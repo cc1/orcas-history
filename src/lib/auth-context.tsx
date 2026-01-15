@@ -28,6 +28,17 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
   })
 
   const login = useCallback(async (password: string): Promise<boolean> => {
+    // Helper for dev fallback
+    const tryDevFallback = (): boolean => {
+      const devPassword = import.meta.env.VITE_SITE_PASSWORD
+      if (devPassword && password === devPassword) {
+        sessionStorage.setItem(SITE_AUTH_KEY, 'true')
+        setAuthState(prev => ({ ...prev, isAuthenticated: true }))
+        return true
+      }
+      return false
+    }
+
     try {
       const response = await fetch('/api/auth/login', {
         method: 'POST',
@@ -40,17 +51,17 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
         setAuthState(prev => ({ ...prev, isAuthenticated: true }))
         return true
       }
+
+      // API returned error - check if it's a server error (API not available)
+      // vs a 401/403 (wrong password with working API)
+      if (response.status >= 500) {
+        return tryDevFallback()
+      }
+
       return false
     } catch {
-      // Fallback for development - check against env variable
-      // In production, this should always use the API
-      const devPassword = import.meta.env.VITE_SITE_PASSWORD
-      if (devPassword && password === devPassword) {
-        sessionStorage.setItem(SITE_AUTH_KEY, 'true')
-        setAuthState(prev => ({ ...prev, isAuthenticated: true }))
-        return true
-      }
-      return false
+      // Network error or CORS - try dev fallback
+      return tryDevFallback()
     }
   }, [])
 
@@ -60,6 +71,17 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
     // If already authenticated, return true immediately
     if (authState.isEditAuthenticated) {
       return true
+    }
+
+    // Helper for dev fallback
+    const tryDevFallback = (): boolean => {
+      const devEditPassword = import.meta.env.VITE_EDIT_PASSWORD
+      if (devEditPassword && editPassword === devEditPassword) {
+        sessionStorage.setItem(EDIT_AUTH_KEY, 'true')
+        setAuthState(prev => ({ ...prev, isEditAuthenticated: true }))
+        return true
+      }
+      return false
     }
 
     try {
@@ -74,16 +96,16 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
         setAuthState(prev => ({ ...prev, isEditAuthenticated: true }))
         return true
       }
+
+      // API returned error - check if it's a server error (API not available)
+      if (response.status >= 500) {
+        return tryDevFallback()
+      }
+
       return false
     } catch {
-      // Fallback for development
-      const devEditPassword = import.meta.env.VITE_EDIT_PASSWORD
-      if (devEditPassword && editPassword === devEditPassword) {
-        sessionStorage.setItem(EDIT_AUTH_KEY, 'true')
-        setAuthState(prev => ({ ...prev, isEditAuthenticated: true }))
-        return true
-      }
-      return false
+      // Network error or CORS - try dev fallback
+      return tryDevFallback()
     }
   }, [authState.isEditAuthenticated])
 

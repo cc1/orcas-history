@@ -1,150 +1,114 @@
 /**
  * API client for fetching data from the backend
+ *
+ * Uses a factory pattern to reduce repetitive fetch code.
  */
+import type {
+  MediaItem,
+  MediaLinks,
+  Person,
+  Place,
+  Topic,
+  NewsItem,
+  EntityNewsItem,
+  Entity,
+  EntityType,
+  LinkedMentions,
+  RelatedPage,
+  PaginatedResponse,
+  SingleResponse,
+} from './types'
+
+// Re-export types for convenience
+export type {
+  MediaItem,
+  MediaLinks,
+  Person,
+  Place,
+  Topic,
+  NewsItem,
+  EntityNewsItem,
+  Entity,
+  EntityType,
+  LinkedMentions,
+  RelatedPage,
+  PaginatedResponse,
+  SingleResponse,
+}
 
 const API_BASE = '/api'
 
-// Type definitions matching the API responses
-export interface MediaItem {
-  id: string
-  number: string
-  category: 'photo' | 'document' | 'object'
-  title: string | null
-  description: string | null
-  googleUrl: string | null
-  webImagePath: string | null
-  originalImagePath?: string | null
-  resolutionStatus?: string
-  dateSort: number | null
-  needsDate: boolean | null
-  locationText: string | null
-  sourceText: string | null
-  sourcePageUrl?: string | null
-  externalUrl?: string | null
-  hasHighRes: boolean | null
-  isDuplicate?: boolean
-  notes: string | null
-  dateOriginalText: string | null
-  datePrecision: string | null
-  dateYearStart?: number | null
-  dateYearEnd?: number | null
-  dateMonth?: number | null
-  dateDay?: number | null
-}
+// ============================================================================
+// Core Fetch Utilities
+// ============================================================================
 
-// Related Page type (user-curated connections)
-export interface RelatedPage {
-  type: 'person' | 'place' | 'topic'
-  slug: string
-  name: string
-}
-
-export interface Person {
-  id: string
-  slug: string
-  displayName: string
-  biography?: string | null
-  connectionToPtLawrence?: string | null
-  miscellaneous?: string | null
-  keyDatesText: string | null
-  birthYear: number | null
-  deathYear: number | null
-  familyData?: {
-    parents?: string[]
-    spouses?: string[]
-    children?: string[]
-    siblings?: string[]
-  } | null
-  timeline?: Array<{
-    year: number
-    age?: number
-    event: string
-  }> | null
-  relatedPages?: RelatedPage[] | null
-  imageUrl: string | null
-  sourcePageUrl?: string | null
-  linkedPhotos?: Array<{
-    id: string
-    number: string
-    imageUrl: string
-    description?: string | null
-  }> | null
-}
-
-export interface Place {
-  id: string
-  slug: string
-  name: string
-  description: string | null
-  latitude: string | null
-  longitude: string | null
-  contentSections?: Array<{
-    heading: string
-    content: string
-  }> | null
-  researchQuestions?: string[] | null
-  relatedPages?: RelatedPage[] | null
-  imageUrl: string | null
-  sourcePageUrl?: string | null
-  linkedPhotos?: Array<{
-    id: string
-    number: string
-    imageUrl: string | null
-    description?: string | null
-  }> | null
-}
-
-export interface Topic {
-  id: string
-  slug: string
-  name: string
-  description: string | null
-  contentSections?: Array<{
-    heading: string
-    content: string
-  }> | null
-  researchQuestions?: string[] | null
-  relatedPages?: RelatedPage[] | null
-  imageUrl: string | null
-  sourcePageUrl?: string | null
-  linkedPhotos?: Array<{
-    id: string
-    number: string
-    imageUrl: string | null
-    description?: string | null
-  }> | null
-}
-
-export interface NewsItem {
-  id: string
-  itemId: string
-  decade: string
-  year: number
-  month: string | null
-  monthSort: number | null
-  content: string
-  sourceUrl: string | null
-}
-
-interface PaginatedResponse<T> {
-  data: T[]
-  total: number
-  limit: number
-  offset: number
-}
-
-interface SingleResponse<T> {
-  data: T
-}
-
-// Fetch helpers
-async function fetchApi<T>(endpoint: string): Promise<T> {
-  const response = await fetch(`${API_BASE}${endpoint}`)
+async function fetchJson<T>(url: string, options?: RequestInit): Promise<T> {
+  const response = await fetch(url, options)
   if (!response.ok) {
     throw new Error(`API error: ${response.status}`)
   }
   return response.json()
 }
+
+function buildUrl(endpoint: string, params?: Record<string, string | number | boolean | undefined>): string {
+  const url = `${API_BASE}${endpoint}`
+  if (!params) return url
+
+  const searchParams = new URLSearchParams()
+  for (const [key, value] of Object.entries(params)) {
+    if (value !== undefined) {
+      searchParams.set(key, String(value))
+    }
+  }
+
+  const query = searchParams.toString()
+  return query ? `${url}?${query}` : url
+}
+
+// ============================================================================
+// Entity API Factory
+// ============================================================================
+
+const ENTITY_ENDPOINTS: Record<EntityType, string> = {
+  person: 'people',
+  place: 'places',
+  topic: 'topics',
+}
+
+function createEntityApi<T>(entityType: EntityType) {
+  const endpoint = ENTITY_ENDPOINTS[entityType]
+
+  return {
+    getAll: (): Promise<SingleResponse<T[]>> =>
+      fetchJson(buildUrl(`/${endpoint}`)),
+
+    getBySlug: (slug: string): Promise<SingleResponse<T>> =>
+      fetchJson(buildUrl(`/${endpoint}/${slug}`)),
+
+    updateField: (
+      slug: string,
+      field: string,
+      value: string | object
+    ): Promise<{ success: boolean; field: string; value: unknown }> => {
+      // Person endpoint has /update suffix for historical reasons
+      const suffix = entityType === 'person' ? '/update' : ''
+      return fetchJson(buildUrl(`/${endpoint}/${slug}${suffix}`), {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ field, value }),
+      })
+    },
+  }
+}
+
+// Create typed entity APIs
+const peopleApi = createEntityApi<Person>('person')
+const placesApi = createEntityApi<Place>('place')
+const topicsApi = createEntityApi<Topic>('topic')
+
+// ============================================================================
+// Exported API Functions
+// ============================================================================
 
 // Media API
 export async function getMedia(params?: {
@@ -154,116 +118,23 @@ export async function getMedia(params?: {
   limit?: number
   offset?: number
 }): Promise<PaginatedResponse<MediaItem>> {
-  const searchParams = new URLSearchParams()
-  if (params?.category) searchParams.set('category', params.category)
-  if (params?.sort) searchParams.set('sort', params.sort)
-  if (params?.needsDate) searchParams.set('needsDate', 'true')
-  if (params?.limit) searchParams.set('limit', params.limit.toString())
-  if (params?.offset) searchParams.set('offset', params.offset.toString())
-
-  const query = searchParams.toString()
-  return fetchApi(`/media${query ? `?${query}` : ''}`)
+  return fetchJson(buildUrl('/media', params))
 }
 
 export async function getMediaByNumber(number: string): Promise<SingleResponse<MediaItem>> {
-  return fetchApi(`/media/${number}`)
+  return fetchJson(buildUrl(`/media/${number}`))
 }
 
-// People API
-export async function getPeople(): Promise<SingleResponse<Person[]>> {
-  return fetchApi('/people')
-}
-
-export async function getPersonBySlug(slug: string): Promise<SingleResponse<Person>> {
-  return fetchApi(`/people/${slug}`)
-}
-
-// Places API
-export async function getPlaces(): Promise<SingleResponse<Place[]>> {
-  return fetchApi('/places')
-}
-
-export async function getPlaceBySlug(slug: string): Promise<SingleResponse<Place>> {
-  return fetchApi(`/places/${slug}`)
-}
-
-// Topics API
-export async function getTopics(): Promise<SingleResponse<Topic[]>> {
-  return fetchApi('/topics')
-}
-
-export async function getTopicBySlug(slug: string): Promise<SingleResponse<Topic>> {
-  return fetchApi(`/topics/${slug}`)
-}
-
-// News API
-export async function getNews(params?: {
-  sort?: 'asc' | 'desc'
-  decade?: string
-}): Promise<SingleResponse<NewsItem[]>> {
-  const searchParams = new URLSearchParams()
-  if (params?.sort) searchParams.set('sort', params.sort)
-  if (params?.decade) searchParams.set('decade', params.decade)
-
-  const query = searchParams.toString()
-  return fetchApi(`/news${query ? `?${query}` : ''}`)
-}
-
-// Entity News API (news items linked to a specific entity)
-export interface EntityNewsItem {
-  id: string
-  itemId: string
-  year: number
-  month: string | null
-  monthSort: number | null
-  content: string
-}
-
-export async function getEntityNews(
-  entityType: 'person' | 'place' | 'topic',
-  slug: string
-): Promise<SingleResponse<EntityNewsItem[]>> {
-  return fetchApi(`/entity-news?type=${entityType}&slug=${slug}`)
-}
-
-// Linked Mentions API (explicit links from other pages)
-export interface LinkedMentions {
-  people: Array<{
-    slug: string
-    name: string
-  }>
-  places: Array<{
-    slug: string
-    name: string
-  }>
-  topics: Array<{
-    slug: string
-    name: string
-  }>
-}
-
-export async function getLinkedMentions(
-  entityType: 'person' | 'place' | 'topic',
-  entityId: string
-): Promise<SingleResponse<LinkedMentions>> {
-  return fetchApi(`/backlinks?type=${entityType}&id=${entityId}`)
-}
-
-// All Entities API (for autocomplete)
-export interface Entity {
-  type: 'person' | 'place' | 'topic'
-  slug: string
-  name: string
-}
-
-export async function getAllEntities(): Promise<SingleResponse<Entity[]>> {
-  return fetchApi('/entities')
-}
-
-// Media Links API
-export interface MediaLinks {
-  people: Array<{ id: string; slug: string; name: string }>
-  place: { id: string; slug: string; name: string } | null
+export async function updateMediaField(
+  number: string,
+  field: string,
+  value: string
+): Promise<{ success: boolean; field: string; value: string }> {
+  return fetchJson(buildUrl(`/media/${number}`), {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ field, value }),
+  })
 }
 
 export async function updateMediaLinks(
@@ -273,67 +144,62 @@ export async function updateMediaLinks(
     place?: { id: string; slug: string; name: string } | null
   }
 ): Promise<SingleResponse<MediaLinks>> {
-  const response = await fetch(`${API_BASE}/media/${number}/links`, {
+  return fetchJson(buildUrl(`/media/${number}/links`), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(links),
   })
-  if (!response.ok) {
-    throw new Error(`API error: ${response.status}`)
-  }
-  return response.json()
 }
 
-// Update media text fields (description, source, notes, date)
-export async function updateMediaField(
-  number: string,
-  field: string,
-  value: string
-): Promise<{ success: boolean; field: string; value: string }> {
-  const response = await fetch(`${API_BASE}/media/${number}`, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ field, value }),
-  })
-  if (!response.ok) {
-    throw new Error(`API error: ${response.status}`)
-  }
-  return response.json()
-}
+// People API
+export const getPeople = peopleApi.getAll
+export const getPersonBySlug = peopleApi.getBySlug
+export const updatePersonField = peopleApi.updateField
 
-// Entity type to API endpoint mapping
-const ENTITY_ENDPOINTS: Record<EntityType, string> = {
-  person: 'people',
-  place: 'places',
-  topic: 'topics',
-}
+// Places API
+export const getPlaces = placesApi.getAll
+export const getPlaceBySlug = placesApi.getBySlug
+export const updatePlaceField = placesApi.updateField
 
-type EntityType = 'person' | 'place' | 'topic'
+// Topics API
+export const getTopics = topicsApi.getAll
+export const getTopicBySlug = topicsApi.getBySlug
+export const updateTopicField = topicsApi.updateField
 
-// Generic entity field update (replaces updatePersonField, updatePlaceField, updateTopicField)
-export async function updateEntityField(
+// Generic entity field update
+export function updateEntityField(
   entityType: EntityType,
   slug: string,
   field: string,
   value: string | object
 ): Promise<{ success: boolean; field: string; value: unknown }> {
-  const endpoint = ENTITY_ENDPOINTS[entityType]
-  const suffix = entityType === 'person' ? '/update' : ''
-  const response = await fetch(`${API_BASE}/${endpoint}/${slug}${suffix}`, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ field, value }),
-  })
-  if (!response.ok) {
-    throw new Error(`API error: ${response.status}`)
-  }
-  return response.json()
+  const apis = { person: peopleApi, place: placesApi, topic: topicsApi }
+  return apis[entityType].updateField(slug, field, value)
 }
 
-// Legacy aliases for backwards compatibility (can be removed once all usages are updated)
-export const updatePersonField = (slug: string, field: string, value: string | object) =>
-  updateEntityField('person', slug, field, value)
-export const updatePlaceField = (slug: string, field: string, value: string | object) =>
-  updateEntityField('place', slug, field, value)
-export const updateTopicField = (slug: string, field: string, value: string | object) =>
-  updateEntityField('topic', slug, field, value)
+// News API
+export async function getNews(params?: {
+  sort?: 'asc' | 'desc'
+  decade?: string
+}): Promise<SingleResponse<NewsItem[]>> {
+  return fetchJson(buildUrl('/news', params))
+}
+
+export async function getEntityNews(
+  entityType: EntityType,
+  slug: string
+): Promise<SingleResponse<EntityNewsItem[]>> {
+  return fetchJson(buildUrl('/entity-news', { type: entityType, slug }))
+}
+
+// Entity-related APIs
+export async function getAllEntities(): Promise<SingleResponse<Entity[]>> {
+  return fetchJson(buildUrl('/entities'))
+}
+
+export async function getLinkedMentions(
+  entityType: EntityType,
+  entityId: string
+): Promise<SingleResponse<LinkedMentions>> {
+  return fetchJson(buildUrl('/backlinks', { type: entityType, id: entityId }))
+}

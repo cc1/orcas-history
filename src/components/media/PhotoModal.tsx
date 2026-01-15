@@ -1,8 +1,12 @@
-import { useEffect, useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { EditableField } from '@/components/forms/EditableField'
 import { AutocompleteField } from '@/components/forms/AutocompleteField'
-import { updateMediaLinks } from '@/lib/api'
+import { useModalKeyboard } from '@/hooks/useModalKeyboard'
+import { useMediaLinks } from '@/hooks/useMediaLinks'
+
+// ============================================================================
+// Types
+// ============================================================================
 
 interface EntityLink {
   id: string
@@ -31,68 +35,110 @@ interface PhotoModalProps {
   onOpenPage?: () => void
 }
 
-export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModalProps): React.ReactElement {
+// ============================================================================
+// Sub-components
+// ============================================================================
+
+function NavigationButton({
+  direction,
+  onClick,
+  rightOffset = '2',
+}: {
+  direction: 'prev' | 'next'
+  onClick: () => void
+  rightOffset?: string
+}): React.ReactElement {
+  const isPrev = direction === 'prev'
+  return (
+    <button
+      onClick={onClick}
+      className={`absolute ${isPrev ? 'left-2' : `right-${rightOffset} md:right-[320px]`} top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors`}
+      aria-label={isPrev ? 'Previous photo' : 'Next photo'}
+    >
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d={isPrev ? 'M15 19l-7-7 7-7' : 'M9 5l7 7-7 7'}
+        />
+      </svg>
+    </button>
+  )
+}
+
+function IconButton({
+  href,
+  onClick,
+  icon,
+  label,
+  position,
+}: {
+  href?: string
+  onClick?: (e: React.MouseEvent) => void
+  icon: React.ReactNode
+  label: string
+  position: 'topLeft' | 'topRight'
+}): React.ReactElement {
+  const positionClass = position === 'topLeft' ? 'top-4 left-4' : 'top-4 right-4'
+  const className = `absolute ${positionClass} z-10 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors`
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        download
+        className={className}
+        aria-label={label}
+        title={label}
+        onClick={onClick}
+      >
+        {icon}
+      </a>
+    )
+  }
+
+  return (
+    <button onClick={onClick} className={className} aria-label={label}>
+      {icon}
+    </button>
+  )
+}
+
+// ============================================================================
+// Main Component
+// ============================================================================
+
+export function PhotoModal({
+  photo,
+  onClose,
+  onNavigate,
+  onOpenPage,
+}: PhotoModalProps): React.ReactElement {
   const navigate = useNavigate()
 
-  // State for linked entities
-  const [peopleLinks, setPeopleLinks] = useState<EntityLink[]>(photo.peopleLinks || [])
-  const [locationLink, setLocationLink] = useState<EntityLink | null>(photo.locationLink || null)
+  // Keyboard navigation
+  useModalKeyboard({
+    onClose,
+    onPrev: () => onNavigate('prev'),
+    onNext: () => onNavigate('next'),
+  })
 
-  // Helper to navigate and close modal
-  const handleLinkClick = (path: string) => (e: React.MouseEvent) => {
+  // Entity links management
+  const { peopleLinks, locationLink, savePeopleLinks, saveLocationLink } = useMediaLinks({
+    mediaNumber: photo.id,
+    initialPeople: photo.peopleLinks,
+    initialPlace: photo.locationLink,
+  })
+
+  const handleOpenPage = (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
-    onClose()
-    navigate(path)
-  }
-
-  // Generate slug from location text
-  const locationSlug = photo.locationSlug || photo.location?.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-
-  // Handle keyboard navigation
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'Escape') onClose()
-    if (e.key === 'ArrowLeft') onNavigate('prev')
-    if (e.key === 'ArrowRight') onNavigate('next')
-  }, [onClose, onNavigate])
-
-  useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown)
-      document.body.style.overflow = ''
-    }
-  }, [handleKeyDown])
-
-  // Update state when photo changes
-  useEffect(() => {
-    setPeopleLinks(photo.peopleLinks || [])
-    setLocationLink(photo.locationLink || null)
-  }, [photo.id, photo.peopleLinks, photo.locationLink])
-
-  const handleSave = async (field: string, value: string) => {
-    // TODO: Implement API call to save text fields (date, description)
-    console.log('Saving:', field, value)
-  }
-
-  const handleSavePeopleLinks = async (links: EntityLink[] | EntityLink | null) => {
-    const newLinks = Array.isArray(links) ? links : links ? [links] : []
-    setPeopleLinks(newLinks)
-    try {
-      await updateMediaLinks(photo.id, { people: newLinks })
-    } catch (error) {
-      console.error('Failed to save people links:', error)
-    }
-  }
-
-  const handleSaveLocationLink = async (link: EntityLink[] | EntityLink | null) => {
-    const newLink = Array.isArray(link) ? link[0] || null : link
-    setLocationLink(newLink)
-    try {
-      await updateMediaLinks(photo.id, { place: newLink })
-    } catch (error) {
-      console.error('Failed to save location link:', error)
+    if (onOpenPage) {
+      onOpenPage()
+    } else {
+      onClose()
+      navigate(`/photos/${photo.id}`)
     }
   }
 
@@ -102,50 +148,34 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
         className="fixed inset-4 md:inset-8 bg-card rounded-lg shadow-2xl flex flex-col md:flex-row overflow-hidden z-50"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Navigation Buttons */}
-        <button
-          onClick={() => onNavigate('prev')}
-          className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors"
-          aria-label="Previous photo"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <button
-          onClick={() => onNavigate('next')}
-          className="absolute right-2 md:right-[320px] top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors"
-          aria-label="Next photo"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        {/* Navigation */}
+        <NavigationButton direction="prev" onClick={() => onNavigate('prev')} />
+        <NavigationButton direction="next" onClick={() => onNavigate('next')} />
 
-        {/* Download Button - Top Left */}
-        <a
+        {/* Download Button */}
+        <IconButton
           href={photo.imageUrl}
-          download={`photo-${photo.id}.jpg`}
-          className="absolute top-4 left-4 z-10 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors"
-          aria-label="Download photo"
-          title="Download"
           onClick={(e) => e.stopPropagation()}
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-        </a>
+          position="topLeft"
+          label="Download"
+          icon={
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          }
+        />
 
         {/* Close Button */}
-        <button
+        <IconButton
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors"
-          aria-label="Close"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+          position="topRight"
+          label="Close"
+          icon={
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          }
+        />
 
         {/* Image Area */}
         <div className="flex-1 bg-black flex items-center justify-center p-4 min-h-[300px] md:min-h-0">
@@ -164,16 +194,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
             </h2>
             <a
               href={`/photos/${photo.id}`}
-              onClick={(e) => {
-                e.preventDefault()
-                e.stopPropagation()
-                if (onOpenPage) {
-                  onOpenPage()
-                } else {
-                  onClose()
-                  navigate(`/photos/${photo.id}`)
-                }
-              }}
+              onClick={handleOpenPage}
               className="text-sm font-semibold text-primary hover:underline cursor-pointer"
             >
               Open Page →
@@ -185,7 +206,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
               <label className="text-sm font-medium text-muted-foreground block mb-1">Date</label>
               <EditableField
                 value={photo.date || ''}
-                onSave={(value) => handleSave('date', value)}
+                onSave={async (value) => console.log('Saving date:', value)}
                 placeholder="Enter date..."
                 alwaysEditable
               />
@@ -196,7 +217,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
               <AutocompleteField
                 type="place"
                 value={locationLink}
-                onSave={handleSaveLocationLink}
+                onSave={saveLocationLink}
                 placeholder="Select location..."
                 alwaysEditable
               />
@@ -207,7 +228,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
               <AutocompleteField
                 type="people"
                 value={peopleLinks}
-                onSave={handleSavePeopleLinks}
+                onSave={savePeopleLinks}
                 placeholder="Add people..."
                 alwaysEditable
               />
@@ -217,7 +238,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
               <label className="text-sm font-medium text-muted-foreground block mb-1">Description</label>
               <EditableField
                 value={photo.description || ''}
-                onSave={(value) => handleSave('description', value)}
+                onSave={async (value) => console.log('Saving description:', value)}
                 placeholder="Enter description..."
                 multiline
                 alwaysEditable

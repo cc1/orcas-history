@@ -1,4 +1,4 @@
-import { pgTable, uuid, varchar, text, integer, boolean, timestamp, pgEnum, jsonb, decimal } from 'drizzle-orm/pg-core';
+import { pgTable, uuid, varchar, text, integer, boolean, timestamp, pgEnum, jsonb, decimal, type AnyPgColumn } from 'drizzle-orm/pg-core';
 
 // Enums
 export const mediaCategoryEnum = pgEnum('media_category', ['photo', 'document', 'object']);
@@ -54,7 +54,7 @@ export const media = pgTable('media', {
 
   // Duplicate tracking
   isDuplicate: boolean('is_duplicate').default(false),
-  duplicateOfId: uuid('duplicate_of_id').references(() => media.id),
+  duplicateOfId: uuid('duplicate_of_id').references((): AnyPgColumn => media.id),
   duplicateNote: text('duplicate_note'),
 
   notRelevant: boolean('not_relevant').default(false),

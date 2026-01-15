@@ -49,7 +49,7 @@ export function createPatchHandler<T extends PgTable>(config: PatchHandlerConfig
 
       await db
         .update(table)
-        .set({ [field]: finalValue || null })
+        .set({ [field]: finalValue || null } as Partial<T['$inferInsert']>)
         .where(eq(slugColumn, slug))
 
       return res.status(200).json({ success: true, field, value: finalValue })

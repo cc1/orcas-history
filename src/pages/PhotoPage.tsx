@@ -1,100 +1,112 @@
-import { useParams, useNavigate, Link } from 'react-router-dom'
-import { useMediaByNumber, usePeople, usePlaces } from '@/hooks/useData'
+import { useParams, useNavigate } from 'react-router-dom'
+import { useMediaByNumber } from '@/hooks/useData'
+import { useMediaLinks } from '@/hooks/useMediaLinks'
 import { EditableField } from '@/components/forms/EditableField'
 import { AutocompleteField } from '@/components/forms/AutocompleteField'
 import { EditableSection } from '@/components/forms/EditableSection'
-import { updateMediaLinks, updateMediaField } from '@/lib/api'
-import { useState, useEffect } from 'react'
+import { updateMediaField } from '@/lib/api'
+import { useCallback } from 'react'
 
-interface EntityLink {
-  id: string
-  slug: string
-  name: string
+// ============================================================================
+// Loading/Error States
+// ============================================================================
+
+function LoadingState(): React.ReactElement {
+  return (
+    <div className="container px-4 py-6">
+      <div className="flex items-center justify-center py-12">
+        <div className="text-muted-foreground">Loading photo...</div>
+      </div>
+    </div>
+  )
 }
+
+function ErrorState({ message }: { message?: string }): React.ReactElement {
+  return (
+    <div className="container px-4 py-6">
+      <div className="flex items-center justify-center py-12">
+        <div className="text-destructive">
+          {message ? `Error: ${message}` : 'Photo not found'}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ============================================================================
+// Sub-components
+// ============================================================================
+
+function BackButton({ onClick }: { onClick: () => void }): React.ReactElement {
+  return (
+    <button
+      onClick={onClick}
+      className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
+    >
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+      </svg>
+      Back
+    </button>
+  )
+}
+
+function DownloadButton({ href, number }: { href: string; number: string }): React.ReactElement {
+  return (
+    <a
+      href={href}
+      download={`photo-${number}.jpg`}
+      className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+      aria-label="Download photo"
+      title="Download"
+    >
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+        />
+      </svg>
+    </a>
+  )
+}
+
+// ============================================================================
+// Main Component
+// ============================================================================
 
 export function PhotoPage(): React.ReactElement {
   const { number } = useParams<{ number: string }>()
   const navigate = useNavigate()
   const { data: photo, loading, error } = useMediaByNumber(number || null)
 
-  // State for linked entities
-  const [peopleLinks, setPeopleLinks] = useState<EntityLink[]>([])
-  const [locationLink, setLocationLink] = useState<EntityLink | null>(null)
+  // Entity links management
+  const { peopleLinks, locationLink, savePeopleLinks, saveLocationLink } = useMediaLinks({
+    mediaNumber: number || '',
+    initialPeople: [],
+    initialPlace: null,
+  })
 
-  // Update state when photo data loads
-  useEffect(() => {
-    if (photo) {
-      // TODO: Load actual linked entities from API
-      setPeopleLinks([])
-      setLocationLink(null)
+  const saveField = useCallback(async (field: string, value: string) => {
+    if (!photo) return
+    try {
+      await updateMediaField(photo.number, field, value)
+    } catch (err) {
+      console.error(`Failed to save ${field}:`, err)
     }
   }, [photo])
 
-  if (loading) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-muted-foreground">Loading photo...</div>
-        </div>
-      </div>
-    )
-  }
-
-  if (error || !photo) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-destructive">
-            {error ? `Error: ${error.message}` : 'Photo not found'}
-          </div>
-        </div>
-      </div>
-    )
-  }
+  if (loading) return <LoadingState />
+  if (error || !photo) return <ErrorState message={error?.message} />
 
   const imageUrl = photo.webImagePath || photo.googleUrl || ''
-
-  const handleSave = async (field: string, value: string) => {
-    try {
-      await updateMediaField(photo.number, field, value)
-    } catch (error) {
-      console.error(`Failed to save ${field}:`, error)
-    }
-  }
-
-  const handleSavePeopleLinks = async (links: EntityLink[] | EntityLink | null) => {
-    const newLinks = Array.isArray(links) ? links : links ? [links] : []
-    setPeopleLinks(newLinks)
-    try {
-      await updateMediaLinks(photo.number, { people: newLinks })
-    } catch (error) {
-      console.error('Failed to save people links:', error)
-    }
-  }
-
-  const handleSaveLocationLink = async (link: EntityLink[] | EntityLink | null) => {
-    const newLink = Array.isArray(link) ? link[0] || null : link
-    setLocationLink(newLink)
-    try {
-      await updateMediaLinks(photo.number, { place: newLink })
-    } catch (error) {
-      console.error('Failed to save location link:', error)
-    }
-  }
 
   return (
     <div className="min-h-screen bg-background">
       {/* Back navigation */}
       <div className="container px-4 py-4">
-        <button
-          onClick={() => navigate(-1)}
-          className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Back
-        </button>
+        <BackButton onClick={() => navigate(-1)} />
       </div>
 
       <div className="container px-4 pb-12">
@@ -126,76 +138,80 @@ export function PhotoPage(): React.ReactElement {
                 <h1 className="font-serif text-2xl font-bold">
                   {photo.category === 'document' ? 'Document' : 'Photo'} #{photo.number}
                 </h1>
-                <a
-                  href={imageUrl}
-                  download={`photo-${photo.number}.jpg`}
-                  className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-                  aria-label="Download photo"
-                  title="Download"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                </a>
+                <DownloadButton href={imageUrl} number={photo.number} />
               </div>
 
               <EditableSection className="space-y-5 pr-8">
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground block mb-1">Date</label>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">
+                    Date
+                  </label>
                   <EditableField
                     value={photo.dateOriginalText || ''}
-                    onSave={(value) => handleSave('date', value)}
+                    onSave={(value) => saveField('date', value)}
                     placeholder="Enter date..."
                   />
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground block mb-1">Location</label>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">
+                    Location
+                  </label>
                   <AutocompleteField
                     type="place"
                     value={locationLink}
-                    onSave={handleSaveLocationLink}
+                    onSave={saveLocationLink}
                     placeholder="Select location..."
                   />
                   {photo.locationText && !locationLink && (
-                    <p className="text-xs text-muted-foreground mt-1">Original: {photo.locationText}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      Original: {photo.locationText}
+                    </p>
                   )}
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground block mb-1">People</label>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">
+                    People
+                  </label>
                   <AutocompleteField
                     type="people"
                     value={peopleLinks}
-                    onSave={handleSavePeopleLinks}
+                    onSave={savePeopleLinks}
                     placeholder="Add people..."
                   />
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground block mb-1">Description</label>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">
+                    Description
+                  </label>
                   <EditableField
                     value={photo.description || ''}
-                    onSave={(value) => handleSave('description', value)}
+                    onSave={(value) => saveField('description', value)}
                     placeholder="Enter description..."
                     multiline
                   />
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground block mb-1">Source</label>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">
+                    Source
+                  </label>
                   <EditableField
                     value={photo.sourceText || ''}
-                    onSave={(value) => handleSave('source', value)}
+                    onSave={(value) => saveField('source', value)}
                     placeholder="Enter source..."
                   />
                 </div>
 
                 <div>
-                  <label className="text-sm font-medium text-muted-foreground block mb-1">Notes</label>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">
+                    Notes
+                  </label>
                   <EditableField
                     value={photo.notes || ''}
-                    onSave={(value) => handleSave('notes', value)}
+                    onSave={(value) => saveField('notes', value)}
                     placeholder="Add notes..."
                     multiline
                   />
