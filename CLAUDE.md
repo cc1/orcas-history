@@ -5,7 +5,8 @@ Knowledge graph family history site for Orcas Island / Pt. Lawrence area.
 ## Quick Reference
 
 ```bash
-npm run dev           # Start development server
+npm start             # Start development server (frontend + API on port 3000)
+npm run dev           # Frontend only (Vite on port 5173, no API routes)
 npm run build         # Production build
 npm run extract:sample # Run sample extraction
 npm run extract:full   # Run full site extraction
@@ -678,16 +679,12 @@ Photos open as full pages, not modals:
 # Database
 DATABASE_URL=           # Neon connection string
 
-# Authentication (server-side)
+# Authentication
 SITE_PASSWORD=          # Site access password
 EDIT_PASSWORD=          # Edit mode password
-
-# Authentication (client-side fallback for dev)
-VITE_SITE_PASSWORD=     # Dev fallback when API unavailable
-VITE_EDIT_PASSWORD=     # Dev fallback for edit auth
 
 # Storage
 BLOB_READ_WRITE_TOKEN=  # Vercel Blob token
 ```
 
-**Note**: When running `vite` directly (without `vercel dev`), API routes return 500. The auth-context falls back to `VITE_*` passwords for local development.
+**Note**: Use `npm start` for full development (frontend + API on port 3000). Use `npm run dev` for frontend-only work (no API routes).
