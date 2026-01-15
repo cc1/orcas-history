@@ -2,7 +2,6 @@ import { useEffect, useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { EditableField } from '@/components/forms/EditableField'
 import { AutocompleteField } from '@/components/forms/AutocompleteField'
-import { EditableSection } from '@/components/forms/EditableSection'
 import { updateMediaLinks } from '@/lib/api'
 
 interface EntityLink {
@@ -123,6 +122,20 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
           </svg>
         </button>
 
+        {/* Download Button - Top Left */}
+        <a
+          href={photo.imageUrl}
+          download={`photo-${photo.id}.jpg`}
+          className="absolute top-4 left-4 z-10 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors"
+          aria-label="Download photo"
+          title="Download"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </a>
+
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -167,13 +180,14 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
             </a>
           </div>
 
-          <EditableSection className="space-y-4 pr-8">
+          <div className="space-y-4">
             <div>
               <label className="text-sm font-medium text-muted-foreground block mb-1">Date</label>
               <EditableField
                 value={photo.date || ''}
                 onSave={(value) => handleSave('date', value)}
                 placeholder="Enter date..."
+                alwaysEditable
               />
             </div>
 
@@ -184,6 +198,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
                 value={locationLink}
                 onSave={handleSaveLocationLink}
                 placeholder="Select location..."
+                alwaysEditable
               />
             </div>
 
@@ -194,6 +209,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
                 value={peopleLinks}
                 onSave={handleSavePeopleLinks}
                 placeholder="Add people..."
+                alwaysEditable
               />
             </div>
 
@@ -204,6 +220,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
                 onSave={(value) => handleSave('description', value)}
                 placeholder="Enter description..."
                 multiline
+                alwaysEditable
               />
             </div>
 
@@ -211,7 +228,7 @@ export function PhotoModal({ photo, onClose, onNavigate, onOpenPage }: PhotoModa
               <label className="text-sm font-medium text-muted-foreground block mb-1">Source</label>
               <p className="text-muted-foreground">{photo.source || '—'}</p>
             </div>
-          </EditableSection>
+          </div>
         </div>
       </div>
     </div>

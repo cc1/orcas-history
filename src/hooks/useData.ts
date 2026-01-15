@@ -40,6 +40,20 @@ function useData<T>(
   return { data, loading, error, refetch: fetch }
 }
 
+// Generic slug-based entity hook factory (eliminates duplicate null-handling logic)
+function useEntityBySlug<T>(
+  slug: string | null,
+  fetchFn: (slug: string) => Promise<{ data: T }>
+): UseDataResult<T> {
+  return useData(
+    async () => {
+      if (!slug) return { data: null as unknown as T }
+      return fetchFn(slug)
+    },
+    [slug]
+  )
+}
+
 // Media hooks
 export function useMedia(params?: Parameters<typeof api.getMedia>[0]): UseDataResult<api.MediaItem[]> & { total: number } {
   const [total, setTotal] = useState(0)
@@ -72,13 +86,7 @@ export function usePeople(): UseDataResult<api.Person[]> {
 }
 
 export function usePersonBySlug(slug: string | null): UseDataResult<api.Person> {
-  return useData(
-    async () => {
-      if (!slug) return { data: null as unknown as api.Person }
-      return api.getPersonBySlug(slug)
-    },
-    [slug]
-  )
+  return useEntityBySlug(slug, api.getPersonBySlug)
 }
 
 // Places hooks
@@ -87,13 +95,7 @@ export function usePlaces(): UseDataResult<api.Place[]> {
 }
 
 export function usePlaceBySlug(slug: string | null): UseDataResult<api.Place> {
-  return useData(
-    async () => {
-      if (!slug) return { data: null as unknown as api.Place }
-      return api.getPlaceBySlug(slug)
-    },
-    [slug]
-  )
+  return useEntityBySlug(slug, api.getPlaceBySlug)
 }
 
 // Topics hooks
@@ -102,13 +104,7 @@ export function useTopics(): UseDataResult<api.Topic[]> {
 }
 
 export function useTopicBySlug(slug: string | null): UseDataResult<api.Topic> {
-  return useData(
-    async () => {
-      if (!slug) return { data: null as unknown as api.Topic }
-      return api.getTopicBySlug(slug)
-    },
-    [slug]
-  )
+  return useEntityBySlug(slug, api.getTopicBySlug)
 }
 
 // News hooks
@@ -119,16 +115,35 @@ export function useNews(params?: Parameters<typeof api.getNews>[0]): UseDataResu
   )
 }
 
-// Related Pages hook (bidirectional text-based links)
-export function useRelatedPages(
+// Entity News hook (news items linked to a specific entity)
+export function useEntityNews(
+  entityType: 'person' | 'place' | 'topic',
+  slug: string | null
+): UseDataResult<api.EntityNewsItem[]> {
+  return useData(
+    async () => {
+      if (!slug) return { data: [] }
+      return api.getEntityNews(entityType, slug)
+    },
+    [entityType, slug]
+  )
+}
+
+// Linked Mentions hook (explicit links from other pages)
+export function useLinkedMentions(
   entityType: 'person' | 'place' | 'topic',
   entityId: string | null
-): UseDataResult<api.RelatedPages> {
+): UseDataResult<api.LinkedMentions> {
   return useData(
     async () => {
       if (!entityId) return { data: { people: [], places: [], topics: [] } }
-      return api.getRelatedPages(entityType, entityId)
+      return api.getLinkedMentions(entityType, entityId)
     },
     [entityType, entityId]
   )
+}
+
+// All Entities hook (for autocomplete across all types)
+export function useAllEntities(): UseDataResult<api.Entity[]> {
+  return useData(() => api.getAllEntities(), [])
 }

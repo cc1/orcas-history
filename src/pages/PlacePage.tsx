@@ -1,7 +1,10 @@
 import { useParams } from 'react-router-dom'
 import { BacklinksSidebar } from '@/components/layout/BacklinksSidebar'
 import { PhotoCarousel } from '@/components/media/PhotoCarousel'
+import { InTheNews } from '@/components/entity/InTheNews'
 import { usePlaceBySlug } from '@/hooks/useData'
+import { updatePlaceField } from '@/lib/api'
+import type { RelatedPage } from '@/lib/api'
 
 export function PlacePage(): React.ReactElement {
   const { slug } = useParams<{ slug: string }>()
@@ -42,6 +45,16 @@ export function PlacePage(): React.ReactElement {
   const lat = place.latitude ? parseFloat(place.latitude) : null
   const lng = place.longitude ? parseFloat(place.longitude) : null
   const linkedPhotos = place.linkedPhotos || []
+  const relatedPages = (place.relatedPages || []) as RelatedPage[]
+
+  const handleSaveRelatedPages = async (pages: RelatedPage[]) => {
+    if (!slug) return
+    try {
+      await updatePlaceField(slug, 'relatedPages', pages)
+    } catch (error) {
+      console.error('Failed to save related pages:', error)
+    }
+  }
 
   return (
     <div className="container px-4 py-6">
@@ -103,11 +116,19 @@ export function PlacePage(): React.ReactElement {
               </ul>
             </section>
           )}
+
+          {/* In the News */}
+          <InTheNews entityType="place" slug={slug || ''} />
         </div>
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <BacklinksSidebar entityType="place" entityId={slug || ''} />
+          <BacklinksSidebar
+            entityType="place"
+            entityId={slug || ''}
+            relatedPages={relatedPages}
+            onSaveRelatedPages={handleSaveRelatedPages}
+          />
         </div>
       </div>
     </div>

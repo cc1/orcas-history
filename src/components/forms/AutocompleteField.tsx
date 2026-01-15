@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
+import { Link } from 'react-router-dom'
 import { useEditableSection } from './EditableSection'
 import { usePeople, usePlaces } from '@/hooks/useData'
 
@@ -13,17 +14,21 @@ interface AutocompleteFieldProps {
   value: EntityLink[] | EntityLink | null
   onSave: (links: EntityLink[] | EntityLink | null) => Promise<void>
   placeholder?: string
+  /** When true, field is always editable without requiring EditableSection */
+  alwaysEditable?: boolean
 }
 
 export function AutocompleteField({
   type,
   value,
   onSave,
-  placeholder
+  placeholder,
+  alwaysEditable
 }: AutocompleteFieldProps): React.ReactElement {
   const { isEditing: sectionEditing } = useEditableSection()
-  const [isFieldEditing, setIsFieldEditing] = useState(false)
+  const [isFieldEditing, setIsFieldEditing] = useState(alwaysEditable || false)
   const [searchText, setSearchText] = useState('')
+  const [showDropdown, setShowDropdown] = useState(false)
   const [selectedItems, setSelectedItems] = useState<EntityLink[]>(() => {
     if (!value) return []
     return Array.isArray(value) ? value : [value]
@@ -38,7 +43,8 @@ export function AutocompleteField({
   const { data: people } = usePeople()
   const { data: places } = usePlaces()
 
-  const isEditing = sectionEditing && isFieldEditing
+  // In alwaysEditable mode, component is always ready to edit
+  const isEditing = alwaysEditable || (sectionEditing && isFieldEditing)
   const isMultiple = type === 'people'
 
   // Get available options based on type
@@ -66,13 +72,13 @@ export function AutocompleteField({
     }
   }, [value])
 
-  // Reset field editing when section editing ends
+  // Reset field editing when section editing ends (skip in alwaysEditable mode)
   useEffect(() => {
-    if (!sectionEditing) {
+    if (!alwaysEditable && !sectionEditing) {
       setIsFieldEditing(false)
       setSearchText('')
     }
-  }, [sectionEditing])
+  }, [sectionEditing, alwaysEditable])
 
   // Focus input when editing starts
   useEffect(() => {
@@ -108,7 +114,8 @@ export function AutocompleteField({
     setSearchText('')
     handleSave(newItems)
 
-    if (!isMultiple) {
+    // In alwaysEditable mode, keep field open; otherwise close after single selection
+    if (!isMultiple && !alwaysEditable) {
       setIsFieldEditing(false)
     }
   }
@@ -138,7 +145,10 @@ export function AutocompleteField({
         }
         break
       case 'Escape':
-        setIsFieldEditing(false)
+        // In alwaysEditable mode, just clear search; otherwise close field
+        if (!alwaysEditable) {
+          setIsFieldEditing(false)
+        }
         setSearchText('')
         break
       case 'Backspace':
@@ -149,12 +159,11 @@ export function AutocompleteField({
     }
   }
 
-  // Display value when not editing
-  const displayValue = selectedItems.length > 0
-    ? selectedItems.map(s => s.name).join(', ')
-    : placeholder || '—'
+  // Get the path prefix for links based on type
+  const pathPrefix = type === 'people' ? '/people' : '/places'
 
   if (!isEditing) {
+    // In edit mode for section, show clickable edit interface
     if (sectionEditing) {
       return (
         <button
@@ -162,7 +171,9 @@ export function AutocompleteField({
           className="w-full text-left p-2 -m-2 rounded hover:bg-muted/50 transition-colors group"
         >
           <span className={selectedItems.length === 0 ? 'text-muted-foreground italic' : ''}>
-            {displayValue}
+            {selectedItems.length > 0
+              ? selectedItems.map(s => s.name).join(', ')
+              : placeholder || '—'}
           </span>
           <span className="ml-2 opacity-0 group-hover:opacity-50 text-xs">
             {isSaving ? '(saving...)' : '(click to edit)'}
@@ -171,9 +182,28 @@ export function AutocompleteField({
       )
     }
 
+    // Not editing - show as clickable links
+    if (selectedItems.length === 0) {
+      return (
+        <span className="text-muted-foreground italic">
+          {placeholder || '—'}
+        </span>
+      )
+    }
+
     return (
-      <span className={selectedItems.length === 0 ? 'text-muted-foreground italic' : ''}>
-        {displayValue}
+      <span>
+        {selectedItems.map((item, index) => (
+          <span key={item.id}>
+            <Link
+              to={`${pathPrefix}/${item.slug}`}
+              className="font-semibold text-primary hover:underline"
+            >
+              {item.name}
+            </Link>
+            {index < selectedItems.length - 1 && ', '}
+          </span>
+        ))}
       </span>
     )
   }
@@ -205,13 +235,21 @@ export function AutocompleteField({
           ref={inputRef}
           type="text"
           value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
+          onChange={(e) => {
+            setSearchText(e.target.value)
+            setShowDropdown(true)
+          }}
+          onFocus={() => setShowDropdown(true)}
           onKeyDown={handleKeyDown}
           onBlur={() => {
             // Delay to allow click events on dropdown
             setTimeout(() => {
-              setIsFieldEditing(false)
+              // In alwaysEditable mode, just clear search; otherwise close field
+              if (!alwaysEditable) {
+                setIsFieldEditing(false)
+              }
               setSearchText('')
+              setShowDropdown(false)
             }, 200)
           }}
           placeholder={selectedItems.length === 0 ? placeholder : 'Add more...'}
@@ -219,8 +257,8 @@ export function AutocompleteField({
         />
       </div>
 
-      {/* Dropdown */}
-      {(searchText || (filteredOptions.length > 0 && selectedItems.length === 0)) && (
+      {/* Dropdown - only show when focused/typing */}
+      {showDropdown && filteredOptions.length > 0 && (
         <div
           ref={dropdownRef}
           className="absolute left-0 right-0 top-full mt-1 bg-background border rounded-md shadow-lg max-h-48 overflow-y-auto z-50"

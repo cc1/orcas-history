@@ -6,35 +6,23 @@ interface EditableFieldProps {
   onSave: (value: string) => Promise<void>
   placeholder?: string
   multiline?: boolean
+  /** When true, field is always editable without requiring EditableSection */
+  alwaysEditable?: boolean
 }
 
-export function EditableField({ value, onSave, placeholder, multiline }: EditableFieldProps): React.ReactElement {
+export function EditableField({ value, onSave, placeholder, multiline, alwaysEditable }: EditableFieldProps): React.ReactElement {
   const { isEditing: sectionEditing } = useEditableSection()
-  const [isFieldEditing, setIsFieldEditing] = useState(false)
-
-  // Combine section editing state with field-level active editing
-  const isEditing = sectionEditing && isFieldEditing
   const [editValue, setEditValue] = useState(value)
   const [isSaving, setIsSaving] = useState(false)
   const inputRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null)
   const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
-  useEffect(() => {
-    if (isEditing && inputRef.current) {
-      inputRef.current.focus()
-    }
-  }, [isEditing])
+  // In alwaysEditable mode, always show input; otherwise check section editing state
+  const showInput = alwaysEditable || sectionEditing
 
   useEffect(() => {
     setEditValue(value)
   }, [value])
-
-  // Reset field editing when section editing ends
-  useEffect(() => {
-    if (!sectionEditing) {
-      setIsFieldEditing(false)
-    }
-  }, [sectionEditing])
 
   const handleBlur = async () => {
     if (editValue !== value) {
@@ -53,38 +41,20 @@ export function EditableField({ value, onSave, placeholder, multiline }: Editabl
         }
       }, 500)
     }
-    setIsFieldEditing(false)
   }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Escape') {
       setEditValue(value)
-      setIsFieldEditing(false)
+      inputRef.current?.blur()
     }
     if (e.key === 'Enter' && !multiline) {
-      handleBlur()
+      inputRef.current?.blur()
     }
   }
 
-  if (!isEditing) {
-    // If section is in edit mode, show clickable edit interface
-    if (sectionEditing) {
-      return (
-        <button
-          onClick={() => setIsFieldEditing(true)}
-          className="w-full text-left p-2 -m-2 rounded hover:bg-muted/50 transition-colors group"
-        >
-          <span className={!value || value === 'TBD' ? 'text-muted-foreground italic' : ''}>
-            {value || placeholder || 'Click to edit'}
-          </span>
-          <span className="ml-2 opacity-0 group-hover:opacity-50 text-xs">
-            {isSaving ? '(saving...)' : '(click to edit)'}
-          </span>
-        </button>
-      )
-    }
-
-    // Section not in edit mode - just display the value
+  // Not in edit mode - display value as text
+  if (!showInput) {
     return (
       <span className={!value || value === 'TBD' ? 'text-muted-foreground italic' : ''}>
         {value || placeholder || '—'}
@@ -92,6 +62,7 @@ export function EditableField({ value, onSave, placeholder, multiline }: Editabl
     )
   }
 
+  // In edit mode - show input directly (no extra click required)
   const inputProps = {
     ref: inputRef as any,
     value: editValue,
@@ -104,12 +75,21 @@ export function EditableField({ value, onSave, placeholder, multiline }: Editabl
 
   if (multiline) {
     return (
-      <textarea
-        {...inputProps}
-        rows={4}
-      />
+      <div className="relative">
+        <textarea {...inputProps} rows={4} />
+        {isSaving && (
+          <span className="absolute right-2 top-2 text-xs text-muted-foreground">Saving...</span>
+        )}
+      </div>
     )
   }
 
-  return <input type="text" {...inputProps} />
+  return (
+    <div className="relative">
+      <input type="text" {...inputProps} />
+      {isSaving && (
+        <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">Saving...</span>
+      )}
+    </div>
+  )
 }

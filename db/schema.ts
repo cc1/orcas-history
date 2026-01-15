@@ -82,6 +82,7 @@ export const person = pgTable('person', {
   // Structured data as JSONB
   familyData: jsonb('family_data'), // { parents: [], spouses: [], children: [], siblings: [] }
   timeline: jsonb('timeline'), // [{ year, age, event }]
+  relatedPages: jsonb('related_pages'), // [{ type: 'person'|'place'|'topic', slug, name }]
 
   headerImageId: uuid('header_image_id').references(() => media.id),
   imageUrl: text('image_url'), // Representative image URL
@@ -114,6 +115,7 @@ export const place = pgTable('place', {
   // Structured content as JSONB
   contentSections: jsonb('content_sections'), // [{ heading, content }]
   researchQuestions: jsonb('research_questions'), // ["question1", "question2"]
+  relatedPages: jsonb('related_pages'), // [{ type: 'person'|'place'|'topic', slug, name }]
 
   imageUrl: text('image_url'), // Representative image URL
   sourcePageUrl: text('source_page_url'),
@@ -131,6 +133,7 @@ export const topic = pgTable('topic', {
   // Structured content as JSONB
   contentSections: jsonb('content_sections'), // [{ heading, content }]
   researchQuestions: jsonb('research_questions'), // ["question1", "question2"]
+  relatedPages: jsonb('related_pages'), // [{ type: 'person'|'place'|'topic', slug, name }]
 
   imageUrl: text('image_url'), // Representative image URL
   sourcePageUrl: text('source_page_url'),

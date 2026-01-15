@@ -1,7 +1,10 @@
 import { useParams } from 'react-router-dom'
 import { BacklinksSidebar } from '@/components/layout/BacklinksSidebar'
 import { PhotoCarousel } from '@/components/media/PhotoCarousel'
+import { InTheNews } from '@/components/entity/InTheNews'
 import { useTopicBySlug } from '@/hooks/useData'
+import { updateTopicField } from '@/lib/api'
+import type { RelatedPage } from '@/lib/api'
 
 export function TopicPage(): React.ReactElement {
   const { slug } = useParams<{ slug: string }>()
@@ -40,6 +43,16 @@ export function TopicPage(): React.ReactElement {
   const sections = (topic.contentSections || []) as Array<{ heading: string; content: string }>
   const researchQuestions = (topic.researchQuestions || []) as string[]
   const linkedPhotos = topic.linkedPhotos || []
+  const relatedPages = (topic.relatedPages || []) as RelatedPage[]
+
+  const handleSaveRelatedPages = async (pages: RelatedPage[]) => {
+    if (!slug) return
+    try {
+      await updateTopicField(slug, 'relatedPages', pages)
+    } catch (error) {
+      console.error('Failed to save related pages:', error)
+    }
+  }
 
   return (
     <div className="container px-4 py-6">
@@ -96,11 +109,19 @@ export function TopicPage(): React.ReactElement {
               </ul>
             </section>
           )}
+
+          {/* In the News */}
+          <InTheNews entityType="topic" slug={slug || ''} />
         </div>
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <BacklinksSidebar entityType="topic" entityId={slug || ''} />
+          <BacklinksSidebar
+            entityType="topic"
+            entityId={slug || ''}
+            relatedPages={relatedPages}
+            onSaveRelatedPages={handleSaveRelatedPages}
+          />
         </div>
       </div>
     </div>

@@ -1,12 +1,32 @@
 /**
- * API route: GET /api/places/:slug
- * Returns a single place by slug with linked photos
+ * API route: GET/PATCH /api/places/:slug
+ * GET: Returns a single place by slug with linked photos
+ * PATCH: Updates place fields
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { db, place, media, mediaPlace } from '../lib/db.js'
 import { eq, and, asc } from 'drizzle-orm'
+import { createPatchHandler } from '../lib/patch-handler.js'
+
+const handlePatch = createPatchHandler({
+  table: place,
+  slugColumn: place.slug,
+  fieldMap: {
+    name: 'name',
+    description: 'description',
+    contentSections: 'content_sections',
+    researchQuestions: 'research_questions',
+    relatedPages: 'related_pages',
+  },
+  jsonFields: ['contentSections', 'researchQuestions', 'relatedPages'],
+  entityName: 'place',
+})
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  if (req.method === 'PATCH') {
+    return handlePatch(req, res)
+  }
+
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
@@ -29,6 +49,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         longitude: place.longitude,
         contentSections: place.contentSections,
         researchQuestions: place.researchQuestions,
+        relatedPages: place.relatedPages,
         imageUrl: place.imageUrl,
         sourcePageUrl: place.sourcePageUrl,
       })

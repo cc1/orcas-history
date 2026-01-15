@@ -32,6 +32,13 @@ export interface MediaItem {
   dateDay?: number | null
 }
 
+// Related Page type (user-curated connections)
+export interface RelatedPage {
+  type: 'person' | 'place' | 'topic'
+  slug: string
+  name: string
+}
+
 export interface Person {
   id: string
   slug: string
@@ -53,6 +60,7 @@ export interface Person {
     age?: number
     event: string
   }> | null
+  relatedPages?: RelatedPage[] | null
   imageUrl: string | null
   sourcePageUrl?: string | null
   linkedPhotos?: Array<{
@@ -75,6 +83,7 @@ export interface Place {
     content: string
   }> | null
   researchQuestions?: string[] | null
+  relatedPages?: RelatedPage[] | null
   imageUrl: string | null
   sourcePageUrl?: string | null
   linkedPhotos?: Array<{
@@ -95,6 +104,7 @@ export interface Topic {
     content: string
   }> | null
   researchQuestions?: string[] | null
+  relatedPages?: RelatedPage[] | null
   imageUrl: string | null
   sourcePageUrl?: string | null
   linkedPhotos?: Array<{
@@ -199,8 +209,25 @@ export async function getNews(params?: {
   return fetchApi(`/news${query ? `?${query}` : ''}`)
 }
 
-// Related Pages API (bidirectional text-based links)
-export interface RelatedPages {
+// Entity News API (news items linked to a specific entity)
+export interface EntityNewsItem {
+  id: string
+  itemId: string
+  year: number
+  month: string | null
+  monthSort: number | null
+  content: string
+}
+
+export async function getEntityNews(
+  entityType: 'person' | 'place' | 'topic',
+  slug: string
+): Promise<SingleResponse<EntityNewsItem[]>> {
+  return fetchApi(`/entity-news?type=${entityType}&slug=${slug}`)
+}
+
+// Linked Mentions API (explicit links from other pages)
+export interface LinkedMentions {
   people: Array<{
     slug: string
     name: string
@@ -215,11 +242,22 @@ export interface RelatedPages {
   }>
 }
 
-export async function getRelatedPages(
+export async function getLinkedMentions(
   entityType: 'person' | 'place' | 'topic',
   entityId: string
-): Promise<SingleResponse<RelatedPages>> {
+): Promise<SingleResponse<LinkedMentions>> {
   return fetchApi(`/backlinks?type=${entityType}&id=${entityId}`)
+}
+
+// All Entities API (for autocomplete)
+export interface Entity {
+  type: 'person' | 'place' | 'topic'
+  slug: string
+  name: string
+}
+
+export async function getAllEntities(): Promise<SingleResponse<Entity[]>> {
+  return fetchApi('/entities')
 }
 
 // Media Links API
@@ -245,3 +283,57 @@ export async function updateMediaLinks(
   }
   return response.json()
 }
+
+// Update media text fields (description, source, notes, date)
+export async function updateMediaField(
+  number: string,
+  field: string,
+  value: string
+): Promise<{ success: boolean; field: string; value: string }> {
+  const response = await fetch(`${API_BASE}/media/${number}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ field, value }),
+  })
+  if (!response.ok) {
+    throw new Error(`API error: ${response.status}`)
+  }
+  return response.json()
+}
+
+// Entity type to API endpoint mapping
+const ENTITY_ENDPOINTS: Record<EntityType, string> = {
+  person: 'people',
+  place: 'places',
+  topic: 'topics',
+}
+
+type EntityType = 'person' | 'place' | 'topic'
+
+// Generic entity field update (replaces updatePersonField, updatePlaceField, updateTopicField)
+export async function updateEntityField(
+  entityType: EntityType,
+  slug: string,
+  field: string,
+  value: string | object
+): Promise<{ success: boolean; field: string; value: unknown }> {
+  const endpoint = ENTITY_ENDPOINTS[entityType]
+  const suffix = entityType === 'person' ? '/update' : ''
+  const response = await fetch(`${API_BASE}/${endpoint}/${slug}${suffix}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ field, value }),
+  })
+  if (!response.ok) {
+    throw new Error(`API error: ${response.status}`)
+  }
+  return response.json()
+}
+
+// Legacy aliases for backwards compatibility (can be removed once all usages are updated)
+export const updatePersonField = (slug: string, field: string, value: string | object) =>
+  updateEntityField('person', slug, field, value)
+export const updatePlaceField = (slug: string, field: string, value: string | object) =>
+  updateEntityField('place', slug, field, value)
+export const updateTopicField = (slug: string, field: string, value: string | object) =>
+  updateEntityField('topic', slug, field, value)

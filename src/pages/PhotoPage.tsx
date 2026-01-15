@@ -3,7 +3,7 @@ import { useMediaByNumber, usePeople, usePlaces } from '@/hooks/useData'
 import { EditableField } from '@/components/forms/EditableField'
 import { AutocompleteField } from '@/components/forms/AutocompleteField'
 import { EditableSection } from '@/components/forms/EditableSection'
-import { updateMediaLinks } from '@/lib/api'
+import { updateMediaLinks, updateMediaField } from '@/lib/api'
 import { useState, useEffect } from 'react'
 
 interface EntityLink {
@@ -55,8 +55,11 @@ export function PhotoPage(): React.ReactElement {
   const imageUrl = photo.webImagePath || photo.googleUrl || ''
 
   const handleSave = async (field: string, value: string) => {
-    // TODO: Implement API call to save text fields
-    console.log('Saving:', field, value)
+    try {
+      await updateMediaField(photo.number, field, value)
+    } catch (error) {
+      console.error(`Failed to save ${field}:`, error)
+    }
   }
 
   const handleSavePeopleLinks = async (links: EntityLink[] | EntityLink | null) => {
@@ -119,9 +122,22 @@ export function PhotoPage(): React.ReactElement {
           {/* Metadata Panel */}
           <div className="lg:col-span-1">
             <div className="bg-card rounded-lg border p-6">
-              <h1 className="font-serif text-2xl font-bold mb-6">
-                {photo.category === 'document' ? 'Document' : 'Photo'} #{photo.number}
-              </h1>
+              <div className="flex items-center justify-between mb-6">
+                <h1 className="font-serif text-2xl font-bold">
+                  {photo.category === 'document' ? 'Document' : 'Photo'} #{photo.number}
+                </h1>
+                <a
+                  href={imageUrl}
+                  download={`photo-${photo.number}.jpg`}
+                  className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                  aria-label="Download photo"
+                  title="Download"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                </a>
+              </div>
 
               <EditableSection className="space-y-5 pr-8">
                 <div>
@@ -168,15 +184,22 @@ export function PhotoPage(): React.ReactElement {
 
                 <div>
                   <label className="text-sm font-medium text-muted-foreground block mb-1">Source</label>
-                  <p className="text-muted-foreground">{photo.sourceText || '—'}</p>
+                  <EditableField
+                    value={photo.sourceText || ''}
+                    onSave={(value) => handleSave('source', value)}
+                    placeholder="Enter source..."
+                  />
                 </div>
 
-                {photo.notes && (
-                  <div>
-                    <label className="text-sm font-medium text-muted-foreground block mb-1">Notes</label>
-                    <p className="text-muted-foreground text-sm">{photo.notes}</p>
-                  </div>
-                )}
+                <div>
+                  <label className="text-sm font-medium text-muted-foreground block mb-1">Notes</label>
+                  <EditableField
+                    value={photo.notes || ''}
+                    onSave={(value) => handleSave('notes', value)}
+                    placeholder="Add notes..."
+                    multiline
+                  />
+                </div>
 
                 {photo.hasHighRes && (
                   <div className="pt-2">
