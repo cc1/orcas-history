@@ -1,0 +1,35 @@
+{
+  "slug": "culver-mabel-gertrude-smith",
+  "displayName": "Mabel Gertrude (Smith) Culver",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-mabel-gertrude-smith",
+
+  "connectionToPtLawrence": null,
+
+  "family": {
+    "parents": "Dr. Charles Carroll Smith (father mentioned in memoir)",
+    "spouses": "Otis Henry Culver (married September 1894)",
+    "children": "Evelyn Louise Culver, Leda Gertrude Culver, Mabel Florian Culver, Mary Luella Culver, Carroll Nelson Culver",
+    "siblings": "TBD"
+  },
+
+  "keyDates": "1872-1952",
+
+  "timeline": [
+    {"year": 1872, "age": 0, "event": "Born October 5, 1872 in Gaysville, Vermont"},
+    {"year": 1894, "age": 22, "event": "September: Married Otis Henry Culver"},
+    {"year": 1946, "age": 74, "event": "Told her 'New England Girlhood' story to her Church Circle"},
+    {"year": 1952, "age": 80, "event": "Died in Bellingham, WA. Graveside service at Olga Cemetery, October 21, 1952"}
+  ],
+
+  "biography": "New England Girlhood\n\nMabel's memoir as told to her Church Circle in 1946 or '47 (she would have been ~74 years old). Transcribed by Jerry Hall in 1948. Given to Carroll and Judy Culver at Christmas 1975.\n\nThe memoir describes growing up in Gaysville, Vermont - a small Vermont hamlet where she experienced harsh New England winters, attended the local church, and grew up in a close-knit community. Her father (Dr. Charles Carroll Smith) was a physician who traveled to make house calls. She describes the distinct four seasons, the preparations for winter, and various aspects of village life including the stockinet mill and button shop that made buttons from ivory nuts.\n\nThe memoir includes vivid descriptions of:\n- Winter preparations (banking houses with leaves, storm windows, dealing with frost)\n- School days and church attendance\n- Village industries and commerce\n- A trip with her father through Connecticut and Massachusetts to research Revolutionary War ancestry\n- Church services and community institutions in the harsh climate",
+
+  "miscellaneous": "Also native of Gaysville, Vermont - same town where O.H. Culver was born. Her father Dr. Charles Carroll Smith was a physician.",
+
+  "researchQuestions": [
+    "Who was Mabel's mother?",
+    "Did Mabel have siblings?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Page contains memoir 'New England Girlhood' (~17,000 characters)"
+}

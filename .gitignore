@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.vite/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Database
+*.sqlite
+*.db
+
+# Drizzle
+db/migrations/*.sql
+
+# Temporary files
+tmp/
+.tmp/
+
+# Test coverage
+coverage/
+
+# Downloaded images (large files - 162MB, can be re-downloaded)
+extraction/data/images/

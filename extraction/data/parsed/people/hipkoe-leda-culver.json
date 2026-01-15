@@ -1,0 +1,38 @@
+{
+  "slug": "hipkoe-leda-culver",
+  "displayName": "Leda Gertrude (Culver) Hipkoe",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/hipkoe-leda-culver",
+
+  "connectionToPtLawrence": "Granddaughter of George Nelson and Diana Culver. Was flower girl (age 4) at aunt Lou's wedding at Alderbrook in 1902.",
+
+  "family": {
+    "parents": "Otis Henry \"O.H.\" Culver and Mabel Gertrude Smith",
+    "spouses": "George August Hipkoe (b. January 27, 1888 in Alden, Rice, Kansas)",
+    "children": "TBD",
+    "siblings": "Evelyn Louise Culver, Mabel Florian Culver, Mary Luella Culver, Carroll Nelson Culver"
+  },
+
+  "keyDates": "1897-1984 (d. Age 87)",
+
+  "timeline": [
+    {"year": 1897, "age": 0, "event": "Born September 11, 1897 in Whatcom County, Washington"},
+    {"year": 1902, "age": 4, "event": "Flower girl at aunt Lou's wedding at Alderbrook"},
+    {"year": 1910, "age": 12, "event": "Living with her parents in San Juan"},
+    {"year": 1920, "age": 22, "event": "Living with her parents in Friday Harbor"},
+    {"year": 1930, "age": 32, "event": "George and Leda were living in Bellingham; George was a newspaper reporter"},
+    {"year": 1942, "age": 44, "event": "Leda and George were living in Bellingham"},
+    {"year": 1984, "age": 87, "event": "November 22: May be the Leda G. Hipkoe who died in Bellingham"}
+  ],
+
+  "biography": null,
+
+  "miscellaneous": "Husband George Hipkoe was a newspaper reporter on the Bellingham American (per O.H. Culver's bio).",
+
+  "researchQuestions": [
+    "Confirm death date as November 22, 1984",
+    "Who were Leda and George Hipkoe's children?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Short page with basic family info"
+}

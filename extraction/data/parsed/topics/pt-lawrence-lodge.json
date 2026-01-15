@@ -1,0 +1,42 @@
+{
+  "slug": "pt-lawrence-lodge",
+  "name": "Point Lawrence Lodge",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/pt-lawrence-lodge",
+
+  "sections": [
+    {
+      "heading": "Dock",
+      "content": "Research questions about the dock: When was it put in place? (Not shown in 1935 photo, appears first in 1938 photo). What years was it active? What time of year was it put out? How was it attached? When was it removed? How was it stored?"
+    },
+    {
+      "heading": "The Lodge Building",
+      "content": "Research questions about the building: When was it built? Was it built all at once or in stages? Evolution of raised walkway (no raised walkway → raised walkway with stairs sloping towards lodge → raised walkway with 2nd story walk going to lodge → addition of stairs from 2nd story walk sloping away from lodge). Who built it? Anything interesting about the construction? Where did the wood come from? Logs pictured at the foundation—did they wash away every year? Raised walkway below garage was built between 1938 and 1940."
+    },
+    {
+      "heading": "The Lodge Cabins",
+      "content": "Research questions: How many were there? Were they named? Were they all built at once?"
+    }
+  ],
+
+  "researchQuestions": [
+    "When was the dock put in place? (Not shown in 1935 photo, appears first in 1938 photo)",
+    "What years was the dock active?",
+    "What time of year was the dock put out?",
+    "How was the dock attached?",
+    "When was the dock removed?",
+    "How was the dock stored?",
+    "When was the lodge building built?",
+    "Was it built all at once or in stages?",
+    "Who built it?",
+    "Anything interesting about the construction?",
+    "Where did the wood come from?",
+    "Logs pictured at the foundation—did they wash away every year?",
+    "Raised walkway below garage was built between 1938 and 1940 - confirm?",
+    "How many cabins were there?",
+    "Were the cabins named?",
+    "Were the cabins all built at once?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Page is primarily research questions organized by topic"
+}

@@ -1,0 +1,112 @@
+{
+  "extractedAt": "2026-01-14T00:00:00Z",
+  "source": "https://sites.google.com/view/orcashistoryresearch",
+  "totalPages": 183,
+  "summary": {
+    "photoBatches": 36,
+    "photosByYear": 58,
+    "people": 20,
+    "topics": 21,
+    "newsByYear": 5,
+    "documents": 1,
+    "other": 41
+  },
+  "extractionStatus": {
+    "photoBatchesExtracted": 36,
+    "photoBatchesPending": 0,
+    "photoBatchesNeedNormalization": true,
+    "peopleExtracted": 20,
+    "peoplePending": 0,
+    "topicsExtracted": 21,
+    "topicsPending": 0,
+    "newsExtracted": 5,
+    "newsPending": 0,
+    "documentsExtracted": 1,
+    "documentsPending": 0,
+    "researchQuestionsCompiled": 28,
+    "imagesDownloaded": 650,
+    "imagesPending": 0
+  },
+  "people": [
+    {"slug": "aiken-agnes", "displayName": "Aiken, Agnes", "extracted": true},
+    {"slug": "culver-carroll-nelson", "displayName": "Culver, Carroll Nelson", "extracted": true},
+    {"slug": "culver-diana-aiken", "displayName": "Culver, Diana (Aiken)", "extracted": true},
+    {"slug": "culver-emma-louise", "displayName": "Culver, Emma Louise", "extracted": true},
+    {"slug": "culver-fred-nelson", "displayName": "Culver, Fred Nelson", "extracted": true},
+    {"slug": "culver-george-nelson", "displayName": "Culver, George Nelson", "extracted": true},
+    {"slug": "culver-inez-adel", "displayName": "Culver, Inez Adel", "extracted": true},
+    {"slug": "culver-jean-roethenhoefer", "displayName": "Culver, Jean (Roethenhoefer)", "extracted": true},
+    {"slug": "culver-ken", "displayName": "Culver, Ken", "extracted": true},
+    {"slug": "culver-mabel-florian", "displayName": "Culver, Mabel Florian", "extracted": true},
+    {"slug": "culver-mabel-gertrude-smith", "displayName": "Culver, Mabel Gertrude (Smith)", "extracted": true},
+    {"slug": "culver-otis-henry-o-h", "displayName": "Culver, Otis Henry \"O.H.\"", "extracted": true},
+    {"slug": "hall-mary-culver", "displayName": "Hall, Mary (Culver)", "extracted": true},
+    {"slug": "hipkoe-leda-culver", "displayName": "Hipkoe, Leda (Culver)", "extracted": true},
+    {"slug": "hipkoe-virginia", "displayName": "Hipkoe, Virginia", "extracted": true},
+    {"slug": "hilbert-tbd", "displayName": "Hilbert, TBD", "extracted": true},
+    {"slug": "johanson-helge", "displayName": "Johanson, Helge", "extracted": true},
+    {"slug": "johanson-larry", "displayName": "Johanson, Larry", "extracted": true},
+    {"slug": "smith-dr-charles-carroll", "displayName": "Smith, Dr. Charles Carroll", "extracted": true},
+    {"slug": "watson-evelyn-culver", "displayName": "Watson, Evelyn (Culver)", "extracted": true}
+  ],
+  "topics": [
+    {"slug": "pt-lawrence-lodge-staff-visitors", "name": "Pt. Lawrence Lodge Staff & Visitors", "extracted": true, "sourceSection": "people"},
+    {"slug": "pt-lawrence-lodge-visitors", "name": "Pt. Lawrence Lodge Visitors", "extracted": true, "sourceSection": "people"},
+    {"slug": "alderbrook-farm", "name": "Alderbrook Farm", "extracted": true},
+    {"slug": "blakely-mill", "name": "Blakely Mill", "extracted": true},
+    {"slug": "the-buckeye-ferry", "name": "The Buckeye Ferry", "extracted": true},
+    {"slug": "doe-bay", "name": "Doe Bay", "extracted": true},
+    {"slug": "early-settlers", "name": "Early Settlers", "extracted": true},
+    {"slug": "ferries", "name": "Ferries", "extracted": true},
+    {"slug": "fish-traps", "name": "Fish Traps", "extracted": true},
+    {"slug": "fishing-derbies", "name": "Fishing Derbies", "extracted": true},
+    {"slug": "jacobsen-postcards", "name": "Jacobsen Postcards", "extracted": true},
+    {"slug": "mailboat-m-v-osage", "name": "Mailboat M.V. Osage", "extracted": true},
+    {"slug": "mosquito-fleet", "name": "Mosquito Fleet", "extracted": true},
+    {"slug": "mt-constitution", "name": "Mt. Constitution", "extracted": true},
+    {"slug": "olga", "name": "Olga", "extracted": true},
+    {"slug": "olga-cemetery", "name": "Olga Cemetery", "extracted": true},
+    {"slug": "pacific-tel-tel", "name": "Pacific Tel & Tel", "extracted": true},
+    {"slug": "pt-lawrence-lodge", "name": "Pt. Lawrence Lodge", "extracted": true},
+    {"slug": "the-san-juan-islander", "name": "The San Juan Islander", "extracted": true},
+    {"slug": "sea-acres", "name": "Sea Acres", "extracted": true},
+    {"slug": "shorewood", "name": "Shorewood", "extracted": true}
+  ],
+  "news": [
+    {"slug": "1890s", "name": "1890s News", "extracted": true},
+    {"slug": "1900s", "name": "1900s News", "extracted": true},
+    {"slug": "1910s", "name": "1910s News", "extracted": true},
+    {"slug": "1920s", "name": "1920s News", "extracted": true},
+    {"slug": "1930s", "name": "1930s News", "extracted": true}
+  ],
+  "documents": [
+    {"slug": "documents-0001-0100", "name": "Documents & Objects 0001-0100", "extracted": true, "itemCount": 22}
+  ],
+  "photoBatches": [
+    "photos-0001-0010", "photos-0011-0020", "photos-0021-0030", "photos-0031-0040",
+    "photos-0041-0050", "photos-0051-0060", "photos-0061-0070", "photos-0071-0090",
+    "photos-0091-0110", "photos-0111-0130", "photos-0131-0150", "photos-0151-0170",
+    "photos-0171-0190", "photos-0191-0210", "photos-0211-0230", "photos-0231-0250",
+    "photos-0251-0270", "photos-0271-0290", "photos-0291-0310", "photos-0311-0330",
+    "photos-0331-0350", "photos-0351-0370", "photos-0371-0390", "photos-0391-0410",
+    "photos-0411-0430", "photos-0431-0450", "photos-0451-0470", "photos-0471-0490",
+    "photos-0491-0510", "photos-0511-0530", "photos-0531-0550", "photos-0551-0570",
+    "photos-0571-0590", "photos-0591-0610", "photos-0611-0630", "photos-0631-0650"
+  ],
+  "knownDuplicates": [
+    {"photo": "0003", "duplicateOf": "0414", "note": "framed version"},
+    {"photo": "0007", "duplicateOf": "0258", "note": "framed version"},
+    {"photo": "0030", "duplicateOf": "0002", "note": null},
+    {"photo": "0156", "duplicateOf": "0287", "note": null},
+    {"photo": "0225", "duplicateOf": "0402", "note": null},
+    {"photo": "0353", "duplicateOf": "0213", "note": null},
+    {"photo": "0355", "duplicateOf": "0314", "note": null},
+    {"photo": "0635", "duplicateOf": "0065", "note": null}
+  ],
+  "notes": {
+    "authentication": "Site requires Google account login for some features",
+    "imageResolution": "Web images max at 1280px. High-res originals to be imported from cousin's folder later.",
+    "externalSources": "Some photos link to Washington Rural Heritage collection",
+    "schemaVersion": "Photo batches need normalization to v2 schema - see EXTRACTION_STRATEGY.md"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "startedAt": "2026-01-13T21:19:00.785Z",
+  "completedAt": "2026-01-13T21:19:07.758Z",
+  "totalImages": 10,
+  "successful": 10,
+  "failed": 0,
+  "originalResolution": 0,
+  "fallbackResolution": 10,
+  "results": [
+    {
+      "number": "0001",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfyV31RIQI3dEfOnVNPWL6e4XiFlH7lRc7K4l3U0jVFAYfk_ePqACIIjjxH-IwGxy3WSEE5VJTn8ZBgSYS0KFpxsa69Nxn-VWLoqUL7zL7NYChG4b_A7oLvJu1OaDIS9Jjogq146TYzsXwAbS8y7RNMH_1VYDwoWV5X0niOyHw2Wtng7CJ7758cLx613MS9SIc2SrDBq7GEUEY=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0001.jpg",
+      "resolution": "fallback",
+      "fileSize": 371084,
+      "hasExif": true,
+      "width": 1280,
+      "height": 848
+    },
+    {
+      "number": "0002",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcSFnIOM-CiyfQntPlJ-n2d1t_GW51b55kD8cyhtrP6H4ovQiwwl5siiRQtlKo0appNntmX-Ihugfzd_GD_kc8zlRAwHk9EE3vxl6gVWFIQ-HsknId8JM73ip7G24Y9ArQqAXggkX8eXNkM7S0dMjw9x3rA5SLF6SEr-RbA_3UvepNfrc_NfpV10IyEW7Y-MbN0jTizkV_m6v0=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0002.jpg",
+      "resolution": "fallback",
+      "fileSize": 313403,
+      "hasExif": true,
+      "width": 1280,
+      "height": 796
+    },
+    {
+      "number": "0003",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdU49hT5gdd9Ft6A3rxdRCyWo47LUQSxKqb49zssmGLEBgrNhH4oLsJaGa7KFv5YXWDqbDONRjeeCgp0ic9Xf2l_WzsrTSQNv77hKSV58j_RPYd0bpJjId99xQdbwiqfzzEfEIhhGrf31An-Ewq43leDzCn7juz_wBr3lJcJ9TwLC1wDJma0z7ChngyXHp5XmpXVYBG74M9Y1U=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0003.jpg",
+      "resolution": "fallback",
+      "fileSize": 6891,
+      "hasExif": true,
+      "width": 400,
+      "height": 180
+    },
+    {
+      "number": "0004",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdYTOcBo9g2uGHLCCIipvM5u0nEa_z8kjG6fOIlzvEnQEiiQsmWtBV5P-D10e_DiHiytJ2GKSq3furKoFEpCBcd1RB39Ir8h73UywTzFTriSBbH3GjzNbMkBn8JEGQdPrkD6syNth0gaVvZZT2rRgSShYfSGFz0=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0004.jpg",
+      "resolution": "fallback",
+      "fileSize": 483980,
+      "hasExif": true,
+      "width": 1280,
+      "height": 2276
+    },
+    {
+      "number": "0005",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfIk46RILl0mksi8yBWE4PYcoKxfRoAvcZFZyyN84JZFkzXHF_gaCz97qyA432iUW9ZfVnqXgZWzDPf2EYG51gW_EFeSKzBIi1Z5ABWYGbh6O4Q4mxa4bJzEv_Xl7zPklmToSx6qMIRmm0njgypVOtfGOty_TthA7NPUrdJ62KH0DwO31PunFc_=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0005.jpg",
+      "resolution": "fallback",
+      "fileSize": 334291,
+      "hasExif": true,
+      "width": 1280,
+      "height": 1989
+    },
+    {
+      "number": "0006",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeNbSgEPiyfvnofPHWjdaMtj79FGlRUoK-qV133JR6gR1Q_LHaVeLE8vH-I5mAq4dw9Zogat-O_AAE_jnGuXmFSesdWaBHRmcCDBbA1JfV7AOjQCuHKePehuR5vIbYd-c4_sYcxuiLlHKZ_1GAcPlZ0GM4GdgBzs02lEH6LtxfFoibhpM5o5KIUhwbKCfPtgPjbMKcYRC0Motw=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0006.jpg",
+      "resolution": "fallback",
+      "fileSize": 126179,
+      "hasExif": true,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "number": "0007",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfq1widR5Du6zqiUdva8SxZ8g2LiYmTO-tN0WuIbNc3FkXyEjHc2bo0VSlg9mDKGuiWOxObXT9Rg602AzvE4mvjqWTKj0uYXT9kzWY7ax8KT6WUAdxysJ8xrnoVhjYrDiBpy5dMxxUxt9V2FjehyPWy0avpEm5B9DLujuud_BFDXxTLI7j1tGOqXljnhaJGnnErIy1kgeugKwo=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0007.jpg",
+      "resolution": "fallback",
+      "fileSize": 6891,
+      "hasExif": true,
+      "width": 400,
+      "height": 180
+    },
+    {
+      "number": "0008",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCke4bLc7FRVgPUXJwlvf2XBgtD36YDzb8dAVKLqZ8PIEPf6B3hTesajugSRrA5ocOvscJ2PZ8NBAhhtAwndDZ9UOpF5SkmID5fdwDh78pInhkPBU0EDfuZ8SUKPXTuteIK59KKgEMTTj3XG-uJ_Y8IECVx03uqc0ssg=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0008.jpg",
+      "resolution": "fallback",
+      "fileSize": 401050,
+      "hasExif": true,
+      "width": 0,
+      "height": 47113
+    },
+    {
+      "number": "0009",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcC70GbC57f159wjA2hv_czoQB_AOsxwxL-w2SXG01NF_oVVZy8GRvyt4swLKj0rnUDcjBZw80pu0kIy_WhBZLpZ_1hytR5Mbki_zokZCbwQ9stIGqjadqXwoZSUvVTawtqR_Umh1REcAd2b3SEJQ7MNvaRnWujg_k=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0009.jpg",
+      "resolution": "fallback",
+      "fileSize": 315846,
+      "hasExif": true,
+      "width": 1280,
+      "height": 2276
+    },
+    {
+      "number": "0010",
+      "originalUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf2AFyBCWspeknkdrJts3sBuiLFo_fsMlW8xUCadfN4wixyVCNdxqmOPc82LbGe4j76JdZ2c9XFO0hNrZkxeDElOHknlHK-BxMwRjIub7xoTL4hZN9exMWxMr1M37szt9oPN5oV05yhqlx9tTDhMpY4c7qltK9S2Q8=s0",
+      "savedPath": "/Users/cc7/Coding/Orcas History/orcas-history/extraction/data/images/0010.jpg",
+      "resolution": "fallback",
+      "fileSize": 291421,
+      "hasExif": true,
+      "width": 65535,
+      "height": 3653
+    }
+  ]
+}

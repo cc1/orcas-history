@@ -1,0 +1,203 @@
+{
+  "slug": "all-questions",
+  "name": "Consolidated Research Questions",
+  "description": "All open research questions extracted from topic and people pages",
+
+  "questionsBySource": [
+    {
+      "source": "topics/pt-lawrence-lodge",
+      "sourceName": "Point Lawrence Lodge",
+      "category": "topics",
+      "questions": [
+        {
+          "id": "pll-1",
+          "question": "When was the dock put in place? (Not shown in 1935 photo, appears first in 1938 photo)",
+          "topic": "Dock"
+        },
+        {
+          "id": "pll-2",
+          "question": "What years was the dock active?",
+          "topic": "Dock"
+        },
+        {
+          "id": "pll-3",
+          "question": "What time of year was the dock put out?",
+          "topic": "Dock"
+        },
+        {
+          "id": "pll-4",
+          "question": "How was the dock attached?",
+          "topic": "Dock"
+        },
+        {
+          "id": "pll-5",
+          "question": "When was the dock removed?",
+          "topic": "Dock"
+        },
+        {
+          "id": "pll-6",
+          "question": "How was the dock stored?",
+          "topic": "Dock"
+        },
+        {
+          "id": "pll-7",
+          "question": "When was the lodge building built?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-8",
+          "question": "Was it built all at once or in stages?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-9",
+          "question": "Who built it?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-10",
+          "question": "Anything interesting about the construction?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-11",
+          "question": "Where did the wood come from?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-12",
+          "question": "Logs pictured at the foundation - did they wash away every year?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-13",
+          "question": "Raised walkway below garage was built between 1938 and 1940 - confirm?",
+          "topic": "The Lodge Building"
+        },
+        {
+          "id": "pll-14",
+          "question": "How many cabins were there?",
+          "topic": "The Lodge Cabins"
+        },
+        {
+          "id": "pll-15",
+          "question": "Were the cabins named?",
+          "topic": "The Lodge Cabins"
+        },
+        {
+          "id": "pll-16",
+          "question": "Were the cabins all built at once?",
+          "topic": "The Lodge Cabins"
+        }
+      ]
+    },
+    {
+      "source": "topics/fish-traps",
+      "sourceName": "Fish Traps",
+      "category": "topics",
+      "questions": [
+        {
+          "id": "ft-1",
+          "question": "When were fish traps banned in Washington?",
+          "topic": "Fish Traps"
+        },
+        {
+          "id": "ft-2",
+          "question": "What was the Point Lawrence Fish Company?",
+          "topic": "Fish Traps"
+        },
+        {
+          "id": "ft-3",
+          "question": "Who was Mr. Craft?",
+          "topic": "Fish Traps"
+        },
+        {
+          "id": "ft-4",
+          "question": "What was the relationship between Craft and Hansen?",
+          "topic": "Fish Traps"
+        }
+      ]
+    },
+    {
+      "source": "topics/sea-acres",
+      "sourceName": "Sea Acres",
+      "category": "topics",
+      "questions": [
+        {
+          "id": "sa-1",
+          "question": "When built?",
+          "topic": "Sea Acres"
+        },
+        {
+          "id": "sa-2",
+          "question": "Built by who?",
+          "topic": "Sea Acres"
+        },
+        {
+          "id": "sa-3",
+          "question": "Connection to Pt. Lawrence lodge?",
+          "topic": "Sea Acres"
+        }
+      ]
+    },
+    {
+      "source": "topics/blakely-mill",
+      "sourceName": "Blakely Mill",
+      "category": "topics",
+      "questions": [
+        {
+          "id": "bm-1",
+          "question": "Correct that this was owned by the family that helped Carroll Culver to build the Pt. Lawrence lodge?",
+          "topic": "Blakely Mill"
+        }
+      ]
+    },
+    {
+      "source": "people/hilbert-tbd",
+      "sourceName": "Hilbert, TBD (Mrs. Hilbert)",
+      "category": "people",
+      "questions": [
+        {
+          "id": "hil-1",
+          "question": "What were the Hilberts' first names?",
+          "topic": "Identity"
+        },
+        {
+          "id": "hil-2",
+          "question": "What was their relationship to the Culver family?",
+          "topic": "Relationships"
+        },
+        {
+          "id": "hil-3",
+          "question": "When did they invest in Point Lawrence Lodge?",
+          "topic": "Point Lawrence Lodge"
+        },
+        {
+          "id": "hil-4",
+          "question": "What was their role in building the Lodge?",
+          "topic": "Point Lawrence Lodge"
+        }
+      ]
+    }
+  ],
+
+  "summary": {
+    "totalQuestions": 28,
+    "byCategory": {
+      "topics": 24,
+      "people": 4
+    },
+    "byTopic": {
+      "Point Lawrence Lodge (Dock)": 6,
+      "Point Lawrence Lodge (Building)": 7,
+      "Point Lawrence Lodge (Cabins)": 3,
+      "Fish Traps": 4,
+      "Sea Acres": 3,
+      "Blakely Mill": 1,
+      "Hilbert Identity": 4
+    }
+  },
+
+  "extractedAt": "2026-01-14",
+  "notes": "Compiled from all topic and people pages with non-empty researchQuestions arrays"
+}

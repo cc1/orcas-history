@@ -1,0 +1,33 @@
+{
+  "slug": "documents-0001-0100",
+  "name": "Documents & Objects 0001-0100",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/documents-objects/documents-0001-0100",
+
+  "items": [
+    {"id": "0001", "description": "Painting (oil?) by Diana Aikens", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0002", "description": "Painting (oil?) by Diana Aikens", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0003", "description": "\"Mustache\" cup, hand-painted by Diana Aikens (1 of 3 images)", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0004", "description": "\"Mustache\" cup, hand-painted by Diana Aikens (1 of 3 images)", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0005", "description": "\"Mustache\" cup, hand-painted by Diana Aikens (1 of 3 images)", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0006", "description": "Mason and Hamlin organ brought from Vermont when George and Diana moved west. Located in front hallway of Otis and Mabel's home on Ellis Street in Bellingham. Now in Gamwell House owned by Ken and Marcia Culver. Solid black walnut, still playable.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0007", "description": "Watercolor of the Alderbrook Farmhouse by Bill Trogdon. View from road to Pt. Lawrence Lodge.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0008", "description": "Oil painting by Diana Aikens. Appears in photograph 0412 in parlor of Alderbrook farmhouse. Now in Gamwell Home.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0009", "description": "Letter from Mary to Ken and Marcia Culver regarding book and signed photograph given to O.H. Culver when he interviewed Mark Twain during Twain's visit to Fairhaven, WA in 1895.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0010", "description": "Front of signed photograph given to O.H. Culver by Mark Twain", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0011", "description": "Back of signed photograph given to O.H. Culver by Mark Twain", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0012", "description": "Note on first page of Mark Twain book regarding O.H. Culver's interview.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0013", "description": "Newspaper clipping describing Mark Twain's visit to Fairhaven, WA in 1895 and his interactions with Roland Gamwell.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0014", "description": "Retyping of Carroll Culver's brief description of his early life.", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0015", "description": "Carroll Culver's drawing of the O.H. Culver family home in Friday Harbor where he was born in 1904.", "source": "Ken Culver", "hasHighRes": true, "notes": "There is a tape recording of Carroll describing this home"},
+    {"id": "0016", "description": "Carroll Culver lament and ode to Jean Culver done on Smith Corona typewriter after their separation and ultimate divorce.", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0017", "description": "State Register of Historic Places nomination for Alderbrook Farmhouse. Submitted by Bob Patton, son of early Doe Bay settlers.", "source": "Ken Culver", "hasHighRes": false},
+    {"id": "0018", "description": "Poem from Carroll Culver to Ken, typed on Smith Corona with blue ribbon. From summer 1956.", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0019", "description": "Text of Carroll Culver's obituary notice.", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0020", "description": "Carroll Culver's speech at the Shorewood Road opening (Part 1 of 2). Building of road to Fickel and Judson homes. Formal ribbon cutting.", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0021", "description": "Carroll Culver's speech at the Shorewood Road opening (Part 2 of 2). Helge and Carroll spent years ribbing each other.", "source": "Ken Culver", "hasHighRes": true},
+    {"id": "0022", "description": "TBD", "source": "Ken Culver", "hasHighRes": false}
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Documents and objects from Ken Culver collection. Many items need rephotographing."
+}

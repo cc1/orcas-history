@@ -1,0 +1,34 @@
+{
+  "slug": "watson-evelyn-culver",
+  "displayName": "Evelyn Louise (Culver) Watson",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/watson-evelyn-culver",
+
+  "connectionToPtLawrence": "Granddaughter of George Nelson and Diana Culver. Visited Alderbrook Farm as a child. Was flower girl (age 6) at aunt Lou's wedding there in 1902.",
+
+  "family": {
+    "parents": "Otis Henry \"O.H.\" Culver and Mabel Gertrude Culver (Smith)",
+    "spouses": "Russell Watson",
+    "children": "TBD",
+    "siblings": "Leda Gertrude Culver, Mabel Florian Culver, Mary Luella Culver, Carroll N. Culver"
+  },
+
+  "keyDates": "1895-TBD",
+
+  "timeline": [
+    {"year": 1895, "age": 0, "event": "Born November 11, 1895 in New Whatcom/Bellingham, WA"},
+    {"year": 1902, "age": 6, "event": "Flower girl at aunt Lou's wedding at Alderbrook"},
+    {"year": 1954, "age": 59, "event": "Photographed at Alderbrook Farm with siblings"}
+  ],
+
+  "biography": null,
+
+  "miscellaneous": "Later lived in Milwaukee, Wisconsin (per O.H. Culver's bio). Source of many family stories passed down about grandparents at Alderbrook.",
+
+  "researchQuestions": [
+    "When did Evelyn die?",
+    "Who were Evelyn and Russell Watson's children?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Short page with basic family info"
+}

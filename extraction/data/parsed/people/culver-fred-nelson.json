@@ -1,0 +1,37 @@
+{
+  "slug": "culver-fred-nelson",
+  "displayName": "Fred Nelson Culver",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-fred-nelson",
+
+  "connectionToPtLawrence": null,
+
+  "family": {
+    "parents": "George Nelson Culver and Diana Louise Aikens",
+    "spouses": "Unknown first wife (widowed by 1900); Alice M. Unknown (second wife, born c. 1871 in English-speaking Canada)",
+    "children": null,
+    "siblings": "Otis Henry Culver, Emma Louise Culver, Inez Adel Culver"
+  },
+
+  "keyDates": "1866-1911 (d. Age 44)",
+
+  "timeline": [
+    {"year": 1866, "age": 0, "event": "Born September 1, 1866 in Gaysville, Vermont"},
+    {"year": 1870, "age": 3, "event": "Living with his parents in Stockbridge"},
+    {"year": 1880, "age": 13, "event": "Living with his parents in Des Moines"},
+    {"year": 1900, "age": 33, "event": "Widowed journalist living in San Juan"},
+    {"year": 1910, "age": 43, "event": "Fred and Alice were living in San Juan; Fred was a newspaper manager"},
+    {"year": 1911, "age": 44, "event": "March 21: Died in Bellingham, WA after surgery"}
+  ],
+
+  "biography": null,
+
+  "miscellaneous": "Occupation: Journalist, newspaper manager. Co-owned the Islander (later San Juan Islander) newspaper with brother O.H. Culver. Had poor health from youth. Died after 5-hour surgery in Bellingham. His father Nelson wrote his obituary titled 'Ring the Bell Softly, There's Crepe on the Door.'",
+
+  "researchQuestions": [
+    "Who was Fred's first wife?",
+    "What was Alice M.'s maiden name?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Relatively sparse page with TBD content about wives"
+}
