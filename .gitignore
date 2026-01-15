@@ -37,3 +37,5 @@ coverage/
 
 # Downloaded images (large files - 162MB, can be re-downloaded)
 extraction/data/images/
+.vercel
+.env*.local

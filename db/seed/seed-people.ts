@@ -64,8 +64,17 @@ export async function seedPeople(): Promise<void> {
 
   for (const file of files) {
     const filePath = path.join(peopleDir, file)
-    const data: PersonFile = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-    const p = data.person
+    const rawData = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+
+    // Handle both formats: { person: {...} } or direct object
+    const p: ExtractedPerson = rawData.person || rawData
+    const pageUrl = rawData.pageUrl || rawData.sourceUrl || null
+
+    // Skip if missing required slug field
+    if (!p.slug) {
+      console.warn(`  Skipping person without slug in ${file}`)
+      continue
+    }
 
     // Create birth date value if available
     let birthDateId: string | null = null
@@ -95,12 +104,19 @@ export async function seedPeople(): Promise<void> {
       deathDateId = insertedDate.id
     }
 
-    // Build family data JSON
+    // Build family data JSON - handle both array and string formats
+    const toArray = (val: unknown): string[] => {
+      if (!val || val === 'TBD') return []
+      if (Array.isArray(val)) return val
+      if (typeof val === 'string') return [val]
+      return []
+    }
+
     const familyData = p.family ? {
-      parents: p.family.parents || [],
-      spouses: p.family.spouses || [],
-      children: p.family.children || [],
-      siblings: p.family.siblings || []
+      parents: toArray(p.family.parents),
+      spouses: toArray(p.family.spouses),
+      children: toArray(p.family.children),
+      siblings: toArray(p.family.siblings)
     } : null
 
     // Insert person record
@@ -118,7 +134,7 @@ export async function seedPeople(): Promise<void> {
       familyData,
       timeline: p.timeline || null,
       imageUrl: p.imageUrl || null,
-      sourcePageUrl: data.pageUrl
+      sourcePageUrl: pageUrl
     }).onConflictDoNothing()
 
     totalPeople++

@@ -571,6 +571,64 @@ This allows the site to evolve to broader "Orcas History" branding later.
 - B&W/sepia theme - photos are the star
 - Full CRUD admin via browser
 
+---
+
+## Frontend Architecture
+
+### Two Linking Systems
+
+The site uses two distinct systems for connecting content:
+
+#### 1. Explicit Links (Junction Tables)
+- **Used for**: Photo-to-entity relationships (people, places, topics in photos)
+- **Storage**: `media_person`, `media_place`, `media_topic` junction tables
+- **Created via**: UI autocomplete fields when editing photo metadata
+- **Display**: Photo carousels on entity pages show ONLY explicitly linked photos
+- **Important**: Seeder does NOT auto-populate these tables. All links are created manually via the edit UI.
+
+#### 2. Related Pages (Text-Based Bidirectional Linking)
+- **Used for**: "Related Pages" sidebar on Person, Place, and Topic pages
+- **Logic**: Scans ALL entity text (biography, description, contentSections) for mentions
+- **Bidirectional**: If Page A mentions Page B OR Page B mentions Page A, they're related
+- **Fuzzy matching**: Handles nicknames (Ken↔Kenneth, O.H.↔Otis Henry) and parenthetical forms
+- **API**: `api/backlinks.ts` with `useRelatedPages()` hook
+- **Does NOT include**: Photos (photos are only shown via explicit links)
+
+```typescript
+// Nickname expansion for fuzzy matching
+const NICKNAMES: Record<string, string[]> = {
+  kenneth: ['ken', 'kenny'],
+  otis: ['o.h.', 'oh'],
+  diana: ['di'],
+  // etc.
+}
+```
+
+### Session-Based Edit Authentication
+
+Edit mode requires the edit password, but only once per browser session:
+
+1. First edit click → Password modal appears
+2. Password validated → Stored in `sessionStorage` as `orcas-edit-auth`
+3. Subsequent edits → No password prompt (session-authenticated)
+4. Browser tab closed → Must re-authenticate
+
+**Implementation**:
+- `src/lib/auth-context.tsx`: `isEditAuthenticated` state + `sessionStorage`
+- `src/components/forms/EditableSection.tsx`: Checks `isEditAuthenticated` before showing modal
+
+### Photos as Pages
+
+Photos open as full pages, not modals:
+- **Route**: `/photos/:number` → `PhotoPage.tsx`
+- **Navigation**: Clicking photo in gallery or carousel navigates to page
+- **Benefits**: Shareable URLs, browser back button works naturally, better SEO
+
+**Key components**:
+- `src/pages/PhotoPage.tsx` - Individual photo page with metadata editing
+- `src/pages/PhotosPage.tsx` - Gallery grid (navigates to PhotoPage on click)
+- `src/components/media/PhotoCarousel.tsx` - Entity page carousel (navigates to PhotoPage on click)
+
 ## Environment Variables
 
 ```

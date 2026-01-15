@@ -15,7 +15,7 @@ interface ExtractedPhoto {
   people?: string
   description?: string
   source?: string
-  hasHighRes?: boolean
+  hasHighRes?: boolean | string
   notes?: string
   duplicate?: string // For photos that are duplicates
 }
@@ -42,9 +42,19 @@ export async function seedMedia(): Promise<void> {
 
   for (const file of files) {
     const filePath = path.join(parsedDir, file)
-    const data: PhotoBatch = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+    const rawData = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
-    for (const photo of data.photos) {
+    // Handle both formats: { photos: [...] } or direct array [...]
+    const photos: ExtractedPhoto[] = Array.isArray(rawData) ? rawData : rawData.photos
+    const pageUrl = Array.isArray(rawData) ? null : rawData.pageUrl
+
+    for (const photo of photos) {
+      // Skip if missing required number field
+      if (!photo.number) {
+        console.warn(`  Skipping photo without number in ${file}`)
+        continue
+      }
+
       // Skip if this is a known duplicate entry
       if (photo.duplicate) {
         skippedDuplicates++
@@ -88,14 +98,14 @@ export async function seedMedia(): Promise<void> {
         googleUrl: photo.imageUrl,
         webImagePath: getImagePath(photo.number),
         resolutionStatus: 'web',
-        needsHighRes: photo.hasHighRes === true,
+        needsHighRes: photo.hasHighRes === true || photo.hasHighRes === 'TBD',
         dateId,
         dateSort: parsedDate.dateSort,
         needsDate: parsedDate.needsDate,
         locationText: photo.location || null,
         sourceText: photo.source || null,
-        sourcePageUrl: data.pageUrl,
-        hasHighRes: photo.hasHighRes || false,
+        sourcePageUrl: pageUrl || null,
+        hasHighRes: photo.hasHighRes === true,
         isDuplicate,
         notRelevant: isHidden,
         notes: photo.notes || null

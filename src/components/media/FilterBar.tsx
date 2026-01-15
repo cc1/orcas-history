@@ -1,9 +1,8 @@
 type SortOption = 'random' | 'year-asc' | 'year-desc'
+type CategoryFilter = 'all' | 'people' | 'places' | 'topics' | 'documents'
 
 interface Filters {
-  people: string[]
-  places: string[]
-  showDocuments: boolean
+  category: CategoryFilter
   needsDate: boolean
 }
 
@@ -14,9 +13,13 @@ interface FilterBarProps {
   onFiltersChange: (filters: Filters) => void
 }
 
-// Mock data for filter options - will be fetched from API
-const mockPeopleOptions = ['Ken Culver', 'Carroll Culver', 'O.H. Culver', 'Jean Culver']
-const mockPlacesOptions = ['Point Lawrence Lodge', 'Alderbrook Farm', 'Doe Bay', 'Olga']
+const categoryOptions: { value: CategoryFilter; label: string }[] = [
+  { value: 'all', label: 'All Photos' },
+  { value: 'people', label: 'People' },
+  { value: 'places', label: 'Places' },
+  { value: 'topics', label: 'Topics' },
+  { value: 'documents', label: 'Documents & Objects' },
+]
 
 export function FilterBar({ sort, onSortChange, filters, onFiltersChange }: FilterBarProps): React.ReactElement {
   return (
@@ -31,59 +34,32 @@ export function FilterBar({ sort, onSortChange, filters, onFiltersChange }: Filt
               onChange={(e) => onSortChange(e.target.value as SortOption)}
               className="px-3 py-1.5 text-sm rounded-md border bg-background"
             >
-              <option value="random">Random</option>
-              <option value="year-asc">Year (Oldest First)</option>
-              <option value="year-desc">Year (Newest First)</option>
+              <option value="random">Shuffle</option>
+              <option value="year-asc">Year (Oldest)</option>
+              <option value="year-desc">Year (Newest)</option>
             </select>
           </div>
 
           <div className="h-6 w-px bg-border" />
 
-          {/* People Filter */}
-          <select
-            value={filters.people[0] || ''}
-            onChange={(e) => onFiltersChange({
-              ...filters,
-              people: e.target.value ? [e.target.value] : []
-            })}
-            className="px-3 py-1.5 text-sm rounded-md border bg-background"
-          >
-            <option value="">All People</option>
-            {mockPeopleOptions.map(person => (
-              <option key={person} value={person}>{person}</option>
+          {/* Category Toggle Buttons */}
+          <div className="flex items-center gap-1">
+            {categoryOptions.map((option) => (
+              <button
+                key={option.value}
+                onClick={() => onFiltersChange({ ...filters, category: option.value })}
+                className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+                  filters.category === option.value
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-muted hover:bg-muted/80 text-foreground'
+                }`}
+              >
+                {option.label}
+              </button>
             ))}
-          </select>
-
-          {/* Places Filter */}
-          <select
-            value={filters.places[0] || ''}
-            onChange={(e) => onFiltersChange({
-              ...filters,
-              places: e.target.value ? [e.target.value] : []
-            })}
-            className="px-3 py-1.5 text-sm rounded-md border bg-background"
-          >
-            <option value="">All Places</option>
-            {mockPlacesOptions.map(place => (
-              <option key={place} value={place}>{place}</option>
-            ))}
-          </select>
+          </div>
 
           <div className="h-6 w-px bg-border" />
-
-          {/* Documents Toggle */}
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={filters.showDocuments}
-              onChange={(e) => onFiltersChange({
-                ...filters,
-                showDocuments: e.target.checked
-              })}
-              className="w-4 h-4 rounded border-muted"
-            />
-            <span className="text-sm">Documents Only</span>
-          </label>
 
           {/* Needs Date Toggle */}
           <label className="flex items-center gap-2 cursor-pointer">
@@ -98,21 +74,6 @@ export function FilterBar({ sort, onSortChange, filters, onFiltersChange }: Filt
             />
             <span className="text-sm">Needs Date</span>
           </label>
-
-          {/* Clear Filters */}
-          {(filters.people.length > 0 || filters.places.length > 0 || filters.showDocuments || filters.needsDate) && (
-            <button
-              onClick={() => onFiltersChange({
-                people: [],
-                places: [],
-                showDocuments: false,
-                needsDate: false,
-              })}
-              className="text-sm text-primary hover:underline"
-            >
-              Clear Filters
-            </button>
-          )}
         </div>
       </div>
     </div>

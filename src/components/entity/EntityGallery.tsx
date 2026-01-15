@@ -29,8 +29,8 @@ export function EntityGallery({ entities, basePath }: EntityGalleryProps): React
               loading="lazy"
             />
           ) : (
-            <div className="w-full h-full bg-muted flex items-center justify-center">
-              <span className="text-4xl text-muted-foreground">
+            <div className="w-full h-full bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center">
+              <span className="text-5xl font-serif text-stone-500/60">
                 {entity.name.charAt(0)}
               </span>
             </div>

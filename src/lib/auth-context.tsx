@@ -2,12 +2,12 @@ import { createContext, useContext, useState, useCallback, type ReactNode } from
 
 interface AuthState {
   isAuthenticated: boolean
-  canEdit: boolean
+  isEditAuthenticated: boolean
 }
 
 interface AuthContextType extends AuthState {
   login: (password: string) => Promise<boolean>
-  enableEdit: (editPassword: string) => Promise<boolean>
+  validateEditPassword: (editPassword: string) => Promise<boolean>
   logout: () => void
 }
 
@@ -23,7 +23,7 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
     const editAuth = sessionStorage.getItem(EDIT_AUTH_KEY)
     return {
       isAuthenticated: siteAuth === 'true',
-      canEdit: editAuth === 'true',
+      isEditAuthenticated: editAuth === 'true',
     }
   })
 
@@ -54,7 +54,14 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
     }
   }, [])
 
-  const enableEdit = useCallback(async (editPassword: string): Promise<boolean> => {
+  // Validates edit password and stores auth state for the session
+  // Once authenticated, user can edit without re-entering password
+  const validateEditPassword = useCallback(async (editPassword: string): Promise<boolean> => {
+    // If already authenticated, return true immediately
+    if (authState.isEditAuthenticated) {
+      return true
+    }
+
     try {
       const response = await fetch('/api/auth/edit', {
         method: 'POST',
@@ -64,7 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
 
       if (response.ok) {
         sessionStorage.setItem(EDIT_AUTH_KEY, 'true')
-        setAuthState(prev => ({ ...prev, canEdit: true }))
+        setAuthState(prev => ({ ...prev, isEditAuthenticated: true }))
         return true
       }
       return false
@@ -73,21 +80,21 @@ export function AuthProvider({ children }: { children: ReactNode }): React.React
       const devEditPassword = import.meta.env.VITE_EDIT_PASSWORD
       if (devEditPassword && editPassword === devEditPassword) {
         sessionStorage.setItem(EDIT_AUTH_KEY, 'true')
-        setAuthState(prev => ({ ...prev, canEdit: true }))
+        setAuthState(prev => ({ ...prev, isEditAuthenticated: true }))
         return true
       }
       return false
     }
-  }, [])
+  }, [authState.isEditAuthenticated])
 
   const logout = useCallback(() => {
     sessionStorage.removeItem(SITE_AUTH_KEY)
     sessionStorage.removeItem(EDIT_AUTH_KEY)
-    setAuthState({ isAuthenticated: false, canEdit: false })
+    setAuthState({ isAuthenticated: false, isEditAuthenticated: false })
   }, [])
 
   return (
-    <AuthContext.Provider value={{ ...authState, login, enableEdit, logout }}>
+    <AuthContext.Provider value={{ ...authState, login, validateEditPassword, logout }}>
       {children}
     </AuthContext.Provider>
   )

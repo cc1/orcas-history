@@ -5,15 +5,17 @@
  *   npm run db:seed          # Run all seeders
  *   npm run db:seed -- media # Run specific seeder
  */
-import 'dotenv/config'
+import { config } from 'dotenv'
+config({ path: '.env.local' })
 import { db, siteConfig } from './index'
 import { seedMedia } from './seed/seed-media'
 import { seedPeople, linkPeopleRelationships } from './seed/seed-people'
 import { seedPlaces } from './seed/seed-places'
 import { seedTopics } from './seed/seed-topics'
 import { seedNews } from './seed/seed-news'
+import { seedMediaLinks } from './seed/seed-links'
 
-type SeederName = 'media' | 'people' | 'places' | 'topics' | 'news' | 'config' | 'all'
+type SeederName = 'media' | 'people' | 'places' | 'topics' | 'news' | 'config' | 'links' | 'all'
 
 /**
  * Seed site configuration defaults
@@ -40,7 +42,8 @@ const seeders: Record<Exclude<SeederName, 'all'>, () => Promise<void>> = {
   people: seedPeople,
   places: seedPlaces,
   topics: seedTopics,
-  news: seedNews
+  news: seedNews,
+  links: seedMediaLinks
 }
 
 async function main(): Promise<void> {
@@ -76,6 +79,10 @@ async function main(): Promise<void> {
 
       // Link relationships after all entities are created
       await linkPeopleRelationships()
+      console.log('')
+
+      // Create media-entity links after all entities are seeded
+      await seedMediaLinks()
       console.log('')
 
     } else if (seeders[target]) {

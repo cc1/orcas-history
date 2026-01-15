@@ -1,6 +1,12 @@
 /**
  * Database connection using Neon serverless driver with Drizzle ORM
  */
+import { config } from 'dotenv'
+
+// Load environment variables (supports both .env.local for dev and .env for production)
+config({ path: '.env.local' })
+config({ path: '.env' })
+
 import { neon } from '@neondatabase/serverless'
 import { drizzle } from 'drizzle-orm/neon-http'
 import * as schema from './schema'

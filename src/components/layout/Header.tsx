@@ -4,28 +4,13 @@ import { useAuth } from '@/lib/auth-context'
 
 export function Header(): React.ReactElement {
   const [searchQuery, setSearchQuery] = useState('')
-  const [showEditModal, setShowEditModal] = useState(false)
-  const [editPassword, setEditPassword] = useState('')
-  const [editError, setEditError] = useState('')
-  const { canEdit, enableEdit, logout } = useAuth()
+  const { logout } = useAuth()
   const navigate = useNavigate()
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
     if (searchQuery.trim()) {
       navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`)
-    }
-  }
-
-  const handleEnableEdit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setEditError('')
-    const success = await enableEdit(editPassword)
-    if (success) {
-      setShowEditModal(false)
-      setEditPassword('')
-    } else {
-      setEditError('Invalid edit password')
     }
   }
 
@@ -66,19 +51,6 @@ export function Header(): React.ReactElement {
               </button>
             </form>
 
-            {canEdit ? (
-              <span className="px-3 py-1 text-xs font-medium rounded-full bg-green-100 text-green-700">
-                Edit Mode
-              </span>
-            ) : (
-              <button
-                onClick={() => setShowEditModal(true)}
-                className="px-3 py-1 text-xs font-medium rounded-full bg-muted text-muted-foreground hover:bg-muted/80"
-              >
-                Enable Editing
-              </button>
-            )}
-
             <button
               onClick={logout}
               className="text-sm text-muted-foreground hover:text-foreground"
@@ -88,43 +60,6 @@ export function Header(): React.ReactElement {
           </div>
         </div>
       </header>
-
-      {/* Edit Mode Modal */}
-      {showEditModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="bg-card rounded-lg shadow-xl p-6 w-full max-w-sm">
-            <h2 className="text-lg font-semibold mb-4">Enable Edit Mode</h2>
-            <form onSubmit={handleEnableEdit}>
-              <input
-                type="password"
-                value={editPassword}
-                onChange={(e) => setEditPassword(e.target.value)}
-                placeholder="Enter edit password"
-                className="w-full px-4 py-2 rounded-md border bg-background mb-3"
-                autoFocus
-              />
-              {editError && (
-                <p className="text-sm text-destructive mb-3">{editError}</p>
-              )}
-              <div className="flex justify-end gap-2">
-                <button
-                  type="button"
-                  onClick={() => setShowEditModal(false)}
-                  className="px-4 py-2 text-sm rounded-md hover:bg-muted"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="px-4 py-2 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
-                >
-                  Enable
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
     </>
   )
 }
