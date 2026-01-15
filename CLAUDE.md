@@ -266,10 +266,11 @@ npx shadcn@latest init
 | Timeline | `/timeline` | Chronological view |
 
 **Key components**:
-- `BacklinksSidebar` - Obsidian-style "Linked mentions"
-- `PhotoCard` - Thumbnail with metadata preview
-- `EntityLink` - Auto-linking mentions to entity pages
-- `DateDisplay` - Handles precision (exact, approximate, range)
+- `UnifiedAutocomplete` - Configurable autocomplete for entity selection
+- `EditableField` - Inline editable text/textarea with save handling
+- `EditableSection` - Groups editable fields with edit mode toggle
+- `PhotoCarousel` - Entity page photo gallery with navigation
+- `RelatedPagesSidebar` - Obsidian-style "Linked mentions"
 
 **Visual theme**:
 - B&W/sepia palette
@@ -290,27 +291,41 @@ npx shadcn@latest init
 ### Directory Structure
 ```
 orcas-history/
-├── extraction/           # Site scraping tools
-│   ├── scraper.ts       # Browser automation
-│   ├── parser.ts        # HTML → structured data
-│   ├── types.ts         # TypeScript interfaces
-│   └── data/
-│       ├── raw/         # HTML snapshots
-│       ├── parsed/      # JSON data
-│       └── images/      # Downloaded images
+├── api/                  # Vercel serverless functions
+│   ├── lib/
+│   │   ├── db.ts        # Database connection
+│   │   ├── date-parser.ts # Date parsing with precision detection
+│   │   └── patch-handler.ts # Generic PATCH handler factory
+│   ├── auth/            # Login/edit authentication
+│   ├── media/           # Photo CRUD endpoints
+│   ├── people/          # Person CRUD endpoints
+│   ├── places/          # Place CRUD endpoints
+│   ├── topics/          # Topic CRUD endpoints
+│   └── backlinks.ts     # Related pages API
 ├── db/
 │   ├── schema.ts        # Drizzle ORM schema
 │   └── migrations/
+├── extraction/           # Site scraping tools
+│   └── data/
+│       ├── parsed/      # JSON data
+│       └── images/      # Downloaded images
 ├── src/
 │   ├── components/
 │   │   ├── ui/          # shadcn components
-│   │   ├── entity/      # Person, Location, Topic displays
-│   │   ├── media/       # Photo gallery, viewer
-│   │   └── navigation/  # Header, sidebar, backlinks
+│   │   ├── forms/       # Form components (EditableField, UnifiedAutocomplete)
+│   │   ├── media/       # PhotoModal, PhotoCarousel
+│   │   └── layout/      # Header, Layout, navigation
+│   ├── hooks/           # Shared React hooks
+│   │   ├── useAutocomplete.ts    # Autocomplete state/keyboard handling
+│   │   ├── useMediaLinks.ts      # Photo entity link management
+│   │   ├── useModalKeyboard.ts   # Modal keyboard navigation
+│   │   └── usePersonForm.ts      # Person page form handling
 │   ├── pages/
 │   └── lib/
-│       ├── db.ts        # Neon client
-│       └── queries.ts   # Data fetching
+│       ├── api.ts       # API client with factory pattern
+│       ├── auth-context.tsx # Authentication state
+│       ├── types.ts     # Centralized type definitions
+│       └── timeline.ts  # Timeline markdown utilities
 └── public/
 ```
 
@@ -575,6 +590,34 @@ This allows the site to evolve to broader "Orcas History" branding later.
 
 ## Frontend Architecture
 
+### Shared Hooks Pattern
+
+The codebase uses custom hooks to share logic across components:
+
+| Hook | Purpose | Used By |
+|------|---------|---------|
+| `useAutocomplete` | Autocomplete state, filtering, keyboard nav | UnifiedAutocomplete |
+| `useMediaLinks` | Photo entity link management (people, places) | PhotoModal, PhotoPage |
+| `useModalKeyboard` | Escape/arrow key handling for modals | PhotoModal |
+| `usePersonForm` | Person page field save handlers | PersonPage |
+
+**UnifiedAutocomplete** consolidates three previously duplicate components:
+- `AutocompleteField` - Single/multi entity selection
+- `FamilyLinksField` - Family relationship editing
+- `RelatedPagesField` - Cross-entity page links
+
+### API Client Pattern
+
+The API layer uses a factory pattern (`src/lib/api.ts`):
+
+```typescript
+// Creates typed API client for any entity type
+const peopleApi = createEntityApi<Person>('people')
+await peopleApi.getAll()
+await peopleApi.getBySlug('culver-ken')
+await peopleApi.updateField('culver-ken', 'biography', 'New bio text')
+```
+
 ### Two Linking Systems
 
 The site uses two distinct systems for connecting content:
@@ -632,8 +675,19 @@ Photos open as full pages, not modals:
 ## Environment Variables
 
 ```
+# Database
 DATABASE_URL=           # Neon connection string
+
+# Authentication (server-side)
+SITE_PASSWORD=          # Site access password
+EDIT_PASSWORD=          # Edit mode password
+
+# Authentication (client-side fallback for dev)
+VITE_SITE_PASSWORD=     # Dev fallback when API unavailable
+VITE_EDIT_PASSWORD=     # Dev fallback for edit auth
+
+# Storage
 BLOB_READ_WRITE_TOKEN=  # Vercel Blob token
-NEXT_PUBLIC_CLERK_*=    # Clerk auth keys
-SITE_PASSWORD=          # Optional browse protection
 ```
+
+**Note**: When running `vite` directly (without `vercel dev`), API routes return 500. The auth-context falls back to `VITE_*` passwords for local development.
