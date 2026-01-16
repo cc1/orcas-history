@@ -19,7 +19,7 @@ interface EditableSectionProps {
 
 /**
  * Wraps a section of content that can be edited.
- * Shows an edit icon that prompts for password, then enables editing for that section only.
+ * Shows an edit icon for users with edit permissions (based on email allowlist).
  * Editing state is local to this component and does not persist across navigation.
  */
 export function EditableSection({
@@ -27,56 +27,28 @@ export function EditableSection({
   className = '',
   onEditStateChange
 }: EditableSectionProps): React.ReactElement {
-  const { validateEditPassword, isEditAuthenticated } = useAuth()
+  const { isEditAuthenticated } = useAuth()
   const [isEditing, setIsEditing] = useState(false)
-  const [showPasswordModal, setShowPasswordModal] = useState(false)
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState('')
-  const [isValidating, setIsValidating] = useState(false)
 
-  const handleEditClick = useCallback(async () => {
+  const handleEditClick = useCallback(() => {
     if (isEditing) {
-      // If already editing, just toggle off
+      // Toggle off
       setIsEditing(false)
       onEditStateChange?.(false)
-    } else if (isEditAuthenticated) {
-      // Already authenticated for this session, enable editing immediately
+    } else {
+      // Toggle on (only possible if user has edit permissions)
       setIsEditing(true)
       onEditStateChange?.(true)
-    } else {
-      // Need to authenticate first
-      setShowPasswordModal(true)
-      setPassword('')
-      setError('')
     }
-  }, [isEditing, isEditAuthenticated, onEditStateChange])
+  }, [isEditing, onEditStateChange])
 
-  const handlePasswordSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setError('')
-    setIsValidating(true)
-
-    try {
-      const isValid = await validateEditPassword(password)
-      if (isValid) {
-        setShowPasswordModal(false)
-        setPassword('')
-        setIsEditing(true)
-        onEditStateChange?.(true)
-      } else {
-        setError('Invalid password')
-      }
-    } catch {
-      setError('Authentication failed')
-    } finally {
-      setIsValidating(false)
-    }
-  }
-
-  const handleCancel = () => {
-    setShowPasswordModal(false)
-    setPassword('')
-    setError('')
+  // Only show edit button if user has edit permissions
+  if (!isEditAuthenticated) {
+    return (
+      <EditableSectionContext.Provider value={{ isEditing: false }}>
+        <div className={className}>{children}</div>
+      </EditableSectionContext.Provider>
+    )
   }
 
   return (
@@ -105,52 +77,6 @@ export function EditableSection({
         </button>
 
         {children}
-
-        {/* Password Modal */}
-        {showPasswordModal && (
-          <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50"
-            onClick={handleCancel}
-          >
-            <div
-              className="bg-card rounded-lg shadow-xl p-6 w-full max-w-sm mx-4"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h2 className="text-lg font-semibold mb-4">Enter Edit Password</h2>
-              <form onSubmit={handlePasswordSubmit}>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Password"
-                  className="w-full px-4 py-2 rounded-md border bg-background mb-3 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  autoFocus
-                  disabled={isValidating}
-                />
-                {error && (
-                  <p className="text-sm text-destructive mb-3">{error}</p>
-                )}
-                <div className="flex justify-end gap-2">
-                  <button
-                    type="button"
-                    onClick={handleCancel}
-                    className="px-4 py-2 text-sm rounded-md hover:bg-muted transition-colors"
-                    disabled={isValidating}
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    className="px-4 py-2 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors disabled:opacity-50"
-                    disabled={isValidating}
-                  >
-                    {isValidating ? 'Checking...' : 'Enable Edit'}
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        )}
       </div>
     </EditableSectionContext.Provider>
   )

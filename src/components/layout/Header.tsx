@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '@/lib/auth-context'
+import { UserButton } from '@neondatabase/neon-js/auth/react/ui'
 
 export function Header(): React.ReactElement {
   const [searchQuery, setSearchQuery] = useState('')
-  const { logout } = useAuth()
   const navigate = useNavigate()
 
   const handleSearch = (e: React.FormEvent) => {
@@ -51,12 +50,7 @@ export function Header(): React.ReactElement {
               </button>
             </form>
 
-            <button
-              onClick={logout}
-              className="text-sm text-muted-foreground hover:text-foreground"
-            >
-              Logout
-            </button>
+            <UserButton />
           </div>
         </div>
       </header>

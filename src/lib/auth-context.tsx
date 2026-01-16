@@ -1,89 +1,26 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import { createContext, useContext, type ReactNode } from 'react'
+import { authClient, isEditor } from './neon-auth'
 
-interface AuthState {
+interface AuthContextType {
   isAuthenticated: boolean
   isEditAuthenticated: boolean
-}
-
-interface AuthContextType extends AuthState {
-  login: (password: string) => Promise<boolean>
-  validateEditPassword: (editPassword: string) => Promise<boolean>
-  logout: () => void
+  userEmail: string | null
 }
 
 const AuthContext = createContext<AuthContextType | null>(null)
 
-const SITE_AUTH_KEY = 'orcas-site-auth'
-const EDIT_AUTH_KEY = 'orcas-edit-auth'
-
 export function AuthProvider({ children }: { children: ReactNode }): React.ReactElement {
-  const [authState, setAuthState] = useState<AuthState>(() => {
-    // Check for existing auth in session storage
-    const siteAuth = sessionStorage.getItem(SITE_AUTH_KEY)
-    const editAuth = sessionStorage.getItem(EDIT_AUTH_KEY)
-    return {
-      isAuthenticated: siteAuth === 'true',
-      isEditAuthenticated: editAuth === 'true',
-    }
-  })
+  const session = authClient.useSession()
 
-  const login = useCallback(async (password: string): Promise<boolean> => {
-    try {
-      const response = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
-      })
+  // User is authenticated if they have an active session
+  const isAuthenticated = !session.isPending && !!session.data?.user
 
-      if (response.ok) {
-        sessionStorage.setItem(SITE_AUTH_KEY, 'true')
-        setAuthState(prev => ({ ...prev, isAuthenticated: true }))
-        return true
-      }
-
-      return false
-    } catch {
-      // Network error - API unavailable
-      return false
-    }
-  }, [])
-
-  // Validates edit password and stores auth state for the session
-  // Once authenticated, user can edit without re-entering password
-  const validateEditPassword = useCallback(async (editPassword: string): Promise<boolean> => {
-    // If already authenticated, return true immediately
-    if (authState.isEditAuthenticated) {
-      return true
-    }
-
-    try {
-      const response = await fetch('/api/auth/edit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password: editPassword }),
-      })
-
-      if (response.ok) {
-        sessionStorage.setItem(EDIT_AUTH_KEY, 'true')
-        setAuthState(prev => ({ ...prev, isEditAuthenticated: true }))
-        return true
-      }
-
-      return false
-    } catch {
-      // Network error - API unavailable
-      return false
-    }
-  }, [authState.isEditAuthenticated])
-
-  const logout = useCallback(() => {
-    sessionStorage.removeItem(SITE_AUTH_KEY)
-    sessionStorage.removeItem(EDIT_AUTH_KEY)
-    setAuthState({ isAuthenticated: false, isEditAuthenticated: false })
-  }, [])
+  // User can edit if their email is in the allowlist
+  const userEmail = session.data?.user?.email ?? null
+  const isEditAuthenticated = isEditor(userEmail)
 
   return (
-    <AuthContext.Provider value={{ ...authState, login, validateEditPassword, logout }}>
+    <AuthContext.Provider value={{ isAuthenticated, isEditAuthenticated, userEmail }}>
       {children}
     </AuthContext.Provider>
   )
