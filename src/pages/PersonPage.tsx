@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { BacklinksSidebar } from '@/components/layout/BacklinksSidebar'
+import { handlePageState } from '@/components/layout/PageStates'
 import { PhotoCarousel } from '@/components/media/PhotoCarousel'
 import { InTheNews } from '@/components/entity/InTheNews'
 import { EditableSection } from '@/components/forms/EditableSection'
@@ -11,44 +12,6 @@ import { usePersonForm } from '@/hooks/usePersonForm'
 import { timelineToMarkdown } from '@/lib/timeline'
 import type { RelatedPage } from '@/lib/api'
 
-// ============================================================================
-// Loading/Error States
-// ============================================================================
-
-function LoadingState(): React.ReactElement {
-  return (
-    <div className="container px-4 py-6">
-      <div className="flex items-center justify-center py-12">
-        <div className="text-muted-foreground">Loading person...</div>
-      </div>
-    </div>
-  )
-}
-
-function ErrorState({ message }: { message: string }): React.ReactElement {
-  return (
-    <div className="container px-4 py-6">
-      <div className="flex items-center justify-center py-12">
-        <div className="text-destructive">Error loading person: {message}</div>
-      </div>
-    </div>
-  )
-}
-
-function NotFoundState(): React.ReactElement {
-  return (
-    <div className="container px-4 py-6">
-      <div className="flex items-center justify-center py-12">
-        <div className="text-muted-foreground">Person not found</div>
-      </div>
-    </div>
-  )
-}
-
-// ============================================================================
-// Main Component
-// ============================================================================
-
 export function PersonPage(): React.ReactElement {
   const { slug } = useParams<{ slug: string }>()
   const { data: person, loading, error } = usePersonBySlug(slug || null)
@@ -59,9 +22,9 @@ export function PersonPage(): React.ReactElement {
     familyData: family,
   })
 
-  if (loading) return <LoadingState />
-  if (error) return <ErrorState message={error.message} />
-  if (!person) return <NotFoundState />
+  // Handle loading/error/not-found states
+  const pageState = handlePageState({ loading, error, data: person, entityType: 'person' })
+  if (pageState) return pageState
 
   const timeline = person.timeline || []
   const linkedPhotos = person.linkedPhotos || []

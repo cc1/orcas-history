@@ -4,35 +4,10 @@ import { useMediaLinks } from '@/hooks/useMediaLinks'
 import { EditableField } from '@/components/forms/EditableField'
 import { AutocompleteField } from '@/components/forms/AutocompleteField'
 import { EditableSection } from '@/components/forms/EditableSection'
+import { handlePageState } from '@/components/layout/PageStates'
 import { updateMediaField } from '@/lib/api'
 import { getImageUrl } from '@/lib/utils'
 import { useCallback } from 'react'
-
-// ============================================================================
-// Loading/Error States
-// ============================================================================
-
-function LoadingState(): React.ReactElement {
-  return (
-    <div className="container px-4 py-6">
-      <div className="flex items-center justify-center py-12">
-        <div className="text-muted-foreground">Loading photo...</div>
-      </div>
-    </div>
-  )
-}
-
-function ErrorState({ message }: { message?: string }): React.ReactElement {
-  return (
-    <div className="container px-4 py-6">
-      <div className="flex items-center justify-center py-12">
-        <div className="text-destructive">
-          {message ? `Error: ${message}` : 'Photo not found'}
-        </div>
-      </div>
-    </div>
-  )
-}
 
 // ============================================================================
 // Sub-components
@@ -98,8 +73,9 @@ export function PhotoPage(): React.ReactElement {
     }
   }, [photo])
 
-  if (loading) return <LoadingState />
-  if (error || !photo) return <ErrorState message={error?.message} />
+  // Handle loading/error/not-found states
+  const pageState = handlePageState({ loading, error, data: photo, entityType: 'photo' })
+  if (pageState) return pageState
 
   const imageUrl = getImageUrl(photo.webImagePath, photo.googleUrl)
 

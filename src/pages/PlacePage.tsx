@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { BacklinksSidebar } from '@/components/layout/BacklinksSidebar'
+import { handlePageState } from '@/components/layout/PageStates'
 import { PhotoCarousel } from '@/components/media/PhotoCarousel'
 import { InTheNews } from '@/components/entity/InTheNews'
 import { usePlaceBySlug } from '@/hooks/useData'
@@ -10,35 +11,9 @@ export function PlacePage(): React.ReactElement {
   const { slug } = useParams<{ slug: string }>()
   const { data: place, loading, error } = usePlaceBySlug(slug || null)
 
-  if (loading) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-muted-foreground">Loading place...</div>
-        </div>
-      </div>
-    )
-  }
-
-  if (error) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-destructive">Error loading place: {error.message}</div>
-        </div>
-      </div>
-    )
-  }
-
-  if (!place) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-muted-foreground">Place not found</div>
-        </div>
-      </div>
-    )
-  }
+  // Handle loading/error/not-found states
+  const pageState = handlePageState({ loading, error, data: place, entityType: 'place' })
+  if (pageState) return pageState
 
   const sections = (place.contentSections || []) as Array<{ heading: string; content: string }>
   const researchQuestions = (place.researchQuestions || []) as string[]

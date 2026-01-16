@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { BacklinksSidebar } from '@/components/layout/BacklinksSidebar'
+import { handlePageState } from '@/components/layout/PageStates'
 import { PhotoCarousel } from '@/components/media/PhotoCarousel'
 import { InTheNews } from '@/components/entity/InTheNews'
 import { useTopicBySlug } from '@/hooks/useData'
@@ -10,35 +11,9 @@ export function TopicPage(): React.ReactElement {
   const { slug } = useParams<{ slug: string }>()
   const { data: topic, loading, error } = useTopicBySlug(slug || null)
 
-  if (loading) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-muted-foreground">Loading topic...</div>
-        </div>
-      </div>
-    )
-  }
-
-  if (error) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-destructive">Error loading topic: {error.message}</div>
-        </div>
-      </div>
-    )
-  }
-
-  if (!topic) {
-    return (
-      <div className="container px-4 py-6">
-        <div className="flex items-center justify-center py-12">
-          <div className="text-muted-foreground">Topic not found</div>
-        </div>
-      </div>
-    )
-  }
+  // Handle loading/error/not-found states
+  const pageState = handlePageState({ loading, error, data: topic, entityType: 'topic' })
+  if (pageState) return pageState
 
   const sections = (topic.contentSections || []) as Array<{ heading: string; content: string }>
   const researchQuestions = (topic.researchQuestions || []) as string[]
