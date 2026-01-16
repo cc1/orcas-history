@@ -195,7 +195,7 @@ export async function getEntityNews(
 
 // Entity-related APIs
 export async function getAllEntities(): Promise<SingleResponse<Entity[]>> {
-  return fetchJson(buildUrl('/entities'))
+  return fetchJson(buildUrl('/backlinks', { action: 'entities' }))
 }
 
 export async function getLinkedMentions(

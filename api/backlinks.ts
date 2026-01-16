@@ -1,21 +1,17 @@
 /**
  * API route: GET /api/backlinks
- * Returns linked mentions - pages that explicitly link to this entity
+ * Returns linked mentions OR all entities for autocomplete
  *
- * For Person pages:
- * - Other people who list this person in their familyData (parents, spouses, children, siblings)
- * - Other entities that have this person in their relatedPages
- *
- * For Place/Topic pages:
- * - Other entities that have this place/topic in their relatedPages
- *
- * Query parameters:
+ * Query parameters for backlinks:
  * - type: 'person' | 'place' | 'topic' (required)
  * - id: entity slug (required)
+ *
+ * Query parameters for entities (autocomplete):
+ * - action: 'entities' (returns all entities for autocomplete)
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { db, person, place, topic } from './lib/db.js'
-import { eq } from 'drizzle-orm'
+import { eq, asc } from 'drizzle-orm'
 
 // ============================================================================
 // Types
@@ -190,9 +186,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { type, id } = req.query
+  const { type, id, action } = req.query
 
-  // Validate parameters
+  // Handle entities action (for autocomplete)
+  if (action === 'entities') {
+    return handleEntities(res)
+  }
+
+  // Validate parameters for backlinks
   if (!type || typeof type !== 'string') {
     return res.status(400).json({ error: 'Missing required parameter: type' })
   }
@@ -222,6 +223,41 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json({ data: linkedMentions })
   } catch (error) {
     console.error('Error fetching linked mentions:', error)
+    return res.status(500).json({ error: 'Internal server error' })
+  }
+}
+
+// ============================================================================
+// Entities Handler (for autocomplete)
+// ============================================================================
+
+interface Entity {
+  type: 'person' | 'place' | 'topic'
+  slug: string
+  name: string
+}
+
+async function handleEntities(res: VercelResponse) {
+  try {
+    const [allPeople, allPlaces, allTopics] = await Promise.all([
+      db.select({ slug: person.slug, name: person.displayName }).from(person).orderBy(asc(person.displayName)),
+      db.select({ slug: place.slug, name: place.name }).from(place).orderBy(asc(place.name)),
+      db.select({ slug: topic.slug, name: topic.name }).from(topic).orderBy(asc(topic.name)),
+    ])
+
+    const entities: Entity[] = [
+      ...allPeople.map(p => ({ type: 'person' as const, slug: p.slug, name: p.name })),
+      ...allPlaces.map(p => ({ type: 'place' as const, slug: p.slug, name: p.name })),
+      ...allTopics.map(t => ({ type: 'topic' as const, slug: t.slug, name: t.name })),
+    ]
+
+    // Sort all together by name
+    entities.sort((a, b) => a.name.localeCompare(b.name))
+
+    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate')
+    return res.status(200).json({ data: entities })
+  } catch (error) {
+    console.error('Error fetching entities:', error)
     return res.status(500).json({ error: 'Internal server error' })
   }
 }
