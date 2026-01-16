@@ -4,10 +4,10 @@
  * PATCH: Updates topic fields
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, topic, media, mediaTopic } from '../lib/db.js'
+import { db, topic, media, mediaTopic } from '../_lib/db.js'
 import { eq, and, asc } from 'drizzle-orm'
-import { createPatchHandler } from '../lib/patch-handler.js'
-import { getImageUrl } from '../lib/image-utils.js'
+import { createPatchHandler } from '../_lib/patch-handler.js'
+import { getImageUrl } from '../_lib/image-utils.js'
 
 const handlePatch = createPatchHandler({
   table: topic,

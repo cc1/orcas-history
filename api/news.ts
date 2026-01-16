@@ -9,7 +9,7 @@
  *   - entitySlug: The entity's slug (required with entityType)
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, newsItem, newsPerson, newsPlace, newsTopic, person, place, topic } from './lib/db.js'
+import { db, newsItem, newsPerson, newsPlace, newsTopic, person, place, topic } from './_lib/db.js'
 import { asc, desc, eq } from 'drizzle-orm'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

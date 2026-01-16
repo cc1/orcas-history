@@ -4,10 +4,10 @@
  * PATCH: Updates person fields
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, person, media, mediaPerson } from '../lib/db.js'
+import { db, person, media, mediaPerson } from '../_lib/db.js'
 import { eq, and, asc } from 'drizzle-orm'
-import { getImageUrl } from '../lib/image-utils.js'
-import { createPatchHandler } from '../lib/patch-handler.js'
+import { getImageUrl } from '../_lib/image-utils.js'
+import { createPatchHandler } from '../_lib/patch-handler.js'
 
 const handlePatch = createPatchHandler({
   table: person,

@@ -3,7 +3,7 @@
  * Returns all people
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, person } from './lib/db.js'
+import { db, person } from './_lib/db.js'
 import { asc } from 'drizzle-orm'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

@@ -3,7 +3,7 @@
  * Returns all places with coordinates
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, place } from './lib/db.js'
+import { db, place } from './_lib/db.js'
 import { asc } from 'drizzle-orm'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

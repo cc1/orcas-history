@@ -3,7 +3,7 @@
  * Returns all media (photos and documents) with optional filtering
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, media, dateValue, mediaPerson } from './lib/db.js'
+import { db, media, dateValue, mediaPerson } from './_lib/db.js'
 import { eq, and, or, desc, asc, sql, isNull, notExists } from 'drizzle-orm'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

@@ -3,7 +3,7 @@
  * Returns all topics
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, topic } from './lib/db.js'
+import { db, topic } from './_lib/db.js'
 import { asc } from 'drizzle-orm'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

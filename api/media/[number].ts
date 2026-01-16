@@ -5,9 +5,9 @@
  * POST: Updates media-entity relationships (people, places) - use ?action=links
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, media, dateValue, mediaPerson, mediaPlace, person, place } from '../lib/db.js'
+import { db, media, dateValue, mediaPerson, mediaPlace, person, place } from '../_lib/db.js'
 import { eq, inArray } from 'drizzle-orm'
-import { parseDate } from '../lib/date-parser.js'
+import { parseDate } from '../_lib/date-parser.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'GET' && req.method !== 'PATCH' && req.method !== 'POST') {

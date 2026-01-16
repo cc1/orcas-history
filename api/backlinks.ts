@@ -10,7 +10,7 @@
  * - action: 'entities' (returns all entities for autocomplete)
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, person, place, topic } from './lib/db.js'
+import { db, person, place, topic } from './_lib/db.js'
 import { eq, asc } from 'drizzle-orm'
 
 // ============================================================================
