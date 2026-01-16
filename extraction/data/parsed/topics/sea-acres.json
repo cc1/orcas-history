@@ -1,16 +1,12 @@
 {
   "slug": "sea-acres",
   "name": "Sea Acres",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/sea-acres",
-
-  "sections": [],
-
+  "extractedAt": "2026-01-15T21:32:00.000Z",
+  "images": [],
+  "status": "TBD",
   "researchQuestions": [
     "When built?",
     "Built by who?",
     "Connection to Pt. Lawrence lodge?"
-  ],
-
-  "extractedAt": "2026-01-14",
-  "notes": "Stub page - TBD content with research questions"
+  ]
 }

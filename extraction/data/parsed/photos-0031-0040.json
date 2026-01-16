@@ -1,110 +1,17 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0031-0040",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0031-0040",
+  "extractedAt": "2026-01-15T21:25:00.000Z",
+  "count": 10,
   "photos": [
-    {
-      "number": "0031",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeLd68Vl1EOcxkR-rVaq24IpxXIuyAFI8KFACRGI9OcuEYFwtd1qRPlaClEh6QvvhihX8hnocEMAQDa4wVh9TqLM9XeWjDFSsSzXV5T2aMSGqXl5ziUpL5I3i_vLN-IxjAc4B8es4v4_ibSYdz9wif9tfe-L5qg9gAQbL5SLFD0WyRnJy4RjerfWpmJfwCd4mo80c2Qvgqkptg=w1280",
-      "date": "1939 Christmas label. Duplicate print is labeled 1945.",
-      "location": "Point Lawrence Lodge",
-      "people": "NA",
-      "description": "Cabin 7, 8, 9, 10 during a winter snow. Cabin seven was the first cabin constructed (excluding the old cabin 4 which originally had been a watchmans shack for a fish trap located in the bay). Carroll Culver rebuilt and finished the shack for his grandfather G.N. Culver and also lived in it when the Lodge was being constructed. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0032",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCke3hohqc7qZ8YzRV_Nf24NKoPYDpFwThE6VfpPdG5fwvOEsHvDMw5DMFYWLaZdU0hqOvxg2b5kOQe1QhSW1lmYZYwQwwMprzoqzPssbzWRgobf2Zz01KSUMoL-ohmcD8i6xwKx6PpE1oGwrwpaTFXJVTN8UnqgqdkNf4py1ZEr2EbV7WpGvYX3kPeYRo-3CUtTVXCDDa6FWfQ0gqLxuCNRqwHIYtldqJiHjpOM=w1280",
-      "date": "TBD",
-      "location": "NA",
-      "people": "NA",
-      "description": "Front of Jean and Carroll Culver Holiday Card",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Photo 0035 is a duplicate of this."
-    },
-    {
-      "number": "0033",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfJ-D16Ud6SZSY85uK6iDIUoPtbbTW3i4xj6hWsV836uCunKcUPlXNNIv7OOjSFAaAwi0OVPAq3lNfv5mB08XyvIlmYpiw5YBt47lwQdm9u6i-Zd01qnPw_Tqcke4a8rfLHs95uRr01vgmTFoOgiXbing-0sQgnHfHMYy0dZ8tmr2Ng_tgm84Ixtd2Ce41oqCBgrl65pRzzEga31A_PS4E5zPaUqQMon7ra-Eo=w1280",
-      "date": "1940s",
-      "location": "Point Lawrence Lodge",
-      "people": "NA",
-      "description": "Christmas card with personal greeting in each one - I can recall him sitting at a counter in our kitchen preparing stacks of these. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0034",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcpzZVSY9VJ2UsaY60ZO7TRxowM1RvTOloRNPdQIAIgFRffxphdtXd2SPwi8qJWIvYLBASccYuCiihImcDYnHasMVnMDQeIH1kWlT0QaLIINjhYu_NP89o2roHWJhyHSHMzbdxFuIM6pfTgZYHZ2o-UW1e0i5GHHEY6tSC8M6YSNVrjK6euShWRag9bzF7K8Ig3O9TnKbbIluk=w1280",
-      "date": "TBD",
-      "location": "NA",
-      "people": "Written by Jean (Rothenhafer) Culver",
-      "description": "Pretty self explanatory. Not sure of the exact date, but would guess late 40s. Our family often celebrated Thanksgiving and Christmas in Bellingham or Edmonds. I have fond memories of these gatherings - much laughter and good cheer it seemed to me. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0035",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcd-IEO1FkAPKEjX9slJRWwhDLRIPRhcUSdTkk7kvFKAdmKaj_NoUhM3r5vxNcf5gS6hb12gKSbV8Mpqa7zAbhtmXHnrzlnGkJIYVQ1riIdYtW-osYVqTgbhCLdZAXb1HpFXm508xpL52eH4R7SqFYDyZkbrv-21YUTdCvPFd3c90OM7qTv5BpH-JGmcSnG2zKeVN_7Z-Hm=w1280",
-      "duplicate": "Duplicate of Photo 0032"
-    },
-    {
-      "number": "0036",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd5QnUb2LGk_fkzQcZJFI2KtsMsRugbvqPXont8fS9PLfRVtMUXfYHtug5uGYknxiKhOXNWmQfVVU53GgoqklnSJ7bKI0uCmZQUKxvPzcQaDO5bc9kGHZDfgGPxRfftrVGZqUgicQtqmxKPTaHeY4H4x5vxLTw-O-Bmczr_MgnigUmcU5OW4x6ydJhBgGFyDvPnX2ezAms0EVw=w1280",
-      "date": "TBD",
-      "location": "NA",
-      "people": "Jean (Rothenhafer) Culver, Carroll Culver",
-      "description": "Front of Jean and Carroll Culver Holiday Card",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0037",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdjn5ZHNLhtKcssZ_58y-A1IwkrcInPBhJm8R8oFfw_1arJTkO0DyHzRHCKHc47iMUqZThbAccEniBfkL-UEoniQVmxk4_Q3fOhLZJrkxnkaKNKptU7PrM3ttGM79MIIYVZOwpDy9CeU2F3FnHAdxBzZo33UDDfliwgBMaalmiIpHlqSA-2fXvC9bf_Hj6kK7A_A7hlvYIomGAK8kuUyTuE0VybJjT9Ewex2LI=w1280",
-      "date": "Estimated early 40s",
-      "location": "Point Lawrence Lodge",
-      "people": "NA",
-      "description": "Lodge view",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0038",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeDIHdzn_iBvaLchvmLjeN8Cn1fgaFEhm8n1wldCK1aYrbkPCfwC_lj8RWSJ3n_k2LXbWIGGGBFiSHLsoZ64JHt14gWd6nAN0_f8d8XM4i_pWeVOTjmFkzgiKT5KzExT9bv6Y_nZgFcTKunsFSkn8R3LktKblBIGuHgwRwPk643J9REFTWBIdXhH65M8oCgw4cp7nCiBTyiYag=w1280",
-      "date": "TBD",
-      "location": "Point Lawrence Lodge",
-      "people": "Jean (Rothenhafer) Culver, Carroll Culver",
-      "description": "Pt. Lawrence Lodge holiday card",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0039",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdkEFEwmjkMwwtez67IDgqDI8pXlzsb0r8APxWkb4fS7CMA9LkppUztzt9M5MHzGwyrg_JCIYbxwj3c0LGJeKcrZ9Qeb51Fa2NfHeRFMa99NJFBajn4lMuOvKJC4Z7yEn-tLErdupz9lr6Kx5LLUyKdl09Oqc5UAQA4ZV2W6jfrOnOlTcvTfMI3Gsrr9ZBLpvJVzpGFJ3fn=w1280",
-      "date": "1948",
-      "location": "Point Lawrence Lodge",
-      "people": "Carroll Culver (walking on Beach)",
-      "description": "Les Bergsma's seaplane from Bellingham preparing to land at the beach and greeted by Carroll Culver and Ken and either Bruce or Carolyn? (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Jacobsen 184"
-    },
-    {
-      "number": "0040",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcMuMLmnDAYqr4Mg2no15hBl5802XEB-XGExd0PQFkqLPyhX6B_gpvlbdKDTZ-ht0LqRw3Nmn67UjRAMQjoXaXbozyvf_d6dTy6VR-l_H1AN7X9rdLenhADlC7jjG_6IE9hzqHKE7_uU3qnZxXGtQ5vJPQAJsmFwR2G4DAh-S8J1MaUZ9bxNp_ni2kOIZIP8Pq4k6dcH6EDAkCODOUEDFmtGg2E14LPjoc9=w1280",
-      "date": "1950",
-      "location": "Point Lawrence Lodge",
-      "people": "NA",
-      "description": "An excellent photo of the lodge in its prime, with the newly constructed ramp over the boathouse platform below. Looking Northeast—Upper windows were Carroll and Jeans' bedroom, below was the kitchen, with oil room below that. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    }
+    {"id":"0031","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdtAzrfxQr8sQm7jQQIf2YDJiHITwO3yjNBA0yI27nwjxeyuje5FfIVuSZDT-TRbKnrw-qaxUh1bWQGc1WPDFpr4m0eivG4obJXRDGJ_FGkBP7T53KuMp2x4cIO3gNn75ils0BU04RPghVa_CSa2aEhIo0tF9ZY9cdOwkFUAvdeMCNpldt5X8PPWlwCSTQ5GD_HYYifM3pWd2Y=w1280","date":"1939 Christmas label. Duplicate print is labeled 1945.","location":"Point Lawrence Lodge","people":"NA","description":"Cabin 7, 8, 9, 10 during a winter snow. Cabin seven was the first cabin constructed (excluding the old cabin 4 which originally had been a watchmans shack for a fish trap located in the bay). Carroll Culver rebuilt and finished the shack for his grandfather G.N. Culver and also lived in it when the Lodge was being constructed.  (Ken)","source":"Ken Culver","notes":"TBD","duplicate":"Date: 1939 Christmas label. Duplicate print is labeled 1945.","hasHighRes":true},
+    {"id":"0032","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdLhJnJzH9WC2v2V3kengSx0v1IX_loaXgU5CtWy_XLpSvnXRpr3p4u415yifRFtQvr4paIn-Y0NMPtq1tpQkP4mc_c7dZO2QwcHBXxm-U4cVIcNhX_B9ESJTQUOjdPACOxy6KPBhRl2bREhW4SV0ovGi8TrAAzfC_TmxLFfWqGIB2_vhdlnwPiEULwE-3E5-PciFtOgZt3EW8S7ruco7KvccNGD8J4feZLpAA=w1280","date":"TBD","location":"NA","people":"NA","description":"Front of Jean and Carroll Culver Holiday Card","source":"Ken Culver","notes":"Photo 0035 is a duplicate of this.","hasHighRes":true},
+    {"id":"0033","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcEdpJaRA23Yt_k_7nJNU1fKgpIXJc_rcWM3BvePazNJBAz9TnEkN3C1ONNI0BdHF220a1NJmC8YhvPR8thoV3NBrzrWAj6YDzpF1405nWE7g9CBx5UFf0aZeLG6F5XgasHcqD0oe6586V19R7fnDHrHSBajmlsGkdEeJ44WZ_Qgag2Psm8SlCqas-70RGluw3SGxikTltd62mZm12xVWXCiIkCfsN6MiJKJfg=w1280","date":"1940's","location":"Point Lawrence Lodge","people":"NA","description":"Christmas Card (year unknown, but probably 40's).  Christmas cards were part of the business - a good way to stay in touch with prior customers, many of who came year after year.  Often Dad wrote a short personal greeting in each one - I can recall him sitting at a counter in our kitchen preparing stacks of these.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0034","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfKkGVv7EWZ5DGh4fM-WzoG4GBBfAhP2J-nnLVmYw9DOq2yGE0rg0tSm8qnzF_WEFMEG5PrisxJBZEFFztcZGyaPFngCY8j_6CP20-G0-z5wHhbDUM8VZkdYFXebjCE0TunfC--sGItda5LlWcHE9Q-7FZ5JhILL4gufdinRc6mrB3C156J4uetvI755N2q_MUi8ed012BZbnM=w1280","date":"TBD","location":"NA","people":"Written by Jean (Rothenhafer) Culver","description":"Pretty self explanatory.  Not sure of the exact date, but would guess late 40's.  Our family often celebrated Thanksgiving and Christmas in Bellingham or Edmonds.  I have fond memories of these gatherings - much laughter and good cheer it seemed to me.   (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0035","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdjCUYckk4vLYcxfkqmIsV9oyYeHW9c5dRR3oqKKP9IG8SQiA3B4pz5_iPodkxB7uZ7fRPGJb1B5mOGL1mhoTXX0vVSwLytwVnxfm-RucxbFiz7xSnU-v4eOG-1wx3grc_E6KQdLVjOXilCUITQHP3qqdqxKGOCjwxVU7aaj2VA0kX3RezybcaWi8Xh_ph--hPuG7etNDnV=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate of Photo 0032."},
+    {"id":"0036","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeiajsVumUEi4SboEgX-IwhmzcEDrmepPswTYNELOjLHpzWIpB3IlKNNax17DMyM0JS5nc6Fzj0-rQWGfGbMj6Gi7PccVOlhJlfBdq9JK5lweB2rp_xFcfgkBR5Op-hoHVwQjpJApKFQAmgVde03yKuCcsoL7TiTJuNfQURHFNV4Pf12uyVrFbQ0FLydrMniq03ksB8NUdWX4E=w1280","date":"TBD","location":"NA","people":"Jean (Rothenhafer) Culver, Carroll Culver","description":"Front of Jean and Carroll Culver Holiday Card","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0037","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdoKlBVFNIR2cm2t9iNb6SNzVgrr_fJQucYoj7UREsdW467ku9xSSSSUOndxw5VTGiXNPxWjRm02NLDbZLr5DOPyEDQimvk8XsHLgxG6uNsWhYgXpABZfWfzw8Sz6fHzWaaemogYNYoROjn4N5d1uWqoMzWTe_ahk9CRoIWflaTyr2N437_wtU8WJploCwTDzlZ8t5L41D_pjhweJiXteHASHDxfkQGR3u_lP0=w1280","date":"Estimated early 40's.","location":"Point Lawrence Lodge","people":"NA","description":"Snowy view of the Lodge as seen from a small boat.  Note the garage is still under construction hence my date estimate.   Ken","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0038","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeVeYgLwiR1jApJqNCenNkib0LKBuYVEfLlzAu3jZJ25vyTqwhyNDdODyoY7rmlena0NmsSDPAyJWy4YpaIgw-RxVLgWKrW-0epKQYGAjBDVBsSURuL9_4shO8xHOqmyIVl6z-Bw8jr0PVoT-kOONaLCDzQwR040V-1O5ucapVIC424ZNY5Z_m-JCHkvit0YXRY8-UFRFGiM8w=w1280","date":"TBD","location":"NA","people":"Jean (Rothenhafer) Culver, Carroll Culver","description":"Pt. Lawrence Lodge holiday card","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0039","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfneuA5HVEGEdQdbpdCuqYs0LdO5RCMdYj4dHyuU4MdtrGcqWOdl_SbP9w28EHsu4SNV3_oaEng0B5fGeeDm2hdRCagMZDedS8F9Ev_PZUbq4wSFan-v2B3-YNMn8GVK8sZurNFA1r5TU0Z-z_Rc6Nz5YLhSF2qHzlXT5stEXNxO0X-djTaNYAskTHO4G-cupZoA_XrOGha=w1280","date":"1948","location":"Point Lawrence Lodge","people":"Carroll Culver (walking on Beach)","description":"Les Bergsma's seaplane from Bellingham preparing to land at the beach and greeted by Carroll Culver and Ken and either Bruce or Carolyn?  (Ken)","source":"Ken Culver","notes":"Jacobsen 184","hasHighRes":true},
+    {"id":"0040","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdMy42dyB0FcsxLbnXR4TlPQg8e5WRLS_f-vK4BmfuPmtVHxBVENMWigXw4GaL9eTOn6SgWv3RUr-t6JQzcbttWvy9ikoH0PAsCtKEU2yiiP2iz0MqAtaMfXoeadMU2qly4K3q4eq6ylOQZQQ8JGbZIWL0IIq7Jo6zMmSv-oQ7amarWmosCwqPfWnXJA57s8xz_AXVS6TtsJ-h4SvBQiQWyfeGwKXaAqiSe=w1280","date":"1950","location":"Point Lawrence Lodge","people":"NA","description":"An excellent photo of the lodge in its prime, with the newly constructed ramp over the boathouse platform below. Looking Northeast—Upper windows were Carroll and Jeans' bedroom, below was the kitchen, with \"oil room\" below that.    (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true}
   ]
 }

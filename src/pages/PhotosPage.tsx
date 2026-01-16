@@ -1,34 +1,64 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MasonryGrid } from '@/components/media/MasonryGrid'
 import { FilterBar } from '@/components/media/FilterBar'
 import { PhotoModal } from '@/components/media/PhotoModal'
-import { useMedia } from '@/hooks/useData'
+import { useInfiniteMedia } from '@/hooks/useData'
+import { getImageUrl } from '@/lib/utils'
 
 type SortOption = 'random' | 'year-asc' | 'year-desc'
-type CategoryFilter = 'all' | 'people' | 'places' | 'topics' | 'documents'
+type ShowFilter = 'all' | 'people' | 'places' | 'topics' | 'documents' | 'missingInfo'
 
-interface Filters {
-  category: CategoryFilter
-  needsDate: boolean
+const PHOTO_WIDTH_KEY = 'orcas-photo-width'
+const DEFAULT_PHOTO_WIDTH = 280
+
+function getInitialPhotoWidth(): number {
+  if (typeof window === 'undefined') return DEFAULT_PHOTO_WIDTH
+  const stored = localStorage.getItem(PHOTO_WIDTH_KEY)
+  if (stored) {
+    const parsed = parseInt(stored, 10)
+    if (!isNaN(parsed) && parsed >= 150 && parsed <= 400) {
+      return parsed
+    }
+  }
+  return DEFAULT_PHOTO_WIDTH
 }
 
 export function PhotosPage(): React.ReactElement {
   const navigate = useNavigate()
   const [sort, setSort] = useState<SortOption>('random')
-  const [filters, setFilters] = useState<Filters>({
-    category: 'all',
-    needsDate: false,
-  })
+  const [showFilter, setShowFilter] = useState<ShowFilter>('all')
+  const [photoWidth, setPhotoWidth] = useState(getInitialPhotoWidth)
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null)
 
-  // Fetch photos from API based on category filter
-  const { data: photos, loading, error } = useMedia({
-    category: filters.category === 'documents' ? 'document' : filters.category === 'all' ? undefined : undefined,
+  // Persist photo width to localStorage
+  useEffect(() => {
+    localStorage.setItem(PHOTO_WIDTH_KEY, String(photoWidth))
+  }, [photoWidth])
+
+  // Map showFilter to API params
+  const apiParams = useMemo(() => {
+    const params: {
+      category?: 'photo' | 'document'
+      missingInfo?: boolean
+    } = {}
+
+    if (showFilter === 'documents') {
+      params.category = 'document'
+    } else if (showFilter === 'missingInfo') {
+      params.missingInfo = true
+    }
+    // people, places, topics filters not yet implemented in API
+    // they would filter by linked entities
+
+    return params
+  }, [showFilter])
+
+  // Fetch photos from API with infinite scroll
+  const { data: photos, loading, loadingMore, error, hasMore, loadMore } = useInfiniteMedia({
+    ...apiParams,
     sort: sort,
-    needsDate: filters.needsDate || undefined,
-    limit: 500,
-    // TODO: Add people/places/topics filtering when API supports it
+    pageSize: 40,
   })
 
   // Transform API data to match component expectations
@@ -37,7 +67,7 @@ export function PhotosPage(): React.ReactElement {
 
     return photos.map(photo => ({
       id: photo.number,
-      imageUrl: photo.webImagePath || photo.googleUrl || '',
+      imageUrl: getImageUrl(photo.webImagePath, photo.googleUrl),
       date: photo.dateOriginalText || 'TBD',
       location: photo.locationText || '',
       people: '', // TODO: Fetch linked people
@@ -78,16 +108,23 @@ export function PhotosPage(): React.ReactElement {
 
   const selectedPhoto = selectedPhotoIndex !== null ? transformedPhotos[selectedPhotoIndex] : null
 
+  // Apply photo width as CSS variable
+  const gridStyle = {
+    '--photo-width': `${photoWidth}px`,
+  } as React.CSSProperties
+
   return (
     <div className="min-h-screen">
       <FilterBar
         sort={sort}
         onSortChange={setSort}
-        filters={filters}
-        onFiltersChange={setFilters}
+        showFilter={showFilter}
+        onShowFilterChange={setShowFilter}
+        photoWidth={photoWidth}
+        onPhotoWidthChange={setPhotoWidth}
       />
 
-      <div className="container px-4 py-6">
+      <div className="px-4 py-6">
         {loading && (
           <div className="flex items-center justify-center py-12">
             <div className="text-muted-foreground">Loading photos...</div>
@@ -110,6 +147,10 @@ export function PhotosPage(): React.ReactElement {
           <MasonryGrid
             photos={transformedPhotos}
             onPhotoClick={handlePhotoClick}
+            onLoadMore={loadMore}
+            hasMore={hasMore}
+            loadingMore={loadingMore}
+            style={gridStyle}
           />
         )}
       </div>

@@ -1,32 +1,44 @@
 {
   "slug": "fish-traps",
   "name": "Fish Traps",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/fish-traps",
-
-  "sections": [
+  "extractedAt": "2026-01-15T21:10:00.000Z",
+  "images": [],
+  "inTheNews": [
     {
-      "heading": "In the News",
-      "content": "Collection of news items from 1901-1905 about fish traps at Point Lawrence."
+      "date": "1901 July",
+      "content": "Craft & Co., of Whatcom, are reported to be putting in a fish trap near Point Lawrence, Orcas island. Mr. Craft is the proprietor of the Famous Shoe Store and has for years been a constant advertiser in The Islander."
+    },
+    {
+      "date": "1901 August",
+      "content": "Mr. and Mrs. Craft, of Whatcom, and Mr. McDonald, state dairy commissioner, of Seattle, visited mr. Craft's fish trap at Point Lawrence, Sunday. The little trap is doing finely."
+    },
+    {
+      "date": "1901 November",
+      "content": "Mr. and Mrs. Hansen and their two children returned to Fairhaven Tuesday for the winter. Mr. Hansen is interested in the Point Lawrence Fish Company's trap at the Alderbrook farm beach."
+    },
+    {
+      "date": "1902 May",
+      "content": "The Point Lawrence fish trap is nearly completed, having been driven out 200 feet or more further than it was last year. Owners of an adjoining location claim that as now driven it encroaches upon their rights."
+    },
+    {
+      "date": "1902 June",
+      "content": "The Lawrence Fish Company has given up the effort to drive a trap directly out from Point Lawrence this season and is now driving at the Paternosier place, near Doe Bay.\n\nThe Point Lawrence fish trap has been catching a good many fine spring salmon, which have been shipped to Whatcom. Some of them have weighed 100 pounds and the price has ranged from four to seven cents a pound."
+    },
+    {
+      "date": "1902 July",
+      "content": "The high tides of last week did considerable damage to fish traps, especially to the P. P. & N. Co's big trap at Mosquito pass, the big A. P. A. Trap on the salmon banks, and the Wormer trap at the south end of Lopez. The Craft trap at Point Lawrence was also damaged and doubtless there were many others injured to some extent.\n\nThe Point Lawrence Fish Company's trap in front of Patermoster's place is completed and a good catch is expected."
+    },
+    {
+      "date": "1903 July",
+      "content": "Mr. Craft's trap is getting quite a lot of sockeyes."
+    },
+    {
+      "date": "1904 May",
+      "content": "There is some talk of Blaine parties driving the Craft trap at Point Lawrence."
+    },
+    {
+      "date": "1905 May",
+      "content": "Mr. Hansen came over from Bellingham Monday to superintend the work on the Craft-Hansen trap at Point Lawrence."
     }
-  ],
-
-  "newsItems": [
-    {"year": 1901, "month": "July", "content": "Craft & Co., of Whatcom, are reported to be putting in a fish trap near Point Lawrence, Orcas island. Mr. Craft is the proprietor of the Famous Shoe Store and has for years been a constant advertiser in The Islander."},
-    {"year": 1901, "month": "August", "content": "Mr. and Mrs. Craft, of Whatcom, and Mr. McDonald, state dairy commissioner, of Seattle, visited Mr. Craft's fish trap at Point Lawrence, Sunday. The little trap is doing finely."},
-    {"year": 1901, "month": "November", "content": "Mr. and Mrs. Hansen and their two children returned to Fairhaven Tuesday for the winter. Mr. Hansen is interested in the Point Lawrence Fish Company's trap at the Alderbrook farm beach."},
-    {"year": 1902, "month": "May", "content": "The Point Lawrence fish trap is nearly completed, having been driven out 200 feet or more further than it was last year. Owners of an adjoining location claim that as now located, the trap encroaches on their ground. The Point Lawrence Fish Company's trap in front of Patermoster's place is completed and a good catch is expected."},
-    {"year": 1903, "month": "January", "content": "Damage was done to fish traps, especially to the P. P. & N. Co's big trap at Mosquito pass, the big A. P. A. Trap on the salmon banks, and the Wormer trap at the south end of Lopez. The Craft trap at Point Lawrence was also damaged."},
-    {"year": 1903, "month": "July", "content": "Mr. Craft's trap is getting quite a lot of sockeyes."},
-    {"year": 1904, "month": "May", "content": "There is some talk of Blaine parties driving the Craft trap at Point Lawrence."},
-    {"year": 1905, "month": "May", "content": "Mr. Hansen came over from Bellingham Monday to superintend the work on the Craft-Hansen trap at Point Lawrence."}
-  ],
-
-  "researchQuestions": [
-    "When were fish traps banned in Washington?",
-    "What was the Point Lawrence Fish Company?",
-    "Who was Mr. Craft?",
-    "What was the relationship between Craft and Hansen?"
-  ],
-
-  "extractedAt": "2026-01-14"
+  ]
 }

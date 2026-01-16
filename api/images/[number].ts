@@ -16,8 +16,9 @@ function loadBlobUrls(): Record<string, string> {
   const blobUrlsPath = join(process.cwd(), 'extraction', 'data', 'blob-urls.json')
   const content = readFileSync(blobUrlsPath, 'utf-8')
   const data = JSON.parse(content)
-  blobUrls = data.photos || {}
-  return blobUrls
+  const urls: Record<string, string> = data.photos || {}
+  blobUrls = urls
+  return urls
 }
 
 export default function handler(req: VercelRequest, res: VercelResponse): void {

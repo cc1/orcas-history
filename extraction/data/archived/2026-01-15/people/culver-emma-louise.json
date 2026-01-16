@@ -1,0 +1,38 @@
+{
+  "slug": "culver-emma-louise",
+  "displayName": "Emma Louise Culver",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-emma-louise",
+
+  "connectionToPtLawrence": "Lived with her parents at Alderbrook Farm on Orcas Island. Married Cecil Willis there in June 1902.",
+
+  "family": {
+    "parents": "George Nelson Culver and Diana Louise Aikens",
+    "spouses": "Cecil Swainson Willis (b. July 20, 1873 in England; d. between 1920-1930)",
+    "children": "Cecil Culver Willis",
+    "siblings": "Otis Henry Culver, Fred Nelson Culver, Inez Adel Culver"
+  },
+
+  "keyDates": "1872-TBD",
+
+  "timeline": [
+    {"year": 1872, "age": 0, "event": "Born October 1872 in Gaysville, Vermont"},
+    {"year": 1880, "age": 7, "event": "Living with her parents in Des Moines"},
+    {"year": 1900, "age": 27, "event": "Living with her parents in Orcas"},
+    {"year": 1902, "age": 29, "event": "June: Married Cecil Willis at Alderbrook (parents' home)"},
+    {"year": 1910, "age": 37, "event": "Louise and Cecil were living in Orcas; Cecil was a fruit farmer"},
+    {"year": 1920, "age": 47, "event": "Louise and Cecil were living in Olga, San Juan, Washington; Cecil was a farmer"},
+    {"year": 1930, "age": 57, "event": "Louise was a widow living in Olga"}
+  ],
+
+  "biography": null,
+
+  "miscellaneous": "Also known as 'Lou'. Wedding at Alderbrook in 1902 had granddaughters Evelyn (6) and Leda (4) as flower girls.",
+
+  "researchQuestions": [
+    "When did Emma Louise die?",
+    "When exactly did Cecil Willis die (between 1920-1930)?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Relatively sparse page with TBD content"
+}

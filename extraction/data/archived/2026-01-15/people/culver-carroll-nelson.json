@@ -1,0 +1,37 @@
+{
+  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-carroll-nelson",
+  "extractedAt": "2026-01-13T12:00:00Z",
+  "person": {
+    "slug": "culver-carroll-nelson",
+    "displayName": "Carroll Nelson Culver",
+    "connectionToPtLawrence": "Carroll Culver built and ran a fishing resort (Pt. Lawrence Lodge) at Pt. Lawrence during the 1930s, 40s, and 50s.",
+    "family": {
+      "parents": ["Otis Henry Culver", "Mabel Gertrude Smith"],
+      "spouses": ["Jean (Rothenhoefer) Culver", "Judy Culver"],
+      "children": ["Ken Culver", "Bruce Culver", "Carolyn (Culver) Leonhardt"],
+      "siblings": ["Evelyn Louise Culver", "Leda Gertrude Culver", "Mabel Florian Culver", "Mary Luella Culver"]
+    },
+    "keyDates": "1904-1995 (d. Age 91)",
+    "birthDate": {
+      "original": "April 07, 1904",
+      "year": 1904,
+      "month": 4,
+      "day": 7,
+      "location": "New Whatcom, WA (Now Bellingham, WA)",
+      "precision": "exact"
+    },
+    "deathDate": {
+      "original": "1995",
+      "year": 1995,
+      "precision": "year_only"
+    },
+    "timeline": [
+      {"year": 1904, "age": 0, "event": "Born April 07, 1904 (New Whatcom, WA—Now Bellingham, WA)"},
+      {"year": 1910, "age": 6, "event": "Living with his parents in Friday Harbor."},
+      {"year": 1920, "age": 15, "event": "Living with his parents in Friday Harbor."},
+      {"year": 1930, "age": 25, "event": "Living with his parents in Bellingham."},
+      {"year": 1931, "age": 26, "event": "Was a crew member of the Pacific American Fisheries' steamship Mary D."}
+    ],
+    "biography": "Carroll Culver built and ran a fishing resort (Pt. Lawrence Lodge) at Pt. Lawrence during the 1930s, 40s, and 50s. Born in New Whatcom (now Bellingham), WA in 1904, he lived with his parents in Friday Harbor as a child. Timeline continues with fishing industry work and establishment of Pt. Lawrence Lodge."
+  }
+}

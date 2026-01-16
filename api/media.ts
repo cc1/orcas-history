@@ -3,8 +3,8 @@
  * Returns all media (photos and documents) with optional filtering
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db, media, dateValue } from './lib/db.js'
-import { eq, and, or, desc, asc, sql } from 'drizzle-orm'
+import { db, media, dateValue, mediaPerson } from './lib/db.js'
+import { eq, and, or, desc, asc, sql, isNull, notExists } from 'drizzle-orm'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'GET') {
@@ -16,6 +16,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       category,
       sort = 'number',
       needsDate,
+      missingInfo,
       limit = '100',
       offset = '0'
     } = req.query
@@ -34,6 +35,24 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (needsDate === 'true') {
       conditions.push(eq(media.needsDate, true))
+    }
+
+    // Missing Information: photos with blank date OR no linked people
+    if (missingInfo === 'true') {
+      // Subquery to check if media has any linked people
+      const hasNoPeople = notExists(
+        db.select({ one: sql`1` })
+          .from(mediaPerson)
+          .where(eq(mediaPerson.mediaId, media.id))
+      )
+
+      // Missing date: needsDate flag is true OR dateId is null
+      const missingDate = or(
+        eq(media.needsDate, true),
+        isNull(media.dateId)
+      )
+
+      conditions.push(or(missingDate, hasNoPeople)!)
     }
 
     // Query with sorting

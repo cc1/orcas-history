@@ -22,7 +22,7 @@ This project recreates and enhances a Google Sites family history website as a m
 
 ## CURRENT STATUS & REMAINING WORK
 
-**Last Updated**: 2026-01-14
+**Last Updated**: 2026-01-15
 
 ### Progress Summary
 
@@ -35,6 +35,7 @@ This project recreates and enhances a Google Sites family history website as a m
 | 1 | News pages extraction | Not Started | 0/5 pages |
 | 1 | Documents page extraction | Not Started | 0/1 page |
 | 2 | Download web-resolution images | ✅ **COMPLETE** | 650/650 images |
+| 2 | Upload images to Vercel Blob | Not Started | 0/650 images |
 | 2 | Build high-res import tool | Pending | - |
 | 3 | Build React + Vite frontend | Pending | - |
 | 3 | Database seeding | Pending | - |
@@ -210,7 +211,29 @@ After all JSON extraction complete:
 // Track failures for retry
 ```
 
-### 2B. High-Res Import Tool
+### 2B. Upload Images to Vercel Blob
+
+Images are currently stored locally in `extraction/data/images/`. For production, they need to be uploaded to Vercel Blob storage.
+
+**Current state**:
+- 650 images downloaded locally at 1280px resolution
+- Database `webImagePath` contains local paths (e.g., `/extraction/data/images/0001.jpg`)
+- Development uses `/api/images/[number]` route to serve from filesystem
+- `@vercel/blob` package NOT yet installed
+
+**Steps to implement**:
+1. Install `@vercel/blob` package
+2. Create Vercel Blob store in dashboard and get `BLOB_READ_WRITE_TOKEN`
+3. Create upload script to:
+   - Read all images from `extraction/data/images/`
+   - Upload each to Vercel Blob
+   - Update `webImagePath` in database with Blob URLs
+4. Update `.env` with `BLOB_READ_WRITE_TOKEN`
+5. Verify all images accessible via Blob URLs
+
+**Script location**: `scripts/upload-to-blob.ts` (to be created)
+
+### 2C. High-Res Import Tool
 
 Cousin will provide folder of original high-res scans.
 

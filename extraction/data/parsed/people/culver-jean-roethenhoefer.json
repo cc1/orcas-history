@@ -1,35 +1,8 @@
 {
   "slug": "culver-jean-roethenhoefer",
-  "displayName": "Jean (Rothenhoefer) Culver",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-jean-roethenhoefer",
-
-  "connectionToPtLawrence": "Wife of Carroll Culver, who operated Pt. Lawrence Lodge. Mother of Ken Culver, Bruce Culver, and Carolyn (Culver) Leonhardt.",
-
-  "family": {
-    "parents": "TBD",
-    "spouses": "Carroll Nelson Culver (married March 19, 1938)",
-    "children": "Ken Culver, Bruce Culver, Carolyn (Culver) Leonhardt",
-    "siblings": "TBD"
-  },
-
-  "keyDates": "1916-TBD",
-
-  "timeline": [
-    {"year": 1916, "age": 0, "event": "Born December ??? (need to confirm)"},
-    {"year": 1938, "age": 21, "event": "March 19: Married Carroll Culver"}
-  ],
-
-  "biography": null,
-
-  "miscellaneous": "Note: Surname spelled 'Rothenhoefer' on page, but 'Rothenhafer' on Ken Culver's page.",
-
-  "researchQuestions": [
-    "What is Jean's exact birth date?",
-    "What is the correct spelling of her maiden name?",
-    "When did Jean die?",
-    "Who were Jean's parents?"
-  ],
-
-  "extractedAt": "2026-01-14",
-  "notes": "Stub page - mostly TBD content"
+  "name": "Jean (Rothenhoefer) Culver",
+  "extractedAt": "2026-01-16T03:20:00.000Z",
+  "images": [],
+  "immediateFamily": "TBD",
+  "keyDates": "Born: December ???, 1916 (need to confirm)\n\nMarried: Carroll Culver on March 19, 1938"
 }

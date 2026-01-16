@@ -2,9 +2,11 @@
  * AutocompleteField - Entity link autocomplete (people or places)
  *
  * Thin wrapper around UnifiedAutocomplete for backward compatibility.
+ * Defers data fetching until user enters edit mode to improve page load performance.
  */
 import { useCallback, useMemo, useState } from 'react'
 import { UnifiedAutocomplete, type AutocompleteOption } from './UnifiedAutocomplete'
+import { useEditableSection } from './EditableSection'
 import { usePeople, usePlaces } from '@/hooks/useData'
 
 interface EntityLink {
@@ -30,10 +32,13 @@ export function AutocompleteField({
   alwaysEditable
 }: AutocompleteFieldProps): React.ReactElement {
   const [isSaving, setIsSaving] = useState(false)
+  const { isEditing } = useEditableSection()
 
-  // Fetch data based on type
-  const { data: people } = usePeople()
-  const { data: places } = usePlaces()
+  // Only fetch data when user is actually editing (or field is always editable)
+  // This defers the API call until needed, improving initial page load
+  const shouldFetch = alwaysEditable || isEditing
+  const { data: people } = usePeople({ enabled: shouldFetch && type === 'people' })
+  const { data: places } = usePlaces({ enabled: shouldFetch && type === 'place' })
 
   const isMultiple = type === 'people'
   const pathPrefix = type === 'people' ? '/people' : '/places'

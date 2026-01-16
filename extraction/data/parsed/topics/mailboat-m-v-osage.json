@@ -1,33 +1,28 @@
 {
   "slug": "mailboat-m-v-osage",
-  "name": "Mailboat M.V. Osage",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/mailboat-m-v-osage",
-
-  "sections": [
+  "name": "Mailboat \"M.V. Osage\"",
+  "extractedAt": "2026-01-15T21:16:00.000Z",
+  "images": [
     {
-      "heading": "About",
-      "content": "MV OSAGE - the mailboat that also carried freight and passengers and anything else from Bellingham to numerous points within the San Juans on a daily basis. This photo appears to be docked in Friday Harbor where it turned around before heading back to Bellingham. (Ken)\n\nThe last and most memorable of the \"Mosquito Fleet\" was the M.V. \"Osage\". The 59 foot vessel was built in 1930 at the shipyard on Decatur Island. It served the passenger, mail and cargo route from Bellingham to Sinclair Island, Doe Bay, Olga, Eastsound, Deer Harbor, and Friday Harbor. It returned to Bellingham via the same route in the evening. East-enders could hear the \"Osage\" whistle at Urban on Sinclair Island and head to Doe Bay, knowing it would arrive in 30 minutes. If someone missed the sound of the whistle, he or she would surely be alerted by the distinctive chug-a-lug of the engine as the boat got close to shore. In June 1950 the mail contract ended and the Doe Bay community lost the daily ritual of meeting the \"Osage.\"",
-      "source": "Doe Bay Historical Images and Favorite Recipes"
-    },
-    {
-      "heading": "Memories by Jane Barfoot Hodde",
-      "content": "The mail boat left Bellingham every weekday at 7:00 a.m., bringing the mail and freight. It stopped at Urban, Post Office on Cotton Wood Island, Doe Bay, Olga, Rosario, Eastsound, Dolphin Bay, Shaw, Orcas, West Sound, Deer Harbor, on to Friday Harbor and returned on the same route in the afternoon, summer and winter. Two or three times a week it would also go to Waldron Island.",
-      "source": "125 Years: Olga: Memories and Potlucks (Compiled by Irene Barfoot O'Neill)"
-    },
-    {
-      "heading": "Memories by Ken Culver",
-      "content": "The mailboat \"OSAGE\" came daily from Bellingham, stopping at Urban on Sinclair, Doe Bay, Obstruction Pass, Orcas, Deer Harbor, and Friday Harbor. I do not know if it stopped at Lopez. I rode it many times - often shared with live animals, freight, ice, and people. It rolled terribly, resulting in a lot of sea sick passengers. The crew stood by with a bucket and mop. The boat landed at the old Quackenbush dock in the C-street waterway.\n\nIn the summer my Dad (Carroll Culver) would drive the '41 Ford pickup down to the Doe Bay Store to pick up block ice carried from Bellingham on the Osage. It came in huge 300 pound blocks wrapped in burlap and was divided up on the dock using an ice pick. Properly done, ice cracks into straight lines, and was usually broken up into 25 lb. blocks which fit the small ice boxes of the time. At Pt. Lawrence Lodge you ordered your ice the night before and it was called in to the Bellingham Ice Company who then delivered it to the Osage at Bellingham.\n\nThe same was true of many supplies. My dad had a Morse Hardware Catalog and called in to order often. Next day it was on the Osage."
-    },
-    {
-      "heading": "Memories by Carolyn (Culver) Leonhardt",
-      "content": "My mom (Jean Culver) took it by herself when it was time to deliver each of us. I think there must have been a friend or relative who would take care of Kenny and Brucie, as they were known then. My grandmother would meet her at St. Joseph's - how she got there from Seattle is a mystery - was there a train? Then Mom and new baby were back on the Osage to go back to the lodge. The wooden crib that Dad (Carroll Culver) built for us is in the barn."
+      "url": "https://lh3.googleusercontent.com/sitesv/AAzXCkcWQSzhTiW6LCZ86nggVbhts-_AGn-eIWALgnHZrlacJpjwEmd3MKo8iSb2eMszKEtRtRKCuSo2pvKoJ9r5HyH0rJv1aKc-36-l1am6bhXm75Z02jBmUqpsF7Rdj1QOSaSZUsedJug8uSvjr_iQTTUzyEO8Fjv9jPHAKE6EtMJl72alHx_jl6YwFaZ5_sbR7Cy1dIf2GsLnGuUc8Rl65ld5JCqh6RQPP4oDmmE=w1280",
+      "caption": "Image 0121"
     }
   ],
-
-  "relatedPhotos": ["0121"],
-
-  "researchQuestions": [],
-
-  "extractedAt": "2026-01-14",
-  "notes": "History of the mailboat with memories from multiple family members"
+  "about": "MV OSAGE - the mailboat that also carried freight and passengers and anything else from Bellingham to numerous points within the San Juans on a daily basis. This photo appears to be docked in Friday Harbor where it turned around before heading back to Bellingham. (Ken)\n\nThe last and most memorable of the \"Mosquito Fleet\" was the M.V. \"Osage\". The 59 foot vessel was built in 1930 at the shipyard on Decatur Island. it served the passenger, mail and cargo route from Bellingham to Sinclair island, Doe Bay, Olga, Eastround, Deer Harbor, and Friday Harbor. It returned to Bellingham via the same route in the evening. East-enders could hear the \"Osage' whistle at Urban on Sinclair Island and head to Doe Bay, knowing it would arrive in 30 minutes. If someone missed the sound of the whistle, he or she would surely be alerted by the distinctive chug-a-lug of the engine as the boat got close to shore. In June 1950 the mail contract ended and the Doe Bay community lost the daily ritual of meeting the \"Osage.\"",
+  "source": "Doe Bay Historical Images and Favorite Recipes",
+  "memories": [
+    {
+      "author": "Jane Barfoot Hodde",
+      "source": "\"125 Years: Olga: Memories and Potlucks\" (Compiled by Irene Barfoot O'Neill)",
+      "content": "\"The mail boat left Bellingham every weekday at 7:00 a.m., bringing the mail and freight. It stopped at Urban, Post Office on Cotton Wood Island, Doe Bay, Olga, Rosario, Eastsound, Dolphin Bay, Shaw, Orcas, West Sound, Deer Harbor, on to Friday Harbor and returned on the same route in the afternoon, summer and winter. Two or three times a week it would also to Waldron Island.\""
+    },
+    {
+      "author": "Ken Culver",
+      "content": "\"The mailboat \"OSAGE\" came daily from Bellingham, stopping at Urban on Sinclair, Doe Bay, Obstruction Pass, Orcas, Deer Harbor, and Friday Harbor. I do not know if it stopped at Lopez. I rode it many times - often shared with live animals, freight, ice, and people. It rolled terribly, resulting in a lot of sea sick passengers. The crew stood by with a bucket and mop. The boat landed at the old Quackenbush dock in the C-street waterway.\"\n\n\"In the summer my Dad (Caroll Culver) would drive the '41 Ford pickup down to to the Doe Bay Store to pick up block ice carried from Bellingham on the Osage. It came in huge 300 pound blocks wrapped in burlap and was divided up on the dock using an ice pick. Properly done, ice cracks into straight lines, and was usually broken up into 25 lb. blocks which fit the small ice boxes of the time. At Pt. Lawrence Lodge you ordered your ice the night before and it was called in to the Bellingham Ice Company who then delivered it to the Osage at Bellingham.\n\nThe same was true of many supplies. My dad had a Morse Hardware Catalog and called in to order often. Next day it was on the Osage.\""
+    },
+    {
+      "author": "Carolyn (Culver) Leonhardt",
+      "content": "My mom (Jean Culver) took it by herself when it was time to deliver each of us. I think there must have been a friend or relative who would take care of Kenny and Brucie, as they were known then. My grandmother would meet her at St. Joseph's - how she got there from Seattle is a mystery - was there a train? Then Mom and new baby were back on the Osage to go back to the lodge. The wooden crib that Dad (Carroll Culver) built for us is in the barn."
+    }
+  ]
 }

@@ -1,27 +1,18 @@
 {
   "slug": "aiken-agnes",
-  "displayName": "Aiken, Agnes",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/aiken-agnes",
-
-  "connectionToPtLawrence": null,
-
-  "family": {
-    "parents": "TBD",
-    "spouses": "TBD",
-    "children": "TBD",
-    "siblings": null
-  },
-
+  "name": "Aiken, Agnes",
+  "extractedAt": "2026-01-16T03:00:00.000Z",
+  "images": [],
+  "birthdate": "TBD",
+  "birthplace": "TBD",
+  "died": "TBD",
+  "sonOf": "TBD",
+  "spouseOf": "TBD",
+  "fatherOf": "TBD",
+  "occupation": "TBD",
   "keyDates": "TBD",
-
-  "timeline": [],
-
-  "biography": null,
-
-  "miscellaneous": "Occupation: TBD",
-
-  "researchQuestions": [],
-
-  "extractedAt": "2026-01-14",
-  "notes": "Stub page - mostly TBD content"
+  "about": null,
+  "connectionToPtLawrence": null,
+  "miscellaneous": null,
+  "questionsToAnswer": null
 }

@@ -1,190 +1,27 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0171-0190",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0171-0190",
+  "extractedAt": "2026-01-15T22:15:00.000Z",
+  "count": 20,
   "photos": [
-    {
-      "number": "0171",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeeFvjw5ZVFR0PifogQqeKAi_a7RGJWp0C3h4vvDiljrt_ajjeZRi9bvwQmgETSChRZNcyEh2vFInsC89XL0uInvqyufjd2Bauq6Dmn_5sWmTacPGZ6fEUAVzA1HBVJ79N2KOS421PJ86UmUWNSutQ9wjeC08RrT78BKVGatLQBFZ1XCdvQ-EKg4Y039bF2MIYJEqAn2oihJmc=w1280",
-      "date": "1940s",
-      "location": "Orcas Ferry Landing",
-      "people": "TBD",
-      "description": "Ferry Chippewa - part of the Black Ball Line before Washington State took over the ferry system.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Jacobsen 701 or 201"
-    },
-    {
-      "number": "0172",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfJYiJ9hkzZpRXgyIDZiAfpX_Tl7IoMUZaNwalq_4lnKPxq7OEje8FrgBMLmGeT9OW3jN7K25ZyWC6UwV9zZfi-FcgU5lUJ0_0uYmIq72h3fbDLPqiKBXxKvweCWymkD7TJ_GV5kFJq-p9SQqDTBui2Xy3K7Y6hcKrk2amC5hr7-2AefZ7rQKUCze6ySOcRw0AMPL2WWUhV=w1280",
-      "date": "Early 1950s",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "A couple of 'locals' that came in with this large King - that metal box with wood trim is a fish box.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0173",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeAKnAA3k-bh8DOjDp9LXkYyW7yOWc85Wj7IwHSvCTadQAlvqxL5FcsBgpqHatvtiCF5SzkbD1bDzej8jv6mumywNAsYFzn8-1A6MXbsOFpysrEEr56j2R8dOsD6ba4oUauKjOAfEP17_4DwQXJOC31nXj9SuCQGZ0q3_UJ_Thjpsnyvxtin1cPnfb9xsQROfjjanoX4tY40O4=w1280",
-      "date": "Early 1950s",
-      "location": "TBD",
-      "people": "TBD",
-      "description": "Same fish - with different fisherman.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0174",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfiNdrYfooi8QLeDm5iw_8yojkL4KGCvupO-rMpFIKpEx5ouHcwQmiwv6AWVW_K59dFo3R1iSRcdP6g6GvnYDAAop1sDKYWFCX1ijQLPIDfjZCFCPd4lNDVu3oeEIvbES6o-lsRMiSjLbFm2Usk3shrgMg-weWjpx0_0ByQjEjPR14PwaZZCJCsjNZYMdZ9pPx15qbDL8WRAtk=w1280",
-      "date": "1949-50",
-      "location": "TBD",
-      "people": "TBD",
-      "description": "Undoubtedly two of my many summer 'girlfriends' taken in front of Cabin #1 - the site of the current...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0175",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf0Ggsm80YMoi7UubnURmMvSGjPaivgzDR_zvBMHXgjRSPnILmOcRg84iDDQlV6-MpmpkXUNrwwY985KKU2Q9KaFE3ZpCADC6iAL9KbmGI0vpwq8CP9TZuNQXbXmypkzb5iRdXIkwkwxjLYCNyyeEsF27yBZtHOY9EPS2UGfVHQmpD8WQ9wV-9E_ss5tPsjxKGSxu7VBJ0U=w1280",
-      "date": "Circa 1950",
-      "location": "TBD",
-      "people": "Nell Rothenhoefer",
-      "description": "Grandma Nell Rothenhoefer at Orcas. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0176",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdArRhryCl6-VrKMADp1DIrvPxXgBaMmQ4RKeUKiMgM85VpkVaHNlKIm9F_5MattBSI4lONfXSJA5JHo8P_-ZXGzf-97u3ZfxVVx2lUQuctREgFdo73dDH3CgfzrZ4n-ld-Jq5vGs2NsCJfnkMT5SrSoUnihhlZDCxz8GX55g4jmAYpsRK6FS3VFe9_lmm_T7zGkro9stSo=w1280",
-      "date": "1950-51",
-      "location": "Parking lot - Pt. Lawrence Lodge",
-      "people": "Carolyn in the trailer, Bruce on tractor, Ken standing on left",
-      "description": "Bruce on the Ford Tractor in the parking area above the Lodge. Despite poor maintenance by Carroll...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0177",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdl0sHD7KbcixnjERGIoYJS9KBq3UGBCXcuFwvU688Vgy1StWi3C7aOHG59Ql0BkvMSd2xckNUjSAiRB6o1k3Dn_YG1BYUeBDiDn4By54UtDJPyEHlgYoZLL0sH8mJ8OVzPM9gbcX9v13asxESOlcywce6YNXjjWsX3sYYXprK_TzwbpyTXw0kJVotqPQq6UpDVWgphrFz9cr8=w1280",
-      "date": "1950",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Double-exposure. Either that, or an invasion of giant seagulls suddenly appeared. Frightening photo.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0178",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcvE0npKHgQMusjiR58QS1gGL9ACzhYxLChdOZlEGhgo2gAtK2zcSMiRXZFowNXILA1u9FtjfYOOSr92QbneFIu7QIshHaUUT1S6irdURpqZ__jbJxvbQBTnkwKnqH2fN25unyGy8NlwGIZFVUIm_zbCOgavMLUnxWIUDO3whsCIJYMEvbeB0uYkoA3bq3nNOV-sTK1wXfH-eI=w1280",
-      "date": "1950",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Taken with my first camera - a Baby Brownie by Kodak. The ubiquitous seagulls always hanging around...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Part of a 'Flip-Pak' booklet that includes images 0172-0178"
-    },
-    {
-      "number": "0179",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd3YY_8fJ3zqsrqKrvCiGx7j3LoKH24Oa-cCf06N5A3y8jp_S8vy4ac-vV8e8D87OPLyA70Xhaxb_pCLrt0aCbisad7dWrVINRQjzErjQ9aPAEXXGO6T17Sq2dCoqPusHQA9xCkb4AE2fKw5vsYyuvS06SiakzK4R2ZA4Db_8KliW3QqPgkGXPauqdrrKLIq6b6GjNvckzZT4M=w1280",
-      "date": "TBD",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Carroll Culver",
-      "description": "A duplicate photo I believe. Carroll using the ingenious salmon photo device consisting of a wooden...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "A silly side story about fishing trip with Kathleen..."
-    },
-    {
-      "number": "0180",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdnmfhf6qE78uKXpDsrqiQ7QpFaqvxD438OvP62n5zFjjlP7vORIeYuVorTbN28A4q8xSD7QSAN0u0gfhcWACM5TmwaYNtGOigJSP2r8fL0VXWy2Ns9a551ogXHA7gWpG1ra0O_e5FiUIjd4UoX_YPTvm2ibkBQJM3Jlfa6GFagFhKU4hAM5_p83jk5AfEGJ6LWhAnfzLD0ZJk=w1280",
-      "date": "1980",
-      "location": "Community Beach - Shorewood",
-      "people": "Carroll Culver",
-      "description": "Carroll Culver in his 'dress' dungarees and chambray shirt. Greek fisherman's hat only for special occasions.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0181",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeTeJYIIm1UQDlUKAXKe0-5hfDF7pZ37PhGrqz2zzpmQ5OgNjhdpmIVoP3LBCXcjNlrCdL-mve-2JOnrSivQKGJptIfz8DkiUFEiEU_nnCAVa3Tgh2SZ9aYwGLDIPZD37yKhX1v19lOtjiJSCYaOS1_mA6mrCdRVkk3UiP6p9zG8ixNWFXiP75F6nTc3tbv7oHCpZbZkf063yg=w1280",
-      "date": "1990s",
-      "location": "TBD",
-      "people": "Carroll Culver",
-      "description": "Carroll Culver on his 1949-50 Ford Tractor. One of the few photos of him with a baseball style hat.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0182",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeoQAb16PuaxYtr1c-kPvLEEK0rDCMsbNsCf03XASFw9SbI8DA3eBEiyQVkv6aVY08-RsjLUNudHQN0Dqx-Gld2o7cgbtRfdgSw47lxMOlwXOr6zpBn0FX76nn8xAWVRG00YNPnk2NQ_Diu55JT0ZqkgPUJ9maR4laE1I178ahpygt207h6qaBHkqDvno0vvYxe20eaPzooLPs=w1280",
-      "date": "1904",
-      "location": "TBD",
-      "people": "Carroll Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0183",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdr2oPE8xKpY0qGqpDu7rmBqeE8Dx7R5lVTLh3ppNlXHk9epFm1egqTLwwL252CEjN5ahBs0pXRaUqeg7nq9cz0XXpV1aFocvYGAObMnySm1yaT-l4OVcR-OfoTlkqxrByIBF1EkPTrlKlGNNcqdOqXytU5ApoVts5Ps6aarZKC6u_XaUJS_vXFyvN6SFjDfMdlst1B6qvPDOA=w1280",
-      "date": "1949 Christmas Eve",
-      "location": "Eastsound Episcopal Church",
-      "people": "Ken Culver, Bruce Culver, and Carolyn",
-      "description": "Ken - 2nd from left back row. Bruce far right 2nd row, Carolyn far right 1st row. Emanuel Episcopal Church...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0184",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdKQIc3-pXAWIYzosaDPx3sGPOdcXIlk3F5NNHQDW105pWxBzzxIIx1E4w8c-lVnG3YfltI3_pmqOPRAsFE0EpGEBJGpzXd3_i0EvNslVwFWqJuYTwptBLmMiodq-UWrOGELOsCm4kPWAnyiTjl1sUm-FdSu07fLltQ2KT6NM0gJcIJULDsF6iirYv_cE1_6alXSAXeA1vFhWk=w1280",
-      "date": "Jan 1944",
-      "location": "Bellingham",
-      "people": "Ken Culver (2 years, 4 months)",
-      "description": "On the lawn between Johansons and Hipkoes homes on Ellis St. Bellingham. Just before Bruce was born.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Source: Jean Culver Autobiography"
-    },
-    {
-      "number": "0185",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd7AZx0YbMVEP5P5aZZPYORAVwXLwgdqvYlNY7J_0QJNEWt1KWtDh38tnuyUGW0NnJUxusV5pmVq8AJQ67Qr4fQ_kKVtXdnaq5upMr3_3MoqvfeiprIRkLKNyBk6_LDhFoZT2JvL3TBrN5K8pey7ARVSw-ZonilzKrRvGTSaabfnPL73UP6OksE6M-aF5vjrhRkvdHHpcgtwEM=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0186",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcp6KXfF46J3KcKCXJQ0XpM5hQLPR6xRDZ7E1HcHzXWr35jG3pMkgaeaZ5gM6zy5WeuvkiHhwLTgC0r64ni6DBTqfCVGC7JR0lQRADSVuN4RoMz4U9r8dLgx7EFlCZuaGMMEOwk15awxULJng-wFdsB7HafdAFYepbHnfG93zSz1YDQCOkXUsmHJTjWb_zWIIBTWQZ3tHdqDc4=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0187",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdblcwG2_hZTGIMSaC6K0HT9k6uIcouvhIV4uNLybacIBmChL8iZYtbhtKAt9bQ_Pzn8Nn5-biFoo0D0X1k4kvlwuCGIZLI6cQ5xCQEXFCCgTpk1z32NXklEU2kGR8O6wqkjxQFbUosHfOwzx5kI_9XJDNMrSBe9O9V5MDP6SOSlQ16WqJwqn9Aq52OIYtQqcO1cY9K2kcgjuE=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0188",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdCUpqXKc3k7kir0j-Xu-AXy1SVvwr7PhNEpxmOFu_-lONSAVeVQ1-ifLH08NDf9F2ciUh4h3cIIxfEe1M55y4C2xxlhXV-udipyI8bZhLBIMNHd-u9u0zqK6u4Fh8zqGpXyXVMw1F7_9SexnMPNlkwRe2NnX8cnwN8IolUGapx7-JHlVEao46wkM7iE6Yk7eKippmp4dh-9Hk=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0189",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdd7dkHS1_jamUv8ICO83KtN7TZXRSLPOSK-L96XsLbebajdWVe_4SFECtPASNXSbWsu1TyDqxM2lAPRgvnWMhOSh--rZN6cv2Gzv_qHsMFzuLi-M4xdo10B5Jx-vpTva_hY5wMayL3FvQz2wswx8nkSJZQm46l-kQ_oHJwGX7JQD1zg5yxc5sfIlIJoLTunvpvDShcnDGCUto=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0190",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfIdCmEYjgqkkWNU2MdfQHfhJtS4juIYcruH7JBCbGgm23slYefUSxaW4owkZIJ-ySb2kDZfaWltEG3PNMKVokZYoXZXMqmWBnVDxlUIcwBr7fL2OR2knqo4fs6LbLlTpjpAn7Dzb6LZWqOjAsbqNwQgD79zXH7cxOOmsHLoTiWDXpD7dzYXIwNtmLcwbpJUTo2ytDq227c=w1280",
-      "movedTo": "Documents & Objects"
-    }
+    {"id":"0171","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcwqoFSNBI3dnPqsWh85SIAzJQq-p-xgWTLHGo349AYYPLmB9D7fKWEaB-yhzzD4J0tzzc5h6YN8ypZrxo02sGRP_Mr0OZSj71Zn_Knv4E3oSxMXlv1q-N0X8qc0IalfUjdHBDLYP4345X_L-u_-iDUG4QjMnhesYH48ckKvNv1VzYEQFavRyyEIY4UpmHWcW4Nl9FBN0zd1Pw=w1280","date":"1940's","location":"Orcas Ferry Landing","people":"TBD","description":"Ferry Chippewa - part of the Black Ball Line before Washington State took over the ferry system.  It was one of the original San Francisco Bay ferries that ran to San Mateo back before the Oakland Bay Bridge was constructed.  Seen here docked at the Orcas Landing.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Jacobsen 701 or 201"},
+    {"id":"0172","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcrbA0UqHs5l5mgIVxFZpouQ9hGZi6BOgNjypf4Vx_Cbyv4Bq2nj0W9oSLuvyL1qIuqmyKmcA8W8UCTAolJLJiwUzuLN3DTovIpJJ3UKE-Dl1fvJgq7oIdbd920ucT3_u7D8g7gcs1_YyrFCUUZQQr8ml1R1RYFUg1yDV2nkYi7qVY-vvFLiSmArGhyxTUi-jES2gB-kzbJ=w1280","date":"Early 1950's","location":"Pt. Lawrence Lodge","people":"TBD","description":"A couple of \"locals\" that came in with this large King - that metal box with wood trim is a fish box made to fit under the center thwart (seat) of each rental boat. The pickup in the back is our 50 Chev pickup that replaced the old 41 Ford pickup.  Photo taken in parking lot above the Lodge - now grown up with trees.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0173","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdlM88KpQm21uBjx16KUCmZMa5vdbbHBCFSU44Yh_0NoSMFCCcCkf7SEXSs6t--cFKFExur4AzRGBn1PGZeKLO_vEOCuhGRrpClujH-fAcjvtTTo3qLUPv7KL3XefZfms7AJG5lRc1otYjqlgSyxF8C036UaYXNdWBrx3lPVqCOxT8EfQzIMSzQxyZc55fJ11SvBec9tZa2FQI=w1280","date":"Early 1950's","location":"TBD","people":"TBD","description":"Same fish - with different fisherman.","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0174","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeFR7RjOjhLV_12HJ3DqPWMnpdiqkBYVPQP4kAYV0mLBkTdFQRbQXRncrlxduehBPsGbFECIRio1STXYRudpE6pgJ3wHjpVOtDspxeVtsv0G53t_5uXzlDJoAhQxHhjf9whSoaGMh3YXxNxQ8h4UQ8XIeb2_PjFJ2g7YmITWzjtoG5NeRMdEEO5ImPUg6kLpvXiPk8HSMXStMY=w1280","date":"1949-50","location":"TBD","people":"TBD","description":"Undoubtedly two of my many summer \"girlfriends\" taken in front of Cabin #1 - the site of the current Culver Family home at Pt. Lawrence.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0175","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkccu5PSxofroVDjpIZN4evwU4hbf7PHZXrR6Oz3NmX-YHU8WQiCtN1n_oC7u3jEkNCgL7Rv5J6jsF5qGnE_-H_FzsuvpCiMGkWrj8esqVlIh6-z3n09wiqYuf7B9lmhD4pbBqJe5AjQHksnCAKkMrb-85IBEuFrVlv3hAa3LXEtoXD-1vZdkcjurjguhUSiAwZInhIi9LzP=w1280","date":"Circa 1950","location":"TBD","people":"TBD","description":"Grandma Nell Rothenhoefer at Orcas.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0176","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfFLKzlYdakuDHUppvmrYM9-avwCJZ5YeQlK1g5pn10xVCg4N6sOjoejTbFRhWwCOPjH9m6mI6xw6IlAx_IUzHRw1G9gmXrua-fVKiOTubloD0scYyRb1wL5wToGZSK66XBWCUyfzUQtC7m2uosxjzMWV0zAA4Qu_HqxD-F8pXTdbja24GQNI_RZVksqLWbuo15U5OJLB2A=w1280","date":"1950-51","location":"Parking lot - Pt. Lawrence Lodge","people":"Carolyn in the trailer, Bruce on tractor, Ken standing on left","description":"Bruce on the Ford Tractor in the parking area above the Lodge.  Despite poor maintenance by Carroll this trusty tractor kept going for 60+ years until Bruce disposed (sold) it.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0177","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfEPxvYLpW6h3dhcPzDGPcG1e_UZ6Aho6kKHlMxSnWwGqh57bRz1sAZStDyLifjyccMGfsl5ethgXV2txPLgNEfmxJdvR2YSCfHF7qHuIsQNo2B3eYziAj8XmsOn84A1eoQJh3wuP5qfcebKaENi7_lWRKLvrXGVHhgQScIGQZfcFCbDJ-Sl1ZEws4skABkNW9MHjxZ7AspBrw=w1280","date":"1950","location":"Pt. Lawrence Lodge","people":"TBD","description":"Double-exposure. Either that, or an invasion of giant seagulls suddenly appeared.  Frightening photo.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0178","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdi3HAONZBEhfDc8OloN9A0i8S6rWjWA_64MOdoj_M2YHRmaFASn-EoaoHrGMzKGht6JfxGY9uQebEORCJtjWpAIUzYRBeYGgGvBqe8R5d0NazBgU7r3jiz_p0ik6mMAB_uJbHClesx9eDp21BoCWuRVnVWfgUSJHCWXzLY4A89Ih3UMsDRoNt7AnaNEo3nvYZwnJyIoligzfU=w1280","date":"1950","location":"Pt. Lawrence Lodge","people":"TBD","description":"Taken with my first camera—a Baby Brownie by Kodak.  The ubiquitous seagulls always hanging around the floats and beach hoping for a handout.(Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Part of a \"Flip-Pak\" booklet that includes images 0172-0178"},
+    {"id":"0179","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkf_Zrmw9xU5xcS8fq7hKz121CkOiXs4a6htbYZZqzj2CSghpVkrnQZN9OUaLUaQfokEoMJ4MhUlnXjrSUpbm8Pf5jtebu2V9W3036BaPcHSTMjlSfS0EIIq_VP1P4sRk81qEw8CfoadYNQzuWwA-_xYDZbGnTrGZt_QF-azxyZR4lLW_02pxUHzsYCabzYfJ8zjLHI6f28FyMw=w1280","date":"TBD","location":"Pt. Lawrence Lodge","people":"Carroll Culver","description":"A duplicate photo I believe.  Carroll using the ingenious salmon photo device consisting of a wooden pole with a lanyard that fastened the tail and mouth in place on the pole.  This took all the load off of trying to hold a large fish still for repeated photos.","source":"Ken Culver","hasHighRes":true,"notes":"A silly side story.  Seeing that large fish tail tied reminds me of a fishing trip that Kathleen and I took along with a number of my male friends from Bellingham to the Broughton Islands (she was the only female).  Fishing was lousy, even worse than lousy.  On our last day the VHF radio crackled  to life to say that Larry Johanson had hooked a big one in his boat, and was just getting ready to land it.  We pulled up close in our boat and Dave Blair asked Larry to hold the fish up by the tail.  Larry tried, but the fish slipped right through his hands.  He tried and tried, to the uproarious laughter from our boat.  Dave said \" Larry - that is not a King Salmon - that is a very nice (but illegal) silver salmon.!\"  Larry turned beet red, then made a nice recovery and hastily said \"We are heading back to the dock - and by the way we are having fresh caught King Salmon for lunch\".  Destroying the evidence - also illegal.  Having grown up at a fishing resort I had heard that you could never hold a Silver by the tail - that it would simply fold up in your hands and slip through. Try it some time.   (Ken)"},
+    {"id":"0180","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkc2h_Xiv31uJ2vUwBCQ6peUQkTCJ6GWSCwNltIt55qjP7Vn4f44Trwu7MAcj5nf6W29hDt6JrtvbtBoN2X7z7re_HzhYoSCl1sdwvwlODMjoy5m7UOCsvEoW4AkUu-144Sdku9cbYCzAypo9mZPhFVkClrtsoKaa2aru690E6ZVZapespiMJZC96CdJw1g9REnfoM8ReDcyCdI=w1280","date":"1980","location":"Community Beach - Shorewood","people":"Carroll Culver","description":"Carroll Culver in his \"dress\" dungarees and chambray shirt.  Greek fishermans hat only for special occasions - this being one of the \"closing day\" parade celebrations held at the Community Beach at Doe Bay.   (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0181","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcWj26USZuYvvkSjMzYtwW_WuVtaBFr1Cf8SSJTzI7jd6_6YIJNgIyDNZqQ1uz2zqYv55RaKQwcdFvGd2s0TrMowfu-i4gw5JcYLssJoNEkW1He9EX2b8ovNe8bU2PM1EpoC_lf7vm-yrg_2e6OmFqpTZqLJl3m_zcw8saCB89bIal7hx9e7vKCjRsF0Qxa8eJXHApFgcz1iro=w1280","date":"1990s","location":"TBD","people":"Carroll Culver","description":"Carroll Culver on his 1949-50 Ford Tractor.  One of the few photos of him with a baseball style hat on and his custom made work shoes.  They were custom in that when the soles wore out he replaced them with the tread from a heavy duty truck tire - never to wear out again.    In his last years he drove the tractor up to the mailbox at the County Road.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0182","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkd7VhzNl0sVaftf10tLY3qdOQwh6xUdS0CQKBfARNxYQ42ET9buxxv2af7KD_hkAAEG_27rc3ZbrlwWCr-_hIhCJW0Xs8uSPvFmDpyKyJI42LlT36o3T0IlI-3LsVGSKWC35IJ0_ozTVVv4OVHL7PFObYwDKzFKu7_NIGEBaLz-u516IkQMwWVWgQX_iIvWupowKb-krVK9KOA=w1280","date":"1904","location":"TBD","people":"Carroll Culver","description":"TBD","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0183","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCke6L6fUBn07nuwI_oZf6Vdrq_H-ga2s6cjnA8q5Bory4_ZCt0hD5VKEy8KI1zVhxtlCLZV7mqi1-5EejpEicvb1y_294aT6wObFDHoDWMferzhC-y6WQtsRLBEjTien43CRmAg5dMQBh2zfJLeeRqz4_lijWfQAzq3roUouUd_JeOOU543eZTSF0xg3A32uwlw7268LOo4kftg=w1280","date":"1949 Christmas Eve","location":"Eastsound Episcopal Church","people":"Ken Culver, Bruce Culver, and Carolyn.","description":"Ken - 2nd from left back row.  Bruce far right 2nd row, Carolyn far right 1st row.  Emanuel Episcopal Church - Eastsound.  A Christmas play of some sort I recall.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0184","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdyECP3uhti7ptzkpSd1sOSFyfAzZfwRe_5thIiOTCe7eJctqFxIcrsPxXBW9hmJ5lGUs7BjSfLYwAFXUbxfKDY6n7UwHXaE3xaWLfE4Wl6bjrruBLwei9mlCDs8nrJVHgU5Gy8s3vko0lpO-r14HfodjHrzUlVviLfKvAQ0-5628mP-HW4nUsmej-ORGY75XJvnykHCDxUc5k=w1280","date":"Jan 1944","location":"TBD","people":"Ken Culver (2 years, 4 months) just before Bruce was born (Source: Jean Culver Autobiography)","description":"On the lawn between Johansons and Hipkoes homes on Ellis St.  Bellingham  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0185","imageUrl":"","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD","movedTo":"Documents & Objects"},
+    {"id":"0186","imageUrl":"","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD","movedTo":"Documents & Objects"},
+    {"id":"0187","imageUrl":"","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD","movedTo":"Documents & Objects"},
+    {"id":"0188","imageUrl":"","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD","movedTo":"Documents & Objects"},
+    {"id":"0189","imageUrl":"","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD","movedTo":"Documents & Objects"},
+    {"id":"0190","imageUrl":"","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD","movedTo":"Documents & Objects"}
   ]
 }

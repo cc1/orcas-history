@@ -1,104 +1,17 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0001-0010",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0001-0010",
+  "extractedAt": "2026-01-15T21:10:52.331Z",
+  "count": 10,
   "photos": [
-    {
-      "number": "0001",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdYWF5oY4xUpAFBbbQsJ0_5giCO2ILfaE-acjGg7bY9iblf4Hj4HGnF08tA-oRpJIlceMxtNo-i0-cPgekHY1QeNe26YVTUt3ic1YHzS98U0iKAdP6sWJCPrEReRjLJ-ncCsUTgiZDQc781AQff2QJTE92aV-xhpJwGEPp47eWoV2FZmGUrh-PQzI8bfLCtpWTP69llOLVlHO0=w1280",
-      "date": "June 1, 1940 (Same day as 0058—note boats on dock)",
-      "location": "Point Lawrence Lodge",
-      "people": "TBD",
-      "description": "Fishing derby weigh in 1940. There were often a couple derbies—usually with sponsors and prizes awarded. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0002",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcv2NvM960srhD5mMhFUVr6mhatSZ1jb407tZiwrrmtZPEXGfpF4jdWOrouEY-UD7Y7i3TLTFbk4pPcS0YWWv9rsD9h-oZiHdKoRlt0-s7sKs9iP1j5ZMw_dM21-7-v31PMNDwrpw12DaM23grV3kTP9SVmNQQR6EkxlU7MruWlpYilG4XYLY5UL2soZgXCM6Dxjwew3L6G9VM=w1280",
-      "date": "1948-1949",
-      "location": "Point Lawrence Lodge",
-      "people": "NA",
-      "description": "The main lodge, cedar log floats, and 16' Reinell cedar planked rental boats. The boat on the right was an inboard—it had a little air cooled Wisconsin engine and a rope/tiller steering system. Top speed was not enough to buck the big incoming tides but it was quiet and burned next to no gas. Note the garage building just to the left of the lodge. You can also see tents pitched to the right of the lodge, which is now State Park land. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": false,
-      "notes": "Photo 0030 is a duplicate of this shot. Jacobsen 188."
-    },
-    {
-      "number": "0003",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdo66rc1FEpgWc3WuP4cL7AQHv4VpihVJYQCbFlzv6frsemYz7zgsdHq6Rou8zcROy89rZWTKLUxHaHesSY8hoJoGlU9M-UewcyFO-veiQuG5ZimTgY5V3dDFZOmhd38SZC-6tNCgzb_-YiaRPcBHbkgryOsacurKVhZhpBCdyZtDPXUxmRL_PiLPLQKDQ7-YdBUK6SoL5IzEg=w1280",
-      "duplicate": "This is a framed version of Image No. 0414"
-    },
-    {
-      "number": "0004",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcRUui2ZoAOfYtFGASemKMklOzeeTj0gaCT7XpkEkgZJztrswePYeRhXgClQK1AbYlcJE1tgTzmQ-l_DmgZ9BW5L0ycx7W6IL9F-2eSXOPp6mCr1ioBUIDryLGsvWiM1F1Gy02IXZ4QWikzlmBCxZ4wz8_snLlW=w1280",
-      "date": "TBD",
-      "location": "TBD",
-      "people": "TBD",
-      "description": "TBD",
-      "source": "Jim Durand",
-      "hasHighRes": false,
-      "notes": "A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere."
-    },
-    {
-      "number": "0005",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd9kvUOktcq1N2svgt9QHb6hyJrafnGuQOoF7PXdq0XbI5Nc6ILnw1XSwQNf_Ie_ZIEQtfah0w5Xa3QIKWEhRXEXcrGfnECKpH6QcM3BpRXOWIjsHbIKHa9BewfzoQQaPqRvVoH6yt2ra2W8PhSgo8jmqnM4ByMVG1mgSNGO_tys8-q4ukiRkWM=w1280",
-      "date": "Estimated 1949",
-      "location": "Alderwood Farmhouse",
-      "people": "Al Rode Junior",
-      "description": "This may not be Al but Al and Larry Johason were good summer friends as Al's family often stayed at Pt. Lawrence. They were dedicated fishermen, and Al Junior learned to fish at an early age. Assuming its Al I would guess this was his daughter.",
-      "source": "Jim Durand",
-      "hasHighRes": false,
-      "notes": "A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere."
-    },
-    {
-      "number": "0006",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfwTK7op5OZhnF5XgypeVVDUFE851SeDZ9v9VtLFnaieczvmorv5V5rcEqRu_5tXSQ79aNMG3vIBu-XUVtw71_zlL7K-bzWnJSs35nWLgJ6EzKAyaNed7eO0Ibv3RV965S-Dvpk6CdmI9ZDwAmjTiMC_ZLl7fvJxw912ku5F_YlJ1nWwE5FoIesbnlzMEJJyhaRTYJMgdJBMLk=w1280",
-      "date": "July 7, 1979",
-      "location": "TBD",
-      "people": "Florian, Mary, and Leda",
-      "description": "Taken at Mark and Patti Fickel's wedding, July 7, 1979",
-      "source": "Jim Durand",
-      "hasHighRes": false,
-      "notes": "A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere."
-    },
-    {
-      "number": "0007",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkePLJFhnkbLJd3nhfNnm3bINXfc_B6YoOrOjEM8_vnlZgVX2MzHQMLL7bKJcdDp0hS89ubQR80Zj1Bp98Xvahd4pKCV0Ef1-TesBzqgVmcfT16udQn_ZL1XZzTN8z1NYISPpVArDmaOhbZALDdGsjxoORobRAMVZkWFXhKPBxNvrYeF7L5l1YqOWAI5CPLOwVrtxTlTNzAHtts=w1280",
-      "duplicate": "This is a framed version of image 0258"
-    },
-    {
-      "number": "0008",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdmLxaM51qTJFH9hZlYqely_GWIbQUHtcTCP2A0ZZbweVsfHCtB83OxuNAG8MI5S1dzlUsKR4bCjbfGM3QCCDU5OqU8vRrJPXmwTd6sc2HkzYSJQBbNa6mPjOhPdD0V5xBllbfcCzMytMNMQpp2o1tybCyZx_Hi9QE=w1280",
-      "date": "TBD",
-      "location": "TBD",
-      "people": "TBD",
-      "description": "TBD",
-      "source": "Jim Durand",
-      "hasHighRes": false,
-      "notes": "A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere. Florian and Mary on the right? This looks similar to the wedding photo (image No. 0409)"
-    },
-    {
-      "number": "0009",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdxS-Zh2mK-XpHX9GVJgC42wDv2wZT9ZTogaYlaSmKoC26rWwsn-cFzju7uvmvsXakDgVKWrTPinjNRqjlEWDc3Uufroslz6MiQ188HgmCXtIaWsK3dknPryWUkZnrTLh1R4V6SsKhDkKyeeJeh36dSvKwsduVfYn8=w1280",
-      "date": "TBD",
-      "location": "TBD",
-      "people": "Leda Gertrude Culver",
-      "description": "Portrait",
-      "source": "Jim Durand",
-      "hasHighRes": false,
-      "notes": "A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere."
-    },
-    {
-      "number": "0010",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdj9gzg_Fm2bp6JMe8lhVZpZfueC7Zu3KGiZysyfi_lyDfteIjL1167T-o6jr4eNcJI3OorOxV5i-eIdxhtaGlDwFqAlgKINeHuKVU4MtUg6J5smO1om2zVoRqkzXGm0yBXfnlf8rFL9DEcikHqDNhjWdfHYcBKPT8=w1280",
-      "date": "TBD",
-      "location": "TBD",
-      "people": "Otis Henry (O.H.) Culver",
-      "description": "Portrait",
-      "source": "Jim Durand",
-      "hasHighRes": false,
-      "notes": "A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere."
-    }
+    {"id":"0001","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcomD7DW2Bsq77buuy0MSYyhIIkljs7O-lCyE0le2v5fraXeFFOb3XmD2GLZOi973-pO7t_lONPUKLy-YWiC-rr3t6bxTRdX5VLEMj5OtSHkSU3mLxnmT6UKTs9cOF1sGU9CG7v7e9GKmUcsY31KKpn6YC5lqQ8nYOtA20Brm1OsPxBU0K2xH0gIaNp_d9GnfTU7ubsSahIPvs=w1280","date":"June 1, 1940 (Same day as 0058—note boats on dock)","location":"Point Lawrence Lodge","people":"TBD","description":"Fishing derby weigh in 1940. There were often a couple derbies—usually with sponsors and prizes awarded.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0002","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeuqbk4Y_rJpXFy4ySZxjZrQNq7ZBrMFLzADpca4Fo8xXlzFrpe-2SssDFRdTCS4HOiRu8B2HXjQSS_zsGhIVPEQIL0hC3_U0IqpGHp6KLk-n8qM2Fwmr33KUR43xPTh1RN0OwNUZsq14n-nDVccy0UAF33S2qsNBlA3hvT0YVdFo0guiHgT8Y2hAqine5_qh0zGXr9CYrpCAc=w1280","date":"1948-1949","location":"Point Lawrence Lodge","people":"NA","description":"The main lodge, cedar log floats, and 16' Reinell cedar planked rental boats. The boat on the right was an inboard—it had a little air cooled Wisconsin engine and a rope/tiller steering system. Top speed was not enough to buck the big incoming tides but it was quiet and burned next to no gas. Note the garage building just to the left of the lodge. You can also see tents pitched to the right of the lodge, which is now State Park land.  (Ken)","source":"Ken Culver","notes":"Photo 0030 is a duplicate of this shot. Jacobsen 188.","hasHighRes":false},
+    {"id":"0003","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfxBumSv39BPpYBySuiZdLGlh74b4G0lFwLaGXaGb0g397EH-i1-tMvcMlRjt8vBaON22Y563V49lmBi19DIK3PGI6yNqdNEwtUucneoZVbYawS3WBHRoG6UDx-WsG_a18CQ2iu_9oQt27mYYAewHJ-gw8TsFx7kESS83-JI_DqjYuUMIZYIyatsfzYZyJikm7sWeMLULHmygI=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate: This is a framed version of Image No. 0414."},
+    {"id":"0004","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdweohAYjwVFiOa7UqTjiV6LWmba7PDTwD8f9ApPJnqtJaowJ7N-mNyi38Hh3OaRSSPRchKvoA5dA0ebKeE1zqbFjuOwMrrsk1ptmlkKGgQ2dAqAk67nXyYMzhuYLllm4J3z5BYV_L4k8gkhNJ33iipSBG9nPJW=w1280","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"Jim Durand","notes":"A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere.","hasHighRes":false},
+    {"id":"0005","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcVoVHLEjP7lUKqoTHYJ_3dTYeh-dxAi4DF7DOyJym9CJ7Z0VDq-i8Z2fFiSkczxEsF8QVjveJWIoc2WtwwbED3EqbsVoNVrUqaGpqNGkxB1dhnuqH5UnZGtSDWgbI8PV0qe7pYYJH1LGVh2RtsjqzVzeZZZkVonhdse75wqOk4wn9rMksM7Xya=w1280","date":"Estimated 1949","location":"Alderwood Farmhouse","people":"Al Rode Junior","description":"This may not be Al but Al and Larry Johason were good summer friends as Al's family often stayed at Pt. Lawrence.  They were dedicated fishermen, and Al Junior learned to fish at an early age.  Assuming its Al I would guess this was his daughter.","source":"Jim Durand photo, comments by Ken Culver","notes":"A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere.","hasHighRes":false},
+    {"id":"0006","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeNmCD5xg6QhF0hdDqnxUIHxICLMLUrG78gr0YL72DH_hFh52QZa084d_14w8mKfAsm2XAlaPJHvkc3jFC5zUkIyLY45T3xyslCQuG5HhDfTkj3eHp-MDvAripl1Mvh7eKkQjic23-KUIEc2_kw0LBFIM_ht4CNGZ-EHD6SzWtFJLIfWNhOjh1tJ8TPDPDkzA33VfsAdkoICOo=w1280","date":"July 7, 1979","location":"TBD","people":"Florian, Mary, and Leda","description":"Taken at Mark and Patti Fickel's wedding, July 7, 1979","source":"Jim Durand","notes":"A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere.","hasHighRes":false},
+    {"id":"0007","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfoqiWxzeEtkOt9YaZGnxWtRPuIDTqKO_njzmSR8Zu9pGGtGhizci7lq4tWRMttuUyZ-I_zG7UsAEYxjGJaRl_R7UN7QUS-COEXotMoS3AB4blbswXZJ0-DtBHTBWmw5qAzS5dBM0k3PMaeyo4iN-gA4cLi6WN_QDoKuMtuxo8xmz--2YPtWAkbZNNlPMZGlCvawd-i8Tl1rHw=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate. This is a framed version of image 0258."},
+    {"id":"0008","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkc7_oYHIihjfb-LReHMxfAw5sYWDm8V7a5keenrtyfNwxGw0JDW77xN-xqckzuVU0zC5B8uyfPGe8W-moA1D2n1nMQEZ3WEzoVKSNwkBR0EgXWpGfyZILKe2afYiqYdv2t5egkEUNauEqFTdZSfdHaDPpoFBTBSrHA=w1280","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"Jim Durand","notes":"A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere.","hasHighRes":false},
+    {"id":"0009","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfJy1GmmcCskmag3Ptfn_dftPMqpjXM66aGACBewweDbbmiFdcB3LWQhguJYjYADo4Qh6rEf2lkTPogpm86GB8N_Bm7wCPRwgmCJmwN-_GkwDRAXTITswR3PqsUhTUjmExmauwvelDLKwmn_rA-Y_ie6eoHyMoUr_s=w1280","date":"TBD","location":"TBD","people":"Leda Gertrude Culver","description":"Portrait","source":"Jim Durand","notes":"A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere.","hasHighRes":false},
+    {"id":"0010","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfieUGMzbreLXhoHwFYWZSaFLmHJDtUb1jow0jWQOa6h5LeZH26DiL3BmQvTmYUxik3QjKMESy8Vi37CP2HyJ0_lkX0Jcrm3aNWYjZ7V4jrzMkqv3x-rMgA_k2Wdu6fqJr7zBc5lqfeCsaOFoyWj6grAonKWx8IvvU=w1280","date":"TBD","location":"TBD","people":"Otis Henry (O.H.) Culver","description":"Portrait","source":"Jim Durand","notes":"A photo of a framed picture at the farmhouse provided by Jim Durand. Jeff will circle back and scan this if we don't find the photo elsewhere.","hasHighRes":false}
   ]
 }

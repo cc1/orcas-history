@@ -1,7 +1,7 @@
 /**
  * React hooks for data fetching with loading states
  */
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import * as api from '@/lib/api'
 
 interface UseDataResult<T> {
@@ -11,16 +11,19 @@ interface UseDataResult<T> {
   refetch: () => void
 }
 
-// Generic data fetching hook
+// Generic data fetching hook with optional enabled flag
 function useData<T>(
   fetchFn: () => Promise<{ data: T }>,
-  deps: unknown[] = []
+  deps: unknown[] = [],
+  options: { enabled?: boolean } = {}
 ): UseDataResult<T> {
+  const { enabled = true } = options
   const [data, setData] = useState<T | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(enabled)
   const [error, setError] = useState<Error | null>(null)
 
   const fetch = useCallback(async () => {
+    if (!enabled) return
     setLoading(true)
     setError(null)
     try {
@@ -31,11 +34,13 @@ function useData<T>(
     } finally {
       setLoading(false)
     }
-  }, deps)
+  }, [...deps, enabled])
 
   useEffect(() => {
-    fetch()
-  }, [fetch])
+    if (enabled) {
+      fetch()
+    }
+  }, [fetch, enabled])
 
   return { data, loading, error, refetch: fetch }
 }
@@ -81,8 +86,8 @@ export function useMediaByNumber(number: string | null): UseDataResult<api.Media
 }
 
 // People hooks
-export function usePeople(): UseDataResult<api.Person[]> {
-  return useData(() => api.getPeople(), [])
+export function usePeople(options?: { enabled?: boolean }): UseDataResult<api.Person[]> {
+  return useData(() => api.getPeople(), [], options)
 }
 
 export function usePersonBySlug(slug: string | null): UseDataResult<api.Person> {
@@ -90,8 +95,8 @@ export function usePersonBySlug(slug: string | null): UseDataResult<api.Person> 
 }
 
 // Places hooks
-export function usePlaces(): UseDataResult<api.Place[]> {
-  return useData(() => api.getPlaces(), [])
+export function usePlaces(options?: { enabled?: boolean }): UseDataResult<api.Place[]> {
+  return useData(() => api.getPlaces(), [], options)
 }
 
 export function usePlaceBySlug(slug: string | null): UseDataResult<api.Place> {
@@ -146,4 +151,110 @@ export function useLinkedMentions(
 // All Entities hook (for autocomplete across all types)
 export function useAllEntities(): UseDataResult<api.Entity[]> {
   return useData(() => api.getAllEntities(), [])
+}
+
+// ============================================================================
+// Infinite Scroll Hook
+// ============================================================================
+
+interface UseInfiniteMediaParams {
+  category?: 'photo' | 'document'
+  sort?: 'number' | 'year-asc' | 'year-desc' | 'random'
+  needsDate?: boolean
+  missingInfo?: boolean
+  pageSize?: number
+}
+
+interface UseInfiniteMediaResult {
+  data: api.MediaItem[]
+  loading: boolean
+  loadingMore: boolean
+  error: Error | null
+  hasMore: boolean
+  loadMore: () => void
+  total: number
+}
+
+export function useInfiniteMedia(params: UseInfiniteMediaParams = {}): UseInfiniteMediaResult {
+  const { pageSize = 40 } = params
+  const [data, setData] = useState<api.MediaItem[]>([])
+  const [total, setTotal] = useState(0)
+  const [offset, setOffset] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const [loadingMore, setLoadingMore] = useState(false)
+  const [error, setError] = useState<Error | null>(null)
+  const [hasMore, setHasMore] = useState(true)
+
+  // Track params to detect changes that require a reset
+  const paramsRef = useRef({ ...params, pageSize })
+
+  // Reset when params change
+  useEffect(() => {
+    const paramsChanged =
+      paramsRef.current.category !== params.category ||
+      paramsRef.current.sort !== params.sort ||
+      paramsRef.current.needsDate !== params.needsDate ||
+      paramsRef.current.missingInfo !== params.missingInfo
+
+    if (paramsChanged) {
+      paramsRef.current = { ...params, pageSize }
+      setData([])
+      setOffset(0)
+      setHasMore(true)
+      setLoading(true)
+    }
+  }, [params.category, params.sort, params.needsDate, params.missingInfo, pageSize])
+
+  // Fetch data
+  const fetchPage = useCallback(async (pageOffset: number, isLoadMore: boolean) => {
+    if (isLoadMore) {
+      setLoadingMore(true)
+    } else {
+      setLoading(true)
+    }
+    setError(null)
+
+    try {
+      const response = await api.getMedia({
+        category: params.category,
+        sort: params.sort,
+        needsDate: params.needsDate,
+        missingInfo: params.missingInfo,
+        limit: pageSize,
+        offset: pageOffset,
+      })
+
+      setTotal(response.total)
+
+      if (isLoadMore) {
+        setData(prev => [...prev, ...response.data])
+      } else {
+        setData(response.data)
+      }
+
+      // Check if there are more items to load
+      const newTotalLoaded = pageOffset + response.data.length
+      setHasMore(newTotalLoaded < response.total)
+    } catch (err) {
+      setError(err instanceof Error ? err : new Error('Unknown error'))
+    } finally {
+      setLoading(false)
+      setLoadingMore(false)
+    }
+  }, [params.category, params.sort, params.needsDate, params.missingInfo, pageSize])
+
+  // Initial fetch
+  useEffect(() => {
+    fetchPage(0, false)
+  }, [fetchPage])
+
+  // Load more function
+  const loadMore = useCallback(() => {
+    if (loadingMore || !hasMore) return
+    const newOffset = offset + pageSize
+    setOffset(newOffset)
+    fetchPage(newOffset, true)
+  }, [loadingMore, hasMore, offset, pageSize, fetchPage])
+
+  return { data, loading, loadingMore, error, hasMore, loadMore, total }
 }

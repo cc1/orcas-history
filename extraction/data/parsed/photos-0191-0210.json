@@ -1,214 +1,27 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0191-0210",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0191-0210",
+  "extractedAt": "2026-01-15T22:30:00.000Z",
+  "count": 20,
   "photos": [
-    {
-      "number": "0191",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcbnjVJ16lWfi_4wkLh4TXe21pQTlTLcklRuQFBGpMHJibfnwhmQqbS9MBp8b0Jl5bi1fWqZaK7ydlsofRH4Zo6Yjl88coT5z5jxD2RF177tV5mRpBffmEBISu_sWq75S3hfRliIBniv3kX8_WkSySI4G5SWjT4WckQ6qlprKiF_q94wuYWFMrconIfJwW4Y92dgaxopyCl=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0192",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf30jwfKXHxTmTtLjF83o0Yy_8W2LIuQrxLAb8v7bxC5qTxv1xCSoMvIrGwb9AbH0Crt-gsE8I-mtGLPf2Ut3MrkoQH86A3GZ6t1aua28BIkNHfP1_4Ehjd40ccglTomopcW6hr3XjUOzRf3y-QVx5IUhDaJK2Tzjal0E_4fnk1raiEWY0PFe6hLImPp2wnd2D59wuc-WZ1=w1280",
-      "movedTo": "Documents & Objects"
-    },
-    {
-      "number": "0193",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdMekseRJpXNfyWLI0OaSbVCQMZsqVj3kqvpBsMvbW5LsjkleBKSuICrCD4lBMyVLV0FKsSEEdnaHCj1NTPKsJ2d4YuoR5q34FGGDLeNNdZJzyqZycM47DDLs2EEQjxbQspwMoOuQRAfmGMgSpJUWHLqS8XMh8UyWoKm9LtveNBaWmyRcMuXLSq3aw40ZgsB16ubXdpw_12tvE=w1280",
-      "date": "1941",
-      "location": "TBD",
-      "people": "Carroll Culver, Jean Culver, Ken Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0194",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdJTsUWEJPcSH-gF3e5ZomDVQOfAtbLYwnmFkvdinbwXvIkMoLeV6tdL0KPkjq3sz8QOe2JiKCPnOIavj__lFQOr0ExhjOD0cg6Egf9TeSud67SCrSqhlTL7ieNE12QicDCLBPbozxNPH0nZEdVGBwl3aNCTfrFUZjltMgFXzwaWsKJvJQy62HXnE5l4amSNL-p_H8IUrr9Iws=w1280",
-      "date": "1940s",
-      "location": "Lummi Island",
-      "people": "TBD",
-      "description": "Legoe Bay, Lummi Island looking North. Legoe Bay on the West Side of Lummi was a beehive of activity each summer. There were two fishing resorts - Hawley's and Tuttle's...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Ross 100"
-    },
-    {
-      "number": "0195",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeshWg-89-731VQF05hkfxLwpfLEJ6Q1H2hRsDoPhqbqpPFrKxjhv7JJwfPCG-rhETog-eLhGKqiyCHfU_Vq1F77Q46HkZBZnd18MBz7ouYTQfdCzOmJ4B0Om16nOVB5W_cUCgs0g4TvKc4gV55P1HMiW31Hoh5LSs3E9LbDSxTc34MRoGIkUUijW4BBeYS0l7RkZm9q2QPBrU=w1280",
-      "date": "1880",
-      "location": "TBD",
-      "people": "O.H. Culver (age 18)",
-      "description": "Portrait",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0196",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkehBblQ1ESQeljZbutO5fXqncRKO_RxN3kfShaLswW4mrm26sXCukgC116y3AdWGi6IjFTq4ad4cDQn5j71W2upVKOy7gkF9VE6IzRWJt1l4J8BMTqqF0qXIgRRDWvYYj5PVyr_MKArWbIyc6_cvXa1NBcGzTz8doRDuXfngWGLsg3_8ovkXmqGb9DYcoLw-VAZfBzh9yYq=w1280",
-      "date": "1880",
-      "location": "TBD",
-      "people": "O.H. Culver (age 18)",
-      "description": "Portrait",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0197",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdxdVoLDqym2KoIgWUPdv5D4sAfhNr8MzfbGlifU_KIoPdrGog_OGO4bQ8hbYLJWmgCoJC1mjaxkVjNGmmAn2glzgKayWYNXnfVvPa9nWlTOUlYSnnvvQdcILPZD1IWQUVaAX1-CvIq90AlGXBxhOUUTuoUdtyrAy9MYjMtSsgsMGPkckSlmVD50DSN4VYrexye7Y0fzoz3gmA=w1280",
-      "date": "1956-58",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Ken Culver",
-      "description": "Ken at Orcas",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0198",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeiIabbZjlxCsoBL9SQcs3fqe8p7TekP69PE3gYsnBDysVXTMz1HolG2z3g2VI36pmI8xGU0nahGe9g-FHLEtPN2znr7VSgOyqc4DymArq6U4aAii1uSDlWa7zrsJyC3WstIKx71qNDQGBL3_y5fD8T77GfzgjK-j5AjtG5m4EBVRX6EE9rzybgK52njyS6hNlXKnbUwDgD=w1280",
-      "date": "1959-60",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Ken Culver",
-      "description": "Ken in his 14' Ski Boat - flying past the end float with his 'crash' jacket on. Something his mother...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0199",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcTT7ZnLr3h2yoSb3wu0cZld8qbnaOvSN4kAjxBBAsyQ9ToxdrxX5pNACUTx1EXW5Nmq_w_ZOcOWcTE1UgOv54HVuWmhOxzBSofWHb6nrSZTCqct0H6QTQUOVp6629VS-P5YjBMTLeSi48bGL8gviQhZTipyOuelD1wzwMe0O3V8wN_Z24hhZyKDOn9NHznWaDNHaeKIzCSQ_k=w1280",
-      "date": "Around 1959-60",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Ken's second boat which he finished himself. An excellent side shot of the ski boat I purchased unfinished and outfitted and finished.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0200",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcyX3fzRJRF3HaX0ZfDKnYbaLqbHz6gNqPWXazBo5jfSjwKPFO-J4MofmsafIOnD91Ufq6ax5glMJreloGRhBca_uAdpDBw4b6YmCovaYY4maPbm5oJxwrxWx6UD7k3Val1bYmv9E5-fTh5Zs0yFisOYRKhRzl3L_vn5l-LycRA4EF88j363149L0oJ_L8R1fx2ZWunoZvI_Io=w1280",
-      "date": "early 1940s",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "The Lodge with all cabins except #12 over by Alderbrook Creek which was not built yet. No overhead...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "This photo appears on one of the lodge holiday cards."
-    },
-    {
-      "number": "0201",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcGcki3T-7bVFbzW9u_H7cABFBdYXf-kKXT3QmEnd3yPsyOrHG4Wa-p7u7LccLf6L76f2nUCsE6yftWp-iqPfAgZ5KIAIe_lrOvJDqkIjdjslmNkToDAvLeC7ZxLggrnK9LA8_fK5K_vcYGbkXinUXAYsdwHM9wtDA1enzicmTGTkeSw9VQrRa32jKqehSyg8x0dwIufg1LpI4=w1280",
-      "date": "Early 1950s",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "The only color photo I am aware of of the lodge - you can see the progress of the concrete bulkhead...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0202",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcI8uJnru_5qLrUXgJriEpIwKUMKcRGbcuKVPWvrjlrX6qbswnyxF1DRtfKc26F9IKYqMKBJuIyCb5oTn6CahFq4yYKh2w2UpVvX313ZbhLrka1Dj6n1tTHdz3BCtSrbJnxdxZi9O0ZvkIEpsIzNHldAtElUnXR6ERQzZkmOWyM56eC1okihFMIVpIbfLpvGFNdj6_jOtTPcks=w1280",
-      "date": "1951",
-      "location": "TBD",
-      "people": "TBD",
-      "description": "Postcard from Jean Culver to Mrs. Roy Dernberger of Seattle. Roy Dernberger and Carroll were college and lifetime friends.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0203",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfEDiBA17UZeGsmsSI8Oh0JiQpjWSub0d7ZWbTUaTMgdAeGHHCll_0VBKT1JUthB4Z-bWdwllNodLCdAeo2x9A8fZF1u1CAV2oEckuxZXo3I2yNOLscLA0ckin96lFDK4HPyVY5lNc6-kWlEZ9KcPrlvEZGp4uhKR2rnorDKi4AXGGbK_wZfPgfsnMUmZUqCwhGngTMSWdUVkQ=w1280",
-      "date": "1947",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Carroll Culver",
-      "description": "Carroll Culver in the kitchen of the Lodge at Pt. Lawrence. Appears to be holding a cup of coffee. Lots of memories - this was the only true year round part of the Lodge...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Date: '47' on back of photo. Story about sawdust burner conversion."
-    },
-    {
-      "number": "0204",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd1qh13H6STJ64E-cmxXPUEMCRXmKCGBlgPwi4sQmT1xx7JGNV-1RcyrOD0EKmoHGbZBQjjXbZAtJ3CGBh5rnmmAmeXMD14LgQF5GFVlK5FM119LUcpyKNGvsL8d4UowquQC7SL2XGBAAP0z6PLYS883X4e4df5zHWx5GIb8VR-YL7t0B6P7yBULR6P-I7_gKAayVQqn2Wqblg=w1280",
-      "date": "TBD",
-      "location": "TBD",
-      "people": "Carolyn Culver",
-      "description": "Carolyn in her flower girl dress for Virginia Hipkoe's wedding. (Jean Culver via Ken Culver)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0205",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkch_hFgjqgQdzArRFcp2c-oISpSu77lfrHE-rYgz3NFXuiqIS0tlWZaLVVNhHKGkkwNzv2UXwbFE3s-wwpdnoq29QtP-onuVDcUQ2DxUt-OUBDBgN9BGwyqXKlUYn6F7cpffB2T2TdrY7YTrr8kpAHbp5nhvBq7bfCpcAPDHUvIkyYpsY2xJc7lEAc1nbvWJ4ytM5yDoDAtqBM=w1280",
-      "date": "March 20, 1913",
-      "location": "TBD",
-      "people": "Carroll, Mary, Florian",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0206",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcNUIKi9XAyVDE5yLZdnC2PvnN6r8mXqygBx9qrejWEnYTpCtu1vh8-xl_AD9EfKQEm4vwZLhjEDBYwWC_CVU-khDhifNNiMHhXo8c_Yc5RmII0UQ0C9fHbHDnRJA5u_jv0kwOXBnzPMdLVPchNcWUXtBaXh0ntqERYMvmjD3Y-wX_bIfApJgm54s6-K339Pc5T6ixfHdIblbw=w1280",
-      "date": "1923",
-      "location": "TBD",
-      "people": "Carroll and Culver Willis on 'Homer'",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0207",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkc-Aly7yJ7al5fuX8GgD7j-AqfixblS7CrMcsHBw1hH2Feydkg11O-e32CQkCml8oA9_z25d6BDqmPxgS81pVphnyBeu5n5fQ9YIU6_JAu2tWamfoscpP8X2QOgbb94PByksMdWq1bRuj3ohSUMfXaQEHIC9wyanWKayE2ruSVpRls_7TrXxQkCIMKD1FsxH9B1opCevZt0aEY=w1280",
-      "date": "1923",
-      "location": "TBD",
-      "people": "Culver Willis and Carroll Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0208",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdOViAiMuLkcY4VZ0E9I4VpS-eicbBQRmzD3ln8k-b9XQC7U49o6Wmr8Q6V0n99e7pH1zERJlxVf-oHfq0VvPApMUyVUNshFFjG9CC9NBRdkqbF-ry4WFQsGymoKcwa4tNev8NpYrUmcHM6HzV0J6R7QSr0LLeqUkHZKcLoKwet-NwvW47UaLAiZsWOgN48sU0GiTUnmt5dPjw=w1280",
-      "date": "1960",
-      "location": "TBD",
-      "people": "Carroll Culver",
-      "description": "Carroll Culver standing next to one of the hand picked rock aggregate squares that make up the entrance...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Story about concrete fence posts that Carroll 'invented' and produced."
-    },
-    {
-      "number": "0209",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf1spHuTND4FKX3AG0yywJgmnuUD9YnY0tm6OaLnBIviRyd-WZHOxL1_gSTf24YOkzuqMkL_qiVKK4wQ87LW_GOhb7MXjy58Aw907rsd8KOxI0bwdw3lBERzBUjifsZWUzzSwIVIGpIKO9pztRs3oQxojGIQFFAQAn1SQkOawZWGkkESYFiDEz1ZT2KoPWHF7BO4TjNTuJv=w1280",
-      "date": "Spring 1980",
-      "location": "Orcas",
-      "people": "Carroll Culver, Judy Culver",
-      "description": "Carroll and Judy Culver in their garden at Orcas",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0210",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcISLNCKBThlIuxsOpmEYDy--JSaEqps3Gh0twOi44j5ef_SUzC11rFgumEmWiT7tIda8nkYT8w4g7cuOZ75WTmAqnvi2Q6dbQovjGo77-TcROKEAD8LcSsM7KQMXu23M9kJIW1JA1I5tewKj866_fgta_8eBjo8a-zQw0UV-FxC4A-jjLQYlaa5W2XpESKiVlN7UB27sOB1S0=w1280",
-      "date": "1982",
-      "location": "Olga",
-      "people": "Carroll Culver",
-      "description": "Carroll Culver at the Olga Historic days parade, dressed in his finest captain's outfit and towing the... Note Mayor's Award in Hand.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "The much admired little ferry was reproduced by Ken and hand painted by Carolyn. Copies were given..."
-    }
+    {"id":"0191","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkctbAV0u1eR2wzTZNPiTBIuBKrpqpQAmG_61HdD2HX6FA4YNxV7gN3X8qnAK8IooCO-0xmpDpPhIXjMKDXf6vAY1B7VL8gtDTamk-at3NA2LY-CBqoRbAGqor5wgxTB1flR2xj8sVEFF2oLT9lVBf5rwuiUQz7DKW_Jqt47etuuFMNgROIDww43oh-7QR88oepNtIH2XMGc=w1280","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD"},
+    {"id":"0192","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdy3UAw8CqE32IAiFHfZ-SlkTNZ4JY97JdLuy-oe5sP1CYHfWapyiPU40ImueXVHLrWOTk44AEyJZjFGQfVNomsJmvfDbHF7ghZjnLXFjcytnKnAmWYCpMG8T4PXS_yrGidzl9px4xS7PxHYGvLNusU8o_6OYPpMonDnPTFddehTu05_sDvhB0JZhOihl0VoFSfdCMP9Kad=w1280","date":"TBD","location":"TBD","people":"TBD","description":"TBD","source":"TBD","hasHighRes":false,"notes":"TBD"},
+    {"id":"0193","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCke6tq0t3u1VApWAK72wJPMimJ0UiYFRGo_-HMmJ-zGVUHDcrw1nfcY9yr3CSXD_4PO0WK64v1_QoYdqDckbKDFfaUjpL2R2DLU4gqdQx7kQKhIkqkvPyUsGIXu13LRhrRXWEyqsjbFapBixbldfk4wvBciQrlRC99UniZcdoy-Ca4LQx3HWanAkahTd_01ypkLJox2GHgen4MQ=w1280","date":"1941","location":"TBD","people":"Carroll Culver, Jean Culver, Ken Culver","description":"TBD","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0194","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfj2L7ZYZYPr0oYTW8Sqg3D5gdG5zggD7m-yAVVlIaxe9ePNzftHDCCrlQDUCcWazhwV9ttcQ4GetTBnwuBmI1vdkyl0AduPX8ZBoM9U4TQGfXsOZNFXeqZMzeJ2KFze2oTdgLDqfaThJEmlNEtkz-kAE-UpQmDKA-pb9IjnbYG7lVEk7H_GhPnC-jTBFQfM2D7aWhN6vFrG_0=w1280","date":"1940's","location":"Lummi Island","people":"TBD","description":"Legoe Bay, Lummi Island looking North","source":"Ken Culver","hasHighRes":true,"notes":""},
+    {"id":"0195","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkczUhZ_icBrasgmqIRlmZtUv7zR__V8cK8SJEAEFCX1i-RKGIp6gfcZUIEaoxxiL-xCbjJeZvyrzuZdFN0dFGxDGLowvoeAzQV1fPI8wSibjZ47JNM6KFgRd9QDbpmVIfGPgwtAJM9suAt3_sgI5PgEkt9ze5YXWXI5bPXXj4T3-Ja4AX8F2JrExeisqJafNaRqyIboCLBMV8M=w1280","date":"1880","location":"TBD","people":"O.H. Culver (age 18)","description":"Portrait","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0196","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdnW88ewWlcJfdNfF_xKaX4FFNacF-bz1zS5G_qdAymmAzzV3gJCCWkmXOb4NCU-uKDrAUsblFZbNg_E3yv6bStD_WmWPsqGqrziff1sYU8Wq7I10NlR63m9H430Kv0ngT952E1VTAnBLFWdtfV6jirLPeF4Z_5s6ZEx7ph8W7omaHOsfgEzHuRPpmquDh2sj1DrhXnU6Mt=w1280","date":"1880","location":"TBD","people":"O.H. Culver (age 18)","description":"Portrait","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0197","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdvIeD2kCB4zrHSqyRMKfYlDTItO5A3HsobycKx7eptZk5xQijsayvMH_RWW8sDL84seOviGEDpmqqG0oKsQhpsVNmZNRAFn6bvFsKdUsJvcdUYQlsE2M6kNQ4IUO0tuZhjSvrzwRZH_X8A14Bha6U_LT-QaAoyjjjjHU--EeXxq_QBzw7G1qsxB7ywCrGYrwNNE3HeqK_WxUE=w1280","date":"1956-58","location":"Pt. Lawrence Lodge","people":"Ken Culver","description":"Ken at Orcas","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0198","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkf3p1imxIFLZYz7GDi908oMmc263UubXC_bywtpX0O1fRNqVYsL-z9BRoUm1vQxpHH7DYfILO7NaDQFAS2nbuBlcNeKqpube74OXAmMaJfUzrNpyxNfNUazgKCXFSGpvNOtD21pES328tI5sq9TbbdaT8QuJRrLKmUg-nINq6m0h_qXS2WpJn14vMBvT7cuddG4DZO3IveR=w1280","date":"1959-60","location":"Pt. Lawrence Lodge","people":"Ken Culver","description":"Ken in his 14' Ski Boat - flying past the end float with his \"crash\" jacket on. Something his mother insisted on. I spotted a boat like this while attending the Sammamish Slough Races in Bothell and immediately knew I had to have one like it. I followed the boat to the launch ramp and met the owner who turned out to be the builder as well.  He agree to build me a \"shell\" a completely unfinished wooden hull that I could finish out myself.  That became a winters project while going to Garfield High School. It was kept in my grandmothers old garage in the alley during construction and after.  The top was beautiful mahogany plywood which I coated with glass cloth and resin (just like the builder had done).  I found a used 6 cylinder 70 hp Mercury outboard that needed some work, which I was able to do.  It was a direct drive outboard - that is, no shift, and no reverse.  When you started it you were going, and you had better have it pointed in the right direction.  It nearly jumped out of the water - and was a great ski boat for anyone who wished to chance it.  In return they would then have to drive the boat so I could ski!  That thing flew - without a doubt one of the fastest things any where near Pt. Lawrence.  I sold it a couple of years later to buy an inboard boat which I named Circe' after the Greek Goddess of Magic.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0199","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkd37EFwJG3ZQZJUVvZ1CLlB2W5Q3Njku6Ew16N6zWoRzYSia9fWw49EE282H70Id9nZ6Kz0DcCNhnGpak3bhAWME_bho_6pCWTGFr7A-ov0VB6YXTLrVhv91rnL-Qs2-Kl03SbLI6WEzGqG-AaQwsX_eKPgoLoCUeo8y0bLZGG69mCU1_eJYDN7tN4sA6adMBytUrOxN8qURio=w1280","date":"Around 1959-60","location":"Pt. Lawrence Lodge","people":"TBD","description":"Kens second boat which he finished himself.","source":"Ken Culver","hasHighRes":true,"notes":"An excellent side shot of the ski boat I purchased unfinished and outfitted and finished. I even did the upholstery including that nice roll at the top, with the help of my mother and her sewing machine. Like so many things I wanted but could not afford I ended up building them myself.    (Ken)"},
+    {"id":"0200","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkc58ew6ltz20lI9-A6Puike5H8GTGCr1jnlKNc2bRtJq6hCDVyWbWNgbFe7Nf8hWW-TCDvXmMhhJQUjdKG0vz_S-NajnByDLwnAuensxsOvbG1xCZh-8WB_tu6FqSwqEeWxTXetcru0jqRmKRW1ZVsEGvELX30_-9x673wrA85trdsSqqQuV3uyV5p3nB5UPEU3dn--wOfeEtU=w1280","date":"early 1940's","location":"Pt. Lawrence Lodge","people":"TBD","description":"The Lodge with all cabins except #12 over by Alderbrook Creek which was not built yet.  No overhead ramp and the marine railway located directly off the boathouse platform prior to its relocation on the \"lower platform\"  where the floats were connected to the shore.  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"This photo appears on one of the lodge holiday cards."},
+    {"id":"0201","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdOk9WL87XjeXtRKFtyKLhPyQdDhJztNDSUBA6U9hOcJgdh_GgOTqYGCw-1bYG1V6YcZqUjDEVVJ1kGOgwxOXHOqS224J7nr_sksIVa1-f9ZWvZC_LlB_S-Ie_EHPm2ZuxRIZWmlnOv7vHy1ePQYidvRvT4hmACRtVS6tUMjlbs2LidDXH58fOc7CG6-NT23N76RsJUN6NDRPQ=w1280","date":"Early 1950's","location":"Pt. Lawrence Lodge","people":"TBD","description":"The only color photo I am aware of of the lodge - you can see the progress of the concrete bulkhead starting to replace the old vertical logs at the base of the lodge.  Judging by the 5hp Johnson outboard on the back of the rental boat this would have been early 50's.  The boat with numbers was one of the two 18' Reinells - the 16' Reinells did not require numbers.(Ken)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0202","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdbJCR8tu1o68x_9ISEarIqvp4-YZmQqvwAj1pHfiAmbqMMkhC1PAp3Ntk0jlHjrjKS0_J9MUBfxH1OwmzuQrOiTx0GOhhdZoHRf4l6z-_ZIceAoSr6dWJfBhUQGxt41kYMyoYQk65U5bwxLHfwfMAE8Q3JS43mC_-o2ge-n2fSQrGll_QoGWYTwi7x4zk8EBpc9nWNheWFahU=w1280","date":"1951","location":"TBD","people":"TBD","description":"Postcard from Jean Culver to Mrs. Roy Dernberger of Seattle","source":"Ken Culver","hasHighRes":true,"notes":"Roy Dernberger and Carroll were college and lifetime friends.  We often stayed with them at their home in Northgate up on the hill behind where the Northgate Mall would be located now.  Roy had the first TV I ever layed eyes on - a huge wooden floor standing cabinet with a little round TV screen perhaps 6 or 8\" across.  Most of the time it just had a test Pattern as programs were only broadcast in the evening hours.  The image was small, grainy, and often had \"ghosts\" caused by over the air signals bouncing off of airplanes, or trees./  Sometimes a low flying plane would cause the picture to waiver and flop so badly you could not watch until the plane was well past the line of interference.  I sat on the floor while Roy \"tuned\" it to get the picture to come in.  He was not a man of means - but he certainly was an early adoptor.  (Ken)"},
+    {"id":"0203","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfgbi0MBqMBb40AP4bPF3ddac1HraxD-hZ19aTHJtLpKieDPlx6OKPbK6EA5oAgcAvNUKp0vixeuV68xbwkpB34fICYeq01KGfAIYrcuLu0aHEL7O1r3Epu0d_sszOCPNOBUsu55SWM6_T9yZxIG4Z9NEhCqzEvubGnDY0MOKChT0W4ky9kz-IUMZFBQbLY8EkQJ6w0yYpkN6A=w1280","date":"1947 (\"47\" on back of photo)","location":"TBD","people":"Carroll Culver","description":"Carroll Culver in the kitchen of the Lodge at Pt. Lawrence. Appears to be holding a cup of coffee in his right hand. The large metal device in the right of the photo is a sawdust hopper which was added to the big wood range about that time. More details below:  (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"Lots of memories in this photo, as this was the only true year round part of the Lodge that we lived in.  The counter to the far left was where Carroll sat on a stool each day to write, check his stock portfolio, and do Resort business.  Behind him was the kitchen table with the door leading out to the back concrete stairs that are still used today.  Note the little Philco radio sitting on the table.  It replaced an antique RCA (arched wood radio) that I still have the frame of in my basement shop.  He checked the radio twice a day - in the morning to get the opening stock report and at noon to get the closing report along with the news broadcast from Paul Harvey - a voice that was almost part of the family all of my life there and even after I left.  \"And now you have the rest of the story\" - one of Paul's most famous lines."},
+    {"id":"0204","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfDMCpaG4nmGwMHL0AUyTqrw6_-678F1V9eD4GBmOq1PDLA6kmUVD1n3KsCTBbtwMlBar04ggzLlFzbOap-RrzKJCWwqKKES22kfq0i38zX0enPylC09R6I8DOWNJaI-rPXasOIxmLW8j5O7jW9fZtxHX2afkZ21E7RaoNVCq8CCy8JiXjN1dSdGBcK5BIQA7Rx3uJu1rB9WOA=w1280","date":"TBD","location":"TBD","people":"Carolyn Culver.","description":"Carolyn in her flower girl dress for Virginia Hipkoe's wedding.  (Jean Culver via Ken Culver)","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0205","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeyc9sy3pjxZkYShUr4BeSEkyzHetKyF5dFNV36pSFDxqbh_pI5EBi7gqZAvtaWb01QC49bwuKdlwuoXMiyX8YmzaDPT0Fxwhz1n7-sJ3wWr73ijviNE3XJ8fFfPTSbDtlZKHV1UiZ7XrKGAaLwdzIVeaGiLozWM0py3clphFaonFD8RkWIY2lWe9qi6GZ8tHnKJNBRWt44wnY=w1280","date":"March 20, 1913","location":"TBD","people":"Carroll, Mary, Florian","description":"TBD","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0206","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdhLghbDKUzE6KzCqKaE-vvd1Atd46DTh9Hf8NjiEDXfQCf2-uP20DU9TDjlMSVHPXR_L09tqKK1xWf4VF1a0z93T1BNziaDK_NbVm69JO9b8XLCEjCFTHEY_QlRxN5t4LYImu8KeD-M47HGUy1m4gg7p-IXd7uOIj7-UDO6E4v5H3J2BZA-1B9bJgXJSm1vRdnBIsqF3wt_Os=w1280","date":"1923","location":"TBD","people":"Carroll and Culver Willis on \"Homer\"","description":"TBD","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0207","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcWcCKhCzFHdJmr0aYXfCewJqBMahdMRfmFuOM4J4m0zPcmKH43e7sZtND_cdKuJn10EcqlONabUZit-Pmbnd4nr6br93K8AhJXQb3dB8GEs-JlvlsN5zFfpzcKy3D1Ntz4UicTTNPvRf9H2Ln8F4N18hGNHY_hhL8oMVaBClzTBaADvqKHRuJncDfjtSsD8169NgWrdDRmeaI=w1280","date":"1923","location":"TBD","people":"Culver Willis and Carrol Culver","description":"TBD","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0208","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCke98U-SS083BJlsHrmUjup2GFwpWGntesM2tvKzplXZUV5tA-2C_73wcj5PVXXBkzX0wyl2CuYZHlh4h0AtE8HASNEUWYpSFTxCoviAbY3PUPhhK8HZKd5p-SVh5E60V600RUVfNYcFEwd3W_eeVdMgr_eknwWEtvC6txqI2SdhvQAJhhjI_X2vlEBVW_W7J2JKKkpmAjs7rag=w1280","date":"1960","location":"TBD","people":"TBD","description":"Carroll Culver standing next to one of the hand picked rock aggregate squares that make up the entrance walk and inside hall floor of his Doe Bay home.","source":"Ken Culver","hasHighRes":true,"notes":"Way before Carroll sold the Lodge Property to Ken, Pete, Gary and Stu he began working on his dream home at Doe Bay (Shorewood).  Among other things he began making these hand picked  exposed rock aggregate squares on the main platform of the Lodge.  These things were HEAVY and I do not recall how he picked them up to transport and place at the house in Doe Bay.  Bruce do you remember?  The rocks were finished with a clear coating to give them more \"life\"."},
+    {"id":"0209","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkc_Hs4AIuanyhGrGP9flM5bGVj8ZtDjDN7JxYn5WYR6vyjwDLUupNwYVUp93dc4qqJyV9uoBGv83QSsGb087jPyFdFAyAQevIDfhuT1-kwMz6e_saDTHdal9FE1AGrdZUOhZoQIKlcRdJDN60B8gaUiRpy4El3NqPaiBxlQw4rbrYRaj3kiNJ408v9DQb6285fPMzyotT3j=w1280","date":"Spring 1980","location":"TBD","people":"Carroll Culver, Judy Culver","description":"Carroll and Judy Culver in their garden at Orcas","source":"Ken Culver","hasHighRes":true,"notes":"TBD"},
+    {"id":"0210","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkchoLb1BkG4RIVLyetiZ94soinLvqG4uIHsagVtfYjOEJVGbzlyxoOk6xjycdJLR4zG1fs_unR3zSTO33zEJXWAKJ_MWMimUScW5go0DFVHWlpQhUQblCT_srDrX02BsK20ZxWZ90x1b2FcY7RzycZOuz8nYMm29cYxuZJ6aL6R46JvHZ3NpndXIVgLehrVglFEO4BJNVwumnY=w1280","date":"1982","location":"TBD","people":"TBD","description":"Carroll Culver at the Olga Historic days parade, dressed in his finest captains outfit and towing the little wooden ferry \"Vashon\" that he built for his children.  Not sure where the little wagon came from.  His sense of humor was always concocting these sorts of things, and he relished them. (Ken)","source":"Ken Culver","hasHighRes":true,"notes":"The much admired little ferry was reproduced by Ken and hand painted by Carolyn.  Copies were given to Bruce, Carolyn, and to Beverly Johanson. They can be completely disassembled and become a puzzle to rebuild. (Ken)"}
   ]
 }

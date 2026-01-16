@@ -1,32 +1,11 @@
 {
   "slug": "early-settlers",
   "name": "Early Settlers",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/early-settlers",
-
-  "sections": [
-    {
-      "heading": "Memories by Jane Barfoot Hodde",
-      "content": "Prior to 1860, many adventurers felt the urge to explore the west, and perhaps miss the conflict that seemed inevitable. After all, it was new country with many promised advantages. The publicity given to the San Juan Islands because of the Pig War dispute and the promised arbitration ruling had influence on those coming. As soon as a bit of cleaning could be done, orchards were planted. Payton Reddricks, John Cale, Norris Oldawski, Tierney, and John Bowman were some of those between Stockade Bay and Cascade Lake. Some of those who homesteaded between Olga and Doe Bay were John Gray, William Moore, Tom Robinson, Peter Morris, Claus Legbandt, John Vierick, and John Hand.",
-      "source": "125 Years: Olga: Memories and Potlucks (Compiled by Irene Barfoot O'Neill)"
-    }
-  ],
-
-  "mentionedPeople": [
-    "Payton Reddricks",
-    "John Cale",
-    "Norris Oldawski",
-    "Tierney",
-    "John Bowman",
-    "John Gray",
-    "William Moore",
-    "Tom Robinson",
-    "Peter Morris",
-    "Claus Legbandt",
-    "John Vierick",
-    "John Hand"
-  ],
-
-  "researchQuestions": [],
-
-  "extractedAt": "2026-01-14"
+  "extractedAt": "2026-01-15T21:04:00.000Z",
+  "images": [],
+  "memories": {
+    "author": "Jane Barfoot Hodde",
+    "content": "\"Prior to 1860, many adventurers felt the urge to explore the west, and perhaps miss the conflict that seemed inevitable. After all, it was new country with many promised advantages. The publicity given to the San Juan Islands because of the Pig War dispute and the promised arbitration ruling had influence on those coming. As soon as a bit of cleaning could be done, orchards were planted. Payton Reddricks, John Cale, Norris Oldawski, Tierney, and John Bowman were some of those between Stockade Bay and Cascade Lake. Some of those who homesteaded between Olga and Doe Bay were John Gray, William Moore, Tom Robinson, Peter Morris, Claus Legbandt, John Vierick, and John Hand.\""
+  },
+  "source": "\"125 Years: Olga: Memories and Potlucks\" (Compiled by Irene Barfoot O'Neill)"
 }

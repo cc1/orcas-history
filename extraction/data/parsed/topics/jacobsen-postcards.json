@@ -1,44 +1,31 @@
 {
   "slug": "jacobsen-postcards",
   "name": "Jacobsen Postcards",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/jacobsen-postcards",
-
-  "sections": [
-    {
-      "heading": "About Emil I. Jacobson",
-      "content": "Emil I. Jacobson was a professional photographer in Bellingham. He apprenticed with Clyde Banks before starting his own studio in 1927 on the Champion Street side of the Mt. Baker Theater building. He was in business until 1954.\n\nThe card is certainly a commercial postcard and probably post-WWII when we were back in the tourist market. The card no doubt originally would have been available at the lodge, perhaps other places on the island.\n\nIt's a real-photo card made with a postcard camera that used a film negative that was the same size as, well, a postcard. One dialed in the exposure and produced the cards in bulk by going through the whole three-tray method + rinse and dry. Postcard stock darkroom papers were available pre-cut to the proper dimension.\n\nThe writing in white you see was actually the result of writing on the front of the negative in black ink. Black on a negative prints white, so it then printed the caption and photographer's name on each subsequent card (he didn't have to individually write the caption on each one). The number was Jacobson's reference to that particular view in his line of commercial cards.\n\nThere isn't a master list of Jacobson postcards that reference subject / date to his numbers. In fact, what happened to Jacobson's negatives is unknown; sadly, there is no collection or repository of his work.",
-      "source": "Jeff Jewel, archivist at the Whatcom Museum (2019)"
-    }
-  ],
-
-  "jacobsenPostcards": [
-    {"jacobsenNumber": "2", "photoId": "0633", "year": "TBD"},
-    {"jacobsenNumber": "34", "photoId": "0637", "year": "TBD"},
-    {"jacobsenNumber": "39(?)", "photoId": "0268", "year": "1935"},
-    {"jacobsenNumber": "140", "photoId": "0378", "year": "TBD"},
-    {"jacobsenNumber": "141", "photoId": "0620", "year": "1935"},
-    {"jacobsenNumber": "142", "photoId": "0628", "year": "TBD"},
-    {"jacobsenNumber": "148", "photoId": "0022", "year": "TBD"},
-    {"jacobsenNumber": "148", "photoId": "0622", "year": "TBD"},
-    {"jacobsenNumber": "149", "photoId": "0630", "year": "TBD"},
-    {"jacobsenNumber": "171", "photoId": "0024", "year": "TBD"},
-    {"jacobsenNumber": "184", "photoId": "0039", "year": "1948"},
-    {"jacobsenNumber": "186", "photoId": "0626", "year": "TBD"},
-    {"jacobsenNumber": "188", "photoId": "0377", "year": "TBD"},
-    {"jacobsenNumber": "188", "photoId": "0625", "year": "TBD"},
-    {"jacobsenNumber": "189", "photoId": "0153", "year": "TBD"},
-    {"jacobsenNumber": "211", "photoId": "0225", "year": "TBD"},
-    {"jacobsenNumber": "311", "photoId": "0371", "year": "TBD"},
-    {"jacobsenNumber": "333", "photoId": "0370", "year": "TBD"},
-    {"jacobsenNumber": "335", "photoId": "0381", "year": "TBD"},
-    {"jacobsenNumber": "419", "photoId": "0631", "year": "TBD"},
-    {"jacobsenNumber": "701", "photoId": "0171", "year": "TBD"}
-  ],
-
-  "relatedPhotos": ["0633", "0637", "0268", "0378", "0620", "0628", "0022", "0622", "0630", "0024", "0039", "0626", "0377", "0625", "0153", "0225", "0371", "0370", "0381", "0631", "0171"],
-
-  "researchQuestions": [],
-
-  "extractedAt": "2026-01-14",
-  "notes": "Comprehensive list of Jacobsen postcards in collection with photo cross-references"
+  "extractedAt": "2026-01-15T21:14:00.000Z",
+  "imageCount": 21,
+  "about": "Emil I. Jacobson was a professional photographer in Bellingham. He apprenticed with Clyde Banks before starting his own studio in 1927 on the Champion Street side of the Mt. Baker Theater building. He was in business until 1954.\n\nThe card is certainly a commercial postcard and probably post-WWII when we were back in the tourist market. The card no doubt originally would have been available at the lodge, perhaps other places on the island.\n\nIt's a real-photo card made with a postcard camera that used a film negative that was the same size as, well, a postcard. One dialed in the exposure and produced the cards in bulk by going through the whole three-tray method + rinse and dry. Postcard stock darkroom papers were available pre-cut to the proper dimension.\n\nThe writing in white you see was actually the result of writing on the front of the negative in black ink. Black on a negative prints white, so it then printed the caption and photographer's name on each subsequent card (he didn't have to individually write the caption on each one). The number was Jacobson's reference to that particular view in his line of commercial cards.\n\nThere isn't a master list of Jacobson postcards that reference subject / date to his numbers. In fact, what happened to Jacobson's negatives is unknown; sadly, there is no collection or repository of his work.",
+  "source": "Jeff Jewel, archivist at the Whatcom Museum (2019)",
+  "postcards": [
+    {"jacobsenNumber": "2", "imageNumber": "0633", "year": "TBD"},
+    {"jacobsenNumber": "34", "imageNumber": "0637", "year": "TBD"},
+    {"jacobsenNumber": "39(?)", "imageNumber": "0268", "year": "1935"},
+    {"jacobsenNumber": "140", "imageNumber": "0378", "year": "TBD"},
+    {"jacobsenNumber": "0141", "imageNumber": "0620", "year": "193"},
+    {"jacobsenNumber": "142", "imageNumber": "0628", "year": "TBD"},
+    {"jacobsenNumber": "148", "imageNumber": "0022", "year": "TBD"},
+    {"jacobsenNumber": "148", "imageNumber": "0622", "year": "TBD"},
+    {"jacobsenNumber": "149", "imageNumber": "0630", "year": "TBD"},
+    {"jacobsenNumber": "171", "imageNumber": "0024", "year": "TBD"},
+    {"jacobsenNumber": "184", "imageNumber": "0039", "year": "1948"},
+    {"jacobsenNumber": "186", "imageNumber": "0626", "year": "TBD"},
+    {"jacobsenNumber": "188", "imageNumber": "0377", "year": "TBD"},
+    {"jacobsenNumber": "188", "imageNumber": "0625", "year": "TBD"},
+    {"jacobsenNumber": "189", "imageNumber": "0153", "year": "TBD"},
+    {"jacobsenNumber": "211", "imageNumber": "0225", "year": "TBD"},
+    {"jacobsenNumber": "311", "imageNumber": "0371", "year": "TBD"},
+    {"jacobsenNumber": "333", "imageNumber": "0370", "year": "TBD"},
+    {"jacobsenNumber": "335", "imageNumber": "0381", "year": "TBD"},
+    {"jacobsenNumber": "419", "imageNumber": "0631", "year": "TBD"},
+    {"jacobsenNumber": "701", "imageNumber": "0171", "year": "TBD"}
+  ]
 }

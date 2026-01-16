@@ -64,28 +64,11 @@
   background: color-mix(in srgb, var(--color-muted-foreground) 50%, transparent);
 }
 
-/* Masonry grid layout */
+/* Masonry grid layout - uses column-width for responsive columns */
 .masonry-grid {
-  column-count: 2;
+  --photo-width: 280px; /* Default width, controlled by zoom slider */
+  column-width: var(--photo-width);
   column-gap: 1rem;
-}
-
-@media (min-width: 640px) {
-  .masonry-grid {
-    column-count: 3;
-  }
-}
-
-@media (min-width: 1024px) {
-  .masonry-grid {
-    column-count: 4;
-  }
-}
-
-@media (min-width: 1280px) {
-  .masonry-grid {
-    column-count: 5;
-  }
 }
 
 .masonry-item {

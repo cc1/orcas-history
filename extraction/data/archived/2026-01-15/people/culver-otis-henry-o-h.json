@@ -1,0 +1,59 @@
+{
+  "slug": "culver-otis-henry-o-h",
+  "displayName": "Otis Henry \"O.H.\" Culver",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-otis-henry-o-h",
+
+  "connectionToPtLawrence": "TBD",
+
+  "family": {
+    "parents": "George Nelson Culver and Diana Louise Aikens",
+    "spouses": "Mabel Gertrude Smith",
+    "children": "Evelyn Louise Culver, Leda Gertrude Culver, Mabel Florian Culver, Mary Luella Culver, Carroll Nelson Culver",
+    "siblings": "Fred Nelson Culver, Emma Louise Culver, Inez Adel Culver"
+  },
+
+  "keyDates": "1862-1941 (d. Age 79)",
+
+  "timeline": [
+    {"year": 1862, "age": 0, "event": "November 1: Born in Gaysville, Vermont"},
+    {"year": 1870, "age": 7, "event": "Living with his parents in Stockbridge, Vermont"},
+    {"year": 1876, "age": 14, "event": "Moved to Iowa with his parents"},
+    {"year": 1880, "age": 17, "event": "Living with his parents in Des Moines"},
+    {"year": 1884, "age": 22, "event": "Moved to northern Idaho; worked at a newspaper (until 1889)"},
+    {"year": 1890, "age": 28, "event": "Arrived in Tacoma, Washington in June. In August located in Fairhaven, WA. Stockholder in the Fairhaven Herald. Also purchased stock in the Bellingham Herald, of which he was manager for two years"},
+    {"year": 1891, "age": 29, "event": "August: Fairhaven Land Company agreed to allow O.H. Culver and Elmer George Earle to consolidate management of The Weekly World and Fairhaven Herald"},
+    {"year": 1894, "age": 32, "event": "Married Miss Mabel Gertrude Smith (also a native of Vermont)"},
+    {"year": 1895, "age": 33, "event": "November 11: Birth of Evelyn Louise Culver (New Whatcom, WA—Now Bellingham). O.H. Culver interviews Mark Twain during his world tour stop in Fairhaven, WA"},
+    {"year": 1896, "age": 34, "event": "Purchased the Islander newspaper (renamed 'The San Juan Islander' in 1898) with brother Fred"},
+    {"year": 1897, "age": 35, "event": "September 11: Birth of Leda Gertrude Culver (New Whatcom, WA). Named Deputy Collector of the U.S. Customs Service, managing the port in Roche Harbor for three years before establishing the port at Friday Harbor"},
+    {"year": 1903, "age": 41, "event": "November 16: Birth of Mary Luella Culver"},
+    {"year": 1904, "age": 41, "event": "April 7: Birth of Carroll Nelson Culver (Friday Harbor, WA)"},
+    {"year": 1907, "age": 44, "event": "March 28: Birth of Mabel Florian Culver (Friday Harbor, WA)"},
+    {"year": 1909, "age": 46, "event": "Left the San Juan Islander newspaper. Brother Fred continued to manage the paper. It ceased publication in 1914"},
+    {"year": 1920, "age": 58, "event": "October 7: Left Friday Harbor customs position; transferred to head of customs department in Bellingham"},
+    {"year": 1924, "age": 62, "event": "May: Participated in pouring out confiscated contraband liquor at Bellingham customs house during Prohibition"},
+    {"year": 1928, "age": 66, "event": "O.H. and Mabel Culver return from vacation to Vermont and Milwaukee"},
+    {"year": 1941, "age": 79, "event": "Died"}
+  ],
+
+  "biography": "From 'History of Skagit and Snohomish Counties, Washington' (1906):\n\nOtis Henry Culver, deputy collector of customs at Friday Harbor, and formerly connected with newspaper interests of western Washington, is a native of Vermont, his birth having occurred at Gaysville on the 1st of November, 1862. He is a son of George Nelson and Diana L. (Aiken) Culver, and comes of English and Scotch-Irish ancestry. Having acquired his early education in the public schools of Des Moines, Iowa, he afterward attended the University of Minnesota, and during his father's residence in Idaho acted as editor and publisher of a newspaper at Murray. In 1890 Mr. Culver came to Washington, locating at first at Fairhaven, and for several years he was connected with the Bellingham Herald and other papers. In 1895, with his brother F. Nelson Culver, he purchased the Islander, of Friday Harbor, renamed the San Juan Islander in 1898. In 1909, he separated his interests from that journal, which later ceased publication in 1914.\n\nIn the meantime Mr. Culver became connected with the United States customs department in 1897 and for three years was in charge of the port at Roche Harbor. He then returned to Bellingham and after a brief connection with journalistic interest reentered the customs service. He established the port at Friday Harbor, where he was stationed until October 7, 1920, and he has since been at the head of the department in Bellingham. He has a comprehensive knowledge of this branch of federal service and is one of the most efficient and trustworthy of the Washington body of government officials.\n\nIn 1894 Mr. Culver was married to Miss Mabel G. Smith, also a native of Vermont, and five children were born to them: Evelyn, now Mrs. Russell Watson, of Milwaukee, Wisconsin; Leda, the wife of George Hipkoe, a reporter on the Bellingham American; Carroll, who is taking a course in the University of Washington; and Mary and Mabel, who are attending the local schools. The family are members of the Episcopal Church, and Mr. Culver is a republican.",
+
+  "miscellaneous": "Photo reference: 0010. Occupation: Newspaper editor/publisher, U.S. Customs Deputy Collector. Interviewed Mark Twain in 1895 during his world tour stop in Fairhaven, WA. Member of the Episcopal Church. Republican.",
+
+  "researchQuestions": [],
+
+  "extractedAt": "2026-01-14",
+
+  "newsClippings": [
+    {
+      "source": "Bellingham Herald",
+      "date": "May 28, 1924",
+      "content": "Description of confiscated liquor being poured out at the customs house during Prohibition, with O.H. Culver participating"
+    },
+    {
+      "source": "The Fairhaven Herald",
+      "date": "August 1891",
+      "content": "Fairhaven Land Company agreed to allow Otis Henry Culver and Elmer George Earle to consolidate management of The Weekly World and Fairhaven Herald"
+    }
+  ]
+}

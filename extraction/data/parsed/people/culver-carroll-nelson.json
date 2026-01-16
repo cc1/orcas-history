@@ -1,37 +1,44 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-carroll-nelson",
-  "extractedAt": "2026-01-13T12:00:00Z",
-  "person": {
-    "slug": "culver-carroll-nelson",
-    "displayName": "Carroll Nelson Culver",
-    "connectionToPtLawrence": "Carroll Culver built and ran a fishing resort (Pt. Lawrence Lodge) at Pt. Lawrence during the 1930s, 40s, and 50s.",
-    "family": {
-      "parents": ["Otis Henry Culver", "Mabel Gertrude Smith"],
-      "spouses": ["Jean (Rothenhoefer) Culver", "Judy Culver"],
-      "children": ["Ken Culver", "Bruce Culver", "Carolyn (Culver) Leonhardt"],
-      "siblings": ["Evelyn Louise Culver", "Leda Gertrude Culver", "Mabel Florian Culver", "Mary Luella Culver"]
-    },
-    "keyDates": "1904-1995 (d. Age 91)",
-    "birthDate": {
-      "original": "April 07, 1904",
-      "year": 1904,
-      "month": 4,
-      "day": 7,
-      "location": "New Whatcom, WA (Now Bellingham, WA)",
-      "precision": "exact"
-    },
-    "deathDate": {
-      "original": "1995",
-      "year": 1995,
-      "precision": "year_only"
-    },
-    "timeline": [
-      {"year": 1904, "age": 0, "event": "Born April 07, 1904 (New Whatcom, WA—Now Bellingham, WA)"},
-      {"year": 1910, "age": 6, "event": "Living with his parents in Friday Harbor."},
-      {"year": 1920, "age": 15, "event": "Living with his parents in Friday Harbor."},
-      {"year": 1930, "age": 25, "event": "Living with his parents in Bellingham."},
-      {"year": 1931, "age": 26, "event": "Was a crew member of the Pacific American Fisheries' steamship Mary D."}
-    ],
-    "biography": "Carroll Culver built and ran a fishing resort (Pt. Lawrence Lodge) at Pt. Lawrence during the 1930s, 40s, and 50s. Born in New Whatcom (now Bellingham), WA in 1904, he lived with his parents in Friday Harbor as a child. Timeline continues with fishing industry work and establishment of Pt. Lawrence Lodge."
-  }
+  "slug": "culver-carroll-nelson",
+  "name": "Culver, Carroll Nelson",
+  "extractedAt": "2026-01-15T22:05:00.000Z",
+  "images": [],
+  "connectionToPtLawrence": "Carroll Culver built and ran a fishing resort (Pt. Lawrence Lodge) at Pt. Lawrence during the 1930s, 40s, and 50s.",
+  "immediateFamily": {
+    "sonOf": "Otis Henry Culver and Mabel Gertrude Smith",
+    "husbandOf": "Jean (Rothenhoefer) Culver, Judy Culver",
+    "fatherOf": "Ken Culver, Bruce Culver, Carolyn (Culver) Leonhardt",
+    "brotherOf": "Evelyn Louise Culver, Leda Gertrude Culver, Mabel Florian Culver, and Mary Luella Culver"
+  },
+  "keyDates": "1904-1995 (d. Age 91)",
+  "timeline": [
+    "1904: Born April 07, 1904 (New Whatcom, WA—Now Bellingham, WA)",
+    "1910 (Age 6): Living with his parents in Friday Harbor.",
+    "1920 (Age 15): Living with his parents in Friday Harbor.",
+    "1930 (Age 25): Living with his parents in Bellingham.",
+    "1931 (Age 26): Was a crew member of the Pacific American Fisheries' steamship Mary D. which in November was delivering lumber to New York city.",
+    "1938 (Age 33): Married Jean (Rothenhoefer) Culver on March 19, 1938",
+    "1941 (Age 36): First child, Ken Culver, is born.",
+    "TBD: Second child, Bruce Culver is born.",
+    "TBD: Third child, Carolyn (Culver) Leonhardt is born.",
+    "TBD: Carroll Culver and Jean (Rothenhoefer) Culver divorced.",
+    "TBD: Married Judy (TBD) Culver",
+    "1995 (Age 91): Died on 6 Dec 1995. Buried at Olga Cemetery on Orcas Island, WA."
+  ],
+  "about": "For over 60 years Carroll Culver was a prominent member of the Doe Bay community. He built and ran Point Lawrence Lodge successfully for over 30 years. His wit and charisma made him popular as a master of ceremonies at potluck dinners and Fourth of July celebrations. In the early 1960s the depletion of the salmon runs by commercial operators caused many sport fishing resorts to close their doors. Carroll retired and, over a period of years, built a new home at Shorewood. His carpentry skills inspired a number of his neighbors to become do-it-yourself summer homebuilders.\n\nSource: Doe Bay Historical Images and Favorite Recipes",
+  "inTheNews": [
+    {
+      "date": "1931 November 2",
+      "source": "The Bellingham Herald",
+      "content": "\"O.H. Culver, veteran customs inspector at Bellingham, and Mrs. Culver, returned Saturday evening from a five weeks' trip East, during which they travelled in twenty states and in two Canadian provinces, Ontario and Quebec. They also spent a few hours in Washington D.C. It was their first trip East in eight years. In New York City, the couple met their son, Carroll, a member of the crew of the Pacific American FIsheries' steamship Mary D., now en route from that city, where she delivered lumber. In Vermont, they visited Mrs. Culver's sister, and in Milwaukee they spent several days with their oldest daughter, Mrs. Evelyn Watson."
+    }
+  ],
+  "miscellaneous": "Letter from George Nelson Culver to O.H. and Mabel Culver on the Occasion of Carroll's Birth (April 10, 1904)\n\nDear folks,\n\nWe all rejoice with exceeding joy in the heartiest of hearty sympanthy with you on the coming of him whom we anticipate will perpetuate the good name and honor of his honorable parentage.\n\nAdditional text needed.",
+  "questionsToAnswer": [
+    "Date of Carolyn (Culver) Leonhardt's birth?",
+    "Date of Bruce Culver's birth?",
+    "Date Carroll and Judy (Last Name?) married?",
+    "Dates of Pt. Lawrence Lodge operations?",
+    "Date of divorce from Jean (Rothenhafer) Culver?"
+  ]
 }

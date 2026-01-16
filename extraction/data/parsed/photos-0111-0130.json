@@ -1,202 +1,27 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0111-0130",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0111-0130",
+  "extractedAt": "2026-01-15T22:00:00.000Z",
+  "count": 20,
   "photos": [
-    {
-      "number": "0111",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf2_6ibFyZQkNK2OcJvOHnVKkD25O_SZutrqAIEqH01SkQ4TPGoeTzHdBuDRvqygWJ-35Yj_JkB2_dTchJkPiDJZ0wRQOXHeD16iTCHNES3WuiqCqtlIYiMUanNXNdl1AZjlpK7CMze-pIS80XIPVRTdps4PqA0G2_MqO74g7Xac2Pg7z-SUTbNmM8W3TmzCo1oMyKOkfaW=w1280",
-      "date": "Spring 1944",
-      "location": "Montlake, Seattle",
-      "people": "Carroll Culver, Ken Culver",
-      "description": "Carroll Culver and Ken Culver in back yard of Rothenhoefer home in Montlake, Seattle.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0112",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeOOA-_vRHfbWC8m6OWXMAtK5VljuNvqV9IFHJWxD7WYm30JTMLa88ZR_bahlQimXd0JeJLOLQPtzXaXgt4cUSu9BrNJe1pSx8lsIp_r36UdH-Sa39IalKiaU-GWhF-L7L5RIiQ7y2UDP4KLVrhOSskVHm3xnn6qszP_GVTo0SB1nus0Inn6pL77yrYRLASQtmKy5nhI928IkA=w1280",
-      "date": "Spring 1944",
-      "location": "Montlake, Seattle",
-      "people": "Ken Culver",
-      "description": "Ken Culver in back yard of Rothenhoefer home in Montlake, Seattle. This is the tricycle I rode down the hill on.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0113",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkc-j1w8-W4RxzyIoEQn0cYd58sndcR8uckXVct9kZAuQ6Eyo9C3k0dEHIW6IF93yv_NR1iEypKGuWRKvR0OXfYQmQlUUYmvnxismh6jLhPSFvzKCqxBumqNB5dl5624i_mzaOBofvQGg-Si8XAzgzhQBr78nmCE1yOuhOvnmU1Ose9NRaWSQ2H_6an_0O_s5z7i3sHIS8Qs=w1280",
-      "date": "1941",
-      "location": "TBD",
-      "people": "Ken Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0114",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdIOSWrsz45VKsbs_6eh_BTd7S83AXvLmza5Vrw39ja2DjbbFHBJ2vsQTgyCcwYnsUvQSUHiL_Mc5Sg3eJ5gILsXoVBiANW2KgV6Dr6aWFdqn-04KPcuptEHMD5FD6p9uCQwWKIBAcJdwMyCMcw_rIuGIL4R9rbfGz-792pFqez_puAAJfVwJs9d39UyamwWVR6_PsSQrbn_Qw=w1280",
-      "date": "1941",
-      "location": "TBD",
-      "people": "Ken Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0115",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdjTSXn6ba5erjSv4rlvxsP7_AQKQgFb2HeoHc9ZFT3_edBZOdYSL6VcddyQnliJLRdR2nFM16hLK_IwebQHda-JzkdSUTxTTbVlY5aQBynnKn8htL2TeoBBS-Y1aEtTKLxKqROckHyT0pq2884STSvXZQPJzGHPfHiU2YEhdbDnu3eLMUNhNcNGzQydjLijTt7bLWTJpPZszo=w1280",
-      "duplicate": "Duplicate of 0071"
-    },
-    {
-      "number": "0116",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfTZjHxKByQG3HdYy5mJl8LCsPeUDTDH26FzoXEXoaP2hfNcvG6dF_p3p7SsCtGFPvFbdu2Pu8h8KIONxhhu8_Lps9NO3-wR4_ujUJI1EHlvv66aamRCOcDQ-B1jGccViAhhHYXMdNDRJW83_zXtxsKReNRKtDlWIYR3iMhim72iPbea6_ZOdyfZIgPqYk8Yhxcg9blvw28bTM=w1280",
-      "date": "Unknown",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Unknown",
-      "description": "I do not know who these two ladies were but they were perched on the marine railway car at Pt. Lawrence.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0117",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeycI6jrfGL2fAI2n38quz1O4CicgDD-y1Vhgu7bZ1xNZRM5GsOVLpjrUhcH0385bCkB0slp94QA7Pjj0HmC2qQj0yhGN9BTcb31Hc52wZ1AbwRVOr-EI8-NqOvhbKXyn7D2Fw_kDEMiCbCSgI_5KhXKgbTr_37ZpMlp4yR0ufUe_8bQIR2Ls6VJJian19loK9WSRgb-_as1Y8=w1280",
-      "date": "1941",
-      "location": "TBD",
-      "people": "Ken Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0118",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcRX5UT53GwWBwhmzRcRToZXiApMSHyzWz4o5OKkwqR4-PlO0n28IdCEJaK9dOzAS-OONwH-QuIi3Hy2jRF8PlNrk00dmh_IMVcaO3kk3wEiGItpja_3qyBRmD9RGwrqZQMFygm00JqyFeXhCdPGb8xwDeVRDS3HGbScwzpbDeYkatf1uH8HNl1y5AtXd54FYo2sPe8SS-B_-c=w1280",
-      "date": "1941",
-      "location": "TBD",
-      "people": "Ken Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0119",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfJ2RAiPD8u6WNBPILkjf0SblgyuTo0cyY-_NPJnYevETOjMYnxEceBAl3nvFdENwtOihbWdBuA2FhPu5ddMrDdLk9mBJ_LOIY1DYq6TCgo5ra-dJBrw_Jt4rvUpyC8vpwDQUfpZ2XzPTru5xHW8PdW7mxwh5ObcoXZDTaOUQtV5_92yoA37U1b6WA004d2nwQbxf16MSXW=w1280",
-      "date": "1956",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Ken Culver",
-      "description": "Ken Culver learning to use a bow and arrow brought by the Holens during their summer stay one year.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0120",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCke_xU7t9wPQcjwV_mVV6iX27GMzvtzg1LoZcikXNwQ51c_IapxKS4jrIbbQSdU7tYyBhlRuXwadAvneCtQmuVRsXNnl69jhdf_408ULzs69WE7kOMR8VxbpZD0xAoiEGU1LPd7yeeEoWD5k8DNLk_9WVjXdHzWfjm-SJCwZB1zIBvSRsPK8VYpd_C2NvSbVlzr35pf3RYvgPCs=w1280",
-      "date": "1941",
-      "location": "Bellingham",
-      "people": "Jean (Rothenhoefer) Culver, Ken Culver",
-      "description": "Portrait of Jean (Rothenhoefer) Culver and Ken Culver sitting on a bed in the Hipkoe home in Bellingham where they often stayed.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0121",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfO4jmvhj9VqY4Yc1YIeKJR7G8iF9QsSPFAoIUFfLDcfdCAUHMsSQdoJNhPAnQE-pB_P7K6lLWOLPqd4e9lRI0tZMFdTrpPveMM5eGMWXB779weG9OAWcvP3UhUFy2T1SSrkFsUZpBG_AE-1rEr-AGjejDENtLDVpJ-6YKNHv6XFQYuvatybu42mdn7lpd4ZGhTRMa8C_yAZtE=w1280",
-      "date": "40's-50's",
-      "location": "TBD",
-      "people": "TBD",
-      "description": "MV OSAGE - the mailboat that also carried freight and passengers and anything else from Bellingham. The last and most memorable of the 'Mosquito Fleet' was the M.V. 'Osage'. The 59 foot vessel was built...",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0122",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf3S2ocVb0-S8LbE5R-gK9nGZ6Xhlg0uAZziCatGPnekDjqORPR8uEQchBHmJqigXj_NmXLWsco0jG3q8IXhmQNPCj85LGjMzctncAjr1hTbDIXjoO_8_nJikNyxZPMMAvzViwQjnwE4Z31Wc2iqy6zrCQDHytF_pGdu2Suni28DbPQY5AIhEIJVnWJSwppRjMwbCtJgBYGOmw=w1280",
-      "date": "circa 1910",
-      "location": "Alderbrook Farm at Pt. Lawrence",
-      "people": "NA",
-      "description": "Alderbrook Farm itself comprised a small part of the Culver holdings at Point Lawrence. This circa 1910 photo shows the farm.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "According to records GN Culver leased and later purchased a large amount of land here for a 'gentleman's farm'."
-    },
-    {
-      "number": "0123",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfl2zQ7hQSDHOPIc9hr-2EjbTjJldchvO203BIa4diJ0yYujX3BghrG5wyc4FRio83ry63O-P3-1rheKvZi_tuwzSvP04I00II5W95C0EohnOBRye0-e6aPvlpdlqfHMzdQmYeutTHrQwDZist_e23OnYzaizKsdyfxQfiOzteGmW2YzO13ggDBw2tvJFRVUNmCNoFhf4ov0DA=w1280",
-      "date": "Mid to late 40's",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Carroll Culver",
-      "description": "Carroll loading green alder onto a hot bed of coals at the smokehouse, which was built of green lumber.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "Includes Carroll Culver Salmon Kipper Recipe"
-    },
-    {
-      "number": "0124",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdOGLan67ZqQ72wEOLLPrGhO-qyY9bvVxXjeajFPg8QP927VQTNAk9USWxLGqA_f-c8HQl2JN15uNwgtYEubhwdps1IwU7yypn811tKRJT-o4mgV9GdmoCH49yumPV0WyZ8LPiYdfqsbKLUEYXNKnLY-FzhnNcK4FNtBDRdGrW-b4L69xNa9VwGg6Tih6-JSv9XQhMbBlOy=w1280",
-      "date": "1941",
-      "location": "TBD",
-      "people": "Ken Culver",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0125",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdVbRmkSngEcUwqtepEnUL9gwCGjO3xXHBFnFVmHrJ_dqFQvVjR3ey5qGtup_xE6q2eyXBB8koh9xsuY2DEixcOezCpsBFGzy35l86_n3sGllOC8WHI2y1gSeRbPIEpwZBwdjl6hHYPDXo--kxCuUk_b5C3h7WmWzHeqHVFrhG6yhMhEUUKDn1NXLFGAReTIwuf_BHt13ZzP-Y=w1280",
-      "date": "Circa 1945-46",
-      "location": "TBD",
-      "people": "Ken Culver",
-      "description": "Ken - valentines card.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0126",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkc7do0ggkRztG-5SxaUH5NV-Iv3YanQ4YmCk3Q1M_YDZ3NIByI2MQba7e7MNdHYzYkf4QP3c768MXe7ZUfiuaylHnUolg8KJGkd23wOyyTGjZZa-w62eUC2982CGD09b1v-qUBmbuzrBZG5dEvTGLRmTdub_sUurmQ9T95NYhnm10TpUBzp6ng7KDga6WWoAba0pzz8GD2VSCg=w1280",
-      "duplicate": "Duplicate of 0165"
-    },
-    {
-      "number": "0127",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfdP6qaWm86f2x6WmzJfhgReygTezT8b2FlwZYv1hXzvjL4V-Q1QiUjDwsyJh-y-1WCBx6Q5F4nBBy1j-GlrqOJyx95M6OmfeX1XNedoYk4MkvMpMKyEnKFuSfYeakM_veQ3AT4J9pOO9CUSzg-KRGLqAjnBu4pT8auToytk8cYUd54dqkvF3VQt8JxAHnCUDbV1iKEjM_ZW2U=w1280",
-      "date": "TBD",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Photo taken from porch of Cabin #4 looking to Cabin #1 complete with jumping deer. You can see cabin in background. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0128",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcC_AoMtj4_brFjD1t1yAKhdIVLbMQdvRc-Wc967kDXBUaRRnfdUSjWR-PUfvNgZa5lbmmDfZila19lKnyOqfUmtYyAW3DbxEKx_VQKkCUW_7BBIfbM-wjZQLUnrjrunEEaPonika3-BVxEZw1qyMULyEvPlLP88RqU432C7o_zN7Kky9QJjqA55Pmcn9u3mtdNF4zafxZ0nKA=w1280",
-      "duplicate": "Duplicate of 0169"
-    },
-    {
-      "number": "0129",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcyT7lR3FVU5zG2HMbnYFKtwE4mQiWaCEe547dhOSJIpQDOKsnstoX2s3U4Tj336TIdnDhL-_5SSbBI74gPAcMdwgaejMzdVZOyYlMzpbepMSvkRE6Q3an3HJ4fi5LYnFblN3ItbjHvqfZBC0CKgWLXQd5kmtfPfS-bSQZ0gvNXNKsNYeKDQXKbLMDSDLfRsTEXfheiE2lyhC0=w1280",
-      "duplicate": "Duplicate of 0155"
-    },
-    {
-      "number": "0130",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcK85qIa9A-ag1g1ueD3PZ89XOHxRi_ApZSeSEnJmKv9ozS6OShX5tbg6BlC5AjliochS5Xmcelnca98Q4hHBvV6QwJbU2Tvq1bYbmPjIZoTDSpCGP3dHG_v3vSEkvDDIK9-ZzcXAII-7RETfn9ZonhS5D9LjTlNRZu6F0YPVCUuiYhAGeb901PjDsZKBcOMy9ZXhzjWjem=w1280",
-      "date": "1940's",
-      "location": "Point Lawrence Lodge",
-      "people": "Carroll Culver",
-      "description": "Carroll working on the Wisconsin air cooled engine in the 16 foot inboard rental boat built by the Reinell Boat Co.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    }
+    {"id":"0111","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeWCaUDIsxo0rODhyZEdE6EG2O-QCwrtGtHCUOBWHstNle4iL5LMLjE2u-8NL3SyzKZJgNAUqY0Sh13lrvuxBFsoI9mH_3cJDKDiSk9OzVHI7m6YL4EHoZo83c7H8bKHOQR1zvnKWs2ozEAQDpMY97CeT7cLSKHPJgOCXYm6CuRuDMT8gvHtb0-jWOxs5wyDbNC-fz-IpcV=w1280","date":"Spring 1944","location":"Montlake, Seattle","people":"Carroll Culver, Ken Culver","description":"Carroll Culver and Ken Culver in back yard of Rothenhoefer home in Montlake, Seattle.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0112","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkc84iG3BbzXhyqK-6BjX5QyrHGANJBYleNh-F915gEeAPwobSpKpwyLHymUnuYTxS3aMiE_CTbh2xh0CLUaggIl7so-93pZoipajrA9kMMhcL_5mjSfAb5u12hEKsW_6-mJa2qitSIIgp6doMlKMwSO3XfWNiqhGN-75rSHtGShtp_3e2QkzX26AXH4IIYUEVrYhT2QZyEdcKY=w1280","date":"Spring 1944","location":"Montlake, Seattle","people":"Ken Culver","description":"Ken Culver in back yard of Rothenhoefer home in Montlake, Seattle. This is the tricycle I rode down the front walk and over the bank onto the concrete sidewalk below, doing a number on my teeth.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0113","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcX2s0bUrY-pdATPWVOv6ynKouIZSiwr3sjoPYPZbc3mQ_UMa0otdnm1P6Tzjie-9m-DcXwozHUFntbk0m-0DM7VzZj6OmcXGkZ7XPPiPoOwt_LvGKs7C6lhN9CZ6ACiyqWcXUb6TlEbKCFSb4xuDdFvg5kvXQa-pXn9FpfZ1T6omKetzuXBetRS0QsNX6lzFfUgqJJxxYM=w1280","date":"1941","location":"TBD","people":"Ken Culver","description":"TBD","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0114","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcFYM7zYzOPK8Wa1CuxWgjluLvLKRkv-BL3NwuUlx-2fngzQ5UzTUyppWa1fQutOq8z1Hr50cZpDP5bKNhTuXkMiVQWkk9o4E2PjfVVRWVcB8kX8GvNzNbm-J65U1Za9Eb_r6uBvharUyJj2eA1m098xru5a4jEhT9iKZ-_oJaw3fPQ4h-IZK_36-w4Y4iUh6SzeJuLwLXJH1A=w1280","date":"1941","location":"TBD","people":"Ken Culver","description":"TBD","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0115","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfSQVAJ6tsYkFAhMeQ9XGZVejVRVqREnM8sTGq2RshT5xX_KZDYlfAbYigUv5SQjO2BHV96AwdbFBr2uwsF-Dkw8mNKr56r0tUQISY94GbX-X3bhMUnRffyBuQluCUHpl8KgwDt76Wv1JoE0KiXrrRrT3c9dOXK4e6rgog8MWXbR2Fbd1W41YB_9Zau6ctO5us3rDUO9Y2tX6E=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate of 0071."},
+    {"id":"0116","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdUC73c4UYJoi6l791-Fhhiql9PgKO5b3Pahe2o2Oz0MCZOZnVXTU-7tYEQHLICNgnwM5JyJbB588fWXfpgPNoICiGD3acEz55o541srt8-y1G1bKAptasALyIJtD_TGnzzeKiJt7JzRQsesZrEM-6eNXZ_O7Hq4iQ-vBOloyWbSS_Ndh5W-zqEkUtffl8-Je0ij0pPrrd4ELw=w1280","date":"Unknown","location":"TBD","people":"Unknown","description":"I do not know who these two ladies were but they were perched on the marine railway car at Pt. Lawrence Lodge.   No floats in the water so either late spring or early fall.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0117","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcIAUKJxdMAr8oxrhIilR00wJ31vtUM5hmm149xT8Vby4Sg4WTjvHLmEhYR-fdUqwV6roKtsKl0x7z3A6evIyBaN2mlHjjd4DY20rXEXlDcz9ZcnYCOHDR-7m-FFKycllSzxJ8QNjL9x1fKgF5zudiNeWi5tvStKxTK7PSmzh5ffWCa30rm-AySpt6vg9yjBOUyC7J9Lg8iXM4=w1280","date":"1941","location":"TBD","people":"Ken Culver","description":"TBD","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0118","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkct_sGtCaqit8voHk1LVebrbx5dEm0b-APlsymIWiq8YR_POT-Qd3u6hJFnjtoe-YgR_br5kPJ-tWnyzwM6BsI8ar_HBeuzEDOW8dV62lLv9a579y7I6ySwa0hBedLhXEIqB2yrAtmh-e9bieznzJTrNvoX45SbDsdwIeOxhX2R9fTneEYeMiOvNBe45Vn4xnf3wJI_kS64N7U=w1280","date":"1941","location":"TBD","people":"Ken Culver","description":"TBD","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0119","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcJ1kUUFlSzt-973gABxcUMhjhZkrzgZ0xbIYNA3BMej344EyChRIQew1Kb2rZqAVhoKPLglku3kR6zyXE2ahwdp8rOk0xfyiDgf26SY2zVo6v2IiAGR7qahRkxSPSw5zC1ct-GNituk_f5A26HdhfslVlaneFzx58CmvxnbGvnH2nilrQfihpq8Tri1VLlmWBGO440U9qU=w1280","date":"1956","location":"Pt. Lawrence Lodge","people":"Ken Culver","description":"Ken Culver learning to use a bow and arrow brought by the Holens during their summer stay one year.  Standing by the southern corner of cabin #4 which the Holens always stayed in.  It was my favorite cabin.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0120","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkf33YSJOeI-22ZFjohHCjSQs7QQOoyw-rqgw2-Pq4_T-40tRzDIlZaY6WS-aYSDDvAXGZ7uUCzmvFHq_PV2NVIV3GDPL_V16cvPiWbV_Q8LFAyRycU3unjVLRScyI9sO3XclWJQwvKNVLbwBigtajaJ83Ahc7fd-Y4uiS_xcXOdmVWt3ptZ1Op5ngpio0kINBabJkuDMUVhn8I=w1280","date":"1941","location":"TBD","people":"Jean (Rothenhoefer) Culver, Ken Culver","description":"Portrait of Jean (Rothenhoefer) Culver and Ken Culver sitting on a bed in the Hipkoe home in Bellingham where they often stayed when coming to \"town\".  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0121","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCketnZY_y-LUY00aKJq0kqOwpZc9TAfXbMs3vwl83gxb6Iguj6CJFNauTryN2wLiH2BEAfcODYJypeww-AuECspRmUUsLEKWML-Pje90MOgWkRMRYxdl-hyeSQHanzKRRwfGZsASqtbZzYvYgYMLmQzw4Z02x64U18QmlM1YptkDrgbTIRWFSs-56B_iORAEPBHzg9naP4jh_pk=w1280","date":"40's-50's","location":"TBD","people":"TBD","description":"MV OSAGE - the mailboat that also carried freight and passengers and anything else from Bellingham to numerous points within the San Juans on a daily basis.  This photo appears to be docked in Friday Harbor where it turned around before heading back to Bellingham.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0122","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkczmx3TkA0C-4HW7IEd7BtfyB0H9YqdUhNqVi1nyNlN3Ro4Xj3NIYSjwUZWQTzWp3Y5YKLc4UNE-o7vF3ldXyxd890e4ammx8uiGm3HECBqRyvb7N6rvzv3H_AboZFEHmeFw8iUNbvzg8-5yr1RWzZEQOY_ivjjhn0PtMSz9LSMQ_UJRFsA9ZDjk_2QrontigHMff5ChQTUq3I=w1280","date":"circa 1910","location":"Alderbrook  Farm at Pt. Lawrence","people":"NA","description":"Alderbrook Farm itself comprised a small part of the Culver holdings at Point Lawrence. This circa 1910 photograph shows the 15-acre apple and prune orchard that surrounded the house. Additional acreage was given over to raising cattle and Oxford down sheep. Alderbrook remained a working farm until 1915. In the distance are Sinclair, Guemes, and Cypress Islands (Source: Doe Bay Historical Images and Favorite Recipes)","source":"Ken Culver","notes":"According to records GN Culver leased and later purchased a large amount of land here for a \"gentlemen's farm\" in order to raise fruits commercially before the advent of irrigation in Eastern Washington created by Roosevelt's New Deal. The site was picked because it contained the most easterly location for a steamboat landing in a well sheltered cove. The farmhouse remains to this day in its original condition with no indoor plumbing or electricity. It is now a designated State Historic Site. All other buildings slowly deteriorated and collapsed over time. The last to go was the big hay barn seen to the left of the Farmhouse. When it finally collapsed I salvaged several of the weathered cedar 1x12 barn siding boards which later became an interior wall of the Culver Family cabin at Pt. Lawrence.  (Ken)","hasHighRes":true},
+    {"id":"0123","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcI8_RX00RhlWkAtGwI-Y7CoguN-NP3HOL-4Mf4zaVRJDVgjXMthGbeDYae-wWpz73FgKhkIRGtxlh3bqPJ8eHmDaxFyf1gjTpcQdkbcRmD-QmUgpYKq1lu76XG8MfIYz4XC5d6txbD5v6blsRbqle6MDfsEb1tK3Oie-rBuP5pl_ah-K6BzTG64eQeGVx3A82S6w21Ou-GJjs=w1280","date":"Mid to late 40's","location":"Pt. Lawrence Lodge","people":"Carroll Culver","description":"Carroll loading green alder onto a hot bed of coals at the smokehouse, which was built of green lumber.  Carroll did not \"smoke\" like so many did, but instead \"kippered\" resulting in a moist, soft, smoke which retained more oil.  The technique involved filleting then cutting the fillets into chunks.  The chunks were then brined in metal buckets over night using a recipe that was written on the boat house wall (I still have it).  Each bucket, when carefully filled with layers of salmon or herring, was covered with a heavy wooden top held down by a brick.  In the morning he would start a hot fire using cedar kindling and dry alder.  This could be risky as it would become a roaring fire which on numerous occasions caught the smoke house on fire - but a quick bucket brigade using salt water always spared it.  When the fire settled down to hot glowing coals he would then lay on fresh cut green alder and just let it smolder and smoke until the fire ultimately went out.  That evening he would pick the still warm pieces from the screened racks - there was never a better tasting piece of fish in my opinion.  Since freezing was still not available, most fish were canned, either smoked or unsmoked, using a large pressure cooker with the fish stuffed carefully into each open can and placed in the pressure cooker on top of the huge kitchen wood stove range.  You can imagine the heat in that kitchen on a hot summer day !  After opening, the hot cans were sealed using a Burpee hand crank lid sealer (often my job) and set aside to cool.  You had to wait for each can to \"sing\" or make a popping sign, indicating a good vacumn seal had been accomplished.    (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0124","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdNY0Zukx4x-Aa7KqUm94v_0bjc8dDymDAX_dIoTUlZFChs_M3frsonz4roMA-_icMWZ84b6dhlng1m7M27W8yCDe8mL9YVWx4gDBsYYXbGO9NmKBFlAwsnQI4cUMG5HJ9pAHVsSAPPrG3SV6Pouaxz-jjMR_DZz3ZwBvZYSRHs35R8AuN8zY0JizyVoDAY0E3w3k4utHSC=w1280","date":"1941","location":"TBD","people":"Ken Culver","description":"TBD","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0125","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeH-RHGXd1ixjDugD7pX-vOx8JPL63iR864FC6Vic-X4WJE1SRYAd8blwTIhJLUIG_7CT2LYhtdg98t3vjYON0zysIxLVoJRh8ZCdOHAebosg1q01jTb2zM_YMupTkWBsaL16yDe5LtZEVisdjkZgKqCxGDZ8iSeJyR-SkydMFJ-jtdRj923hn-NqL_dJDsKTbLIlg-dQxF0k4=w1280","date":"Circa 1945-46","location":"TBD","people":"Ken Culver","description":"Ken - valentines card.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0126","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkf0ve3u5vAxUylP3ofy0E8nbhHTAMGiOtmxt9X3AXynq9YGilCDP0kaelZdJ4zJUSEaMuKYq5Mc-RuZt3wOqS_zXTXfRoC8rbKSEgQu5A0pm0N2wf4Vz4hHdfvu1jOujCjAalSP3ztB6UxskQSpis4cop8xMtfOgfuaqTh9kUVhuOdmYdkuo92evsdJl0SsYGKclNPp5ufGTtw=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate of 0165."},
+    {"id":"0127","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkci1LLkJ6ZZ_aDeG5-XIr8o9r8ocqK5I2uxEzmhGt3EyrpRU4DsQIxC2TCplxiVdCEoeX8ynyBDVxrHQiUqy2Gklmcy4_koCjZ_lw8iN-4oMl3-ZLxme0FIz0RfxNF5_eN9a7bBqQ9T8-j5mk4KlUv7DGr0lDL4wpLHws1D8e8R0L1e9RU-Ad2u-unS98r9vLqfoNeuyqfWil0=w1280","date":"TBD","location":"Pt. Lawrence Lodge","people":"TBD","description":"Photo taken from porch of Cabin #4 looking to Cabin# 1 complete with jumping deer. You can see cabin# 2 (which Marcia and I lived in during the summer of l968 while upgrading cabin #1 for our use). Next to cabin 2 was the bath house, with Women in the back, and Men in the front. The only bathrooms at that time for the cabins. Each side had a single shower, with hot water furnished by a wood heater located in the middle of the cabin, and requiring the user to build a hot fire for at least an hour ahead of time.  Since the water pressure was low (gravity system then) it was common practice to yell \"flushing\" in case someone was showering on the other side so that they did not get scalded.  There was no thermostat and the hotter the fire the hotter the water could get.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0128","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcKti-_SzbIdjaTqjfqWRfypoe48ASagnDFxyr9BtIANxakZMz5C7np_o7u6JevhC-Duz2-8vJKznGZDTpBgiTjN_qkkhkyI0DXhga9aE0WlRAqywMEsnSuuKfSBXzB1vyCDhe5QsL6kCLfyVVGiD_pglzfGhGG8oMoY8lfxlz3VgJpjNySRjznP0U3Y91sHR-7E3-qIYA1DtA=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate of 0169"},
+    {"id":"0129","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdjb5Qnlo-wTPW5uOHXMZRbEgT1eL66NG6PWOiygmyRYkjFIeGTQ7UY4GfPt_4DebG4wXqcDYpv4A3TxhIO7F3POGhm7wDr2FtftOYFTiITlmWHmDRI3bD_dXZ1640owKBXIMQQjyqnhq6hA9YRBtQiUCh8ZAc1WOxBrDaUaLUCdL0Rz8k2gMQjJDgSaOI8MeElfCVb0bkm0yA=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate of 0155"},
+    {"id":"0130","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkes-_u02l-vK3-esA5XzRrI7H5LhYQbPUy1LMYdDRMU-iC7X4Iz-nMWgpmFJDqiMbjA3um3TeE0pnn1jK1fBUXco28bjKVSWNqYQW9-J4giO_Rp7Xn2LiEb60t408UP6GC-oUzM47Hea-JbVTESsYmqBF77i7OkndzDWt8fD0R3kkITPlgMwaIRW-_W7uZCNYeNg42ciu6P=w1280","date":"1940's","location":"Point Lawrence Lodge","people":"Carroll Culver","description":"Carroll working on the Wisconsin air cooled engine in the 16 foot inboard rental boat built by the Reinell Boat Company in Marysville, WA. It had a rope start on the flywheel and could be obstinate—but when running it was quiet and fuel efficient—just slow.  I loved fishing out of this boat but many fishermen did not as a fish could run under the boat and foul in the running gear.  When modern outboards started to appear after the war, Carroll sold the boat locally.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true}
   ]
 }

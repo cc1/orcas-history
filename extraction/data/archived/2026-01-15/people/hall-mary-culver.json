@@ -1,0 +1,33 @@
+{
+  "slug": "hall-mary-culver",
+  "displayName": "Mary Luella (Culver) Hall",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/hall-mary-culver",
+
+  "connectionToPtLawrence": null,
+
+  "family": {
+    "parents": "Otis Henry \"O.H.\" Culver and Mabel Gertrude Smith",
+    "spouses": "George Mason Hall (married July 16, 1929)",
+    "children": "George, Jerald, Sandra (Durand)",
+    "siblings": "Evelyn Louise Culver, Leda Gertrude Culver, Mabel Florian Culver, Carroll Nelson Culver"
+  },
+
+  "keyDates": "1905-1980 (d. Age 74)",
+
+  "timeline": [
+    {"year": 1905, "age": 0, "event": "Born November 16, 1905 in Friday Harbor (Note: O.H. Culver's page says 1903)"},
+    {"year": 1929, "age": 24, "event": "July 16: Married George Mason Hall"},
+    {"year": 1980, "age": 74, "event": "April 28: Died in Edmonds, WA"}
+  ],
+
+  "biography": null,
+
+  "miscellaneous": "Occupation: Elementary school teacher (kindergarten through 2nd grade). Graduate of Bellingham Normal School (now WWU).",
+
+  "researchQuestions": [
+    "Confirm birth year - 1903 or 1905? (O.H. Culver's page says Nov 16, 1903)"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Short page. Birth year discrepancy with O.H. Culver's page."
+}

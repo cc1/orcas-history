@@ -1,35 +1,14 @@
 {
   "slug": "smith-dr-charles-carroll",
-  "displayName": "Dr. Charles Carroll Smith",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/smith-dr-charles-carroll",
-
-  "connectionToPtLawrence": "Father of Mabel Gertrude Smith, who married O.H. Culver. Carroll Nelson Culver was named after him.",
-
-  "family": {
+  "name": "Dr. Charles Carroll Smith",
+  "extractedAt": "2026-01-15T20:47:00.000Z",
+  "images": [],
+  "immediateFamily": {
     "parents": "Ransom Smith and Lydia Smith",
-    "spouses": "Mary Lurana Perry",
-    "children": "Mabel Gertrude Smith (wife of O.H. Culver)",
-    "siblings": "TBD"
+    "spouse": "Mary Lurana Perry",
+    "children": "Mabel Gertrude Smith (wife of O.H. Culver)"
   },
-
-  "keyDates": "1830-1906 (d. Age 76)",
-
-  "timeline": [
-    {"year": 1830, "age": 0, "event": "June 11: Born in Sharon, Connecticut"},
-    {"year": 1861, "age": 31, "event": "A few days after getting married, joined the Vermont Volunteers during the Civil War"},
-    {"year": 1863, "age": 33, "event": "Fought at Battle of Gettysburg"},
-    {"year": null, "age": null, "event": "After the war: Sick with typhoid fever, then went to medical training"},
-    {"year": 1906, "age": 76, "event": "June 19: Died in Gaysville, Vermont"}
-  ],
-
-  "biography": "A few days after getting married, he joined the Vermont Volunteers during the Civil War and fought at Gettysburg. Was sick with typhoid fever after the war, then went to medical training. Was a country doctor in Vermont.",
-
-  "miscellaneous": "Occupation: Medical Doctor (country doctor in Vermont). Carroll Nelson Culver was named after him. Civil War veteran - Vermont Volunteers, fought at Gettysburg.",
-
-  "researchQuestions": [
-    "When did Charles marry Mary Lurana Perry?",
-    "What other children did Charles and Mary have besides Mabel?"
-  ],
-
-  "extractedAt": "2026-01-14"
+  "keyDates": "Birthdate: June 11, 1830\n\nBirthplace: Sharon, Connecticut\n\nDied: June 19, 1906 (age 76). Gaysville, Vermont.",
+  "occupation": "Medical Doctor",
+  "about": "A few days after getting married, he joined the Vermont Volunteers during the Civil War and fought at Gettysburg. Was sick with typhoid fever after the war, then went to medical training. Was a country doctor in Vermont.\n\nCarroll Culver was named after him."
 }

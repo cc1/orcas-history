@@ -1,116 +1,17 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0061-0070",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0061-0070",
+  "extractedAt": "2026-01-15T21:40:00.000Z",
+  "count": 10,
   "photos": [
-    {
-      "number": "0061",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcA7u27qzgH4Ho153ehF-gv-fcydeH1MPedudeXY8wG-17XvERKA23nwr-6uxVWTk0i1q1Z0XZsKlzraN27m-WC_lRcN4gfsd8lxMMtGbUeyBAuXBiFWsyhxhb_xfbuhifZEix-MW3-qK3KtexTqH8tiVpbVavAnF_j8DoVjJAR3tb4Jsjt-3lqYNKh2JK-3V20aM0GEKaaV_Q=w1280",
-      "date": "TBD",
-      "location": "Pt. Lawrence Lodge",
-      "people": "Earl Jewell of Bellingham",
-      "description": "Earl won the booby prize for the smallest fish at this derby. Ironic because Earl was one of the best fisherman and a frequent face around Pt. Lawrence Lodge during fishing season.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0062",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd3hx_x_7r8jNncIRoGyl-phSVmVjPJCdg-5qLDoVb439FCFlz2lIOR0nn8w8psfprJS7SpxfThFAksPuXLZVJrBz7KxzLA6s-30rxWK-yDbuq4cucXxyHtfT2exn-CHEa5k8jY8C7e0k4MmOc82X8UvIVFb1mhueaCjoRMFX4aYdyn0VIVbaRzsOEshUePm0F-lIXypMcg=w1280",
-      "date": "TBD",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Derby news, probably in the Orcas Islander or San Juan County Journal. Salmon derbies were a big part of the economy then, and hence newsworthy. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0063",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcGiqbYazOhVIalWCBzpVTaNp_w5kVs5IyRz0oShJOGaaKOhoUIX8hUPYs954w2ouw1MOyXXYKzXBQwYPggVEmxKSqDLgfZieCi8bU-mWle5Q-IyFJK2I-ZrW6MNLIiHNCtvrKuJEmSdfFWR28fAfzfGNpwQ0cho0JZxOTcOKoKGqklwS35skePkoS1heeIemy70M1TTdl0Lyk=w1280",
-      "date": "TBD",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "TBD",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0064",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdlG7ArcEFYjqLIN_QkpT_zKbg8E2ZslzOfIF4mShDhxkIKsnnsQMPMTAusPukXcxwRPF3B6eIIzjt0NBVMyyKCeFVY3u0APwyavonhvPabfseokkhB-fBceO9YfwOhqp_zRtSs_CBgfXJiUIpAtdplxi59Y8Ng7ot1wKB7ZmicM6rF5ucJlqyV0N1cjhiPEnCRbfo9wR2N=w1280",
-      "date": "1915",
-      "location": "San Juans (appears taken from Crane Island)",
-      "people": "NA",
-      "description": "Stern Wheeler steamer Gleaner traversing the San Juans. Photo appears to be taken from Crane Island. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0065",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCke5Wu9WwhvXjbSJgy7nhxpYtqEQRkuYGE4npZ_cPj7h2g1upqGMVIni5wMod8S_cv1sfIUJX7fkZPxSotwiVnXOV7BRXOtdkmngl-nsZYL_hD5x6VGcj8rZuaP51LQla33lAY569spAuWTuzblBgLDTmvwoF_lNnbFYrdUjU6n28GY_GYnsKT_A0xexNAJ6K89A_b_RuuEi=w1280",
-      "date": "1935",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "The Lodge and beach in 1935 - no floats yet, no overhead walkway. Campers on the beach, which is what inspired Carroll Culver to consider starting a fishing resort. All the boats except one appear to be inboards—outboards were not big enough to make the trip from the mainland. Notice the smoke coming up from the smokehouse! Also notice the Pacific Telephone and Telegraph phone lines on the hill behind the Lodge. The lines terminated at the second beach from Pt. Lawrence where the cable went underwater to Lummi Island. Also notice the lack of trees and vegetation - likely caused by a fire years before. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0066",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkc5QTn85kOA2NaJYzL3kEUG8ZCTBW0yGkfnQxgxyDlW7bYUrM9jmaUst7UytRSWMkcqHC3mzwVJBY6YAO_vLUyKLoilBrrwU7amQ2nRF0Q-D2rBNsLmK4KmouOii76CIQcL6hEu9XP8P4WK44bla--d2XH001ITiROy-xceiNaBeDV9iCVSsPl-apgdyWuCbVG7DvE24n84VBc=w1280",
-      "date": "1935",
-      "location": "Pt. Lawrence Lodge",
-      "people": "NA",
-      "description": "This is cabin #3 which suffered major damage from a tree during a big winter storm. You will note there there was no grass yet—the ground looks pretty rough. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0067",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkd8hXN_OPQN_6JhoWyhUM9TMV5p97MLi0Sdah5ROEC7ZZwk6-no6BgLTfU0XJCv_3T22qjj3r0SB4XPh89m0R5i0Ne_hZa_jiqgPrX04EtknJu9o8g33CHYZA0sYLsJZYiXeeOg2HwAQLap4BDYeEHadPdq6mjiJzT-7sVmEhrbUenZ0oj3pXFcGCeY5m9Xzdu3OupRmNYv72Q=w1280",
-      "date": "1935",
-      "location": "Pt. Lawrence Lodge",
-      "people": "NA",
-      "description": "Cabin #3 - after a large fir snapped and fell across it during a major windstorm. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0068",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcFbkbSUS350pVhTIokgRFTuWOftbbEb57TqEwyJHxw4ZFR-LiEvz6X-PjqcWS8BTcTcVtnVlb3STmE2AhsvuBNShwivLoiZ0aTMlHnl1lBkBkxvGJFV7p8tozkK7jKrQ4W7qj9mF7GB5KCK1zcJ_RoXh4vzZcX00SUi5992wGcQLGEiWcCKYJ006MXtVpIZ5qv_zOV3bV_=w1280",
-      "date": "1935",
-      "location": "Pt. Lawrence Lodge",
-      "people": "NA",
-      "description": "Cabin #3 storm/tree damage. (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0069",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdZRSMm1lbuOfhSwliN5XcyaTBBOPnTeynHXzmHpwskZ4b9zas5swRsZ0BKXsn8zIpKjo8d1A4jttvy1HuwMQgyAudDqadOTgUedql4cwIjnrmvJOpN8eJFLj0MMQ6axRQLymTQRtbOy5lmz2kF_4zPa9P3o0jJnHo1gTanfOzHW-s2RnbQFiuP5Sc1Qj066p285Ha_41hTPNs=w1280",
-      "date": "1938 September",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Derby time - judging from the crowd on the platform at lodge, it was weigh-in time. No floats, so every boat just anchored or pulled up on the beach. (Ken) Note the very tall post/piling in the left foreground, a remnant of the short lived Ferry to Lummi Island, or perhaps from the fish trap that was located in the bay earlier still.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0070",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeY4jI91bxn1GILP22fEgFbOLSuOsfC8Ck338qiRCyqLpGeITl_pUaBlke6EJRHVmJIvRY5uWY_BupxuhgHBe2cpbHMK7osZa3ru071vCOrUoEqnPex9BannPk3B7ViRfAXzQNd9_7__4Lwlo5CEZil8MrDJahzvP6r5btBfnfdM80cFpK7vkMFXuJTVrsr_8OeC3z2LaXazBo=w1280",
-      "date": "1939",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "A huge derby gathering. In 1939 there were floats made of cedar logs and planks, anchored with cables to cement blocks. The large vessel at the end of the dock was the Coast Guard cutter - 83 feet powered by two huge gasoline engines (Kermaths I believe). The exhaust was an amazing throaty roar—very impressive for a young kid. The flat bottom skiff on the beach to the right was built by the Reinell Boat Co. in Marysville (as were all the rental boats). It was 14 feet long and had two sets of oarlocks so that two people could row at the same time. Ken, Bruce, and Carolyn Culver all spent countless hours rowing that little boat.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    }
+    {"id":"0061","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkecPtVYelQ_F7THyJJLYKRrwDny5ZyMU5atldcoRe362uyLpOfr8jvzKp-vwVUYg_bMRiCPEy9cmxIVO2NMOU9wJvC5Sz-SJ8r-s4aNz1_m6K3zBe6NpRPRP7B3np1ampniJGXJhwHzDz6Ds5-HUq1ATJSgO9fgry_2SFUG91T9QvaxQMNw10vCLjaq2e7TMPiQhBPmL2osDdA=w1280","date":"TBD","location":"Pt. Lawrence Lodge","people":"Earl Jewell of Bellingham","description":"Earl won the booby prize for the smallest fish at this derby.  Ironic because Earl was one of the best fisherman and a frequent face around Pt. Lawrence Lodge during fishing season.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0062","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcodLKCotKcMw-_VXGmuRZsd_85GAYqpsKuNC0Cwr8HkJ_T41FNk9wEvkqVqUsiGwRLi8_JJqAafY0luGuAxjJLDfzgiWC3tsuSZuNgjdQ_5TBpBfNj3bByn6FsD639WyS1VJZ13ZPOULXpk2sfa0aS-GBohG9YRRM9J9q1P6KQ3NuNiY0HdZJsSHxF2W8LorrZOA1ndXcI=w1280","date":"TBD","location":"Pt. Lawrence Lodge","people":"TBD","description":"Derby news, probably in the Orcas Islander or San Juan County Journal.  Salmon derbies were a big part of the economy then, and hence newsworthy.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0063","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkd1KVXPUx6PtWij9NRxXXPKqTxragedr4JR_raylwD9t-BPiBSn6hH2P8liV8mOALLO0nOU78pYvwVsn_fOEMJiqONRDzcbhQBFKxfooju8DlecpJpWQA7tNwUYNcFsSU3bpZrKRciEQkYqhWDgldQFQtrffK8COUKORXrjexZP7JrQUM5VuAuq_z9TLL-_dyaJs8yrquw4jTo=w1280","date":"TBD","location":"Pt. Lawrence Lodge","people":"TBD","description":"TBD","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0064","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfBJ6_1UAdP8s7tErazKa5Ge_priYZ7Z-Fl0PGqBBAgYqFa1421i-LO9JBPjg-XZfuiw4I5BHiPCN7YJfbXDxyPofR2o9S361lNP9FEOwYB9725LqFO_nVZ7zGa6WMbb1qSy7jZoG_iIqJogy8d_FnO3nV62SCHK6DpOlZTd_gVGlJo1h7IVl45Wh6YqVqWShNYFOZC9XKm=w1280","date":"1915-16","location":"Pole Pass","people":"TBD","description":"The Victoria-Anacortes ferry going West through Pole Pass. The name of the boat is the Harvester King, the first car ferry in the San Juans. Photo appears to be taken from Crane Island. (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0065","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkc5SFj9U_ypJPO61ANtSYs9xSJ1j4Ueg6QcGRn7UVBXB00miBZXaPeL19tpzzl1z5qmPFsX-BPi_fVBbAIQYsQ3eAFJo02XMWsVSSDBS6OVmQzsE03_fOeoO5qw80MXDgjA9aY2ZCzgWWlfHGoGpfRdePn-I7bFBrh-CokMRCnahHipmbvW2CtN6yFKopKjPNabV-A36aGg=w1280","date":"1935","location":"Pt. Lawrence Lodge","people":"TBD","description":"The Lodge and beach in 1935 - no floats yet, no overhead walkway. Campers on the beach, which is what inspired Carroll Culver to consider starting a fishing resort. All the boats except one appear to be inboards—outboards were not big enough to make the trip from the mainland. Notice the smoke coming up from the smokehouse! Also notice the Pacific Telephone and Telegraph phone lines on the hill behind the Lodge .  The lines  terminated at the second beach from Pt. Lawrence where the cable went underwater to Lummi Island. Also notice the lack of trees and vegetation - likely caused by a fire years before.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0066","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdDkha9KxqyZjODuzjjEd1hGU9tIdNXgTtfwDDE2EUWruv3N61TrD_LJDH9Rkn0PZ6WYVJWMIa2cSB55c50JpZthrQHVBOGV-nR-TKWHFjW4bkyZcPttnFFOX1EG38y4nt4q4J9E_8SIz_dXXJ3D04ZDH54KpUWVe5GOUwUYWHnET8HYMAIYwgdS0TrovFzjuZc0-Dm7_dV-FI=w1280","date":"1935","location":"Pt. Lawrence Lodge","people":"NA","description":"This is cabin #3 which .suffered major damage from a tree during a big winter store. You will note there there was no grass yet—the ground looks pretty rough.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0067","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkfoGO46AsC54XYLLpWhkbP0KH5qpNn3F74xCWovUX4mSRVeXOhpzYV4cRRetcp6scv5omMBi7p2Xnqt8nxnEs7CrV9wpEv0QlcFB3kP0D34FN0zxKVa3CsslA_NJWcx85e1EjFzszDhWZp8u2rfgUTEKKdYDdQrzIv-LsLyjKLZqbnMnOAdxHyO4Iiq5rYPcATMryUmNArZzi4=w1280","date":"1935","location":"Pt. Lawrence Lodge","people":"NA","description":"Cabin #3 - after a large fir snapped and fell across it during a major windstorm.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0068","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkcQGrDk8JgOFbGXKSnRFaBgVJD_JBUvDNcjq7Zt6IHNAuwy9sU8o2RIylvcYF_4ClZK4sQcY6jQUv5TePdq9iY0oliDy7zOJJ3_1f8pC89dUivMVIWcE_shuN-IQuLG3Y2X6GLPofhG0X-bae7kEGkjMRwH2J41w-nI2UuDBpk2ChoENsvoavV0sexdf870gtbGt1b0Ea2M=w1280","date":"1935","location":"Pt. Lawrence Lodge","people":"NA","description":"Cabin #3 storm/tree damage.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0069","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeBnuOA3N3xUqKXxRFcDncpjjN8Nl1yvwDOPIqUmsxI9olnvITYdqoDFzfbNuPu5wcu7zIo3jkmXsm55Z55Qgzog_sHp9SEGqkiCo9copDnbOj81-ADWKjj2nZlW795Ue3YPS9XINnyy3Pez3f9e-8Z_N40iR6Z0O_c_6D-i8XKR5A2JOA1u2zRwXj4rOI5jFTYWtNT6Kg9y8w=w1280","date":"1938 September","location":"Pt. Lawrence Lodge","people":"TBD","description":"Derby time - judging from the crowd on the platform at lodge, it was weigh-in time. No floats, so every boat just anchored or pulled up on the beach.  (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0070","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdyBft2OBk--vvvZAJ2a1wTqmPNFcOy6GKq06obsW9i-RzDJiQJ2iokXwzvD-5HZyaZqQe9V4HOKRDJsP5olRflEWtEqhgICkvYF3GguUc-QX7z7drfPKV_Deumb9r3cHNx2BXMCad1-xjWPBJ2sDRR-RowwQ23LN6TGoMRgnoww_vm3TRw1kX0qSuYvILfV_gLjqcglzCzDZw=w1280","date":"1939","location":"Pt. Lawrence Lodge","people":"TBD","description":"A huge derby gathering.  In 1939 there were floats made of cedar logs and planks, anchored with cables to cement blocks.  The large vessel at the end of the dock was the Coast Guard cutter - 83' powered by two huge gasoline engines (Kermaths I believe).  The exhaust was an amazing throaty roar—very impressive for a young kid. The flat bottom skiff on the beach to the right was built by the Reinell Boat Co. in Marysville (as were all the rental boats).  It was 14' long and had two sets of oarlocks so that two people could row at the same time.  It was occasionally rented by fishermen who wanted to catch cod in the nearby kelp beds or even troll for salmon.  In those days you could catch a salmon just off the floats!  Ken, Bruce, and Carolyn Culver all spent countless hours rowing that little boat, and then graduating to a 2 1/2 hp Lawson air cooled rope start outboard.  That was really living!  I distinctly remember the approved method of docking was to come into the float head on (crash!) and then run up and tie off. (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true}
   ]
 }

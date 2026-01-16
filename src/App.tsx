@@ -1,5 +1,6 @@
-import { Routes, Route, Navigate, useParams } from 'react-router-dom'
-import { AuthView, SignedIn, RedirectToSignIn } from '@neondatabase/neon-js/auth/react/ui'
+import { Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom'
+import { AuthView, SignedIn } from '@neondatabase/neon-js/auth/react/ui'
+import { authClient } from './lib/neon-auth'
 import { AuthProvider } from './lib/auth-context'
 import { Layout } from './components/layout/Layout'
 import { PhotosPage } from './pages/PhotosPage'
@@ -35,6 +36,21 @@ function AuthPage(): React.ReactElement {
   )
 }
 
+function RedirectToAuth(): React.ReactElement | null {
+  const location = useLocation()
+  const session = authClient.useSession()
+
+  // While loading, show nothing
+  if (session.isPending) return null
+
+  // If not signed in, redirect to auth
+  if (!session.data?.user) {
+    return <Navigate to="/auth/sign-in" state={{ from: location }} replace />
+  }
+
+  return null
+}
+
 function ProtectedContent(): React.ReactElement {
   return (
     <>
@@ -55,7 +71,7 @@ function ProtectedContent(): React.ReactElement {
           </Routes>
         </Layout>
       </SignedIn>
-      <RedirectToSignIn />
+      <RedirectToAuth />
     </>
   )
 }

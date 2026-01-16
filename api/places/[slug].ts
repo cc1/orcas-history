@@ -7,6 +7,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { db, place, media, mediaPlace } from '../lib/db.js'
 import { eq, and, asc } from 'drizzle-orm'
 import { createPatchHandler } from '../lib/patch-handler.js'
+import { getImageUrl } from '../lib/image-utils.js'
 
 const handlePatch = createPatchHandler({
   table: place,
@@ -85,7 +86,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const photos = linkedPhotos.map(p => ({
       id: p.id,
       number: p.number,
-      imageUrl: p.imageUrl || p.googleUrl,
+      imageUrl: getImageUrl(p.imageUrl, p.googleUrl),
       description: p.description,
     }))
 

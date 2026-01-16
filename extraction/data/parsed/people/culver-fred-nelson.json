@@ -1,37 +1,12 @@
 {
   "slug": "culver-fred-nelson",
-  "displayName": "Fred Nelson Culver",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-fred-nelson",
-
-  "connectionToPtLawrence": null,
-
-  "family": {
-    "parents": "George Nelson Culver and Diana Louise Aikens",
-    "spouses": "Unknown first wife (widowed by 1900); Alice M. Unknown (second wife, born c. 1871 in English-speaking Canada)",
-    "children": null,
-    "siblings": "Otis Henry Culver, Emma Louise Culver, Inez Adel Culver"
+  "name": "Fred Nelson Culver",
+  "extractedAt": "2026-01-16T03:10:00.000Z",
+  "images": [],
+  "immediateFamily": {
+    "sonOf": "George Nelson Culver and Diana Louise Aikens",
+    "brotherOf": "Otis Henry Culver; Emma Louise Culver, and Inez Adel Culver"
   },
-
-  "keyDates": "1866-1911 (d. Age 44)",
-
-  "timeline": [
-    {"year": 1866, "age": 0, "event": "Born September 1, 1866 in Gaysville, Vermont"},
-    {"year": 1870, "age": 3, "event": "Living with his parents in Stockbridge"},
-    {"year": 1880, "age": 13, "event": "Living with his parents in Des Moines"},
-    {"year": 1900, "age": 33, "event": "Widowed journalist living in San Juan"},
-    {"year": 1910, "age": 43, "event": "Fred and Alice were living in San Juan; Fred was a newspaper manager"},
-    {"year": 1911, "age": 44, "event": "March 21: Died in Bellingham, WA after surgery"}
-  ],
-
-  "biography": null,
-
-  "miscellaneous": "Occupation: Journalist, newspaper manager. Co-owned the Islander (later San Juan Islander) newspaper with brother O.H. Culver. Had poor health from youth. Died after 5-hour surgery in Bellingham. His father Nelson wrote his obituary titled 'Ring the Bell Softly, There's Crepe on the Door.'",
-
-  "researchQuestions": [
-    "Who was Fred's first wife?",
-    "What was Alice M.'s maiden name?"
-  ],
-
-  "extractedAt": "2026-01-14",
-  "notes": "Relatively sparse page with TBD content about wives"
+  "keyDates": "1866: Born September 01, 1866 in Gaysville, Vermont.\n\n1870: Fred was three and living with his parents in Stockbridge.\n\n1880: Fred N. was 13 and living with his parents in Des Moines.\n\n1900: Fred was a widowed journalist living in San Juan.\n\n1910: Fred and Alice were living in San Juan and Fred was a newspaper manager.\n\n1911: Fred died March 21, 1911 (age 44) Bellingham, WA, United States\n\n1920: Alice was a widow living in Friday Harbor.\n\n1930: Alice was a widow living in Bellingham.",
+  "notes": "TBD\n\n· He had an unknown first wife.\n\n· He married second Alice M. Unknown.\n\n· She was born about 1871 in English-speaking Canada."
 }

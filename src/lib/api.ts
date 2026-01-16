@@ -115,6 +115,7 @@ export async function getMedia(params?: {
   category?: 'photo' | 'document'
   sort?: 'number' | 'year-asc' | 'year-desc' | 'random'
   needsDate?: boolean
+  missingInfo?: boolean
   limit?: number
   offset?: number
 }): Promise<PaginatedResponse<MediaItem>> {
@@ -144,7 +145,7 @@ export async function updateMediaLinks(
     place?: { id: string; slug: string; name: string } | null
   }
 ): Promise<SingleResponse<MediaLinks>> {
-  return fetchJson(buildUrl(`/media/${number}/links`), {
+  return fetchJson(buildUrl(`/media/${number}`), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(links),
@@ -189,7 +190,7 @@ export async function getEntityNews(
   entityType: EntityType,
   slug: string
 ): Promise<SingleResponse<EntityNewsItem[]>> {
-  return fetchJson(buildUrl('/entity-news', { type: entityType, slug }))
+  return fetchJson(buildUrl('/news', { entityType, entitySlug: slug }))
 }
 
 // Entity-related APIs

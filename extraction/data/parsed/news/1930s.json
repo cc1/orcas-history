@@ -1,11 +1,7 @@
 {
   "slug": "1930s",
-  "name": "1930s News",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/news-by-year/1930s",
+  "decade": "1930s",
+  "extractedAt": "2026-01-15T21:52:00.000Z",
   "yearsIncluded": ["1931"],
-
-  "rawContent": "1931\n\nApril\nFerry Man Wins Fire Risk Verdict: Olympia, Tuesday, April 28, 1931—Judgement of the Whatcom County Superior Court giving Willis Nearhoff victory in a suit against the Home Insurance Company of New York was sustained by the Supreme Court yesterday. Nearhoff was owner of the ferry City of Clinton, which was insured as a carrier between Lummi and Orcas. She burned on March 23, 1929, while being taken from Everett to Seattle for repairs. The high court held that although the ferry burned while off her regular run, Nearheff was entitled to the fire insurance. (Seattle Daily Times)",
-
-  "extractedAt": "2026-01-14",
-  "notes": "News items from Seattle Daily Times about ferry insurance case"
+  "rawContent": "1931\n\nApril\n\nFerry Man Wins Fire Risk Verdict: Olympia, Tuesday, April 28, 1931—Judgement of the Whatcom County Superior Court giving Willis Nearhoff victory in a suit against the Home Insurance Company of New York was sustained by the Supreme Court yesterday. Nearhoff was owner of the ferry City of Clinton, which was insured as a carrier between Lummi and Orcas. She burned on March 23, 1929, while being taken from Everett to Seattle for repairs. The high court held that although the ferry burned while off her regular run, Nearheff was entitled to the fire insurance. (Seattle Daily Times)"
 }

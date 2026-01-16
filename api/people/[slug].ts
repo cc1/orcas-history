@@ -1,12 +1,35 @@
 /**
- * API route: GET /api/people/:slug
- * Returns a single person by slug with linked photos
+ * API route: GET/PATCH /api/people/:slug
+ * GET: Returns a single person by slug with linked photos
+ * PATCH: Updates person fields
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { db, person, media, mediaPerson } from '../lib/db.js'
 import { eq, and, asc } from 'drizzle-orm'
+import { getImageUrl } from '../lib/image-utils.js'
+import { createPatchHandler } from '../lib/patch-handler.js'
+
+const handlePatch = createPatchHandler({
+  table: person,
+  slugColumn: person.slug,
+  fieldMap: {
+    keyDatesText: 'key_dates_text',
+    connectionToPtLawrence: 'connection_to_pt_lawrence',
+    biography: 'biography',
+    miscellaneous: 'miscellaneous',
+    familyData: 'family_data',
+    timeline: 'timeline',
+    relatedPages: 'related_pages',
+  },
+  jsonFields: ['familyData', 'timeline', 'relatedPages'],
+  entityName: 'person',
+})
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  if (req.method === 'PATCH') {
+    return handlePatch(req, res)
+  }
+
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
@@ -67,7 +90,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const photos = linkedPhotos.map(p => ({
       id: p.id,
       number: p.number,
-      imageUrl: p.imageUrl || p.googleUrl,
+      imageUrl: getImageUrl(p.imageUrl, p.googleUrl),
       description: p.description,
     }))
 

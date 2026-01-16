@@ -1,40 +1,12 @@
 {
   "slug": "hipkoe-virginia",
-  "displayName": "Virginia Culver (Hipkoe) McLean",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/hipkoe-virginia",
-
-  "connectionToPtLawrence": null,
-
-  "family": {
-    "parents": "George August Hipkoe and Leda Gertrude (Culver) Hipkoe (based on middle name 'Culver')",
-    "spouses": "Dr. Alan A. McLean (divorced 1975)",
-    "children": "Richard McLean, Robert McLean",
+  "name": "Hipkoe, Virginia",
+  "extractedAt": "2026-01-15T20:35:00.000Z",
+  "images": [],
+  "immediateFamily": {
+    "parents": "TBD",
     "siblings": "TBD"
   },
-
-  "keyDates": "1925-2004 (d. Age 79)",
-
-  "timeline": [
-    {"year": 1925, "age": 0, "event": "March 7: Born in Bellingham, WA"},
-    {"year": null, "age": null, "event": "Graduated from University of Washington with degree in English"},
-    {"year": null, "age": null, "event": "While at university, met Dr. Alan A. McLean"},
-    {"year": null, "age": null, "event": "Moved to New York area; worked in industrial psychiatry field editing articles and abstracts"},
-    {"year": 1975, "age": 50, "event": "Virginia and Alan divorced; joined Vineyard Committee on Hunger"},
-    {"year": 1978, "age": 53, "event": "President of Martha's Vineyard League of Women's Voters (1978-1980)"},
-    {"year": null, "age": null, "event": "1980s: President of Eastville-Lagoon Association"},
-    {"year": 1990, "age": 65, "event": "President of Vineyard Committee on Hunger (1990-1995)"},
-    {"year": 1994, "age": 69, "event": "Retired from Vineyard Haven Library"},
-    {"year": 2004, "age": 79, "event": "May 14: Died at home in Oak Bluffs, Martha's Vineyard, MA"}
-  ],
-
-  "biography": "From obituary (Vineyard Gazette Online, May 28, 2004):\n\nVirginia Culver Hipkoe McLean, 79, died at her home in Oak Bluffs on May 14, after a lengthy illness. A longtime resident of Lagoon Pond, she was born on March 7, 1925 in Bellingham, Wash., where she was raised. She was graduated from the University of Washington with a degree in English.\n\nWhile attending university, she met Dr. Alan A. McLean, 'a prominent psychiatrist, author and leader in the budding field of applied industrial psychiatry'. She worked in New York editing original articles and abstracts of literature in this emerging field.\n\nOn the Island, she worked for several years at the Vineyard Haven Library until her retirement in 1994. At work she would often surprise the unsuspecting with her wry, often cynical wit. She had a distinctly offbeat sense of humor. She worked in various sections of the library, finishing her career there in the children's section.\n\nVirginia volunteered her time to promote civic involvement, serving as president of the Martha's Vineyard League of Women's Voters from 1978 to 1980. She was also president of the Eastville-Lagoon Association in the 1980s and an active member of the Vineyard Committee on Hunger, joining soon after its founding in 1975 and serving as its president from 1990 to 1995.\n\nShe is survived by her sons, Richard McLean of Oak Bluffs and Robert McLean of Toronto, Canada; granddaughters Sarah McLean and Emily McLean.",
-
-  "miscellaneous": "Graduate of University of Washington (English). Worked as editor in industrial psychiatry field. Longtime resident of Martha's Vineyard. Known for wry, cynical wit and offbeat sense of humor.",
-
-  "researchQuestions": [
-    "Who were Virginia's parents? (Middle name 'Culver' suggests connection to Leda Culver Hipkoe)",
-    "When did Virginia marry Dr. Alan McLean?"
-  ],
-
-  "extractedAt": "2026-01-14"
+  "keyDates": "1925: Born on Mar 7, 1925 in Bellingham, WA\n\nTBD: She married Dr. Alan A. McLean, \"a prominent psychiatrist, author and leader in the budding field of applied industrial psychiatry\".\n\n1975: Virginia and Alan divorced in 1975.\n\n2004: Died on May 14, 2004 in Oak Bluffs, Dukes, Massachusetts.",
+  "obituary": "Source: Vineyard Gazette Online (Martha's Vineyard, NY) May 28, 2004\n\nVirginia C. McLean, 79, Was Editor and Librarian\n\nVirginia Culver Hipkoe McLean, 79, died at her home in Oak Bluffs on May 14, after a lengthy illness. A longtime resident of Lagoon Pond, she was born on March 7, 1925 in Bellingham, Wash., where she was raised. She was graduated from the University of Washington with a degree in English.\n\nWhile attending university, she met the man she would marry, the late Dr. Alan A. McLean, a prominent psychiatrist, author and leader in the budding field of applied industrial psychiatry. They married in August 1949 and resided in New York City and Westchester County until their divorce in 1975.\n\nWhile living in New York, she worked in an editorial capacity for various employers, including Columbia University. She also worked as a preschool assistant for several years at the Westchester Day School, as an employee of Harper & Row publishers and for Random House.\n\nVirginia moved to the Vineyard in 1975 and worked for 18 years at the Vineyard Haven Library until her retirement in 1994. At work she would often surprise the unsuspecting with her wry, often cynical wit. She had a distinctly offbeat sense of humor. She worked in various sections of the library, finishing her career there in the children's section which ideally suited her background as an avid reader and her early experience in preschool education.\n\nVirginia volunteered her time to promote civic involvement, serving as president of the Martha's Vineyard League of Women's Voters from 1978 to 1980. She was also president of the Eastville-Lagoon Association in the 1980s and an active member of the Vineyard Committee on Hunger, joining soon after its founding in 1975 and serving as its president from 1990 to 1995.\n\nShe is survived by her sons, Richard McLean of Oak Bluffs and Robert McLean of Toronto, Canada; granddaughters Sarah McLean and Emily McLean, both of Toronto; and her sister, Janice Lind of Linden, Wash.\n\nDonations in her name are requested to the Vineyard Committee on Hunger, P.O. Box 965, Vineyard Haven 02568 or to the Vineyard Haven Public Library, P.O. Box 265, Vineyard Haven 02568."
 }

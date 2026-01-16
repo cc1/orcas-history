@@ -1,33 +1,11 @@
 {
   "slug": "johanson-larry",
-  "displayName": "Larry Johanson",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/johanson-larry",
-
-  "connectionToPtLawrence": "Moved to family property on Doe Bay, Orcas Island in 2003 with wife Beverly. Spent final years on Orcas Island.",
-
-  "family": {
-    "parents": "Helge Johanson and Mabel Florian (Culver) Johanson",
-    "spouses": "Beverly (Curtis) Johanson (married 50+ years)",
-    "children": "TBD",
-    "siblings": "TBD"
+  "name": "Larry Johanson",
+  "extractedAt": "2026-01-15T20:45:00.000Z",
+  "images": [],
+  "immediateFamily": {
+    "parents": "Helge Johanson and Mabel Florian Culver"
   },
-
-  "keyDates": "1935-2008 (d. Age 73)",
-
-  "timeline": [
-    {"year": 1935, "age": 0, "event": "May 18: Born in Bellingham to Helge and Florian (Culver) Johanson"},
-    {"year": 1959, "age": 24, "event": "Joined his father at Helge Johanson Insurance"},
-    {"year": 1960, "age": 25, "event": "Spent summer in London studying at Lloyd's of London with wife Bev"},
-    {"year": 1970, "age": 35, "event": "Co-founded Griffin Garrett Johanson insurance firm"},
-    {"year": 2003, "age": 68, "event": "Moved to family property on Doe Bay, Orcas Island"},
-    {"year": 2008, "age": 73, "event": "August 9: Died suddenly near Bellingham"}
-  ],
-
-  "biography": "From obituary (August 9, 2008):\n\nBorn May 18, 1935, to Helge and Florian (Culver) Johanson, Larry was a lifetime resident of Bellingham until five years ago when he and his wife of 50 years Beverly (Curtis), moved to the family property on Doe Bay, Orcas Island. He was a graduate of Campus School, Bellingham High School and the University of Washington, where he made lifelong ties with his Delta Tau Delta fraternity brothers. In 1959, he joined his father at Helge Johanson Insurance and later the next year he and Bev spent a memorable summer in London, where Larry studied at Lloyd's of London. In 1970 he co-founded Griffin Garrett Johanson.\n\nLarry Johanson was an excellent and civic-minded businessman, a loving family man and loyal friend with a sometimes maddeningly keen eye for detail, a talent for reading a room and a remarkable ability to capture a person, a moment or an idea with a well-turned phrase or a droll comment, or both. Known for his quick wit, long stories and conversational prowess, Larry had a gift for putting people at ease and made doing so a priority. He loved nothing so much as a visit with friends or family — if the subjects of boats, fishing, Husky football or business came up, so much the better.",
-
-  "miscellaneous": "Graduate of Campus School, Bellingham High School, University of Washington. Member of Delta Tau Delta fraternity. Co-founder of Griffin Garrett Johanson insurance firm. Known for his quick wit and hospitality at his Orcas Island home.",
-
-  "researchQuestions": [],
-
-  "extractedAt": "2026-01-14"
+  "keyDates": "1935-2008 (d. Age 73)\n\nBirthdate: May 18, 1935\n\nDeath: August 09, 2008 (73) (Bellingham, WA)",
+  "obituary": "Aug. 9, 2008\n\nBorn May 18, 1935, to Helge and Florian (Culver) Johanson, Larry was a lifetime resident of Bellingham until five years ago when he and his wife of 50 years Beverly (Curtis), moved to the family property on Doe Bay, Orcas Island. He was a graduate of Campus School, Bellingham High School and the University of Washington, where he made lifelong ties with his Delta Tau Delta fraternity brothers. In 1959, he joined his father at Helge Johanson Insurance and later the next year he and Bev spent a memorable summer in London, where Larry studied at Lloyds of London. In 1970 he co-founded Griffin Garrett Johanson and Schacht, later the Unity Group, from which he retired in 1995. Meeting his Swedish relatives in the 1970s was an important and lasting connection that continues with the next generation. He belonged to many organizations, including University Club, Hobby Club and Bellingham Rotary Club, where he was a past president and a Paul Harris Fellow. He was a member of First Congregational Church, and also served on the Board of Directors for the Whatcom Museum. Anyone who knew Larry knew him as an excellent and civic-minded businessman, a loving family man and loyal friend with a sometimes maddeningly keen eye for detail, a talent for reading a room and a remarkable ability to capture a person, a moment or an idea with a well-turned phrase or a droll comment, or both. Known for his quick wit, long stories and conversational prowess, Larry had a gift for putting people at ease and made doing so a priority. He loved nothing so much as a visit with friends or family — if the subjects of boats, fishing, Husky football or business came up, so much the better. There's no other way to put it: Larry held court, most contentedly on the deck, at the table or in the living room of his Orcas home, though any venue could work and often did. More importantly, he held so many, many people in his heart that we all felt welcome to his unfailing humor, his wise counsel and his hospitality, all of which were often sought and freely given.\n\nLarry Johanson died suddenly on Saturday, August 9, near Bellingham. It is possible to believe that Larry's heart was so full of peace and happiness at that moment that it simply stood still. He was having a good time, had had a good day, a wonderful summer and a rich life. He was 73.\n\nPreceded in death by his son Eric (1972), Larry is survived by wife Beverly and sister Margaret Fickel, of Orcas Island, daughter Laura Johanson (and her husband Kyle Ringo) and grandsons Gus and Joey Ringo, of Bellingham, as well as numerous nieces, nephews and cousins."
 }

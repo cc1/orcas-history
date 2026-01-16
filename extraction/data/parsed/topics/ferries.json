@@ -1,53 +1,56 @@
 {
   "slug": "ferries",
   "name": "Ferries",
-  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/topics/ferries",
-
-  "sections": [
+  "extractedAt": "2026-01-15T21:08:00.000Z",
+  "images": [
     {
-      "heading": "In the News",
-      "content": "Collection of news items from 1927-1931 about ferry service to Orcas Island."
-    },
-    {
-      "heading": "Memories by Jane Barfoot Hodde",
-      "content": "By 1926-27 nearly every family had a car. A ferry ran from Orcas to Anacortes, but the long drive from Anacortes to Bellingham, where most of the trading was done, was a definite deterrent to travel.\n\nA group had a small ferry and said if island neighbors would build a slip they would start service from Point Lawrence (Alderbrook) to Lummi. Cars would drive across, take another ferry across Hales Pass to Gooseberry Point, then drive to Bellingham.\n\nOur place, Woodside Farm, had plenty of good timber suitable for the pilings for the slip. John Gray, George Loomis, William Moore, Culver Willis, and my father, Cecil Willis, all community-minded, worked for several weeks felling trees and getting a big boom ready to be towed to Point Lawrence. When they were nearly finished with the project, my mother decided to walk across the field to see what had been done.\n\nIt was June 1, 1927, the last day of school. My brother John and I learned that we had passed eighth-grade exams, which made us eligible for high school. We raced the two-and-a-half miles home to tell our folks that we'd passed. We were greeted with the shocking news that my father had been injured when he jumped a log that was being pulled with his team; he was crushed.\n\nMedical assistance was limited to a shot of morphine by a so-called doctor from Olga. A Coast Guard boat came the three hours it took from Port Angeles, took my father the three more hours to Bellingham. Father died that night. Needless to say, our lives were completely changed that day.\n\nPoint Lawrence was not a good area for a ferry slip. The next year it was moved to Buckhorn, then to Terril's Beach, but it, too, proved unsatisfactory.\n\nIn 1936, a Mr. Tuttle, Chet Carlson, and Lee Quin Captain operated a ferry from Obstruction Pass to Chuckanut, south of Bellingham, which ran until the early 1940s.",
-      "source": "125 Years: Olga: Memories and Potlucks (Compiled by Irene Barfoot O'Neill)"
+      "url": "https://lh3.googleusercontent.com/sitesv/AAzXCkcoa0hDQwx_ZJgWMO_peo9hS89oAxA2lmzD6x7UCp6u6Zj2cuC6qKzSTSnzNzx1EDF9gbDdAPEp079j21F-y1F0q3Qvw1WPaR226HrfEwsMtE2lHItFxfUeI7oKyRmENardDUgR9QZEvbVsAx_-2HT5gyMs2Cw_9s6sETZgVUTg5rtk_6RzmBmYUweLzkNieLC8CJlCoLq15pcJOq4JeT66qf-OjH0EZH4r74A=w1280",
+      "caption": "Image 0090: City of Clinton ferry at Culver's Landing, 1927"
     }
   ],
-
-  "newsItems": [
-    {"year": 1927, "month": "May", "day": 28, "content": "Automobile ferry service between Legoe Bay, Lummi Island, and Culver's Landing, Orcas Island, will be established about June 5 by John D. Corcoran and Hiram Tuttle, who have purchased the ferryboat City of Clinton for that service, paying about $10,000 for the vessel. The ferry has been running between Mukileto and Whidby Island. She has accommodations for ten automobiles and 100 passengers. She will connect with the service given by the ferry Central running between Lummi Reservation and Lummi Island. The new service is subsidized by Bellingham business men and Whatcom and San Juan Counties.", "source": "Seattle Daily Times"},
-    {"year": 1927, "month": "July", "day": 6, "content": "Ferry service between Lummi and Orcas Islands was established Sunday by Corcoran & Tuttle when they placed the City of Clinton in operation. It carried a dozen or more cars. The ferry will operate daily during the summer, connecting with the ferry Central operated by Whatcom County between Goosberry Point, Lummi Reservation and Beach, Lummi Island. Cars will motor between Beach and Legoe Bay, the Lummi Island terminus. The Orcas Island pier is at Culver's Landing.", "source": "Seattle Daily Times"},
-    {"year": 1927, "month": "December", "day": 17, "content": "Alleging that it already has provided adequate service, the Puget Sound Navigation Company yesterday filed a protest with the Department of Public Works against an application of John D. Corcoran for a certificate to give ferry service between Legoe Bay, Lummi Island, and Culver's Landing, Orcas Island.", "source": "Seattle Daily Times"},
-    {"year": 1928, "month": "January", "day": 1, "content": "A large delegation of residents of Lummi and Orcas islands is expected to attend a hearing by the State Department of Public Works at Bellingham Tuesday on the Application of John D. Corcoran and Hiram Tuttle for a certificate of public convenience and necessity. The ferry Clinton provides year around service.", "source": "Seattle Daily Times"},
-    {"year": 1928, "month": "January", "day": 12, "content": "The trustees of the Bellingham Chamber of Commerce adopted resolutions favoring the retention of the ferry service between Legoe Bay, Lummi Island, and Culver's Landing, Orcas Island. A copy will be sent to the State Department of Public Works, which on January 17 will hold a hearing here on the protest of the Puget Sound Navigation Company against the granting of a certificate to Hiram Tuttle and John D. Corcoran, authorizing them to maintain such service in 1928.", "source": "Seattle Daily Times"},
-    {"year": 1928, "month": "February", "day": 17, "content": "Application of Hiram Tuttle and John D. Corcoran for a certificate for ferry service between Legoe Bay, on Lummi Island, and Culver's Landing, on Orcas Island, has been set for hearing by the Department of Public Works for 10 a.m., March 16, at Olympia.", "source": "Seattle Daily Times"},
-    {"year": 1928, "month": "November", "day": 18, "content": "Representing a number of business men who have been subscribing $150 a month toward the operation of the ferry between Lummi and Orcas islands, a committee yesterday asked the Whatcom County commissioners to increase their monthly subsidy from $150 to $250. The ferry is operated by J. D. Corcoran and Hiram Tuttle. The commissioners promised to do what they can to keep the ferry in service, but advised the committee to see if it cannot get some financial assistance on the islands.", "source": "Seattle Daily Times"},
-    {"year": 1929, "month": "March", "day": 23, "content": "The ferry City of Clinton, burned while being taken from Everett to Seattle for repairs.", "source": "Seattle Daily Times"},
-    {"year": 1930, "month": "June", "day": 4, "content": "For travelers to the San Juan Islands, and Orcas Island particularly, announcement was made today by the Puget Sound Navigation Company that the auto-ferry Beeline is now in operation between Orcas and Bellingham, making two round trips daily. By this new service, Orcas will be given six sailings every day to the mainland and two daily to Vancouver Island.", "source": "Seattle Daily Times"},
-    {"year": 1930, "month": "July", "day": 9, "content": "Freight Lines Wins Right to Operate Route: Olympia—The Puget Sound Freight Lines, Inc., today won its contest with the Puget Sound Navigation Company for the right to operate a direct automobile and passenger ferry service between Orcas Island and Goose Berry Point on the mainland near Bellingham. A decision in favor of the company, which operates freight and passenger ferry service between Seattle, Bellingham and intermediate points was handed down today by the State Board of Public Works.", "source": "Seattle Daily Times"},
-    {"year": 1930, "month": "October", "day": 26, "content": "Overhaul of the Whatcom County ferry Chief Kwina has been ordered to prepare her for the opening of the new combined service to Lummi Island and Orcas Island. The route will be served by the automobile ferry Pioneer and will give the people of Bellingham and Whatcom County a new and shorter route to Orcas Island.", "source": "Seattle Daily Times"},
-    {"year": 1931, "month": "April", "day": 28, "content": "Ferry Man Wins Fire Risk Verdict: Judgement of the Whatcom County Superior Court giving Willis Nearhoff victory in a suit against the Home Insurance Company of New York was sustained by the Supreme Court yesterday. Nearhoff was owner of the ferry City of Clinton, which was insured as a carrier between Lummi and Orcas. She burned on March 23, 1929, while being taken from Everett to Seattle for repairs. The high court held that although the ferry burned while off her regular run, Nearheff was entitled to the fire insurance.", "source": "Seattle Daily Times"}
+  "inTheNews": [
+    {
+      "year": "1927",
+      "items": [
+        "May 28: Automobile ferry service between Legoe Bay, Lummi Island, and Culver's Landing, Orcas Island, will be established about June 5 by John D. Corcoran and Hiram Tuttle, who have purchased the ferryboat City of Clinton for that service, paying about $10,000 for the vessel. The ferry has been running between Mukileto and Whidby Island. She has accommodations for ten automobiles and 100 passengers. She will connect with the service given by the ferry Central running between Lummi Reservation and Lummi Island. The new service is subsidized by Bellingham business men and Whatcom and San Juan Counties. (Seattle Daily Times)",
+        "July 6: Ferry service between Lummi and Orcas Islands was established Sunday by Corcoran & Tuttle when they placed the City of Clinton in operation. It carried a dozen or more cars. The ferry will operate daily during the summer leaving Legoe Bay for Culver's Landing at 9:20 a.m. and 3:00 p.m., and leaving Culver's Landing on the return trip at 10 a.m. and 4:30 p.m. (Seattle Daily Times)",
+        "December 16: The Whatcom County Commissioners have been asked to increase their monthly subsidy for the ferry City of Clinton, running between Legoe Bay and Culver's Landing, from $75 to $125, while a committee from the Bellingham Chamber of Commerce has asked the San Juan County Commissioners to increase their monthly subsidy from $150 to $250. The ferry is operated by J. D. Corcoran and Hiram Tuttle. The commissioners promised to do what they can to keep the ferry in service, but advised the committee to see if it cannot get some financial assistance on the islands. (Seattle Daily Times)",
+        "December 20: Hiram Tuttle and John D. Corcoran, operators of the ferry City of Clinton between Lummi and Orcas Islands, have applied to the State Department of Public Works for a certificate to give ferry service between Legoe Bay, Lummi Island, and Culver's Landing, Orcas Island. (Seattle Daily Times)"
+      ]
+    },
+    {
+      "year": "1928",
+      "items": [
+        "January 1: A large delegation of residents of Lummi and Orcas islands is expected to attend a hearing by the State Department of Public Works at Bellingham Tuesday on the Application of John D. Corcoran and Hiram Tuttle for a certificate of public convenience and necessity to operate a ferry between Legoe Bay, Lummi Island and Culver's Landing, Orcas Island. This application is opposed by the Puget Sound Navigation Company which during the summer runs a ferry between Bellingham and Sydney, B. C., via the San Juan Islands. The ferry does not call at Lummi Island. Tuttle and Corcoran established ferry service between Legoe Bay and Culver's Landing last July, with the financial assistance of a Bellingham Chamber of Commerce committee headed by Percy Livesey. The ferry Clinton provides year around service. (Seattle Daily Times)",
+        "January 12: The trustees of the Bellingham Chamber of Commerce adopted resolutions favoring the retention of the ferry service between Legoe Bay, Lummi Island, and Culver's Landing, Orcas Island. A copy will be sent to the State Department of Public Works, which on January 17 will hold a hearing here on the protest of the Puget Sound Navigation Company against the granting of a certificate to Hiram Tuttle and John D. Corcoran, authorizing them to maintain such service in 1928. (Seattle Daily Times)",
+        "February 17: Application of Hiram Tuttle and John D. Corcoran for a permit to operate a ferry between Orcas and Lummi Islands, was granted today by the State Public Works Department. (Seattle Daily Times)"
+      ]
+    },
+    {
+      "year": "1929",
+      "items": [
+        "March 23: The ferry City of Clinton, burned while being taken from Everett to Seattle for repairs. (See below, April 1931 Insurance Claim Story)"
+      ]
+    },
+    {
+      "year": "1930",
+      "items": [
+        "June 4: For travelers to the San Juan Islands, and Orcas Island particularly, announcement was made today by the Puget Sound Navigation Company that the auto-ferry Beeline is now in operation between Orcas and Bellingham, making two round trips daily. By this new service, Orcas will be given six sailings every day to the mainland and two daily to Vancouver Island. (Seattle Daily Times)",
+        "July 9: Freight Lines Wins Right to Operate Route: Olympia—The Puget Sound Freight Lines, Inc., today won its contest with the Puget Sound Navigation Company for the right to operate a direct automobile and passenger ferry service between Orcas Island and Goose Berry Point on the mainland near Bellingham. A decision in favor of the company, which operates freight and passenger ferry service between Seattle, Bellingham and intermediate points was handed down today by the State Board of Public Works. The company had applied to the board for a certificate authorizing it to institute service between Goose Berry Point and Thompson Point on Orcas Island. The Puget Sound Navigation Company protested the application and filed a counter-application for service between Bellingham and north Orcas, via Lummi Island. (Seattle Daily Times)",
+        "August 24: Ferry service between North Orcas and Reservation Landing was started yesterday by the Puget Sound Freight and Ferry Lines, Capt. F. E. Lovejoy, president of the company, announced. (Seattle Daily Times)",
+        "September 28: Puget Sound Freight Lines will start a double ferry service between Lummi Island and Gooseberry Point tomorrow, according to an announcement by Capt. Frank Lovejoy, president and general manager. The new route will give Lummi Island residents service late in the evening. The ferry Pioneer of the Puget Sound Freight Lines will furnish the double service while the Chief Kwina is being overhauled."
+      ]
+    },
+    {
+      "year": "1931",
+      "items": [
+        "April 28: Ferry Man Wins Fire Risk Verdict: Judgement of the Whatcom County Superior Court giving Willis Nearhoff victory in a suit against the Home Insurance Company of New York was sustained by the Supreme Court yesterday. Nearhoff was owner of the ferry City of Clinton, which was insured as a carrier between Lummi and Orcas. She burned on March 23, 1929, while being taken from Everett to Seattle for repairs. The high court held that although the ferry burned while off her regular run, Nearheff was entitled to the fire insurance. (Seattle Daily Times)"
+      ]
+    }
   ],
-
-  "relatedPhotos": ["0090"],
-
-  "mentionedPeople": [
-    "John D. Corcoran",
-    "Hiram Tuttle",
-    "Willis Nearhoff",
-    "Jane Barfoot Hodde",
-    "John Gray",
-    "George Loomis",
-    "William Moore",
-    "Culver Willis",
-    "Cecil Willis",
-    "Chet Carlson",
-    "Lee Quin Captain"
-  ],
-
-  "researchQuestions": [],
-
-  "extractedAt": "2026-01-14",
-  "notes": "Comprehensive ferry history with news items 1927-1931 and memoir by Jane Barfoot Hodde"
+  "memories": {
+    "author": "Jane Barfoot Hodde",
+    "content": "\"By 1926-27 nearly every family had a car. A ferry ran from Orcas to Anacortes, but the long drive from Anacortes to Bellingham, where most of the trading was done, was a definite deterrent to travel.\n\nA group had a small ferry and said if island neighbors would build a slip they would start service from Point Lawrence (Alderbrook) to Lummi. Cars would drive across, take another ferry across Hales Pass to Gooseberry Point, then drive to Bellingham.\n\nOur place, Woodside Farm, had plenty of good timber suitable for the pilings for the slip. John Gray, George Loomis, William Moore, Culver Willis, and my father, Cecil Willis, all community-minded, worked for several weeks felling trees and getting a big boom ready to be towed to Point Lawrence. When they were nearly finished with the project, my mother decided to walk across the field to see what had been done.\n\nIt was June 1, 1927, the last day of school. My brother John and I learned that we had passed eighth-grade exams, which made us eligible for high school. We raced the two-and-a-half miles home to tell our folks that we'd passed. We were greeted with the shocking news that my father had been injured when he jumped a log that was being pulled with his team; he was crushed.\n\nMedical assistance was limited to a shot of morphine by a so-called doctor from Olga. A Coast Guard boat came the three hours it took from Port Angeles, took my father the three more hours to Bellingham. Father died that night. Needless to say, our lives were completely changed that day.\n\nPoint Lawrence was not a good area for a ferry slip. The next year it was moved to Buckhorn, then to Terril's Beach, but it, too, proved unsatisfactory.\n\nIn 1936, a Mr. Tuttle, Chet Carlson, and Lee Quin Captain operated a ferry from Obstruction Pass to Chuckanut, south of Bellingham, which ran until the early 1940s.\""
+  },
+  "source": "\"125 Years: Olga: Memories and Potlucks\" (Compiled by Irene Barfoot O'Neill)"
 }

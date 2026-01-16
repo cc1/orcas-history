@@ -5,6 +5,7 @@ import { EditableField } from '@/components/forms/EditableField'
 import { AutocompleteField } from '@/components/forms/AutocompleteField'
 import { EditableSection } from '@/components/forms/EditableSection'
 import { updateMediaField } from '@/lib/api'
+import { getImageUrl } from '@/lib/utils'
 import { useCallback } from 'react'
 
 // ============================================================================
@@ -100,7 +101,7 @@ export function PhotoPage(): React.ReactElement {
   if (loading) return <LoadingState />
   if (error || !photo) return <ErrorState message={error?.message} />
 
-  const imageUrl = photo.webImagePath || photo.googleUrl || ''
+  const imageUrl = getImageUrl(photo.webImagePath, photo.googleUrl)
 
   return (
     <div className="min-h-screen bg-background">
@@ -119,6 +120,9 @@ export function PhotoPage(): React.ReactElement {
                   src={imageUrl}
                   alt={photo.description || `Photo #${photo.number}`}
                   className="max-w-full max-h-full object-contain"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                 />
               </div>
             </div>

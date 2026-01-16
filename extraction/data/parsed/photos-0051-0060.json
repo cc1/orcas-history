@@ -1,110 +1,17 @@
 {
-  "pageUrl": "https://sites.google.com/view/orcashistoryresearch/photos-master-list/photos-0051-0060",
-  "extractedAt": "2026-01-13T00:00:00Z",
+  "batchId": "0051-0060",
+  "extractedAt": "2026-01-15T21:35:00.000Z",
+  "count": 10,
   "photos": [
-    {
-      "number": "0051",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkfbtl6vhBpGxO1s66reDTDY5dZ0IIMSgmDEC5HHYk5g4cyjRUGdQpPCPezD7WHHrUOZh1G1EgQyND8CIBWW06RK0tRRfEcuBozJcgXSZXMDfX_bVVxLEoW3_dkil-HP2OKXSeO6mbu7fUbMfBqnySfZvOteErL9kzN3EW9rBNPnY-xoVNNGyM3OC_5cRpegev-biROd-zv07d4=w1280",
-      "date": "1940",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Fishing derby participants proudly displaying their salmon.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0052",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCke21ISGVLqJDehhSiUzvwLARbOWdNssbCBcOZFqwbwnBhSkgeCKZ-reby2XuJ7OlcM1hnZ1B7XGizpxoc2543i2GXGg8Nc1Cl5XoVfAbfRy0VGpsdTkaSLHXRrEtmGKrzVbAXLsv4Io6Mt_x4gk7rEaEtyQSoCqeH2MKgEyGQBuF_Ckd4RVxNlmx7oX2jN_i4AJCU-UWlyo45GnXypBKV8jwBVKqM0eZCGi=w1280",
-      "date": "1940s",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Derby winners - the women on the left won with this huge salmon.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0053",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkdjVo901iUh7GhEqz0t1Nf5RWlZLnJmeY32VLa0cHfJuf1lOxLh78Opwqsix2Jdtna1roYk4wo2aK-EUEgv5-VwtLYG2H7nFuLrXT-Zdec5aPbHnRmHNwF1ZLfKxS90rwiisXCCixrtDB3FvG3V50qbV0ZHaCJ9R6ziSnZY_BFAdx59LYwuPXTz42BGOJc2dDSo6KkL7cJ7X2fKGwLSA2JtdOsOFAVdq_Rijeo=w1280",
-      "date": "1940s",
-      "location": "Pt. Lawrence Lodge",
-      "people": "TBD",
-      "description": "Derby winner with 50 lb plus King Salmon. This fish was hooked at dusk and was fought into the night creating concern on shore as the only boat not to return. A crowd gathered when they heard the sound of a small outboard coming from the direction of North Peapod Island. She fought this giant fish and drifted from Pt. Lawrence all the way there before she and her husband got the fish in the boat. Note my father's ingenious method of making the fish look even larger than it really is. He devised a hook mounted on a broomstick which that small woman is simply holding steady out in front of her. Always hold your fish out in front when you are getting your photo taken! (Ken)",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0054",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkeGLdIWGa25Ou-_hlimBp8RWukyRFrSeunD_rBIWcO6y9fZYv9ong78Kgg8zDoyD1kJKxUDHXMNCXUGtMgQHdrzAWoufj3pIUAzmudlxuZfQoUIxipJymwP8Ow-laBJ01MSADMVGs-roZMfEkPa70JUiCcueg73gBKWaSAQBMX0zv4MH4pU_jtVkxSQ1l_tdlNfcTAILTHaDdS_1e8cJ02jB1AadDJHNXbQ8lI=w1280",
-      "date": "1943",
-      "location": "NA",
-      "people": "NA",
-      "description": "Jean and Carroll Culver Christmas Card",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0055",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcqcb3ngFB9d6GYDXNpFor-tUJfhIjGiq-RWbIvVTyDV0_AWgO6vfj15lOoHEka3XGyPRs7wFNvbIaUfPGPWI2uujHnwY3msbQ4es26Z-SbfWKRifRoCWwIy9w-H9rmoCmk264G146STH6v3YcVnXorFElnY7ah8QcHxOKfC4IlN9-mTCXpe0kRjTKc52iAcObxVBWSuTfXh3U=w1280",
-      "date": "1947",
-      "location": "Point Lawrence Lodge",
-      "people": "Jean (Rothenhafer) Culver, Carroll Culver",
-      "description": "Jean and Carroll Culver Christmas Card",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0056",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkc4ZeaCwJZHYEFC2BlW1-P_Jav3hkNrDEFpG1vf4_92nu_PL3fn0l6QWJwaN3ABTU1a0WaXP8WlHHYgz2_qJU82yxQdqfOuyO_MZzpVWrl7Fm5P4BJaAps9AZGjXTrIQSmn6TifBrdQtYLb0bJA1ymWxL8Kvu1wySmdDGdLXaolxYwgxK6ZZ2XGHLA=w1280",
-      "duplicate": "Duplicate of 0031"
-    },
-    {
-      "number": "0057",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcouOgFRbvmTNqGboyeIDz3Lb2G3m5-Ec5QqxIPN-1Miumq3vVzsFc9TFoDPTkModC5IS4xB0jbxSq0Sw-PSuIHbT1dQuTQIaPiQOUY4TRdLfIqgxPrCSttB7CofkXknlqivSq5dr99t26EuGbcpSeOGY-3Zw4t_PK23eXLlfvEbnD25fFkUN5H0Mmtvg8vgT8o2NAo0q82mfs=w1280",
-      "date": "1942",
-      "location": "Point Lawrence Lodge",
-      "people": "TBD",
-      "description": "Jean and Carroll Culver Christmas Card",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0058",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkekBNAHkOrxrkcOyYqUBm-DCLAqp_vwrvPq2jg7TmxSd2KWq2DpLef4BlF3QtPJLLyksl73NWjCGrPK7q5uRDPHlVCTz5yIlgO0KmG0UwnUHCVyLXLURNH65pFLRZ3dcs_gOm3sLFMdcjpL6cKM4WEGfer9eE7DFcRvU9nQwwotd-PTTRTkSNhU0E1T61oxjcJNQ_wqTwxZ1RsSUGZ8GtGhDM08wX-NlSQFEN8=w1280",
-      "date": "TBD",
-      "location": "Point Lawrence Lodge",
-      "people": "TBD",
-      "description": "Crowds always gathered when it was fish weigh in time at a fishing derby. Derbies were held a couple of times each summer at the height of the salmon runs.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0059",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkf7y8iW-2jVDFsMyIIku7DqR6F6IS9leNYLfgNZ4e_sPOe_VHQ0gPvfYA7LnpUcnW4loE9LeNLcaiSD3F5PydhoLv9gJZfnNMemyT-k2ZG6vcn171ALFDpBbaMlYrNfKMuAgHKSGbU10_aZm0Y0FGhuIQUoJe6ecFitWXqV_ToeQxy2OxK-hGpO9-Fw7-5cgtgLuF1bx6wVAB4=w1280",
-      "date": "Late 30s early 40s",
-      "location": "Point Lawrence Lodge",
-      "people": "TBD",
-      "description": "The photo notes tell the story",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    },
-    {
-      "number": "0060",
-      "imageUrl": "https://lh3.googleusercontent.com/sitesv/AAzXCkcFRos5wXbqSGhWzKOXliPgLFpwfKoGd48o_7pr4Qi_iu2FwP1mm7eAfmoAKBVNIWYMK3tR4T18LnVqsj-XtVspzb90uZqzEOUy1CYTeNQTvZSAkBAt3CNkXCBPNdsFsJ3H_Dego0QXJtZxhWLgVkVs0d68qVkU5GgcVEURG-W6QMvCUmtPexVz6HQT687rXmiEWmdx2pHu=w1280",
-      "date": "Early 40s",
-      "location": "Point Lawrence Lodge",
-      "people": "TBD",
-      "description": "Photo notes tell the story.",
-      "source": "Ken Culver",
-      "hasHighRes": true,
-      "notes": "TBD"
-    }
+    {"id":"0051","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdBF_SoIFgDcMCHa_eVyEkyYmyT6c0fMger_mTMrsN38UxPY91NIRknHpLqteRbb5QYvOCTO5a1939Udg7mtotAY-3_URs69s8XsOCoAIs9qmCPKlIyCmHx2ZH11ZQG3uXbpdrpT0ROumAMtydqKWHDNN9wd32QQZ7Cuf7reEPwAneRbCgnRwnpBcxHhFcNaz7GrzEOBOp6YeE=w1280","date":"1940","location":"Pt. Lawrence Lodge","people":"TBD","description":"Fishing derby participants proudly displaying their salmon.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0052","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeghjrruDMnMVNh9r_I2jEFueLK1dP3MfQj88CDPTtC4TZqqVXCZJZaDZwhC6bkjShMs0rX5BkwGBYteLxusLzfOSnTjPpqNVufo1YQeYQRdRFOAIpzNfj4wLGQu8X45HsYNVdUhQ0aRjpq1OkWOCTx1kbMBV2klAxAaEhsF7Hv1IrQf8n5E6tWONCQX5YV_Zt73YaYD52HuT9c4oR3800qDD4cF12jQ0jo=w1280","date":"1940's","location":"Pt. Lawrence Lodge","people":"TBD","description":"Derby winners - the women on the left won with this huge salmon.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0053","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdg4B4Tow2xR5qd5NNToHhlzBQ38nbtMn1k_T70pYnItxtx8IJJMZ4hczN5qHxVFOuOWRFKPMXk-q1sl3a2TSz6MwIM04O1nkp14IzIYDCuspvsQmgTYVFp-B-ghhbDF019G3XhY2myGn68-0C4J36bApxPuL8jKldjHLFfNRfJljMAt3B2QHiOKzKjoknSVHD8rLDfGPrMYZ1zrykGXX6sinVftdjHbMwl7Yc=w1280","date":"1940's","location":"Pt. Lawrence Lodge","people":"TBD","description":"Derby winner with 50 lb plus King Salmon.  This fish was hooked at dusk and was fought into the night creating concern on shore as the only boat not to return.  A crowd gathered when they heard the sound of a small outboard coming from the direction of North Peapod Island.  She fought this giant fish and drifted from Pt. Lawrence to Peapod before it was gaffed.  Fish this big were too big for nets of the day, so it was gaffed instead.  A real art, and the source of many fish knocked off the hook by an inexperienced helper in the boat.  Note my father's ingenious method of making the fish look even larger than it really is.  He devised a hook mounted on a broomstick which that small woman is simply holding steady out in front of her.  Always hold your fish out in front when you are getting your photo taken!   (Ken)","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0054","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkeaNsml5f4ChMzzH4zOvx3jgydF7ql1R21MV9OpJVeIeHXqiMl-qunIPAtps1qBI7LkHfEPXqQnEhiGP8jkO08nuTb5PUpCM87LdJxqaSq1QS8TXE3CiCJM5JrvRdPV4c7QaT1Z7Xg9BtvtqKp-FoobXb2b0ExBqh8DaMj3sY5kZ0q7oHEeZC1WV0GWRmCx2XD67tn1XoiwkErAYDMjft6WlHNyy-QK0HC1oOM=w1280","date":"1943","location":"NA","people":"NA","description":"Jean and Carroll Culver Christmas Card","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0055","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkemJBdesA132LTYUQ9TdfHOeyU9wdX6UE72gyOjItsFy_edol08xcQYBHJzn5iX7PX90bvkbEHXUtyg-ybtUtn8fK7lIwqrmghX64WRKBr-1fp2HIqKsSrdhCULpxJXSlNKXIc950rgPVC_BiTDkAo3B6ucqE5qxREzd1D2a7wFV_XRAG31fxV7F9yH-GQWYw19RKv2PXbzItc=w1280","date":"1947","location":"Point Lawrence Lodge","people":"Jean (Rothenhafer) Culver, Carroll Culver","description":"Jean and Carroll Culver Christmas Card","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0056","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCke6MrYSwO9R5Bkx5DPsZCLRulfVn5M1ElwgxIOOREZz3FvIKxCF55KAR52wVAgNbJXzNuODubCFqYEpJJbhEUu0Ot1o0W4SWNvTzmBB1nFFjcvIf_FRbdryPaB7a3Qz7JK9io7Ldta2gQ1UjqJFGeKlbM_SVKCrs4K5Ol5S7TcL8R0_pOP_EfdLFAI=w1280","date":null,"location":null,"people":null,"description":null,"source":null,"notes":null,"duplicate":"Duplicate of 0031."},
+    {"id":"0057","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdXAbQC3VXCn5vHq8GMGULbsINdWn9HLAjLWaXNG4eXdL_UxfCZs32_LLJ6G6UPujKf1bHKwLgIbjPH75xzWNZO2NayVcS3GCGK_mzUmgMMM5I25DgS0RSbNU7ud8yoSYhP6hb1_nIJmGPC387Wb56SS4opB8Q-hhVSoSNS-aJOB_9BBBXjRZItG4b-imbalgfHv-6GecPgb-k=w1280","date":"1942","location":"Point Lawrence Lodge","people":"TBD","description":"Jean and Carroll Culver Christmas Card","source":"Ken Culver","notes":"Enlarged version of inset photo is image 0200.","hasHighRes":true},
+    {"id":"0058","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdoKpa8eHwrXaHUKyJAtPnUDVYfQNQz22L0GhgpSFkPMNjOln-KO6uXJhI2Z9Z6-hV8-CFFiiBUPMeX15Xe5zB3ncVqGsD-p4Kqqw1-yYoUWLq3Hge1xYzEbkYlTW369UnKnMgQBbm6ITVijcacGT0iDyjKwvs8exncm7NgEF-J--nGj4xbmJ_exfqNUTR23wHzCaV4t6GShmwqDV-zOEMj7Zqz3R33vup32g0=w1280","date":"Late 30's- early 40's","location":"Point Lawrence Lodge","people":"TBD","description":"Crowds always gathered when it was fish weigh in time at a fishing derby. Derbies were held a couple of times each summer at the height of the salmon runs.","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0059","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdDLldgh-8Fm2ym9_lvHrWwbvJ7mHlTVKo3C1FIiRaNiB2QtbfGaVJx9Dng61J4pCxCtpwei-VcKdFK9xHxlKy0lU1pganl5TugGxWYV1KfoPSjHtoj7YR0rBwY1R6hNYGhsLTI4OOOJF0kiBbmV0K-ZzOuyzcaSZiAuIbSfRTjncEqvWpqUkyWbHGlpIexgNdwwOCBLcy1JNo=w1280","date":"Late 30's early 40's","location":"Point Lawrence Lodge","people":"TBD","description":"The photo notes tell the story","source":"Ken Culver","notes":"TBD","hasHighRes":true},
+    {"id":"0060","imageUrl":"https://lh3.googleusercontent.com/sitesv/AAzXCkdZn_dqnOlJkMJJBSqGUTgZm1wK5CCXgzNehADWwwwGm9jHLFI7cOGxDxXqIVNVQycP9q4VJIHFhhhYybXOwQpEd0Ubt_ulXFphabFl7EcOncwUfZQjWSr9VJvgCINWiCUg0kqh_nUtyKUxpEzsF53ZSSZcF0seeFE0t_8YCB6rSVjeeQNzLPJF2YGFw0J17ZAjrR20Sowf=w1280","date":"Early 40's","location":"Point Lawrence Lodge","people":"TBD","description":"Photo notes tell the story.","source":"Ken Culver","notes":"TBD","hasHighRes":true}
   ]
 }

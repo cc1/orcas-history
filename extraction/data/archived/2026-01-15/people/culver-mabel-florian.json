@@ -1,0 +1,35 @@
+{
+  "slug": "culver-mabel-florian",
+  "displayName": "Mabel Florian (Culver) Johanson",
+  "sourceUrl": "https://sites.google.com/view/orcashistoryresearch/people/culver-mabel-florian",
+
+  "connectionToPtLawrence": null,
+
+  "family": {
+    "parents": "Otis Henry Culver and Mabel Gertrude Culver (Smith)",
+    "spouses": "Helge Johanson",
+    "children": "Larry Johanson",
+    "siblings": "Evelyn Louise Culver, Leda Gertrude Culver, Mary Luella Culver, Carroll Nelson Culver"
+  },
+
+  "keyDates": "1907-1996 (d. Age 89)",
+
+  "timeline": [
+    {"year": 1907, "age": 0, "event": "Born March 28, 1907 in Friday Harbor, WA"},
+    {"year": 1910, "age": 2, "event": "Living with her parents in San Juan"},
+    {"year": 1920, "age": 12, "event": "Living with her parents in Friday Harbor"},
+    {"year": 1930, "age": 22, "event": "Living with her parents in Bellingham (as Florian Johanson - married?)"},
+    {"year": 1996, "age": 89, "event": "August 2: Died in Bellingham, WA"}
+  ],
+
+  "biography": null,
+
+  "miscellaneous": "Also known as 'Florian'. Named after her mother Mabel Gertrude.",
+
+  "researchQuestions": [
+    "When did Mabel Florian marry Helge Johanson?"
+  ],
+
+  "extractedAt": "2026-01-14",
+  "notes": "Short page with basic family info"
+}
