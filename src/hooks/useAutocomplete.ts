@@ -2,7 +2,7 @@
  * Shared hook for autocomplete functionality
  * Handles state management, keyboard navigation, and filtering
  */
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react'
 
 export interface AutocompleteItem {
   id: string
@@ -61,13 +61,21 @@ export function useAutocomplete<T extends AutocompleteItem>({
   const inputRef = useRef<HTMLInputElement>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
+  // Build Set of selected IDs for O(1) lookup instead of O(n) Array.some()
+  const selectedIds = useMemo(
+    () => new Set(selectedItems.map(s => getItemId(s))),
+    [selectedItems, getItemId]
+  )
+
   // Filter items based on search and exclude selected
-  const filteredItems = items.filter(item => {
-    const isSelected = selectedItems.some(s => getItemId(s) === getItemId(item))
-    if (isSelected) return false
-    if (!searchText) return true
-    return item.label.toLowerCase().includes(searchText.toLowerCase())
-  })
+  const filteredItems = useMemo(() => {
+    const lowerSearch = searchText.toLowerCase()
+    return items.filter(item => {
+      if (selectedIds.has(getItemId(item))) return false
+      if (!searchText) return true
+      return item.label.toLowerCase().includes(lowerSearch)
+    })
+  }, [items, selectedIds, searchText, getItemId])
 
   // Reset highlighted index when filtered items change
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
 
 // Mock search results - will be replaced with actual search
@@ -46,9 +46,11 @@ export function SearchPage(): React.ReactElement {
       setIsLoading(true)
       // Simulate search - replace with actual API call
       setTimeout(() => {
+        // Compute lowercase query once, not per-item per-field
+        const lowerQuery = query.toLowerCase()
         const filtered = mockSearchResults.filter(r =>
-          r.title.toLowerCase().includes(query.toLowerCase()) ||
-          r.snippet.toLowerCase().includes(query.toLowerCase())
+          r.title.toLowerCase().includes(lowerQuery) ||
+          r.snippet.toLowerCase().includes(lowerQuery)
         )
         setResults(filtered.length > 0 ? filtered : mockSearchResults)
         setIsLoading(false)
@@ -58,12 +60,14 @@ export function SearchPage(): React.ReactElement {
     }
   }, [query])
 
-  // Group results by type
-  const resultsByType = results.reduce((acc, result) => {
-    if (!acc[result.type]) acc[result.type] = []
-    acc[result.type].push(result)
-    return acc
-  }, {} as Record<string, SearchResult[]>)
+  // Group results by type (memoized to avoid recalculation on unrelated re-renders)
+  const resultsByType = useMemo(() =>
+    results.reduce((acc, result) => {
+      if (!acc[result.type]) acc[result.type] = []
+      acc[result.type].push(result)
+      return acc
+    }, {} as Record<string, SearchResult[]>)
+  , [results])
 
   return (
     <div className="container px-4 py-6">

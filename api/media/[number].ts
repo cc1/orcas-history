@@ -214,55 +214,55 @@ async function handleLinksUpdate(req: VercelRequest, res: VercelResponse, number
 
     // Update people links
     if (updates.people !== undefined) {
-      // Delete existing links
-      await db.delete(mediaPerson).where(eq(mediaPerson.mediaId, mediaId))
-
-      // Insert new links
       if (updates.people && updates.people.length > 0) {
         const personIds = updates.people.map(p => p.id)
 
-        // Verify all person IDs exist
-        const validPeople = await db
-          .select({ id: person.id })
-          .from(person)
-          .where(inArray(person.id, personIds))
+        // Parallelize: delete existing links and verify new person IDs exist
+        const [, validPeople] = await Promise.all([
+          db.delete(mediaPerson).where(eq(mediaPerson.mediaId, mediaId)),
+          db.select({ id: person.id }).from(person).where(inArray(person.id, personIds)),
+        ])
 
         const validPersonIds = new Set(validPeople.map(p => p.id))
 
-        for (const p of updates.people) {
-          if (validPersonIds.has(p.id)) {
-            await db.insert(mediaPerson).values({
-              mediaId,
-              personId: p.id,
-              confidence: 'confirmed',
-              notes: 'Updated via admin interface',
-            })
-          }
+        // Batch insert all valid links in a single query
+        const linksToInsert = updates.people
+          .filter(p => validPersonIds.has(p.id))
+          .map(p => ({
+            mediaId,
+            personId: p.id,
+            confidence: 'confirmed' as const,
+            notes: 'Updated via admin interface',
+          }))
+
+        if (linksToInsert.length > 0) {
+          await db.insert(mediaPerson).values(linksToInsert)
         }
+      } else {
+        // Just delete - no new links to add
+        await db.delete(mediaPerson).where(eq(mediaPerson.mediaId, mediaId))
       }
     }
 
     // Update place link
     if (updates.place !== undefined) {
-      // Delete existing links
-      await db.delete(mediaPlace).where(eq(mediaPlace.mediaId, mediaId))
-
-      // Insert new link if provided
       if (updates.place) {
-        // Verify place ID exists
-        const [validPlace] = await db
-          .select({ id: place.id })
-          .from(place)
-          .where(eq(place.id, updates.place.id))
-          .limit(1)
+        // Parallelize: delete existing links and verify new place ID exists
+        const [, validPlaces] = await Promise.all([
+          db.delete(mediaPlace).where(eq(mediaPlace.mediaId, mediaId)),
+          db.select({ id: place.id }).from(place).where(eq(place.id, updates.place.id)).limit(1),
+        ])
 
-        if (validPlace) {
+        if (validPlaces.length > 0) {
           await db.insert(mediaPlace).values({
             mediaId,
             placeId: updates.place.id,
             confidence: 'confirmed',
           })
         }
+      } else {
+        // Just delete - no new link to add
+        await db.delete(mediaPlace).where(eq(mediaPlace.mediaId, mediaId))
       }
     }
 
