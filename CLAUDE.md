@@ -1,184 +1,133 @@
-# CLAUDE.md - Orcas History Project
+# CLAUDE.md
 
-Knowledge graph family history site for Orcas Island / Pt. Lawrence area.
-
-## Quick Reference
-
-```bash
-npm start             # Start development server (frontend + API on port 3000)
-npm run dev           # Frontend only (Vite on port 5173, no API routes)
-npm run build         # Production build
-```
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-This project recreates and enhances a Google Sites family history website as a modern wiki-style knowledge graph. The site features ~650 historic photos of Orcas Island history with rich metadata and relationships.
+**The Pt. Lawrence Project** - A knowledge graph family history site for Orcas Island. Features historical photos, people, places, topics, and newspaper clippings from the Point Lawrence area.
 
-**Source site**: https://sites.google.com/view/orcashistoryresearch
+## Commands
 
----
+```bash
+# Development
+npm run dev          # Vite dev server
+npm run start        # Vercel dev (includes API routes)
+npm run build        # Production build
+npm run lint         # ESLint
+npm run typecheck    # TypeScript check
+
+# Database (Drizzle + Neon PostgreSQL)
+npm run db:generate  # Generate migrations from schema
+npm run db:push      # Push schema changes directly
+npm run db:migrate   # Run migrations
+npm run db:studio    # Drizzle Studio GUI
+npm run db:seed      # Run all seeders
+npm run db:seed -- media   # Run specific seeder (media, people, places, topics, news, links)
+
+# Utilities
+npm run blob:upload  # Upload images to Vercel Blob Storage
+```
 
 ## Architecture
 
-### Tech Stack
-- **Database**: Neon PostgreSQL with Drizzle ORM
-- **Frontend**: React + Vite + TypeScript
-- **UI**: shadcn/ui + Tailwind CSS
-- **Hosting**: Vercel (frontend + serverless API)
-- **Auth**: Session-based edit password
+### Stack
+- **Frontend**: Vite + React 19 + React Router 7 + Tailwind CSS 4
+- **Backend**: Vercel Serverless Functions (TypeScript)
+- **Database**: Neon PostgreSQL + Drizzle ORM
+- **Auth**: Neon Auth (@neondatabase/neon-js)
+- **Storage**: Vercel Blob (images), Google Sites URLs (legacy)
 
 ### Directory Structure
+
 ```
-orcas-history/
-├── api/                  # Vercel serverless functions
-│   ├── _lib/            # Shared utilities (underscore excludes from function count)
-│   │   ├── db.ts        # Database connection
-│   │   ├── date-parser.ts # Date parsing with precision detection
-│   │   ├── image-utils.ts # Image URL helpers
-│   │   └── patch-handler.ts # Generic PATCH handler factory
-│   ├── auth/            # Login/edit authentication
-│   ├── media/           # Photo CRUD endpoints
-│   ├── people/          # Person CRUD endpoints
-│   ├── places/          # Place CRUD endpoints
-│   ├── topics/          # Topic CRUD endpoints
-│   └── backlinks.ts     # Related pages API
-├── db/
-│   ├── schema.ts        # Drizzle ORM schema
-│   └── migrations/
-├── src/
-│   ├── components/
-│   │   ├── ui/          # shadcn components
-│   │   ├── forms/       # Form components (EditableField, UnifiedAutocomplete)
-│   │   ├── media/       # PhotoModal, PhotoCarousel
-│   │   ├── entity/      # Entity-specific components (InTheNews)
-│   │   └── layout/      # Header, Layout, PageStates, navigation
-│   ├── hooks/           # Shared React hooks
-│   │   ├── useAutocomplete.ts    # Autocomplete state/keyboard handling
-│   │   ├── useData.ts            # Data fetching hooks
-│   │   ├── useMediaLinks.ts      # Photo entity link management
-│   │   ├── useModalKeyboard.ts   # Modal keyboard navigation
-│   │   └── usePersonForm.ts      # Person page form handling
-│   ├── pages/
-│   └── lib/
-│       ├── api.ts       # API client with factory pattern
-│       ├── auth-context.tsx # Authentication state
-│       ├── types.ts     # Centralized type definitions
-│       └── timeline.ts  # Timeline markdown utilities
-└── public/
-```
+api/                    # Vercel serverless functions
+├── _lib/               # Shared utilities (db, patch-handler, image-utils)
+├── media.ts            # GET /api/media (paginated list)
+├── media/[number].ts   # GET/PATCH/POST /api/media/:number
+├── people.ts           # GET /api/people
+├── people/[slug].ts    # GET/PATCH /api/people/:slug
+├── places.ts           # GET /api/places
+├── places/[slug].ts    # GET/PATCH /api/places/:slug
+├── topics.ts           # GET /api/topics
+├── topics/[slug].ts    # GET/PATCH /api/topics/:slug
+├── news.ts             # GET /api/news
+└── backlinks.ts        # GET /api/backlinks (entity relationships)
 
----
+db/
+├── schema.ts           # Drizzle schema (entities, junctions, enums)
+├── seed.ts             # Main seeder orchestrator
+├── seed/               # Individual seeders (seed-media.ts, seed-people.ts, etc.)
+└── migrations/
 
-## Entity Model
-
-### Core Types
-- **Media**: Photos, documents, objects (unified type)
-- **Person**: Family members with relationships
-- **Place**: Locations mentioned in photos/content
-- **Topic**: Historical subjects (fish traps, ferries, etc.)
-- **Event**: News items with dates
-
-### Key Relationships
-- Photos link to People, Places, Topics via junction tables
-- People have family relationships (parent, spouse, sibling, child)
-- All entities have backlinks (wiki-style)
-
-### Date Handling
-Dates are stored with precision flags:
-- `exact`: "June 1, 1940"
-- `year_month`: "June 1940"
-- `year_only`: "1940"
-- `range`: "1948-1949"
-- `approximate`: "c. 1940"
-- `unknown`: "TBD"
-
----
-
-## Frontend Architecture
-
-### Shared Components
-
-**PageStates** (`src/components/layout/PageStates.tsx`) provides consistent loading/error/not-found handling:
-
-```typescript
-// Usage in any entity page:
-const pageState = handlePageState({ loading, error, data: person, entityType: 'person' })
-if (pageState) return pageState
-// ... render page content
+src/
+├── lib/
+│   ├── api.ts          # API client with factory pattern
+│   ├── types.ts        # Shared TypeScript types
+│   ├── auth-context.tsx
+│   └── neon-auth.ts
+├── hooks/
+│   ├── useData.ts      # Generic data fetching hooks
+│   ├── usePersonForm.ts
+│   └── useAutocomplete.ts
+├── pages/              # Route pages (PhotosPage, PersonPage, etc.)
+└── components/
+    ├── layout/         # Layout, Header, TabNav, PageStates, BacklinksSidebar
+    ├── forms/          # EditableField, MarkdownField, AutocompleteField
+    ├── media/          # PhotoCarousel, MasonryGrid, FilterBar
+    └── entity/         # EntityGallery, InTheNews
 ```
 
-Used by: `PersonPage`, `TopicPage`, `PlacePage`, `PhotoPage`
+### Key Patterns
 
-### Shared Hooks
+**Entity Types**: Three main entity types (person, place, topic) share common patterns:
+- Slug-based routing (`/people/:slug`, `/places/:slug`, `/topics/:slug`)
+- Same API structure (GET all, GET by slug, PATCH fields)
+- Junction tables for media links (mediaPerson, mediaPlace, mediaTopic)
+- JSONB fields for flexible data (relatedPages, contentSections, familyData)
 
-| Hook | Purpose | Used By |
-|------|---------|---------|
-| `useAutocomplete` | Autocomplete state, filtering, keyboard nav | UnifiedAutocomplete |
-| `useData` | Entity data fetching (person, topic, place, media) | All entity pages |
-| `useMediaLinks` | Photo entity link management (people, places) | PhotoModal, PhotoPage |
-| `useModalKeyboard` | Escape/arrow key handling for modals | PhotoModal |
-| `usePersonForm` | Person page field save handlers | PersonPage |
+**Two Linking Systems** (important!):
+1. **Explicit Links** - Junction tables (`media_person`, `media_place`) for photo-to-entity relationships. Created via UI autocomplete. Photo carousels show ONLY explicitly linked photos.
+2. **Related Pages** - Text-based bidirectional linking for sidebar. Scans entity text for mentions with fuzzy nickname matching (Ken↔Kenneth). API: `api/backlinks.ts`
 
-### API Client Pattern
+**Edit Authentication**: Session-based password stored in `sessionStorage` as `orcas-edit-auth`. First edit prompts for password, subsequent edits in same session don't.
 
-The API layer uses a factory pattern (`src/lib/api.ts`):
+**Shared Utilities**:
+- `src/lib/api.ts` - Factory pattern: `createEntityApi<T>()` for typed entity APIs
+- `api/_lib/patch-handler.ts` - Shared PATCH route handler with field mapping
+- `src/hooks/useData.ts` - Generic hooks: `useEntityBySlug<T>()`, `useInfiniteMedia()`
+- `src/components/layout/PageStates.tsx` - `handlePageState()` for loading/error/not-found
 
-```typescript
-const peopleApi = createEntityApi<Person>('people')
-await peopleApi.getAll()
-await peopleApi.getBySlug('culver-ken')
-await peopleApi.updateField('culver-ken', 'biography', 'New bio text')
+### Database Schema
+
+Core entities: `media`, `person`, `place`, `topic`, `newsItem`
+Supporting: `dateValue` (structured dates), `contributor`, `researchQuestion`
+Junctions: `mediaPerson`, `mediaPlace`, `mediaTopic`, `newsPerson`, `newsPlace`, `newsTopic`
+Enums: `mediaCategoryEnum`, `datePrecisionEnum`, `relationshipTypeEnum`, `confidenceEnum`
+
+### Environment Variables
+
+```bash
+DATABASE_URL=          # Neon PostgreSQL connection string
+BLOB_READ_WRITE_TOKEN= # Vercel Blob storage token
 ```
 
-### Two Linking Systems
+## Code Conventions
 
-#### 1. Explicit Links (Junction Tables)
-- **Used for**: Photo-to-entity relationships (people, places in photos)
-- **Storage**: `media_person`, `media_place` junction tables
-- **Created via**: UI autocomplete fields when editing photo metadata
-- **Display**: Photo carousels on entity pages show ONLY explicitly linked photos
-
-#### 2. Related Pages (Text-Based Bidirectional Linking)
-- **Used for**: "Related Pages" sidebar on Person, Place, and Topic pages
-- **Logic**: Scans ALL entity text (biography, description, contentSections) for mentions
-- **Bidirectional**: If Page A mentions Page B OR Page B mentions Page A, they're related
-- **Fuzzy matching**: Handles nicknames (Ken↔Kenneth, O.H.↔Otis Henry)
-- **API**: `api/backlinks.ts`
-
-### Session-Based Edit Authentication
-
-Edit mode requires the edit password, but only once per browser session:
-
-1. First edit click → Password modal appears
-2. Password validated → Stored in `sessionStorage` as `orcas-edit-auth`
-3. Subsequent edits → No password prompt
-4. Browser tab closed → Must re-authenticate
-
----
-
-## Development Conventions
-
-### Code Style
-- TypeScript strict mode
-- Explicit return types on functions
+- TypeScript strict mode, explicit return types
 - Use `unknown` instead of `any`
 - Functional React components with hooks
+- Use Set/Map for O(1) lookups in hot paths (see `useAutocomplete.ts`)
+- Parallelize independent DB queries with `Promise.all` (see `api/media/[number].ts`)
+- Batch inserts instead of loops with individual awaits
 
-### UI/UX
-- Wiki-style navigation with click-through links
-- Obsidian-style backlinks sidebar
-- B&W/sepia theme - photos are the star
-- Full CRUD admin via browser
+## Known Issues
 
----
+- **PhotoModal** (`src/components/media/PhotoModal.tsx`) has `console.log` placeholder save handlers - not fully implemented
+- **Bundle size** exceeds 500KB warning - consider code-splitting if adding features
 
-## Environment Variables
+## Data Sources
 
-```
-DATABASE_URL=           # Neon connection string
-SITE_PASSWORD=          # Site access password
-EDIT_PASSWORD=          # Edit mode password
-BLOB_READ_WRITE_TOKEN=  # Vercel Blob token (if using blob storage)
-```
-
-**Note**: Use `npm start` for full development (frontend + API on port 3000). Use `npm run dev` for frontend-only work (no API routes).
+The `extraction/` directory contains data from the original Google Sites page:
+- `extraction/plp/` - Downloaded HTML files
+- `extraction/data/images/` - Photo files (650 images at 1280px)
+- `extraction/data/blob-urls.json` - Vercel Blob URL mappings
