@@ -4,7 +4,7 @@
  * Thin wrapper around UnifiedAutocomplete for backward compatibility.
  * Defers data fetching until user enters edit mode to improve page load performance.
  */
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useMemo, useRef, useState } from 'react'
 import { UnifiedAutocomplete, type AutocompleteOption } from './UnifiedAutocomplete'
 import { useEditableSection } from './EditableSection'
 import { usePeople, usePlaces } from '@/hooks/useData'
@@ -34,6 +34,9 @@ export function AutocompleteField({
   const [isSaving, setIsSaving] = useState(false)
   const { isEditing } = useEditableSection()
 
+  // Stable empty array reference to prevent infinite loops
+  const emptyArray = useRef<AutocompleteOption[]>([])
+
   // Only fetch data when user is actually editing (or field is always editable)
   // This defers the API call until needed, improving initial page load
   const shouldFetch = alwaysEditable || isEditing
@@ -60,9 +63,11 @@ export function AutocompleteField({
   }, [type, people, places])
 
   // Normalize value to array format
+  // Uses stable emptyArray ref to prevent infinite loops from new [] references
   const normalizedValue: AutocompleteOption[] = useMemo(() => {
-    if (!value) return []
+    if (!value) return emptyArray.current
     const arr = Array.isArray(value) ? value : [value]
+    if (arr.length === 0) return emptyArray.current
     return arr.map(v => ({
       id: v.id,
       slug: v.slug,

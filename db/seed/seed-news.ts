@@ -5,15 +5,25 @@
 import fs from 'fs'
 import path from 'path'
 import { db } from '../index'
-import { newsItem } from '../schema'
+import { newsItem, newsPerson, newsPlace, newsTopic } from '../schema'
 import { slugify } from './utils'
 
 interface ExtractedNews {
   slug: string
   name: string
+  decade?: string
   sourceUrl?: string
   yearsIncluded?: string[]
-  rawContent: string
+  rawContent?: string
+  // Pre-parsed news items (alternative to rawContent)
+  newsItems?: Array<{
+    year: number
+    month?: string
+    content: string
+    linkedPeople?: string[]
+    linkedPlaces?: string[]
+    linkedTopics?: string[]
+  }>
   notes?: string
   extractedAt?: string
 }
@@ -107,6 +117,16 @@ function generateItemId(decade: string, year: number, month: string | null, cont
 export async function seedNews(): Promise<void> {
   console.log('Seeding news items...')
 
+  // Clear ALL existing news items first to remove any old/corrupted data
+  // This is necessary because itemIds may have changed between extractions
+  // Must delete junction tables first due to foreign key constraints
+  console.log('Clearing existing news items and links...')
+  await db.delete(newsPerson)
+  await db.delete(newsPlace)
+  await db.delete(newsTopic)
+  await db.delete(newsItem)
+  console.log('Done.')
+
   const newsDir = path.join(process.cwd(), 'extraction/data/parsed/news')
 
   if (!fs.existsSync(newsDir)) {
@@ -122,12 +142,29 @@ export async function seedNews(): Promise<void> {
   let itemsByDecade: Record<string, number> = {}
 
   for (const file of files) {
-    const decade = file.replace('.json', '')
     const filePath = path.join(newsDir, file)
     const data: ExtractedNews = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
-    // Parse the raw content into individual items
-    const parsedItems = parseNewsContent(data.rawContent)
+    // Get decade from filename or data
+    const decade = data.decade || file.replace('.json', '')
+
+    // Get parsed items - either pre-parsed or parse from rawContent
+    let parsedItems: ParsedNewsItem[]
+    if (data.newsItems && data.newsItems.length > 0) {
+      // Use pre-parsed items
+      parsedItems = data.newsItems.map(item => ({
+        year: item.year,
+        month: item.month || null,
+        monthSort: item.month ? MONTH_TO_SORT[item.month.toLowerCase()] || null : null,
+        content: item.content
+      }))
+    } else if (data.rawContent) {
+      // Parse raw content
+      parsedItems = parseNewsContent(data.rawContent)
+    } else {
+      console.log(`  Skipping ${file} - no content`)
+      continue
+    }
 
     itemsByDecade[decade] = 0
 
@@ -144,7 +181,18 @@ export async function seedNews(): Promise<void> {
         monthSort: item.monthSort,
         content: item.content,
         sourcePageUrl: data.sourceUrl
-      }).onConflictDoNothing()
+      }).onConflictDoUpdate({
+        target: newsItem.itemId,
+        set: {
+          decade,
+          year: item.year,
+          month: item.month,
+          monthSort: item.monthSort,
+          content: item.content,
+          sourcePageUrl: data.sourceUrl,
+          updatedAt: new Date()
+        }
+      })
 
       totalItems++
       itemsByDecade[decade]++

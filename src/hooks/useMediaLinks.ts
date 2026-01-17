@@ -3,7 +3,7 @@
  *
  * Shared between PhotoModal and PhotoPage for consistent link handling.
  */
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { updateMediaLinks } from '@/lib/api'
 
 interface EntityLink {
@@ -33,11 +33,9 @@ export function useMediaLinks({
   const [peopleLinks, setPeopleLinks] = useState<EntityLink[]>(initialPeople)
   const [locationLink, setLocationLink] = useState<EntityLink | null>(initialPlace)
 
-  // Sync with initial values when they change
-  useEffect(() => {
-    setPeopleLinks(initialPeople)
-    setLocationLink(initialPlace)
-  }, [initialPeople, initialPlace])
+  // Note: We intentionally don't sync with initial values after mount.
+  // The initial values are used once when the component mounts via useState.
+  // This avoids infinite loops from new array references being passed on every render.
 
   const savePeopleLinks = useCallback(async (links: EntityLink[] | EntityLink | null) => {
     const newLinks = Array.isArray(links) ? links : links ? [links] : []

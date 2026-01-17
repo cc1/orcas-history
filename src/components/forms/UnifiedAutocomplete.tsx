@@ -4,7 +4,7 @@
  * A configurable autocomplete that replaces AutocompleteField, FamilyLinksField,
  * and RelatedPagesField with a single, consistent implementation.
  */
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useAutocomplete, type AutocompleteItem } from '@/hooks/useAutocomplete'
 import { useEditableSection } from './EditableSection'
@@ -182,9 +182,16 @@ export function UnifiedAutocomplete<T extends AutocompleteOption>({
   const [isFieldEditing, setIsFieldEditing] = useState(alwaysEditable)
   const [localValue, setLocalValue] = useState<T[]>(value)
 
-  // Sync local state with prop
+  // Track last synced value by content (not reference) to prevent infinite loops
+  const lastSyncedValue = useRef<string>(JSON.stringify(value.map(v => v.id)))
+
+  // Sync local state with prop only when content actually changes
   useEffect(() => {
-    setLocalValue(value)
+    const currentValueIds = JSON.stringify(value.map(v => v.id))
+    if (currentValueIds !== lastSyncedValue.current) {
+      lastSyncedValue.current = currentValueIds
+      setLocalValue(value)
+    }
   }, [value])
 
   // Reset field editing when section editing ends
@@ -196,6 +203,8 @@ export function UnifiedAutocomplete<T extends AutocompleteOption>({
 
   const handleSelect = useCallback((item: T) => {
     const newItems = multiple ? [...localValue, item] : [item]
+    // Update ref to prevent useEffect from reverting this change
+    lastSyncedValue.current = JSON.stringify(newItems.map(v => v.id))
     setLocalValue(newItems)
     onChange(newItems)
     if (!multiple && !alwaysEditable) {
@@ -205,6 +214,8 @@ export function UnifiedAutocomplete<T extends AutocompleteOption>({
 
   const handleRemove = useCallback((item: T) => {
     const newItems = localValue.filter(v => v.id !== item.id)
+    // Update ref to prevent useEffect from reverting this change
+    lastSyncedValue.current = JSON.stringify(newItems.map(v => v.id))
     setLocalValue(newItems)
     onChange(newItems)
   }, [localValue, onChange])
