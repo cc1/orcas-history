@@ -103,28 +103,16 @@ function findNameInContent(content: string, name: string): boolean {
 
 /**
  * Find all matching people in a news item's content
- * Only matches if the news year falls within the person's lifetime (with some buffer)
  */
 function findPeopleMatches(
   content: string,
-  newsYear: number,
-  people: { id: string; displayName: string; birthYear: number | null; deathYear: number | null }[]
+  people: { id: string; displayName: string }[]
 ): EntityMatch[] {
   const matches: EntityMatch[] = []
   const matchedIds = new Set<string>()
 
   for (const p of people) {
     if (matchedIds.has(p.id)) continue
-
-    // Year filtering: only link if the person could reasonably be alive/mentioned
-    // - If we have a birth year, the news must be from after they were born (minus 1 year buffer for "expecting" news)
-    // - If we have a death year, the news must be from before they died (plus 5 years buffer for obituaries/memorials)
-    if (p.birthYear && newsYear < p.birthYear - 1) {
-      continue // Person wasn't born yet
-    }
-    if (p.deathYear && newsYear > p.deathYear + 5) {
-      continue // Person died more than 5 years before this news
-    }
 
     const variations = generateNameVariations(p.displayName)
 
@@ -222,7 +210,7 @@ export async function seedNewsLinks(): Promise<void> {
   // Load all entities
   const [allNews, allPeople, allPlaces, allTopics] = await Promise.all([
     db.select({ id: newsItem.id, itemId: newsItem.itemId, content: newsItem.content, year: newsItem.year }).from(newsItem),
-    db.select({ id: person.id, displayName: person.displayName, birthYear: person.birthYear, deathYear: person.deathYear }).from(person),
+    db.select({ id: person.id, displayName: person.displayName }).from(person),
     db.select({ id: place.id, name: place.name }).from(place),
     db.select({ id: topic.id, name: topic.name }).from(topic),
   ])
@@ -241,8 +229,8 @@ export async function seedNewsLinks(): Promise<void> {
   for (const news of allNews) {
     const content = news.content
 
-    // Find matches (pass news year for temporal filtering of people)
-    const peopleMatches = findPeopleMatches(content, news.year, allPeople)
+    // Find matches
+    const peopleMatches = findPeopleMatches(content, allPeople)
     const placeMatches = findPlaceMatches(content, allPlaces)
     const topicMatches = findTopicMatches(content, allTopics)
 
